@@ -1,0 +1,234 @@
+[gd_scene load_steps=7 format=3 uid="uid://cbxo4u4ba0wt8"]
+
+[ext_resource type="Script" uid="uid://jwc4boi2mn43" path="res://Scripts/ms_1_network_tracer.gd" id="1_q86yi"]
+[ext_resource type="Theme" uid="uid://4wumgw1yqy2f" path="res://Themes/buttonTheme.tres" id="2_vspgn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nek87"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_43jmm"]
+font_size = 25
+
+[sub_resource type="LabelSettings" id="LabelSettings_k0b4n"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_iggkl"]
+font_size = 18
+
+[node name="Ms1NetworkTracer" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q86yi")
+
+[node name="Grafo" type="Panel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 330.0
+offset_bottom = 239.0
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -29.999985
+offset_bottom = -3.0857544
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(1, 1.1146522)
+
+[node name="ButtonExit" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -43.99997
+offset_top = -8.971431
+offset_right = 42.0
+offset_bottom = 34.02857
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(0.39732915, 0.39403322)
+text = "Salir"
+
+[node name="Panel2" type="Panel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 323.0
+offset_right = 480.0
+offset_bottom = 240.0
+
+[node name="PanelInfoServer" type="Panel" parent="Panel2"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 6.0
+offset_top = 63.0
+offset_right = 471.5984
+offset_bottom = 258.0
+scale = Vector2(0.32860944, 0.4539479)
+
+[node name="ColorRect" type="ColorRect" parent="Panel2/PanelInfoServer"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 60.4
+offset_right = 366.0
+offset_bottom = 130.4
+scale = Vector2(1.2245028, 1.1371841)
+
+[node name="LabelFunct" type="Label" parent="Panel2/PanelInfoServer/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.8150024
+offset_right = -5.1987305
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_nek87")
+autowrap_mode = 3
+
+[node name="PanLabelName" type="ColorRect" parent="Panel2/PanelInfoServer"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 15.4
+offset_right = 366.0
+offset_bottom = 55.4
+scale = Vector2(1.2245028, 1.1371841)
+color = Color(0.24845782, 0.44724834, 1, 1)
+
+[node name="LabelName" type="Label" parent="Panel2/PanelInfoServer/PanLabelName"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.329773
+offset_right = -7.683777
+grow_horizontal = 2
+grow_vertical = 2
+text = "Name"
+label_settings = SubResource("LabelSettings_43jmm")
+
+[node name="PanelPista" type="Panel" parent="Panel2"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 6.0
+offset_top = 126.0
+offset_right = 457.598
+offset_bottom = 311.043
+scale = Vector2(0.32860944, 0.4539479)
+
+[node name="ColorRect" type="ColorRect" parent="Panel2/PanelPista"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 50.0
+offset_right = 446.0
+offset_bottom = 175.0
+
+[node name="LabelPista" type="Label" parent="Panel2/PanelPista/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.30188
+offset_right = -5.8328857
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_k0b4n")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="PanLabelPista" type="ColorRect" parent="Panel2/PanelPista"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 10.0
+offset_right = 446.0
+offset_bottom = 50.0
+color = Color(0.24845782, 0.44724834, 1, 1)
+
+[node name="Label" type="Label" parent="Panel2/PanelPista/PanLabelPista"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.30188
+offset_right = -5.8328857
+grow_horizontal = 2
+grow_vertical = 2
+text = "Pista"
+label_settings = SubResource("LabelSettings_43jmm")
+vertical_alignment = 1
+text_overrun_behavior = 1
+
+[node name="PanelInfo" type="Panel" parent="Panel2"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 12.0
+offset_top = 3.9999695
+offset_right = 152.0
+offset_bottom = 68.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Panel2/PanelInfo"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 350.0
+offset_bottom = 118.0
+scale = Vector2(0.39732915, 0.39403334)
+text = "Para iniciar la busqueda, elige un servidor inicial y luego elige el tipo de recorrido que deseas realizar."
+label_settings = SubResource("LabelSettings_iggkl")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ButtonBFS" type="Button" parent="Panel2/PanelInfo"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 12.0
+offset_top = 34.00003
+offset_right = 112.0
+offset_bottom = 123.0
+scale = Vector2(0.5461316, 0.30548757)
+theme = ExtResource("2_vspgn")
+text = "Busqueda en Anchura
+(BFS)"
+autowrap_mode = 3
+
+[node name="ButtonDFS" type="Button" parent="Panel2/PanelInfo"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 73.0
+offset_top = 34.00003
+offset_right = 210.0
+offset_bottom = 103.00003
+scale = Vector2(0.39732915, 0.39403322)
+theme = ExtResource("2_vspgn")
+text = "Busqueda en Profundida
+(DFS)"
+autowrap_mode = 2
+
+[node name="ButtonSig" type="Button" parent="Panel2"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 53.0
+offset_top = -30.0
+offset_right = 53.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.39732915, 0.39403322)
+theme = ExtResource("2_vspgn")
+text = "Siguiente"
+
+[connection signal="pressed" from="Panel/ButtonExit" to="." method="_on_button_exit_pressed"]
+[connection signal="pressed" from="Panel2/PanelInfo/ButtonBFS" to="." method="_on_button_bfs_pressed"]
+[connection signal="pressed" from="Panel2/PanelInfo/ButtonDFS" to="." method="_on_button_dfs_pressed"]
+[connection signal="pressed" from="Panel2/ButtonSig" to="." method="_on_button_sig_pressed"]

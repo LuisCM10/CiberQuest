@@ -1,0 +1,174 @@
+[gd_scene load_steps=6 format=3 uid="uid://dmswccr50wjuy"]
+
+[ext_resource type="Script" uid="uid://dbtxl1r4ksygw" path="res://mision4/FlowControl.gd" id="1_uessc"]
+[ext_resource type="FontFile" uid="uid://dudo3khf2v3o4" path="res://VT323-Regular.ttf" id="2_srwna"]
+[ext_resource type="Texture2D" uid="uid://cbrskk22q2wth" path="res://letreroMision3.png" id="3_0csbv"]
+[ext_resource type="Texture2D" uid="uid://j4ncx0mcm8xv" path="res://ayuda.png" id="3_4g4t3"]
+[ext_resource type="Texture2D" uid="uid://ctjbmwr0gakao" path="res://boton.png" id="4_7c6un"]
+
+[node name="FlowControl" type="Node2D"]
+script = ExtResource("1_uessc")
+
+[node name="GraphContainer" type="Node2D" parent="."]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="UI"]
+metadata/_edit_use_anchors_ = true
+
+[node name="Instructions" type="Label" parent="UI/Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 230.0
+offset_top = 214.0
+offset_right = 319.0
+offset_bottom = 240.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_srwna")
+theme_override_font_sizes/font_size = 18
+
+[node name="Stats" type="Label" parent="UI/Panel"]
+layout_mode = 1
+offset_left = 345.0
+offset_top = 69.0
+offset_right = 385.0
+offset_bottom = 94.0
+theme_override_fonts/font = ExtResource("2_srwna")
+theme_override_font_sizes/font_size = 24
+
+[node name="PathInfo" type="Label" parent="UI/Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 353.0
+offset_top = 190.0
+offset_right = 393.0
+offset_bottom = 213.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_srwna")
+theme_override_font_sizes/font_size = 16
+
+[node name="Timer" type="Label" parent="UI/Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 272.0
+offset_top = 236.0
+offset_right = 312.0
+offset_bottom = 259.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_srwna")
+theme_override_font_sizes/font_size = 17
+
+[node name="StartButton" type="Button" parent="UI/Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 104.0
+offset_top = 245.0
+offset_right = 135.0
+offset_bottom = 253.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_srwna")
+theme_override_font_sizes/font_size = 12
+
+[node name="SendButton" type="Button" parent="UI/Panel"]
+layout_mode = 1
+offset_left = 336.0
+offset_top = 233.0
+offset_right = 359.0
+offset_bottom = 246.0
+theme_override_fonts/font = ExtResource("2_srwna")
+theme_override_font_sizes/font_size = 20
+
+[node name="ClearButton" type="Button" parent="UI/Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 170.0
+offset_top = 238.0
+offset_right = 204.0
+offset_bottom = 253.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_srwna")
+theme_override_font_sizes/font_size = 20
+
+[node name="PanelAyuda" type="TextureRect" parent="UI/Panel"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 35.0
+offset_right = 409.0
+offset_bottom = 233.0
+texture = ExtResource("3_0csbv")
+expand_mode = 1
+
+[node name="LabelExplicacion" type="Label" parent="UI/Panel/PanelAyuda"]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 26.0
+offset_right = 302.0
+offset_bottom = 164.0
+theme_override_colors/font_color = Color(0.016551724, 0.016551726, 0.016551724, 1)
+theme_override_fonts/font = ExtResource("2_srwna")
+theme_override_font_sizes/font_size = 6
+text = "Al presionar “Iniciar”, el temporizador comienza en 1 minuto.
+Selecciona el nodo fuente, luego los nodos intermedios y el nodo destino.
+Pulsa “Enviar Paquete” para enviar el flujo por la ruta elegida.
+Si un enlace llega a capacidad 0, quedará bloqueado.
+El Némesis Digital puede desactivar nodos aleatoriamente; reconfigura tu ruta cuando ocurra.
+Ganas si mantienes el flujo hasta 00:00.
+Al presionar “Iniciar”, el temporizador comienza en 1 minuto.
+Selecciona el nodo fuente, luego los nodos intermedios y el nodo destino.
+Pulsa “Enviar Paquete” para enviar el flujo por la ruta elegida.
+Si un enlace llega a capacidad 0, quedará bloqueado.
+El Némesis Digital puede desactivar nodos aleatoriamente; reconfigura tu ruta cuando ocurra.
+Ganas si mantienes el flujo hasta 00:00.
+Pierdes si el tiempo se agota sin lograr el flujo objetivo o todas las rutas se bloquean."
+
+[node name="BotonContinuar" type="TextureButton" parent="UI/Panel/PanelAyuda"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -3.9550002
+anchor_top = -2.8460002
+anchor_right = -3.9550002
+anchor_bottom = -2.8460002
+offset_left = 1660.4851
+offset_top = 704.50806
+offset_right = 1776.4851
+offset_bottom = 756.50806
+texture_normal = ExtResource("4_7c6un")
+
+[node name="LabelContinuar" type="Label" parent="UI/Panel/PanelAyuda"]
+layout_mode = 0
+offset_left = 246.0
+offset_top = 158.0
+offset_right = 311.0
+offset_bottom = 181.0
+theme_override_colors/font_color = Color(0.00069389754, 0.00069389766, 0.0006938976, 1)
+theme_override_fonts/font = ExtResource("2_srwna")
+theme_override_font_sizes/font_size = 14
+text = "Continuar "
+
+[node name="BotonAyuda" type="TextureButton" parent="UI"]
+offset_left = 443.0
+offset_top = 7.0
+offset_right = 476.0
+offset_bottom = 40.0
+texture_normal = ExtResource("3_4g4t3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="UI/Panel/PanelAyuda/BotonContinuar" to="." method="_on_boton_continuar_pressed"]
+[connection signal="pressed" from="UI/BotonAyuda" to="." method="_on_boton_ayuda_pressed"]
