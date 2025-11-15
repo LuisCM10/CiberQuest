@@ -1,0 +1,205 @@
+[gd_scene load_steps=7 format=3 uid="uid://cbxo4u4ba0wt8"]
+
+[ext_resource type="Script" uid="uid://jwc4boi2mn43" path="res://ms_1_network_tracer.gd" id="1_nek87"]
+[ext_resource type="Theme" uid="uid://4wumgw1yqy2f" path="res://Themes/buttonTheme.tres" id="2_nek87"]
+[ext_resource type="Texture2D" uid="uid://4i705k5cfk6i" path="res://Themes/NetworkTracer.png" id="3_nek87"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nek87"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_43jmm"]
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_k0b4n"]
+font_color = Color(0, 0, 0, 1)
+
+[node name="Ms1NetworkTracer" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nek87")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -91.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="ButtonBFS" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 46.0
+offset_top = -34.5
+offset_right = 147.0
+offset_bottom = 34.5
+grow_vertical = 2
+theme = ExtResource("2_nek87")
+text = "Busqueda en
+Anchura
+(BFS)"
+
+[node name="ButtonDFS" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 167.0
+offset_top = -34.5
+offset_right = 276.0
+offset_bottom = 34.5
+grow_vertical = 2
+theme = ExtResource("2_nek87")
+text = "Busqueda en
+Profundidad
+(DFS)"
+
+[node name="ButtonSig" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 307.0
+offset_top = -21.5
+offset_right = 359.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_nek87")
+text = ">"
+
+[node name="ButtonExit" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -111.0
+offset_top = -21.5
+offset_right = -25.0
+offset_bottom = 21.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "Salir"
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 301.0
+offset_top = 17.0
+offset_right = 866.0
+offset_bottom = 77.0
+text = "Para iniciar la busqueda, elige un servidor inicial y luego elige el tipo de recorrido que deseas realizar."
+autowrap_mode = 3
+justification_flags = 171
+
+[node name="PanGrafo" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -1.0
+offset_right = 1150.0
+offset_bottom = 557.0
+texture = ExtResource("3_nek87")
+expand_mode = 1
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 815.0
+offset_top = -3.0
+offset_right = 1151.0
+offset_bottom = 555.0
+
+[node name="PanelInfoServer" type="Panel" parent="Panel2"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 31.0
+offset_right = 328.0
+offset_bottom = 192.0
+
+[node name="ColorRect" type="ColorRect" parent="Panel2/PanelInfoServer"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 52.0
+offset_right = 303.0
+offset_bottom = 156.0
+
+[node name="LabelFunct" type="Label" parent="Panel2/PanelInfoServer/ColorRect"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 271.0
+offset_bottom = 95.0
+label_settings = SubResource("LabelSettings_nek87")
+horizontal_alignment = 3
+autowrap_mode = 3
+
+[node name="PanLabelName" type="ColorRect" parent="Panel2/PanelInfoServer"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 14.0
+offset_right = 303.0
+offset_bottom = 54.0
+color = Color(0.24845782, 0.44724834, 1, 1)
+
+[node name="LabelName" type="Label" parent="Panel2/PanelInfoServer/PanLabelName"]
+layout_mode = 0
+offset_left = 7.0
+offset_right = 284.0
+offset_bottom = 37.0
+text = "Name"
+label_settings = SubResource("LabelSettings_43jmm")
+
+[node name="PanelPista" type="Panel" parent="Panel2"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 207.0
+offset_right = 324.0
+offset_bottom = 479.0
+
+[node name="ColorRect" type="ColorRect" parent="Panel2/PanelPista"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 65.0
+offset_right = 303.0
+offset_bottom = 264.0
+
+[node name="LabelPista" type="Label" parent="Panel2/PanelPista/ColorRect"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 8.0
+offset_right = 282.0
+offset_bottom = 193.0
+label_settings = SubResource("LabelSettings_k0b4n")
+horizontal_alignment = 3
+autowrap_mode = 3
+
+[node name="PanLabelPista" type="ColorRect" parent="Panel2/PanelPista"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 26.0
+offset_right = 118.0
+offset_bottom = 66.0
+color = Color(0.24845782, 0.44724834, 1, 1)
+
+[node name="Label" type="Label" parent="Panel2/PanelPista/PanLabelPista"]
+layout_mode = 0
+offset_left = 12.0
+offset_right = 106.0
+offset_bottom = 37.0
+text = "Pista"
+label_settings = SubResource("LabelSettings_43jmm")
+
+[connection signal="pressed" from="Panel/ButtonBFS" to="." method="_on_button_bfs_pressed"]
+[connection signal="pressed" from="Panel/ButtonDFS" to="." method="_on_button_dfs_pressed"]
+[connection signal="pressed" from="Panel/ButtonSig" to="." method="_on_button_sig_pressed"]
+[connection signal="pressed" from="Panel/ButtonExit" to="." method="_on_button_exit_pressed"]

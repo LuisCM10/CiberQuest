@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmp1a86uk6sbu"]
+
+[ext_resource type="Script" uid="uid://04nrv4kvhrc2" path="res://node_point.gd" id="1_v60vl"]
+
+[node name="node_point" type="Node2D"]
+script = ExtResource("1_v60vl")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
