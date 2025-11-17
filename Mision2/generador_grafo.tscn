@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dtbinu5ykhi86"]
+[gd_scene load_steps=5 format=3 uid="uid://dtbinu5ykhi86"]
 
 [ext_resource type="Script" uid="uid://br6gf4r7mco6w" path="res://Mision2/generador_grafo.gd" id="1_568tp"]
+[ext_resource type="AudioStream" uid="uid://b63nrmiplxmuj" path="res://Mision2/btnSonido.mp3" id="2_2410v"]
+[ext_resource type="AudioStream" uid="uid://b1gffd43rfiji" path="res://Mision1/RisaPerdio.mp3" id="3_ht2b8"]
+[ext_resource type="AudioStream" uid="uid://jpn4rva5tnlx" path="res://Mision2/RisaAparicion.mp3" id="4_kaecc"]
 
 [node name="GeneradorGrafo" type="Control"]
 layout_mode = 3
@@ -15,3 +18,12 @@ script = ExtResource("1_568tp")
 layout_mode = 0
 offset_right = 480.0
 offset_bottom = 270.0
+
+[node name="SonidoBoton" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_2410v")
+
+[node name="SonidoPerder" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ht2b8")
+
+[node name="MusicaAparicion" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_kaecc")
