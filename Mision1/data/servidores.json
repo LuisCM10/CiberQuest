@@ -2,70 +2,70 @@
   {
 	"name": "Firewall Central",
 	"functionality": "Protege la red contra accesos no autorizados y filtra tráfico entrante/saliente.",
-	"icon": "res://icons/firewall.png",
+	"icon": "res://Mision1/icons/firewall.png",
 	"is_origin": false,
 	"hidden_message": "Pista de infiltración: Anomalías en logs de tráfico sugieren una brecha inicial. Verifica conexiones con servidores de autenticación o bases de datos para rastros de código malicioso."
   },
   {
 	"name": "Base de Datos Principal",
 	"functionality": "Almacena y gestiona datos relacionales para aplicaciones críticas.",
-	"icon": "res://icons/database.png",
+	"icon": "res://Mision1/icons/database.png",
 	"is_origin": false,
 	"hidden_message": "Pista de robo de datos: Credenciales alteradas apuntan a una infección externa. Busca en backups o servidores de archivos conexiones no autorizadas que lleven a nodos de monitoreo."
   },
   {
 	"name": "Servidor de Correo",
 	"functionality": "Maneja el envío, recepción y almacenamiento de correos electrónicos.",
-	"icon": "res://icons/mail.png",
+	"icon": "res://Mision1/icons/mail.png",
 	"is_origin": false,
 	"hidden_message": "Pista de propagación: Correos con enlaces sospechosos se enviaron desde aquí. Sigue el rastro a servidores web o VPN para encontrar el punto de entrada del virus."
   },
   {
 	"name": "Servidor Web",
 	"functionality": "Hospeda sitios web y aplicaciones web, manejando solicitudes HTTP/HTTPS.",
-	"icon": "res://icons/web.png",
+	"icon": "res://Mision1/icons/web.png",
 	"is_origin": false,
 	"hidden_message": "Pista de inyección: Código malicioso detectado en páginas. Revisa aplicaciones conectadas o firewalls para vulnerabilidades que permitan acceso remoto."
   },
   {
 	"name": "Servidor de Archivos",
 	"functionality": "Proporciona almacenamiento compartido y acceso a archivos en la red.",
-	"icon": "res://icons/files.png",
+	"icon": "res://Mision1/icons/files.png",
 	"is_origin": false,
 	"hidden_message": "Pista de alteración: Archivos modificados sin autorización. Compara con backups o servidores de monitoreo para identificar cuándo comenzó la corrupción."
   },
   {
 	"name": "Servidor de Autenticación",
 	"functionality": "Gestiona logins, contraseñas y autenticación de usuarios en la red.",
-	"icon": "res://icons/auth.png",
+	"icon": "res://Mision1/icons/auth.png",
 	"is_origin": false,
 	"hidden_message": "Pista de control: Tokens de sesión comprometidos. Investiga conexiones con bases de datos o firewalls para pistas de acceso inicial."
   },
   {
 	"name": "Servidor de Backup",
 	"functionality": "Realiza copias de seguridad automáticas de datos críticos.",
-	"icon": "res://icons/backup.png",
+	"icon": "res://Mision1/icons/backup.png",
 	"is_origin": false,
 	"hidden_message": "Pista de sabotaje: Backups corrompidos impiden recuperación. Busca en servidores de archivos o monitoreo anomalías que indiquen una infección previa."
   },
   {
 	"name": "Servidor de Monitoreo",
 	"functionality": "Supervisa el rendimiento y la salud de otros servidores en tiempo real.",
-	"icon": "res://icons/monitor.png",
+	"icon": "res://Mision1/icons/monitor.png",
 	"is_origin": false,
 	"hidden_message": "Pista de evasión: Alertas silenciadas por el virus. Revisa logs de VPN o aplicaciones para conexiones externas sospechosas."
   },
   {
 	"name": "Servidor VPN",
 	"functionality": "Proporciona conexiones seguras remotas a través de redes privadas virtuales.",
-	"icon": "res://icons/vpn.png",
+	"icon": "res://Mision1/icons/vpn.png",
 	"is_origin": false,
 	"hidden_message": "Pista de acceso remoto: Conexiones VPN no autorizadas. Sigue a servidores de correo o web para encontrar el vector de propagación."
   },
   {
 	"name": "Servidor de Aplicaciones",
 	"functionality": "Ejecuta y despliega aplicaciones empresariales personalizadas.",
-	"icon": "res://icons/apps.png",
+	"icon": "res://Mision1/icons/apps.png",
 	"is_origin": false,
 	"hidden_message": "Pista de activación: Aplicaciones con código inyectado. Verifica firewalls o bases de datos para el punto de origen de la IA rebelde."
   }

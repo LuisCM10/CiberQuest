@@ -38,7 +38,7 @@ var json_data
 
 func _ready():
 	# Crear vértices con datos del JSON (carga el JSON como antes)
-	var file = FileAccess.open("res://data/servidores.json", FileAccess.READ)
+	var file = FileAccess.open("res://Mision1/data/servidores.json", FileAccess.READ)
 	json_data = JSON.parse_string(file.get_as_text())
 	file.close()
 	
