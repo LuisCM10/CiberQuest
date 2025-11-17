@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxbbe6rto7mbs"]
+
+[ext_resource type="Script" uid="uid://bolqtnh1mcdbm" path="res://Mision1/conexion.gd" id="1_2jggx"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_2jggx"]
+b = Vector2(0, 13)
+
+[node name="Line2D" type="Line2D"]
+script = ExtResource("1_2jggx")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("SegmentShape2D_2jggx")

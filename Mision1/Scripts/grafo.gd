@@ -32,9 +32,7 @@ func connect_vertice(verti1: Vertice, verti2: Vertice, peso = 0, capacidad = 0):
 				matriz_capa_max[i].append(0)
 				matriz_capa_usa[i].append(0)
 				
-	
-	verti1.addAdyacente(verti2)
-	verti2.addAdyacente(verti1)
+	verti1.addAdyacente(verti2)	
 	matriz_adya[verti1.id][verti2.id] = 1
 	matriz_peso[verti1.id][verti2.id] = peso
 	matriz_capa_max[verti1.id][verti2.id] = capacidad
@@ -82,4 +80,22 @@ func getFlujoMax(verti1, verti2) -> int:
 	
 func getPeso(verti1, verti2) -> int:
 	return matriz_peso[verti1.id][verti2.id]
-		
+
+func bfs(vertActual) :
+	var visitados = []
+	var cola = []
+	var recorrido = []
+	cola.append(vertActual)
+	visitados.append(vertActual)
+	
+	while cola.is_empty():
+		var node = cola.pop_front()
+		if node:
+			recorrido.append(node)			
+			for neighbor in node.adyacentes:
+				if neighbor not in visitados:
+					visitados.append(neighbor)
+					cola.append(neighbor)
+			if node.is_origin:
+				cola.clear()
+	return recorrido
