@@ -5,7 +5,7 @@ var adj_matrix = []
 var nodo_start = 0
 var nemesis_node = -1
 
-var nemesis_icon : Texture2D = preload("res://Mision2/btnNemesis.png")
+var nemesis_icon  = load("res://Mision2/btnNemesis.png")
 
 var posiciones = []            # posiciones de cada nodo
 var camino_optimo = []         # lista de nodos del camino de Dijkstra
@@ -58,12 +58,12 @@ func _generar_grafo():
 func _generar_posiciones():
 	posiciones.clear()
 	var center = Vector2(480, 270)  # Centro aproximado del contenedor (ajusta si el Panel tiene otro tamaño)
-	var radius = 200  # Radio del círculo (ajusta para que quepa en 800x500, dejando margen para botones de 40x40)
+	var radius = 150  # Radio del círculo (ajusta para que quepa en 800x500, dejando margen para botones de 40x40)
 
 	for i in range(num_nodos):
 		var angle = (2 * PI * i) / num_nodos
-		var x = center.x + radius * cos(angle) - 150
-		var y = center.y + radius * sin(angle) - 50
+		var x = radius * cos(angle) + 200
+		var y = (radius - 50) * sin(angle) + 120
 		posiciones.append(Vector2(x, y))
 
 # ────────────────────────────────────────────────
@@ -78,13 +78,13 @@ func _crear_botones():
 
 	for i in range(num_nodos):
 		# Usar TextureButton para simular botones circulares con textura (puedes reemplazar con Polygon2D si prefieres, pero Polygon2D no es interactivo por defecto)
-		var b = TextureButton.new()
+		var b = Button.new()
 		b.name = str(i)
 		b.position = posiciones[i]
-		b.size = Vector2(40, 40)
-		b.stretch_mode = TextureButton.STRETCH_SCALE  # Escalar textura para forma circular
+		b.size = Vector2(20, 20) # Escalar textura para forma circular
 		# Asigna una textura circular por defecto (puedes crear una textura PNG de círculo blanco o transparente)
-		# b.texture_normal = preload("res://ruta/a/textura_circulo.png")  # Agrega esto si tienes una textura
+		b.icon = load("res://ruta/a/textura_circulo.png")  # Agrega esto si tienes una textura
+		b.expand_icon = true
 		b.disabled = true
 		b.connect("pressed", Callable(self, "_seleccionar_nodo").bind(i))
 		if container:
@@ -116,10 +116,10 @@ func crearLinea(vertice, indice_ady, color, width, name = "conexion"):
 	var destino_vert = Vertice.new(indice_ady, str(indice_ady), "", false, "")
 	destino_vert.posicion = posiciones[indice_ady]
 	
-	var pos_a = posiciones[vertice] + Vector2(20, 20)  # Centro aproximado del botón (40x40 / 2)
-	var pos_b = posiciones[indice_ady] + Vector2(20, 20)
-	var radius_a = 20  # Radio aproximado del círculo
-	var radius_b = 20
+	var pos_a = posiciones[vertice] + Vector2(10, 10)  # Centro aproximado del botón (40x40 / 2)
+	var pos_b = posiciones[indice_ady] + Vector2(10, 10)
+	var radius_a = 15 # Radio aproximado del círculo
+	var radius_b = 15
 	var dir = (pos_b - pos_a).normalized()
 	var start_point = pos_a + dir * radius_a
 	var end_point = pos_b - dir * radius_b
@@ -219,7 +219,7 @@ func _elegir_nemesis():
 	if not boton:
 		return
 	if nemesis_icon:
-		boton.texture_normal = nemesis_icon
+		boton.icon = nemesis_icon
 
 # Nuevo: Iniciar animación de aparición de nemesis
 func _iniciar_animacion_aparicion():
@@ -234,7 +234,7 @@ func _iniciar_animacion_aparicion():
 	await get_tree().create_timer(3.0).timeout
 	_terminar_animacion_aparicion()
 
-func _parpadear_boton_temporal(boton: TextureButton):
+func _parpadear_boton_temporal(boton: Button):
 	var tween = get_tree().create_tween()
 	tween.set_loops(6)
 	tween.tween_property(boton, "modulate", Color(1, 1, 1, 0.3), 0.5)
@@ -247,7 +247,7 @@ func _terminar_animacion_aparicion():
 
 	var boton = container.get_node(str(nemesis_node))
 	if boton:
-		boton.texture_normal = null  # Remover la textura de Nemesis
+		boton.icon = null  # Remover la textura de Nemesis
 	
 	# Mostrar aristas
 	_conectar_nodos()
