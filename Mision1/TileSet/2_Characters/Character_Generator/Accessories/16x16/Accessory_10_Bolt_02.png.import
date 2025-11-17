@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cswvkuk7frjjo"
-path="res://.godot/imported/Accessory_10_Bolt_02.png-239393700bc606a693f736344b1a900a.ctex"
+path="res://.godot/imported/Accessory_10_Bolt_02.png-deabbe17320fd0df4d8ca6e4b8e14865.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_10_Bolt_02.png"
-dest_files=["res://.godot/imported/Accessory_10_Bolt_02.png-239393700bc606a693f736344b1a900a.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_10_Bolt_02.png"
+dest_files=["res://.godot/imported/Accessory_10_Bolt_02.png-deabbe17320fd0df4d8ca6e4b8e14865.ctex"]
 
 [params]
 

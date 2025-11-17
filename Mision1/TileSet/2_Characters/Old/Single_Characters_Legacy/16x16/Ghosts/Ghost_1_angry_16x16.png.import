@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dad6lx4ceegbw"
-path="res://.godot/imported/Ghost_1_angry_16x16.png-bc1ea71d3f1cb27486f547ef886ce496.ctex"
+path="res://.godot/imported/Ghost_1_angry_16x16.png-7f02fa402d69dbd809f5a9054bfb42bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Ghosts/Ghost_1_angry_16x16.png"
-dest_files=["res://.godot/imported/Ghost_1_angry_16x16.png-bc1ea71d3f1cb27486f547ef886ce496.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Ghosts/Ghost_1_angry_16x16.png"
+dest_files=["res://.godot/imported/Ghost_1_angry_16x16.png-7f02fa402d69dbd809f5a9054bfb42bb.ctex"]
 
 [params]
 

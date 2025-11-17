@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://uttwkpdf5y45"
-path="res://.godot/imported/animated_chimney_white_48x48.png-be2244e9414ba457a2f39bd9ec740e50.ctex"
+path="res://.godot/imported/animated_chimney_white_48x48.png-2038721a198741c20c074e4c73829757.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_chimney_white_48x48.png"
-dest_files=["res://.godot/imported/animated_chimney_white_48x48.png-be2244e9414ba457a2f39bd9ec740e50.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_chimney_white_48x48.png"
+dest_files=["res://.godot/imported/animated_chimney_white_48x48.png-2038721a198741c20c074e4c73829757.ctex"]
 
 [params]
 

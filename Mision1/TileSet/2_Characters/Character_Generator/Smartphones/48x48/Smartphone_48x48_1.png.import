@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dv1rjuku7bhqg"
-path="res://.godot/imported/Smartphone_48x48_1.png-4953f1bdde897a49088c7c7a46366fd7.ctex"
+path="res://.godot/imported/Smartphone_48x48_1.png-cb8e9c4ab3a15f781c858559a7a132cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Smartphones/48x48/Smartphone_48x48_1.png"
-dest_files=["res://.godot/imported/Smartphone_48x48_1.png-4953f1bdde897a49088c7c7a46366fd7.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Smartphones/48x48/Smartphone_48x48_1.png"
+dest_files=["res://.godot/imported/Smartphone_48x48_1.png-cb8e9c4ab3a15f781c858559a7a132cb.ctex"]
 
 [params]
 

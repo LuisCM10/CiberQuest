@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ifxvsf865h73"
-path="res://.godot/imported/animated_canteen_counter_32x32.png-4fd309879290f1f783e8afdadcd68c4b.ctex"
+path="res://.godot/imported/animated_canteen_counter_32x32.png-3e76d3cf4323223deef2a4101e23d0b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_canteen_counter_32x32.png"
-dest_files=["res://.godot/imported/animated_canteen_counter_32x32.png-4fd309879290f1f783e8afdadcd68c4b.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_canteen_counter_32x32.png"
+dest_files=["res://.godot/imported/animated_canteen_counter_32x32.png-3e76d3cf4323223deef2a4101e23d0b6.ctex"]
 
 [params]
 

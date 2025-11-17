@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dq1by6xuuse8w"
-path="res://.godot/imported/Conference_woman_idle_anim_16x16.png-12b7fe6eed16df7104e8c530420ba1e7.ctex"
+path="res://.godot/imported/Conference_woman_idle_anim_16x16.png-3900158bcf8143f89d0cdc77262cbc90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Conference_woman_idle_anim_16x16.png"
-dest_files=["res://.godot/imported/Conference_woman_idle_anim_16x16.png-12b7fe6eed16df7104e8c530420ba1e7.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Conference_woman_idle_anim_16x16.png"
+dest_files=["res://.godot/imported/Conference_woman_idle_anim_16x16.png-3900158bcf8143f89d0cdc77262cbc90.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5jdjyooofqkt"
-path="res://.godot/imported/animated_fishmonger_sink_32x32.png-1d1db977b6e98a0eca1f695eac51fd41.ctex"
+path="res://.godot/imported/animated_fishmonger_sink_32x32.png-ef009242d1453529eaf1d31cf1472f4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_fishmonger_sink_32x32.png"
-dest_files=["res://.godot/imported/animated_fishmonger_sink_32x32.png-1d1db977b6e98a0eca1f695eac51fd41.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_fishmonger_sink_32x32.png"
+dest_files=["res://.godot/imported/animated_fishmonger_sink_32x32.png-ef009242d1453529eaf1d31cf1472f4c.ctex"]
 
 [params]
 

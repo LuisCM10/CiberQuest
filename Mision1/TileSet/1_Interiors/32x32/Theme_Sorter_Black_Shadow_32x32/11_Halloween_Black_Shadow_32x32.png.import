@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bopanklgowpqx"
-path="res://.godot/imported/11_Halloween_Black_Shadow_32x32.png-a5fb7f7cd8c7b4481691101e90c46515.ctex"
+path="res://.godot/imported/11_Halloween_Black_Shadow_32x32.png-480da73a2aa9865b5670d7942d1a75df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/32x32/Theme_Sorter_Black_Shadow_32x32/11_Halloween_Black_Shadow_32x32.png"
-dest_files=["res://.godot/imported/11_Halloween_Black_Shadow_32x32.png-a5fb7f7cd8c7b4481691101e90c46515.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/32x32/Theme_Sorter_Black_Shadow_32x32/11_Halloween_Black_Shadow_32x32.png"
+dest_files=["res://.godot/imported/11_Halloween_Black_Shadow_32x32.png-480da73a2aa9865b5670d7942d1a75df.ctex"]
 
 [params]
 

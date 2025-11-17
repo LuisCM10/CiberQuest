@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnra23sjll8vd"
-path="res://.godot/imported/Outfit_14_32x32_01.png-490df547485ec0c3c2d4413e29db4ed0.ctex"
+path="res://.godot/imported/Outfit_14_32x32_01.png-4c2c5e39a1ad651cebd37da34c442e9b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Outfits/32x32/Outfit_14_32x32_01.png"
-dest_files=["res://.godot/imported/Outfit_14_32x32_01.png-490df547485ec0c3c2d4413e29db4ed0.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Outfits/32x32/Outfit_14_32x32_01.png"
+dest_files=["res://.godot/imported/Outfit_14_32x32_01.png-4c2c5e39a1ad651cebd37da34c442e9b.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dursoph6wpa20"
-path="res://.godot/imported/Bathroom_Singles_Shadowless_32x32_24.png-995d6c0901db7933fa4dc93fa90bd963.ctex"
+path="res://.godot/imported/Bathroom_Singles_Shadowless_32x32_24.png-17c5b3fc1c5ea0550b603e78963a335c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/32x32/Theme_Sorter_Shadowless_Singles_32x32/3_Bathroom_Singles_Shadowless_32x32/Bathroom_Singles_Shadowless_32x32_24.png"
-dest_files=["res://.godot/imported/Bathroom_Singles_Shadowless_32x32_24.png-995d6c0901db7933fa4dc93fa90bd963.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/32x32/Theme_Sorter_Shadowless_Singles_32x32/3_Bathroom_Singles_Shadowless_32x32/Bathroom_Singles_Shadowless_32x32_24.png"
+dest_files=["res://.godot/imported/Bathroom_Singles_Shadowless_32x32_24.png-17c5b3fc1c5ea0550b603e78963a335c.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0b0rmp3kxq5a"
-path="res://.godot/imported/Bruce_16x16.png-1eb9b737845f8706cf98b222f189ae8e.ctex"
+path="res://.godot/imported/Bruce_16x16.png-720e3d2d6c3be926d99b1619edce248a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Bruce_16x16.png"
-dest_files=["res://.godot/imported/Bruce_16x16.png-1eb9b737845f8706cf98b222f189ae8e.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Bruce_16x16.png"
+dest_files=["res://.godot/imported/Bruce_16x16.png-720e3d2d6c3be926d99b1619edce248a.ctex"]
 
 [params]
 

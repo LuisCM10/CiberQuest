@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dox8snq0fk3qt"
-path="res://.godot/imported/animated_party_balloon_red_48x48.png-ccb6f938ec94cee2b1f4fbd3d4e541ff.ctex"
+path="res://.godot/imported/animated_party_balloon_red_48x48.png-555fd0210925d3e9782be8cb4dceec1b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_party_balloon_red_48x48.png"
-dest_files=["res://.godot/imported/animated_party_balloon_red_48x48.png-ccb6f938ec94cee2b1f4fbd3d4e541ff.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_party_balloon_red_48x48.png"
+dest_files=["res://.godot/imported/animated_party_balloon_red_48x48.png-555fd0210925d3e9782be8cb4dceec1b.ctex"]
 
 [params]
 

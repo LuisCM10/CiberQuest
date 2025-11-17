@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b20o8n8m5snv5"
-path="res://.godot/imported/Kid_Tim_32x32.png-438a54ffe1f4cddc77de89e480e94adb.ctex"
+path="res://.godot/imported/Kid_Tim_32x32.png-7aefd98a1a32575b72db975b69805ef7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Kid_Tim_32x32.png"
-dest_files=["res://.godot/imported/Kid_Tim_32x32.png-438a54ffe1f4cddc77de89e480e94adb.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Kid_Tim_32x32.png"
+dest_files=["res://.godot/imported/Kid_Tim_32x32.png-7aefd98a1a32575b72db975b69805ef7.ctex"]
 
 [params]
 

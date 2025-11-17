@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cf0m2umxfjiah"
-path="res://.godot/imported/animated_grocery_store_ticket_machine_48x48.png-aada474f1eb5dc0a5d6547376d992846.ctex"
+path="res://.godot/imported/animated_grocery_store_ticket_machine_48x48.png-c0454dd9e2275415a1bbf245cfe4736f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_grocery_store_ticket_machine_48x48.png"
-dest_files=["res://.godot/imported/animated_grocery_store_ticket_machine_48x48.png-aada474f1eb5dc0a5d6547376d992846.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_grocery_store_ticket_machine_48x48.png"
+dest_files=["res://.godot/imported/animated_grocery_store_ticket_machine_48x48.png-c0454dd9e2275415a1bbf245cfe4736f.ctex"]
 
 [params]
 

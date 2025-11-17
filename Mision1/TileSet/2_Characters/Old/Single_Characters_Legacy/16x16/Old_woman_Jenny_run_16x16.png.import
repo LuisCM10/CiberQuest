@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c61ide5xefcbh"
-path="res://.godot/imported/Old_woman_Jenny_run_16x16.png-5a7afa69d21eb08d330d5929b849cbf1.ctex"
+path="res://.godot/imported/Old_woman_Jenny_run_16x16.png-fab8307336961f09a3aed6ab3c7cf7c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Old_woman_Jenny_run_16x16.png"
-dest_files=["res://.godot/imported/Old_woman_Jenny_run_16x16.png-5a7afa69d21eb08d330d5929b849cbf1.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Old_woman_Jenny_run_16x16.png"
+dest_files=["res://.godot/imported/Old_woman_Jenny_run_16x16.png-fab8307336961f09a3aed6ab3c7cf7c3.ctex"]
 
 [params]
 

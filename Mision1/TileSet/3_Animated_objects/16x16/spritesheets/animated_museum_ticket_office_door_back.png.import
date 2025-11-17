@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blkhbpf3ggpsx"
-path="res://.godot/imported/animated_museum_ticket_office_door_back.png-e0c47dda9b3a301c81bb7074dabd87e6.ctex"
+path="res://.godot/imported/animated_museum_ticket_office_door_back.png-bda36b5b332211bbbfd121bc58cbdc85.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_museum_ticket_office_door_back.png"
-dest_files=["res://.godot/imported/animated_museum_ticket_office_door_back.png-e0c47dda9b3a301c81bb7074dabd87e6.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_museum_ticket_office_door_back.png"
+dest_files=["res://.godot/imported/animated_museum_ticket_office_door_back.png-bda36b5b332211bbbfd121bc58cbdc85.ctex"]
 
 [params]
 

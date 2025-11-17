@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cet5v1bp0ikro"
-path="res://.godot/imported/kid_Oscar_phone_32x32.png-6a6fd48b6edb7fcb8fd6e099194d770d.ctex"
+path="res://.godot/imported/kid_Oscar_phone_32x32.png-06080f7016ae566b7b9395983e1f7c94.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/kid_Oscar_phone_32x32.png"
-dest_files=["res://.godot/imported/kid_Oscar_phone_32x32.png-6a6fd48b6edb7fcb8fd6e099194d770d.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/kid_Oscar_phone_32x32.png"
+dest_files=["res://.godot/imported/kid_Oscar_phone_32x32.png-06080f7016ae566b7b9395983e1f7c94.ctex"]
 
 [params]
 

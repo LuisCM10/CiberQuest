@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dab6hyldp0r0v"
-path="res://.godot/imported/animated_control_room_facebook_scrolling.png-43d0b5ff090759b968e4591f26eec044.ctex"
+path="res://.godot/imported/animated_control_room_facebook_scrolling.png-ff12dd17ad2235471d8c718c503cfccf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_control_room_facebook_scrolling.png"
-dest_files=["res://.godot/imported/animated_control_room_facebook_scrolling.png-43d0b5ff090759b968e4591f26eec044.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_control_room_facebook_scrolling.png"
+dest_files=["res://.godot/imported/animated_control_room_facebook_scrolling.png-ff12dd17ad2235471d8c718c503cfccf.ctex"]
 
 [params]
 

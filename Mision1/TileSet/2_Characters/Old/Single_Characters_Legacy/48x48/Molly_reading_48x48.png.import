@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cuabudfyj2p14"
-path="res://.godot/imported/Molly_reading_48x48.png-a6646a1f8b4b37c1bf0abdd6aefed368.ctex"
+path="res://.godot/imported/Molly_reading_48x48.png-c8c8bd386d3a14838abb1221a37aac57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Molly_reading_48x48.png"
-dest_files=["res://.godot/imported/Molly_reading_48x48.png-a6646a1f8b4b37c1bf0abdd6aefed368.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Molly_reading_48x48.png"
+dest_files=["res://.godot/imported/Molly_reading_48x48.png-c8c8bd386d3a14838abb1221a37aac57.ctex"]
 
 [params]
 

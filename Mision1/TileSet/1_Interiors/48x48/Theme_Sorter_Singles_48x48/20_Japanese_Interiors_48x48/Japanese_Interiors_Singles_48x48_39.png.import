@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpwb5keh4opdh"
-path="res://.godot/imported/Japanese_Interiors_Singles_48x48_39.png-64414c2b2fcca00d6513acbb269e2b07.ctex"
+path="res://.godot/imported/Japanese_Interiors_Singles_48x48_39.png-751248dcc41522805153ae8ef81ebda7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/48x48/Theme_Sorter_Singles_48x48/20_Japanese_Interiors_48x48/Japanese_Interiors_Singles_48x48_39.png"
-dest_files=["res://.godot/imported/Japanese_Interiors_Singles_48x48_39.png-64414c2b2fcca00d6513acbb269e2b07.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/48x48/Theme_Sorter_Singles_48x48/20_Japanese_Interiors_48x48/Japanese_Interiors_Singles_48x48_39.png"
+dest_files=["res://.godot/imported/Japanese_Interiors_Singles_48x48_39.png-751248dcc41522805153ae8ef81ebda7.ctex"]
 
 [params]
 

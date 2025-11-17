@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dut6f10kraihh"
-path="res://.godot/imported/animated_butterfly_3_32x32.png-f9cf448b3e80652d7ce11d22bb6fa42e.ctex"
+path="res://.godot/imported/animated_butterfly_3_32x32.png-3389c9f3b99c3ba9a37d551e22b25c2d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_butterfly_3_32x32.png"
-dest_files=["res://.godot/imported/animated_butterfly_3_32x32.png-f9cf448b3e80652d7ce11d22bb6fa42e.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_butterfly_3_32x32.png"
+dest_files=["res://.godot/imported/animated_butterfly_3_32x32.png-3389c9f3b99c3ba9a37d551e22b25c2d.ctex"]
 
 [params]
 

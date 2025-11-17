@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dg8cfyj20oj65"
-path="res://.godot/imported/Rob_reading_32x32.png-7b9f023304211e21f43372ba0de460a9.ctex"
+path="res://.godot/imported/Rob_reading_32x32.png-bd4fa84f39db34c604d9c3d870ac31c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Rob_reading_32x32.png"
-dest_files=["res://.godot/imported/Rob_reading_32x32.png-7b9f023304211e21f43372ba0de460a9.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Rob_reading_32x32.png"
+dest_files=["res://.godot/imported/Rob_reading_32x32.png-bd4fa84f39db34c604d9c3d870ac31c8.ctex"]
 
 [params]
 

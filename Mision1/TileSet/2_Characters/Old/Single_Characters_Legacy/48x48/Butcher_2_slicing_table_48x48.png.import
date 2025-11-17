@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqkq6tgire2wm"
-path="res://.godot/imported/Butcher_2_slicing_table_48x48.png-06ba3e8020d947262018a36b7321b456.ctex"
+path="res://.godot/imported/Butcher_2_slicing_table_48x48.png-e92d0836e7f7f6c2d53a0c02af3cde95.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Butcher_2_slicing_table_48x48.png"
-dest_files=["res://.godot/imported/Butcher_2_slicing_table_48x48.png-06ba3e8020d947262018a36b7321b456.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Butcher_2_slicing_table_48x48.png"
+dest_files=["res://.godot/imported/Butcher_2_slicing_table_48x48.png-e92d0836e7f7f6c2d53a0c02af3cde95.ctex"]
 
 [params]
 

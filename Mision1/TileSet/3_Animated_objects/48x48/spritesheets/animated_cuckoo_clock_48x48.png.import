@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pd8n8c7n6sq0"
-path="res://.godot/imported/animated_cuckoo_clock_48x48.png-801b26487b823d40c56c8ea8c1f3370d.ctex"
+path="res://.godot/imported/animated_cuckoo_clock_48x48.png-9c8e5eb267617dacf3625c3e5a750022.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_cuckoo_clock_48x48.png"
-dest_files=["res://.godot/imported/animated_cuckoo_clock_48x48.png-801b26487b823d40c56c8ea8c1f3370d.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_cuckoo_clock_48x48.png"
+dest_files=["res://.godot/imported/animated_cuckoo_clock_48x48.png-9c8e5eb267617dacf3625c3e5a750022.ctex"]
 
 [params]
 

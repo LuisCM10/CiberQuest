@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2wkmhs4a4pcm"
-path="res://.godot/imported/Chef_Rob_idle_anim_48x48.png-578d5f5c0da27b94c24a78b6bb387943.ctex"
+path="res://.godot/imported/Chef_Rob_idle_anim_48x48.png-b872d91e16017760e286a09e8a3382ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Chef_Rob_idle_anim_48x48.png"
-dest_files=["res://.godot/imported/Chef_Rob_idle_anim_48x48.png-578d5f5c0da27b94c24a78b6bb387943.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Chef_Rob_idle_anim_48x48.png"
+dest_files=["res://.godot/imported/Chef_Rob_idle_anim_48x48.png-b872d91e16017760e286a09e8a3382ae.ctex"]
 
 [params]
 

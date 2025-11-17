@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://da5uyvin8psww"
-path="res://.godot/imported/Museum_entrance_preview.png-115bd783627700305b80eed525ef604f.ctex"
+path="res://.godot/imported/Museum_entrance_preview.png-ab418c61f10aacf48930d1018d5bff4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/6_Home_Designs/Museum_Designs/16x16/Museum_entrance_preview.png"
-dest_files=["res://.godot/imported/Museum_entrance_preview.png-115bd783627700305b80eed525ef604f.ctex"]
+source_file="res://Mision1/TileSet/6_Home_Designs/Museum_Designs/16x16/Museum_entrance_preview.png"
+dest_files=["res://.godot/imported/Museum_entrance_preview.png-ab418c61f10aacf48930d1018d5bff4c.ctex"]
 
 [params]
 

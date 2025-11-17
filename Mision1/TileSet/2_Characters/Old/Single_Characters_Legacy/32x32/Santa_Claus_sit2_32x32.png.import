@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0cdjqhpigrpk"
-path="res://.godot/imported/Santa_Claus_sit2_32x32.png-40f2f28ade15b8917279ba815d57b3a4.ctex"
+path="res://.godot/imported/Santa_Claus_sit2_32x32.png-1a23cf6e4ad38c3fc32faf4984ae09da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Santa_Claus_sit2_32x32.png"
-dest_files=["res://.godot/imported/Santa_Claus_sit2_32x32.png-40f2f28ade15b8917279ba815d57b3a4.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Santa_Claus_sit2_32x32.png"
+dest_files=["res://.godot/imported/Santa_Claus_sit2_32x32.png-1a23cf6e4ad38c3fc32faf4984ae09da.ctex"]
 
 [params]
 

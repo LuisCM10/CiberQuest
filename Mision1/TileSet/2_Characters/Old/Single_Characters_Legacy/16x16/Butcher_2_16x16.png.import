@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddqr8yhpla7bn"
-path="res://.godot/imported/Butcher_2_16x16.png-6850336ecc420d1e7763c571d6cf5517.ctex"
+path="res://.godot/imported/Butcher_2_16x16.png-ed651ceac5de5145d0f328bef2c0be79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Butcher_2_16x16.png"
-dest_files=["res://.godot/imported/Butcher_2_16x16.png-6850336ecc420d1e7763c571d6cf5517.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Butcher_2_16x16.png"
+dest_files=["res://.godot/imported/Butcher_2_16x16.png-ed651ceac5de5145d0f328bef2c0be79.ctex"]
 
 [params]
 

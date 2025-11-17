@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cawk0wcfpt25g"
-path="res://.godot/imported/animated_Christmas_jack_in_the_box_48x48.png-aaecac360c0daa6eb7841ea2ee70b185.ctex"
+path="res://.godot/imported/animated_Christmas_jack_in_the_box_48x48.png-683889c9a3331e2a4a2ab3f459cf95e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_Christmas_jack_in_the_box_48x48.png"
-dest_files=["res://.godot/imported/animated_Christmas_jack_in_the_box_48x48.png-aaecac360c0daa6eb7841ea2ee70b185.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_Christmas_jack_in_the_box_48x48.png"
+dest_files=["res://.godot/imported/animated_Christmas_jack_in_the_box_48x48.png-683889c9a3331e2a4a2ab3f459cf95e7.ctex"]
 
 [params]
 

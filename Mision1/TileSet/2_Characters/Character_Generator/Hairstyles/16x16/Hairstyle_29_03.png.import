@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfllbqe6brp0j"
-path="res://.godot/imported/Hairstyle_29_03.png-93957109bd82976b5a28d5eb70ff2483.ctex"
+path="res://.godot/imported/Hairstyle_29_03.png-f6833b4fb8299a38d8d4d09838f8e954.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Hairstyles/16x16/Hairstyle_29_03.png"
-dest_files=["res://.godot/imported/Hairstyle_29_03.png-93957109bd82976b5a28d5eb70ff2483.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Hairstyles/16x16/Hairstyle_29_03.png"
+dest_files=["res://.godot/imported/Hairstyle_29_03.png-f6833b4fb8299a38d8d4d09838f8e954.ctex"]
 
 [params]
 

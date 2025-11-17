@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://caadgtmuow84y"
-path="res://.godot/imported/animated_butterfly_5_idle_48x48.png-6e53b320b22fe9c08fb98b26668b8f2a.ctex"
+path="res://.godot/imported/animated_butterfly_5_idle_48x48.png-be9247e38b70551da3306551e04a1ab9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_butterfly_5_idle_48x48.png"
-dest_files=["res://.godot/imported/animated_butterfly_5_idle_48x48.png-6e53b320b22fe9c08fb98b26668b8f2a.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_butterfly_5_idle_48x48.png"
+dest_files=["res://.godot/imported/animated_butterfly_5_idle_48x48.png-be9247e38b70551da3306551e04a1ab9.ctex"]
 
 [params]
 

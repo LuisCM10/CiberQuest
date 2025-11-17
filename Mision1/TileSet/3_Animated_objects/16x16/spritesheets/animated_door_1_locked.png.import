@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btxdjaaiutwn2"
-path="res://.godot/imported/animated_door_1_locked.png-4f2325603be256c0ab5112a5eaa26649.ctex"
+path="res://.godot/imported/animated_door_1_locked.png-9ea47c5abfc98e29995b11e2764de6a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_door_1_locked.png"
-dest_files=["res://.godot/imported/animated_door_1_locked.png-4f2325603be256c0ab5112a5eaa26649.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_door_1_locked.png"
+dest_files=["res://.godot/imported/animated_door_1_locked.png-9ea47c5abfc98e29995b11e2764de6a9.ctex"]
 
 [params]
 

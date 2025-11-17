@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmee17h68d25"
-path="res://.godot/imported/Accessory_02_Bee_48x48_02.png-f49ad3d0d560ddacbf061d0f5f813ad3.ctex"
+path="res://.godot/imported/Accessory_02_Bee_48x48_02.png-38af263c4c943e430b0ba087f887005d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/48x48/Accessory_02_Bee_48x48_02.png"
-dest_files=["res://.godot/imported/Accessory_02_Bee_48x48_02.png-f49ad3d0d560ddacbf061d0f5f813ad3.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/48x48/Accessory_02_Bee_48x48_02.png"
+dest_files=["res://.godot/imported/Accessory_02_Bee_48x48_02.png-38af263c4c943e430b0ba087f887005d.ctex"]
 
 [params]
 

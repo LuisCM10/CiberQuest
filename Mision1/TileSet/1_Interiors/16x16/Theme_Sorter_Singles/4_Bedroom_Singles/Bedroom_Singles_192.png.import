@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4qpih1g5h8xg"
-path="res://.godot/imported/Bedroom_Singles_192.png-0b40fc1cf04c24a56bf3126298e22999.ctex"
+path="res://.godot/imported/Bedroom_Singles_192.png-8fc5a74a04ef53e47617780689054652.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/16x16/Theme_Sorter_Singles/4_Bedroom_Singles/Bedroom_Singles_192.png"
-dest_files=["res://.godot/imported/Bedroom_Singles_192.png-0b40fc1cf04c24a56bf3126298e22999.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/16x16/Theme_Sorter_Singles/4_Bedroom_Singles/Bedroom_Singles_192.png"
+dest_files=["res://.godot/imported/Bedroom_Singles_192.png-8fc5a74a04ef53e47617780689054652.ctex"]
 
 [params]
 

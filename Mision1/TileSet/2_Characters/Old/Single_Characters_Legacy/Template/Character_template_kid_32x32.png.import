@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cl2hkjfm26w50"
-path="res://.godot/imported/Character_template_kid_32x32.png-295e244561b8a55776124d0002d7f4d7.ctex"
+path="res://.godot/imported/Character_template_kid_32x32.png-4ac23d28399b29505392d6dd9411a90f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/Template/Character_template_kid_32x32.png"
-dest_files=["res://.godot/imported/Character_template_kid_32x32.png-295e244561b8a55776124d0002d7f4d7.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/Template/Character_template_kid_32x32.png"
+dest_files=["res://.godot/imported/Character_template_kid_32x32.png-4ac23d28399b29505392d6dd9411a90f.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bo6tgg8klfb3b"
-path="res://.godot/imported/animeted_mirror_person_approaching_2.png-62ff815e7969b4f8a6b541c78207e305.ctex"
+path="res://.godot/imported/animeted_mirror_person_approaching_2.png-e046a73b48ae4e5240f15ec5635c1a25.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animeted_mirror_person_approaching_2.png"
-dest_files=["res://.godot/imported/animeted_mirror_person_approaching_2.png-62ff815e7969b4f8a6b541c78207e305.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animeted_mirror_person_approaching_2.png"
+dest_files=["res://.godot/imported/animeted_mirror_person_approaching_2.png-e046a73b48ae4e5240f15ec5635c1a25.ctex"]
 
 [params]
 

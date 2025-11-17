@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ba8cfm0ajlq03"
-path="res://.godot/imported/Molly_idle_anim_16x16.png-369e27113b0f3585ace266bb5f5234f1.ctex"
+path="res://.godot/imported/Molly_idle_anim_16x16.png-c7b5a21c5f0df8bd6b59d30691fce49f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Molly_idle_anim_16x16.png"
-dest_files=["res://.godot/imported/Molly_idle_anim_16x16.png-369e27113b0f3585ace266bb5f5234f1.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Molly_idle_anim_16x16.png"
+dest_files=["res://.godot/imported/Molly_idle_anim_16x16.png-c7b5a21c5f0df8bd6b59d30691fce49f.ctex"]
 
 [params]
 

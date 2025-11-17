@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0q05eva08ij2"
-path="res://.godot/imported/animated_jail_locker_empty_32x32.png-c50deef7064b63841ac6fff9c9a0c0ee.ctex"
+path="res://.godot/imported/animated_jail_locker_empty_32x32.png-e1bf7f7593b377859a41dfc529250bf8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_jail_locker_empty_32x32.png"
-dest_files=["res://.godot/imported/animated_jail_locker_empty_32x32.png-c50deef7064b63841ac6fff9c9a0c0ee.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_jail_locker_empty_32x32.png"
+dest_files=["res://.godot/imported/animated_jail_locker_empty_32x32.png-e1bf7f7593b377859a41dfc529250bf8.ctex"]
 
 [params]
 

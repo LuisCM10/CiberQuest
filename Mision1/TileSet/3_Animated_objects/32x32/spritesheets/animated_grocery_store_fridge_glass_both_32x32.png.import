@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cj1jwgut2u2jq"
-path="res://.godot/imported/animated_grocery_store_fridge_glass_both_32x32.png-7734ba5441a8f4dab70bdb8168151b75.ctex"
+path="res://.godot/imported/animated_grocery_store_fridge_glass_both_32x32.png-f3e091beb5dd85169013e6f7d10bf52a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_grocery_store_fridge_glass_both_32x32.png"
-dest_files=["res://.godot/imported/animated_grocery_store_fridge_glass_both_32x32.png-7734ba5441a8f4dab70bdb8168151b75.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_grocery_store_fridge_glass_both_32x32.png"
+dest_files=["res://.godot/imported/animated_grocery_store_fridge_glass_both_32x32.png-f3e091beb5dd85169013e6f7d10bf52a.ctex"]
 
 [params]
 

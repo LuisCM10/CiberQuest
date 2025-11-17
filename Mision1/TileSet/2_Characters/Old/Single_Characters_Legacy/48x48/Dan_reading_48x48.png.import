@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjv1uyinesgnv"
-path="res://.godot/imported/Dan_reading_48x48.png-059c3476952d6ac104fba6242bda1941.ctex"
+path="res://.godot/imported/Dan_reading_48x48.png-64dc4681e8bd1610dca4404430b7224b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Dan_reading_48x48.png"
-dest_files=["res://.godot/imported/Dan_reading_48x48.png-059c3476952d6ac104fba6242bda1941.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Dan_reading_48x48.png"
+dest_files=["res://.godot/imported/Dan_reading_48x48.png-64dc4681e8bd1610dca4404430b7224b.ctex"]
 
 [params]
 

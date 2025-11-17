@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0w1hq4e8x6u8"
-path="res://.godot/imported/animated_fishmonger_fish_tank.png-8a20e6bd0a01716c958b82bf5dc043c5.ctex"
+path="res://.godot/imported/animated_fishmonger_fish_tank.png-68dc04a168f8920b5d88907be67521b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_fishmonger_fish_tank.png"
-dest_files=["res://.godot/imported/animated_fishmonger_fish_tank.png-8a20e6bd0a01716c958b82bf5dc043c5.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_fishmonger_fish_tank.png"
+dest_files=["res://.godot/imported/animated_fishmonger_fish_tank.png-68dc04a168f8920b5d88907be67521b6.ctex"]
 
 [params]
 

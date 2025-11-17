@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7wiqv8kv6qy7"
-path="res://.godot/imported/Generic_Home_1_Layer_2_.png-7c77f96f2f5078affe11dd553f794ecf.ctex"
+path="res://.godot/imported/Generic_Home_1_Layer_2_.png-9e71fdf6f968a646fb53072e48e6e5c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/6_Home_Designs/Generic_Home_Designs/16x16/Generic_Home_1_Layer_2_.png"
-dest_files=["res://.godot/imported/Generic_Home_1_Layer_2_.png-7c77f96f2f5078affe11dd553f794ecf.ctex"]
+source_file="res://Mision1/TileSet/6_Home_Designs/Generic_Home_Designs/16x16/Generic_Home_1_Layer_2_.png"
+dest_files=["res://.godot/imported/Generic_Home_1_Layer_2_.png-9e71fdf6f968a646fb53072e48e6e5c8.ctex"]
 
 [params]
 

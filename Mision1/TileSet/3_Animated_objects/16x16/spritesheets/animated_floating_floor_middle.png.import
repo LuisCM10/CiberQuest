@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ca10r53iu3ny2"
-path="res://.godot/imported/animated_floating_floor_middle.png-bdc1510fd6fd9807fc358f863cb0a09f.ctex"
+path="res://.godot/imported/animated_floating_floor_middle.png-4c5cafab2a4a831a8ed8b2c363af5199.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_floating_floor_middle.png"
-dest_files=["res://.godot/imported/animated_floating_floor_middle.png-bdc1510fd6fd9807fc358f863cb0a09f.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_floating_floor_middle.png"
+dest_files=["res://.godot/imported/animated_floating_floor_middle.png-4c5cafab2a4a831a8ed8b2c363af5199.ctex"]
 
 [params]
 

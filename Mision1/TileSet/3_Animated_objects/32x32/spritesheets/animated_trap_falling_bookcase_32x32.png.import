@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djwgbkieudryt"
-path="res://.godot/imported/animated_trap_falling_bookcase_32x32.png-59195f67982eb253f332d84d717c8321.ctex"
+path="res://.godot/imported/animated_trap_falling_bookcase_32x32.png-49f16b47a2b0fedf5458574ac569596c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_trap_falling_bookcase_32x32.png"
-dest_files=["res://.godot/imported/animated_trap_falling_bookcase_32x32.png-59195f67982eb253f332d84d717c8321.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_trap_falling_bookcase_32x32.png"
+dest_files=["res://.godot/imported/animated_trap_falling_bookcase_32x32.png-49f16b47a2b0fedf5458574ac569596c.ctex"]
 
 [params]
 

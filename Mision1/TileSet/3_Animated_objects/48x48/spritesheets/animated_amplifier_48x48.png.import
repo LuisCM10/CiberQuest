@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwva0k1v15168"
-path="res://.godot/imported/animated_amplifier_48x48.png-19ae3f75257f8f1a6daa0c910aae8bbb.ctex"
+path="res://.godot/imported/animated_amplifier_48x48.png-60e6355e79a91d27886e001e2f51e6ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_amplifier_48x48.png"
-dest_files=["res://.godot/imported/animated_amplifier_48x48.png-19ae3f75257f8f1a6daa0c910aae8bbb.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_amplifier_48x48.png"
+dest_files=["res://.godot/imported/animated_amplifier_48x48.png-60e6355e79a91d27886e001e2f51e6ce.ctex"]
 
 [params]
 

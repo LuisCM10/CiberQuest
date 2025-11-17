@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ireb0xu6jm0a"
-path="res://.godot/imported/animated_incense_burner_4_10_loop.png-db336e7f68843198475072894ce107b5.ctex"
+path="res://.godot/imported/animated_incense_burner_4_10_loop.png-426b7be2824805c8b5ce425ea4a24e74.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_incense_burner_4_10_loop.png"
-dest_files=["res://.godot/imported/animated_incense_burner_4_10_loop.png-db336e7f68843198475072894ce107b5.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_incense_burner_4_10_loop.png"
+dest_files=["res://.godot/imported/animated_incense_burner_4_10_loop.png-426b7be2824805c8b5ce425ea4a24e74.ctex"]
 
 [params]
 

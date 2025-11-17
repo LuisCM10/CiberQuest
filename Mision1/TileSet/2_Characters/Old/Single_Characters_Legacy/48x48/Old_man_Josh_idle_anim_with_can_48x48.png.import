@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dieb3utng4jm8"
-path="res://.godot/imported/Old_man_Josh_idle_anim_with_can_48x48.png-414d0cca076176f7c741eb6f4f47e208.ctex"
+path="res://.godot/imported/Old_man_Josh_idle_anim_with_can_48x48.png-65e9d1c628331c9620eba4046f1ca2cf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Old_man_Josh_idle_anim_with_can_48x48.png"
-dest_files=["res://.godot/imported/Old_man_Josh_idle_anim_with_can_48x48.png-414d0cca076176f7c741eb6f4f47e208.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Old_man_Josh_idle_anim_with_can_48x48.png"
+dest_files=["res://.godot/imported/Old_man_Josh_idle_anim_with_can_48x48.png-65e9d1c628331c9620eba4046f1ca2cf.ctex"]
 
 [params]
 

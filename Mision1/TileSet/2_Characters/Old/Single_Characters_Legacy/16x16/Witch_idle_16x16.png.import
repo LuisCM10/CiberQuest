@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqs7t2b3inghd"
-path="res://.godot/imported/Witch_idle_16x16.png-6022a925d4fb85bc60805ddf7327f109.ctex"
+path="res://.godot/imported/Witch_idle_16x16.png-fcc5e9d20cb080999d08d1d00c4e2c33.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Witch_idle_16x16.png"
-dest_files=["res://.godot/imported/Witch_idle_16x16.png-6022a925d4fb85bc60805ddf7327f109.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Witch_idle_16x16.png"
+dest_files=["res://.godot/imported/Witch_idle_16x16.png-fcc5e9d20cb080999d08d1d00c4e2c33.ctex"]
 
 [params]
 

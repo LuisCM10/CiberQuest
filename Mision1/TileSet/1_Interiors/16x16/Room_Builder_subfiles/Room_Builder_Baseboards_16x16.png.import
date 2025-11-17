@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gbccfco55eeb"
-path="res://.godot/imported/Room_Builder_Baseboards_16x16.png-a208aec53433b35d90d0303d5b1c9143.ctex"
+path="res://.godot/imported/Room_Builder_Baseboards_16x16.png-2fd5f73f856439943d862e8064c97b4b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/16x16/Room_Builder_subfiles/Room_Builder_Baseboards_16x16.png"
-dest_files=["res://.godot/imported/Room_Builder_Baseboards_16x16.png-a208aec53433b35d90d0303d5b1c9143.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/16x16/Room_Builder_subfiles/Room_Builder_Baseboards_16x16.png"
+dest_files=["res://.godot/imported/Room_Builder_Baseboards_16x16.png-2fd5f73f856439943d862e8064c97b4b.ctex"]
 
 [params]
 

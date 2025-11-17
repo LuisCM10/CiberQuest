@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b75nc4l4dy0fe"
-path="res://.godot/imported/Prisoner_2_idle_anim_48x48.png-2454aea38f8601d6266db8597705a46a.ctex"
+path="res://.godot/imported/Prisoner_2_idle_anim_48x48.png-70b7dcd530923736d188adf450e48093.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Prisoner_2_idle_anim_48x48.png"
-dest_files=["res://.godot/imported/Prisoner_2_idle_anim_48x48.png-2454aea38f8601d6266db8597705a46a.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Prisoner_2_idle_anim_48x48.png"
+dest_files=["res://.godot/imported/Prisoner_2_idle_anim_48x48.png-70b7dcd530923736d188adf450e48093.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6uecyqop1krv"
-path="res://.godot/imported/animated_door_glass_double.png-c6c91b590558dddcd5d0b8b6d7a10257.ctex"
+path="res://.godot/imported/animated_door_glass_double.png-93e62811762f6fdb52d6992e6a11bc7c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_door_glass_double.png"
-dest_files=["res://.godot/imported/animated_door_glass_double.png-c6c91b590558dddcd5d0b8b6d7a10257.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_door_glass_double.png"
+dest_files=["res://.godot/imported/animated_door_glass_double.png-93e62811762f6fdb52d6992e6a11bc7c.ctex"]
 
 [params]
 

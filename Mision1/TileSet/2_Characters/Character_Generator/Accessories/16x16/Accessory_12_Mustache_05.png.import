@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b52yynrftvvdy"
-path="res://.godot/imported/Accessory_12_Mustache_05.png-b46b9ac71ed75f9f8a775b49bfb2fa63.ctex"
+path="res://.godot/imported/Accessory_12_Mustache_05.png-8bf98a861d05d7e959c9be9ad7ddc910.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_12_Mustache_05.png"
-dest_files=["res://.godot/imported/Accessory_12_Mustache_05.png-b46b9ac71ed75f9f8a775b49bfb2fa63.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_12_Mustache_05.png"
+dest_files=["res://.godot/imported/Accessory_12_Mustache_05.png-8bf98a861d05d7e959c9be9ad7ddc910.ctex"]
 
 [params]
 

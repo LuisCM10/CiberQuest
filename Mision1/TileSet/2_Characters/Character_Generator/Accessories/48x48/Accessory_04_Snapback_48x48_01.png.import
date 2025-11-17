@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://er0033fs6duc"
-path="res://.godot/imported/Accessory_04_Snapback_48x48_01.png-ce6380bcc115f046c19a0a65ffb310f7.ctex"
+path="res://.godot/imported/Accessory_04_Snapback_48x48_01.png-67a81cf890f58773af5ee7dede50dbce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/48x48/Accessory_04_Snapback_48x48_01.png"
-dest_files=["res://.godot/imported/Accessory_04_Snapback_48x48_01.png-ce6380bcc115f046c19a0a65ffb310f7.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/48x48/Accessory_04_Snapback_48x48_01.png"
+dest_files=["res://.godot/imported/Accessory_04_Snapback_48x48_01.png-67a81cf890f58773af5ee7dede50dbce.ctex"]
 
 [params]
 

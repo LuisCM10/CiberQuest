@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnrtacle3f1x6"
-path="res://.godot/imported/Chef_Alex_idle_32x32.png-8f8cdc50f585b5b9a9f12af90b3cf8db.ctex"
+path="res://.godot/imported/Chef_Alex_idle_32x32.png-c464783e973349c938e14f47096d4fdf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Chef_Alex_idle_32x32.png"
-dest_files=["res://.godot/imported/Chef_Alex_idle_32x32.png-8f8cdc50f585b5b9a9f12af90b3cf8db.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Chef_Alex_idle_32x32.png"
+dest_files=["res://.godot/imported/Chef_Alex_idle_32x32.png-c464783e973349c938e14f47096d4fdf.ctex"]
 
 [params]
 

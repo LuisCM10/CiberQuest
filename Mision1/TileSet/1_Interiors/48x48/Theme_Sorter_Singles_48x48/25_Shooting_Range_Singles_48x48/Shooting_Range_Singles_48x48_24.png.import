@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1ho04cku0n1x"
-path="res://.godot/imported/Shooting_Range_Singles_48x48_24.png-d9c7443e36e9a0fe4c7bfdd9dd75b2a6.ctex"
+path="res://.godot/imported/Shooting_Range_Singles_48x48_24.png-9bfe479dbd5edccd8f5f354dd0012ef5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/48x48/Theme_Sorter_Singles_48x48/25_Shooting_Range_Singles_48x48/Shooting_Range_Singles_48x48_24.png"
-dest_files=["res://.godot/imported/Shooting_Range_Singles_48x48_24.png-d9c7443e36e9a0fe4c7bfdd9dd75b2a6.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/48x48/Theme_Sorter_Singles_48x48/25_Shooting_Range_Singles_48x48/Shooting_Range_Singles_48x48_24.png"
+dest_files=["res://.godot/imported/Shooting_Range_Singles_48x48_24.png-9bfe479dbd5edccd8f5f354dd0012ef5.ctex"]
 
 [params]
 

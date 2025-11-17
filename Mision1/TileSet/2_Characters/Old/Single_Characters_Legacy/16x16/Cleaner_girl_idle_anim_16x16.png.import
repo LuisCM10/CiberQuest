@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0jfqiiqv2f66"
-path="res://.godot/imported/Cleaner_girl_idle_anim_16x16.png-f4b4ea50ed57718fa08c82dd67fdb045.ctex"
+path="res://.godot/imported/Cleaner_girl_idle_anim_16x16.png-4fb4fd12a2ad4892f3b0f8d410fe723b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Cleaner_girl_idle_anim_16x16.png"
-dest_files=["res://.godot/imported/Cleaner_girl_idle_anim_16x16.png-f4b4ea50ed57718fa08c82dd67fdb045.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Cleaner_girl_idle_anim_16x16.png"
+dest_files=["res://.godot/imported/Cleaner_girl_idle_anim_16x16.png-4fb4fd12a2ad4892f3b0f8d410fe723b.ctex"]
 
 [params]
 

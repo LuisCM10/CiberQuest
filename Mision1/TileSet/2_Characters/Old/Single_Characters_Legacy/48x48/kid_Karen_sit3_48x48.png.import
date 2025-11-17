@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnhu36s3vjsne"
-path="res://.godot/imported/kid_Karen_sit3_48x48.png-df5fc842abce33a41ddb3802cca6002f.ctex"
+path="res://.godot/imported/kid_Karen_sit3_48x48.png-a9ae41b27f32f16ce3437b1a355c2aa6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/kid_Karen_sit3_48x48.png"
-dest_files=["res://.godot/imported/kid_Karen_sit3_48x48.png-df5fc842abce33a41ddb3802cca6002f.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/kid_Karen_sit3_48x48.png"
+dest_files=["res://.godot/imported/kid_Karen_sit3_48x48.png-a9ae41b27f32f16ce3437b1a355c2aa6.ctex"]
 
 [params]
 

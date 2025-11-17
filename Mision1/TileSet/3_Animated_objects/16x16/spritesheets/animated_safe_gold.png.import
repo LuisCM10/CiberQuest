@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqukkopnlrl77"
-path="res://.godot/imported/animated_safe_gold.png-111ef1e94d87e8d753bb13ea5c733453.ctex"
+path="res://.godot/imported/animated_safe_gold.png-4cd8ccbdec6a1de5d9cb95fde2fce4bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_safe_gold.png"
-dest_files=["res://.godot/imported/animated_safe_gold.png-111ef1e94d87e8d753bb13ea5c733453.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_safe_gold.png"
+dest_files=["res://.godot/imported/animated_safe_gold.png-4cd8ccbdec6a1de5d9cb95fde2fce4bb.ctex"]
 
 [params]
 

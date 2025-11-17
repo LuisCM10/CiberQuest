@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blyollg38lg0o"
-path="res://.godot/imported/Halloween_Kid_1_16x16.png-d70afad5e08d301285dfbb54af20d5b2.ctex"
+path="res://.godot/imported/Halloween_Kid_1_16x16.png-29e5e4c09f4ffa38e208697de84f52f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Halloween_Kid_1_16x16.png"
-dest_files=["res://.godot/imported/Halloween_Kid_1_16x16.png-d70afad5e08d301285dfbb54af20d5b2.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Halloween_Kid_1_16x16.png"
+dest_files=["res://.godot/imported/Halloween_Kid_1_16x16.png-29e5e4c09f4ffa38e208697de84f52f9.ctex"]
 
 [params]
 

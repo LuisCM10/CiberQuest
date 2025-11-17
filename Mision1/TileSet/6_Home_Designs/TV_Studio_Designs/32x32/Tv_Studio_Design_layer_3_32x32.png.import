@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtuavx3yfi80k"
-path="res://.godot/imported/Tv_Studio_Design_layer_3_32x32.png-db08c1d7b927e3a93ea8ca8f66b56eeb.ctex"
+path="res://.godot/imported/Tv_Studio_Design_layer_3_32x32.png-219bec7ed21f6afb918bc5e61eece22d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/6_Home_Designs/TV_Studio_Designs/32x32/Tv_Studio_Design_layer_3_32x32.png"
-dest_files=["res://.godot/imported/Tv_Studio_Design_layer_3_32x32.png-db08c1d7b927e3a93ea8ca8f66b56eeb.ctex"]
+source_file="res://Mision1/TileSet/6_Home_Designs/TV_Studio_Designs/32x32/Tv_Studio_Design_layer_3_32x32.png"
+dest_files=["res://.godot/imported/Tv_Studio_Design_layer_3_32x32.png-219bec7ed21f6afb918bc5e61eece22d.ctex"]
 
 [params]
 

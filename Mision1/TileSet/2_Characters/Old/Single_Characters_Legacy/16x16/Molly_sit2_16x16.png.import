@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drt1wipt7v13m"
-path="res://.godot/imported/Molly_sit2_16x16.png-1e5af2e08de3c24a747fb6b426c1bb21.ctex"
+path="res://.godot/imported/Molly_sit2_16x16.png-2845fb74deb1f1611f6776bbb91aeae6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Molly_sit2_16x16.png"
-dest_files=["res://.godot/imported/Molly_sit2_16x16.png-1e5af2e08de3c24a747fb6b426c1bb21.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Molly_sit2_16x16.png"
+dest_files=["res://.godot/imported/Molly_sit2_16x16.png-2845fb74deb1f1611f6776bbb91aeae6.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bry8onj54wqx1"
-path="res://.godot/imported/animated_TV_reportage.png-cbbf3150cab54cd527d5447f2398379d.ctex"
+path="res://.godot/imported/animated_TV_reportage.png-1562c849ddac3f6a092dbb2bbcb116a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_TV_reportage.png"
-dest_files=["res://.godot/imported/animated_TV_reportage.png-cbbf3150cab54cd527d5447f2398379d.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_TV_reportage.png"
+dest_files=["res://.godot/imported/animated_TV_reportage.png-1562c849ddac3f6a092dbb2bbcb116a2.ctex"]
 
 [params]
 

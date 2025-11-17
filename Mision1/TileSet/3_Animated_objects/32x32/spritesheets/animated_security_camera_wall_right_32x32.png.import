@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvmhq37fiug7w"
-path="res://.godot/imported/animated_security_camera_wall_right_32x32.png-3c3960632554ddaac5b9cb9852d0467a.ctex"
+path="res://.godot/imported/animated_security_camera_wall_right_32x32.png-8f1de630ea4c13534df90422728ae3ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_security_camera_wall_right_32x32.png"
-dest_files=["res://.godot/imported/animated_security_camera_wall_right_32x32.png-3c3960632554ddaac5b9cb9852d0467a.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_security_camera_wall_right_32x32.png"
+dest_files=["res://.godot/imported/animated_security_camera_wall_right_32x32.png-8f1de630ea4c13534df90422728ae3ed.ctex"]
 
 [params]
 

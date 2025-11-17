@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckpexedhb7mrf"
-path="res://.godot/imported/Fishmonger_2_run_48x48.png-e03366a7a6d851cdd972e45a4558e9e6.ctex"
+path="res://.godot/imported/Fishmonger_2_run_48x48.png-ef64502b8747c6d68c76d6f0f0dddd88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Fishmonger_2_run_48x48.png"
-dest_files=["res://.godot/imported/Fishmonger_2_run_48x48.png-e03366a7a6d851cdd972e45a4558e9e6.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Fishmonger_2_run_48x48.png"
+dest_files=["res://.godot/imported/Fishmonger_2_run_48x48.png-ef64502b8747c6d68c76d6f0f0dddd88.ctex"]
 
 [params]
 

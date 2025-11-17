@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kb8m1lvx8te"
-path="res://.godot/imported/Chef_Molly_run_32x32.png-42f3c8cdea4c919dae4dd6013dd8b4bf.ctex"
+path="res://.godot/imported/Chef_Molly_run_32x32.png-992216adab7f5d68ebfc9967b5620540.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Chef_Molly_run_32x32.png"
-dest_files=["res://.godot/imported/Chef_Molly_run_32x32.png-42f3c8cdea4c919dae4dd6013dd8b4bf.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Chef_Molly_run_32x32.png"
+dest_files=["res://.godot/imported/Chef_Molly_run_32x32.png-992216adab7f5d68ebfc9967b5620540.ctex"]
 
 [params]
 

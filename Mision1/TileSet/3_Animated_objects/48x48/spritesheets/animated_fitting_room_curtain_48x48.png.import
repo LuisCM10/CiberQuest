@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddfb8onmd6hnx"
-path="res://.godot/imported/animated_fitting_room_curtain_48x48.png-096b17141a44e9d62c7ccf567aa7d218.ctex"
+path="res://.godot/imported/animated_fitting_room_curtain_48x48.png-acdf6de3f043d745b99ae16e615c80c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_fitting_room_curtain_48x48.png"
-dest_files=["res://.godot/imported/animated_fitting_room_curtain_48x48.png-096b17141a44e9d62c7ccf567aa7d218.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_fitting_room_curtain_48x48.png"
+dest_files=["res://.godot/imported/animated_fitting_room_curtain_48x48.png-acdf6de3f043d745b99ae16e615c80c9.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://rb4esx52qvoc"
-path="res://.godot/imported/animated_grocery_store_bakery_industrial_fridge_both_48x48.png-5a21a48b2a070a4b417c827c6abbcf2b.ctex"
+path="res://.godot/imported/animated_grocery_store_bakery_industrial_fridge_both_48x48.png-a1fa253d3bba4cdebe886dd49f674f04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_grocery_store_bakery_industrial_fridge_both_48x48.png"
-dest_files=["res://.godot/imported/animated_grocery_store_bakery_industrial_fridge_both_48x48.png-5a21a48b2a070a4b417c827c6abbcf2b.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_grocery_store_bakery_industrial_fridge_both_48x48.png"
+dest_files=["res://.godot/imported/animated_grocery_store_bakery_industrial_fridge_both_48x48.png-a1fa253d3bba4cdebe886dd49f674f04.ctex"]
 
 [params]
 

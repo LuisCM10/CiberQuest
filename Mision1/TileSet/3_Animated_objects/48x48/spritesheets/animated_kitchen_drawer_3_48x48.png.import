@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kgphw0jn5fik"
-path="res://.godot/imported/animated_kitchen_drawer_3_48x48.png-0060c75bd1b674eb5ea271d8097dc745.ctex"
+path="res://.godot/imported/animated_kitchen_drawer_3_48x48.png-4f15e0470008e678461317e507530c47.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_kitchen_drawer_3_48x48.png"
-dest_files=["res://.godot/imported/animated_kitchen_drawer_3_48x48.png-0060c75bd1b674eb5ea271d8097dc745.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_kitchen_drawer_3_48x48.png"
+dest_files=["res://.godot/imported/animated_kitchen_drawer_3_48x48.png-4f15e0470008e678461317e507530c47.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwt77kuebvc7l"
-path="res://.godot/imported/Lucy_reading_16x16.png-57be5e1e6634f57eea18f429d7b99501.ctex"
+path="res://.godot/imported/Lucy_reading_16x16.png-cda602db878eeef15b5862c89b85755f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Lucy_reading_16x16.png"
-dest_files=["res://.godot/imported/Lucy_reading_16x16.png-57be5e1e6634f57eea18f429d7b99501.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Lucy_reading_16x16.png"
+dest_files=["res://.godot/imported/Lucy_reading_16x16.png-cda602db878eeef15b5862c89b85755f.ctex"]
 
 [params]
 

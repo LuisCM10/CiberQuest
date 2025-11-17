@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpesdb7d64ols"
-path="res://.godot/imported/Christmas_Shadow_Singles_32x32_15.png-9b8a8bcb19287a7a758507801ca3800e.ctex"
+path="res://.godot/imported/Christmas_Shadow_Singles_32x32_15.png-ed0c5649c2e7079767aff192bc4fcb96.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/32x32/Theme_Sorter_Black_Shadow_Singles_32x32/15_Christmas_Black_Shadow_Singles_32x32/Christmas_Shadow_Singles_32x32_15.png"
-dest_files=["res://.godot/imported/Christmas_Shadow_Singles_32x32_15.png-9b8a8bcb19287a7a758507801ca3800e.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/32x32/Theme_Sorter_Black_Shadow_Singles_32x32/15_Christmas_Black_Shadow_Singles_32x32/Christmas_Shadow_Singles_32x32_15.png"
+dest_files=["res://.godot/imported/Christmas_Shadow_Singles_32x32_15.png-ed0c5649c2e7079767aff192bc4fcb96.ctex"]
 
 [params]
 

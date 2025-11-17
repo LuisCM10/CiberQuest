@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://diijqesb1rp80"
-path="res://.godot/imported/Nurse_1_idle_32x32.png-378e21baa2e48c216175a789ad8d0548.ctex"
+path="res://.godot/imported/Nurse_1_idle_32x32.png-f5f0e142b02764c776a7c7af64d7493c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Nurse_1_idle_32x32.png"
-dest_files=["res://.godot/imported/Nurse_1_idle_32x32.png-378e21baa2e48c216175a789ad8d0548.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Nurse_1_idle_32x32.png"
+dest_files=["res://.godot/imported/Nurse_1_idle_32x32.png-f5f0e142b02764c776a7c7af64d7493c.ctex"]
 
 [params]
 

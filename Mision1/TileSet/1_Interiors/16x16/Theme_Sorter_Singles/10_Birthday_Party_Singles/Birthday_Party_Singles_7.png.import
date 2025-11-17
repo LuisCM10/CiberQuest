@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqnwrlqlgcmx1"
-path="res://.godot/imported/Birthday_Party_Singles_7.png-d0f0f6a34ab7beb312a59524b732f234.ctex"
+path="res://.godot/imported/Birthday_Party_Singles_7.png-ec242d94cad3b732c9113150bcbe2409.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/16x16/Theme_Sorter_Singles/10_Birthday_Party_Singles/Birthday_Party_Singles_7.png"
-dest_files=["res://.godot/imported/Birthday_Party_Singles_7.png-d0f0f6a34ab7beb312a59524b732f234.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/16x16/Theme_Sorter_Singles/10_Birthday_Party_Singles/Birthday_Party_Singles_7.png"
+dest_files=["res://.godot/imported/Birthday_Party_Singles_7.png-ec242d94cad3b732c9113150bcbe2409.ctex"]
 
 [params]
 

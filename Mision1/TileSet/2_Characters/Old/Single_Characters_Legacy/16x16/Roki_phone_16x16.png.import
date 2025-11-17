@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lg3buntl3bwy"
-path="res://.godot/imported/Roki_phone_16x16.png-bc7499a80c99026773a5e7d175c402b4.ctex"
+path="res://.godot/imported/Roki_phone_16x16.png-66a0b5edc18a3c4ba65b54a157e60d67.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Roki_phone_16x16.png"
-dest_files=["res://.godot/imported/Roki_phone_16x16.png-bc7499a80c99026773a5e7d175c402b4.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Roki_phone_16x16.png"
+dest_files=["res://.godot/imported/Roki_phone_16x16.png-66a0b5edc18a3c4ba65b54a157e60d67.ctex"]
 
 [params]
 

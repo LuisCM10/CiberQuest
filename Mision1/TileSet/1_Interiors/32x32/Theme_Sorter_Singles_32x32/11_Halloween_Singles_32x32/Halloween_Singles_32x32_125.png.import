@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0nlavienlmsw"
-path="res://.godot/imported/Halloween_Singles_32x32_125.png-86acae1ac861fc1ccc34d6f70f18fef0.ctex"
+path="res://.godot/imported/Halloween_Singles_32x32_125.png-193c813e45d5580028459bf08fb520f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/32x32/Theme_Sorter_Singles_32x32/11_Halloween_Singles_32x32/Halloween_Singles_32x32_125.png"
-dest_files=["res://.godot/imported/Halloween_Singles_32x32_125.png-86acae1ac861fc1ccc34d6f70f18fef0.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/32x32/Theme_Sorter_Singles_32x32/11_Halloween_Singles_32x32/Halloween_Singles_32x32_125.png"
+dest_files=["res://.godot/imported/Halloween_Singles_32x32_125.png-193c813e45d5580028459bf08fb520f9.ctex"]
 
 [params]
 

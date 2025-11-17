@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://coq1726at0obj"
-path="res://.godot/imported/animated_control_room_server.png-29164bbabc0ecdab53c21dccef1f27bf.ctex"
+path="res://.godot/imported/animated_control_room_server.png-b463ce4c23c363aa12591af0e925d24c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_control_room_server.png"
-dest_files=["res://.godot/imported/animated_control_room_server.png-29164bbabc0ecdab53c21dccef1f27bf.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_control_room_server.png"
+dest_files=["res://.godot/imported/animated_control_room_server.png-b463ce4c23c363aa12591af0e925d24c.ctex"]
 
 [params]
 

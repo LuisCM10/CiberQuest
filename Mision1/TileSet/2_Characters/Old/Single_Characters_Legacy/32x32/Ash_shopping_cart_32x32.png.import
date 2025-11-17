@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8fj35ac8iwa4"
-path="res://.godot/imported/Ash_shopping_cart_32x32.png-045fd5347af6c1d03385f9037f6e1e26.ctex"
+path="res://.godot/imported/Ash_shopping_cart_32x32.png-1d630751d09024dd6ee7cfda1d6bfc1d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Ash_shopping_cart_32x32.png"
-dest_files=["res://.godot/imported/Ash_shopping_cart_32x32.png-045fd5347af6c1d03385f9037f6e1e26.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Ash_shopping_cart_32x32.png"
+dest_files=["res://.godot/imported/Ash_shopping_cart_32x32.png-1d630751d09024dd6ee7cfda1d6bfc1d.ctex"]
 
 [params]
 

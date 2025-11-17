@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d17l2digaqg2g"
-path="res://.godot/imported/Molly_phone_16x16.png-924b564ac55ef0aeb6249c4240f01981.ctex"
+path="res://.godot/imported/Molly_phone_16x16.png-ff1fa6fb21193b3514d34f83c4231317.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Molly_phone_16x16.png"
-dest_files=["res://.godot/imported/Molly_phone_16x16.png-924b564ac55ef0aeb6249c4240f01981.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Molly_phone_16x16.png"
+dest_files=["res://.godot/imported/Molly_phone_16x16.png-ff1fa6fb21193b3514d34f83c4231317.ctex"]
 
 [params]
 

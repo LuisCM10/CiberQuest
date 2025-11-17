@@ -177,7 +177,7 @@ func dibujarRecorrido(node, prev) -> void:
 
 func _on_button_sig_pressed() -> void:
 	if recorrido.has(origin):
-		get_tree().quit()
+		get_tree().change_scene_to_file("res://niveles.tscn")
 	elif dfs:
 		BotSig.visible = false
 		DFS()
@@ -191,7 +191,7 @@ func _on_button_sig_pressed() -> void:
 
 
 func _on_button_exit_pressed() -> void:
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://niveles.tscn")
 	pass # Replace with function body.
 	
 	

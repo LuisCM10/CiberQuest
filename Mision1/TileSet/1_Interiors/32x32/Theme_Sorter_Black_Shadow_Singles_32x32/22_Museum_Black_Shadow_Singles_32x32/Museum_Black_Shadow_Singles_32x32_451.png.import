@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbieldm07ceb0"
-path="res://.godot/imported/Museum_Black_Shadow_Singles_32x32_451.png-f504ece83cc4ea3f2960062360f220fc.ctex"
+path="res://.godot/imported/Museum_Black_Shadow_Singles_32x32_451.png-33cfb0389efac7301688f97ddc15c725.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/32x32/Theme_Sorter_Black_Shadow_Singles_32x32/22_Museum_Black_Shadow_Singles_32x32/Museum_Black_Shadow_Singles_32x32_451.png"
-dest_files=["res://.godot/imported/Museum_Black_Shadow_Singles_32x32_451.png-f504ece83cc4ea3f2960062360f220fc.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/32x32/Theme_Sorter_Black_Shadow_Singles_32x32/22_Museum_Black_Shadow_Singles_32x32/Museum_Black_Shadow_Singles_32x32_451.png"
+dest_files=["res://.godot/imported/Museum_Black_Shadow_Singles_32x32_451.png-33cfb0389efac7301688f97ddc15c725.ctex"]
 
 [params]
 

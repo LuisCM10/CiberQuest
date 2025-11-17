@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c252yux01umqq"
-path="res://.godot/imported/Bruce_reading_16x16.png-17463ce2e0c573a6fd068ad2cc2ff0c6.ctex"
+path="res://.godot/imported/Bruce_reading_16x16.png-a0349690433a70f1da5d3e4bfe9cdfb7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Bruce_reading_16x16.png"
-dest_files=["res://.godot/imported/Bruce_reading_16x16.png-17463ce2e0c573a6fd068ad2cc2ff0c6.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Bruce_reading_16x16.png"
+dest_files=["res://.godot/imported/Bruce_reading_16x16.png-a0349690433a70f1da5d3e4bfe9cdfb7.ctex"]
 
 [params]
 

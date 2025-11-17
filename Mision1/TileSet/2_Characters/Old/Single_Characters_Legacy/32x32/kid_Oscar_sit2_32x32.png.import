@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhkktm2hgnchg"
-path="res://.godot/imported/kid_Oscar_sit2_32x32.png-c2184b444873e8edac832d15b3e2e2e9.ctex"
+path="res://.godot/imported/kid_Oscar_sit2_32x32.png-cb21aacbe68222291464d2d3e2ceded3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/kid_Oscar_sit2_32x32.png"
-dest_files=["res://.godot/imported/kid_Oscar_sit2_32x32.png-c2184b444873e8edac832d15b3e2e2e9.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/kid_Oscar_sit2_32x32.png"
+dest_files=["res://.godot/imported/kid_Oscar_sit2_32x32.png-cb21aacbe68222291464d2d3e2ceded3.ctex"]
 
 [params]
 

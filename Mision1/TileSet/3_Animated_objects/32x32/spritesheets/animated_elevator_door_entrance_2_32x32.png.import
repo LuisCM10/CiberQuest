@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://s6wssgwbhl16"
-path="res://.godot/imported/animated_elevator_door_entrance_2_32x32.png-c785a2f7339b59e3b5c091c25d18a1e3.ctex"
+path="res://.godot/imported/animated_elevator_door_entrance_2_32x32.png-6dbc2cb1d8be050641c012409ee4fe18.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_elevator_door_entrance_2_32x32.png"
-dest_files=["res://.godot/imported/animated_elevator_door_entrance_2_32x32.png-c785a2f7339b59e3b5c091c25d18a1e3.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_elevator_door_entrance_2_32x32.png"
+dest_files=["res://.godot/imported/animated_elevator_door_entrance_2_32x32.png-6dbc2cb1d8be050641c012409ee4fe18.ctex"]
 
 [params]
 

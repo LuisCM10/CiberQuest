@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lplfjpx6h35u"
-path="res://.godot/imported/aniamted_haunted_mirror.png-b1e6df8563a0054e3ab38be7a01e5896.ctex"
+path="res://.godot/imported/aniamted_haunted_mirror.png-d3c099c880bdf8a30672edd263a6a9b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/aniamted_haunted_mirror.png"
-dest_files=["res://.godot/imported/aniamted_haunted_mirror.png-b1e6df8563a0054e3ab38be7a01e5896.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/aniamted_haunted_mirror.png"
+dest_files=["res://.godot/imported/aniamted_haunted_mirror.png-d3c099c880bdf8a30672edd263a6a9b8.ctex"]
 
 [params]
 

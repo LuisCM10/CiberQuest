@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dlig6hl3etxl8"
-path="res://.godot/imported/Lucy_sit3_48x48.png-777369066b6367cfa401637d72693700.ctex"
+path="res://.godot/imported/Lucy_sit3_48x48.png-bc353df25c7dfd14bb1b86b42a6ea59b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Lucy_sit3_48x48.png"
-dest_files=["res://.godot/imported/Lucy_sit3_48x48.png-777369066b6367cfa401637d72693700.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Lucy_sit3_48x48.png"
+dest_files=["res://.godot/imported/Lucy_sit3_48x48.png-bc353df25c7dfd14bb1b86b42a6ea59b.ctex"]
 
 [params]
 

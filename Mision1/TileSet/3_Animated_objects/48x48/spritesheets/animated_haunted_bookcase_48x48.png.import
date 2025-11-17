@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfbll3g6uccpq"
-path="res://.godot/imported/animated_haunted_bookcase_48x48.png-c329e51c481958d2d795d16e08e1391c.ctex"
+path="res://.godot/imported/animated_haunted_bookcase_48x48.png-c79a0171754c74eb39ad900b7997d20f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_haunted_bookcase_48x48.png"
-dest_files=["res://.godot/imported/animated_haunted_bookcase_48x48.png-c329e51c481958d2d795d16e08e1391c.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_haunted_bookcase_48x48.png"
+dest_files=["res://.godot/imported/animated_haunted_bookcase_48x48.png-c79a0171754c74eb39ad900b7997d20f.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsg2b1yv6ecvm"
-path="res://.godot/imported/Doctor_2_idle_anim_16x16.png-93850375458553b7ed8d12c9656c1c28.ctex"
+path="res://.godot/imported/Doctor_2_idle_anim_16x16.png-5482a545a8306ccacc283e4d8d63fbf1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Doctor_2_idle_anim_16x16.png"
-dest_files=["res://.godot/imported/Doctor_2_idle_anim_16x16.png-93850375458553b7ed8d12c9656c1c28.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Doctor_2_idle_anim_16x16.png"
+dest_files=["res://.godot/imported/Doctor_2_idle_anim_16x16.png-5482a545a8306ccacc283e4d8d63fbf1.ctex"]
 
 [params]
 

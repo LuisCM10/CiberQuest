@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0mxixv844ilj"
-path="res://.godot/imported/Grocery_Store_Singles_377.png-5224181883350313d10b866f176ad281.ctex"
+path="res://.godot/imported/Grocery_Store_Singles_377.png-78c1013ddf55d9dc7781e0df7017025d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/16x16/Theme_Sorter_Singles/16_Grocery_Store_Singles/Grocery_Store_Singles_377.png"
-dest_files=["res://.godot/imported/Grocery_Store_Singles_377.png-5224181883350313d10b866f176ad281.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/16x16/Theme_Sorter_Singles/16_Grocery_Store_Singles/Grocery_Store_Singles_377.png"
+dest_files=["res://.godot/imported/Grocery_Store_Singles_377.png-78c1013ddf55d9dc7781e0df7017025d.ctex"]
 
 [params]
 

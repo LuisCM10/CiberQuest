@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1ljdob2axmak"
-path="res://.godot/imported/animated_tapis_roulant_32x32.png-17be2d83e61c891638b6a743a1df3ed6.ctex"
+path="res://.godot/imported/animated_tapis_roulant_32x32.png-8914c7b1de17ecf26a38e28a5998df22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_tapis_roulant_32x32.png"
-dest_files=["res://.godot/imported/animated_tapis_roulant_32x32.png-17be2d83e61c891638b6a743a1df3ed6.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_tapis_roulant_32x32.png"
+dest_files=["res://.godot/imported/animated_tapis_roulant_32x32.png-8914c7b1de17ecf26a38e28a5998df22.ctex"]
 
 [params]
 

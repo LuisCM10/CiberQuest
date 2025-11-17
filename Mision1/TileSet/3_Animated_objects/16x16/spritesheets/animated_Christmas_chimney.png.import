@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dw4e5fbh2aw1e"
-path="res://.godot/imported/animated_Christmas_chimney.png-c0bcf498a85201954424aa688c1736a9.ctex"
+path="res://.godot/imported/animated_Christmas_chimney.png-ac83c2af258851652ce05ba9ef8fb13b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_Christmas_chimney.png"
-dest_files=["res://.godot/imported/animated_Christmas_chimney.png-c0bcf498a85201954424aa688c1736a9.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_Christmas_chimney.png"
+dest_files=["res://.godot/imported/animated_Christmas_chimney.png-ac83c2af258851652ce05ba9ef8fb13b.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpmy7bpnrlejc"
-path="res://.godot/imported/Kid_Abby_idle_anim_48x48.png-8f95a14ef6d8a09a8704098c5ec4c2b8.ctex"
+path="res://.godot/imported/Kid_Abby_idle_anim_48x48.png-a2d06e0f1169269e394085914180061c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Kid_Abby_idle_anim_48x48.png"
-dest_files=["res://.godot/imported/Kid_Abby_idle_anim_48x48.png-8f95a14ef6d8a09a8704098c5ec4c2b8.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Kid_Abby_idle_anim_48x48.png"
+dest_files=["res://.godot/imported/Kid_Abby_idle_anim_48x48.png-a2d06e0f1169269e394085914180061c.ctex"]
 
 [params]
 

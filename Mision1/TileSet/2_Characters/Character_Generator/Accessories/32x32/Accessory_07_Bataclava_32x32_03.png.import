@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://db6qcybwr6rhd"
-path="res://.godot/imported/Accessory_07_Bataclava_32x32_03.png-a01669c0ba1e8b09643d0c209bfd8db3.ctex"
+path="res://.godot/imported/Accessory_07_Bataclava_32x32_03.png-be64709ae532ecf42f5d00d4cd445546.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/32x32/Accessory_07_Bataclava_32x32_03.png"
-dest_files=["res://.godot/imported/Accessory_07_Bataclava_32x32_03.png-a01669c0ba1e8b09643d0c209bfd8db3.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/32x32/Accessory_07_Bataclava_32x32_03.png"
+dest_files=["res://.godot/imported/Accessory_07_Bataclava_32x32_03.png-be64709ae532ecf42f5d00d4cd445546.ctex"]
 
 [params]
 

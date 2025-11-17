@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2a4hsxybash"
-path="res://.godot/imported/animated_wall_piano_3_48x48.png-4829d79c1e52dac87c799c902c984fea.ctex"
+path="res://.godot/imported/animated_wall_piano_3_48x48.png-3814a69a7919c8277e54c163cd30e543.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_wall_piano_3_48x48.png"
-dest_files=["res://.godot/imported/animated_wall_piano_3_48x48.png-4829d79c1e52dac87c799c902c984fea.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_wall_piano_3_48x48.png"
+dest_files=["res://.godot/imported/animated_wall_piano_3_48x48.png-3814a69a7919c8277e54c163cd30e543.ctex"]
 
 [params]
 

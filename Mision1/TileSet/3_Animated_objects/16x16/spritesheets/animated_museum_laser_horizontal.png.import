@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0oydf2n7tmq0"
-path="res://.godot/imported/animated_museum_laser_horizontal.png-6bf51bf2f22526dc01e10476ce3ed5f1.ctex"
+path="res://.godot/imported/animated_museum_laser_horizontal.png-d89ccb23acf4d9f293c63d42d9c6caac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_museum_laser_horizontal.png"
-dest_files=["res://.godot/imported/animated_museum_laser_horizontal.png-6bf51bf2f22526dc01e10476ce3ed5f1.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_museum_laser_horizontal.png"
+dest_files=["res://.godot/imported/animated_museum_laser_horizontal.png-d89ccb23acf4d9f293c63d42d9c6caac.ctex"]
 
 [params]
 

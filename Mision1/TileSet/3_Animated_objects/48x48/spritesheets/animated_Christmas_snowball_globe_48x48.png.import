@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxfu4ucfs5i6d"
-path="res://.godot/imported/animated_Christmas_snowball_globe_48x48.png-b42a89019b77435aae77a281f18655cc.ctex"
+path="res://.godot/imported/animated_Christmas_snowball_globe_48x48.png-e0ef43e2534856eb85cc7ad68e9cc451.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_Christmas_snowball_globe_48x48.png"
-dest_files=["res://.godot/imported/animated_Christmas_snowball_globe_48x48.png-b42a89019b77435aae77a281f18655cc.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_Christmas_snowball_globe_48x48.png"
+dest_files=["res://.godot/imported/animated_Christmas_snowball_globe_48x48.png-e0ef43e2534856eb85cc7ad68e9cc451.ctex"]
 
 [params]
 

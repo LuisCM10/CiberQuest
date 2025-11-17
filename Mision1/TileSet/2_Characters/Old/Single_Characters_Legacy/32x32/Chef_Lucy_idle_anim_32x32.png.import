@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgckgt8mwmutl"
-path="res://.godot/imported/Chef_Lucy_idle_anim_32x32.png-aa32aaf7fa0de1c6a810f3f488ad2a69.ctex"
+path="res://.godot/imported/Chef_Lucy_idle_anim_32x32.png-e7569cd27ef02b02077818a5ffa6aa15.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Chef_Lucy_idle_anim_32x32.png"
-dest_files=["res://.godot/imported/Chef_Lucy_idle_anim_32x32.png-aa32aaf7fa0de1c6a810f3f488ad2a69.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Chef_Lucy_idle_anim_32x32.png"
+dest_files=["res://.godot/imported/Chef_Lucy_idle_anim_32x32.png-e7569cd27ef02b02077818a5ffa6aa15.ctex"]
 
 [params]
 

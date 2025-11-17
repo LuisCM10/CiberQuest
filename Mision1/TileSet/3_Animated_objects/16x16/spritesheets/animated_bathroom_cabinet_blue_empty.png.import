@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ugyu6hthpm8n"
-path="res://.godot/imported/animated_bathroom_cabinet_blue_empty.png-53b1492580fc0604fb3507451402526e.ctex"
+path="res://.godot/imported/animated_bathroom_cabinet_blue_empty.png-8c76535138b2e178c5eca14cbab22b14.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_bathroom_cabinet_blue_empty.png"
-dest_files=["res://.godot/imported/animated_bathroom_cabinet_blue_empty.png-53b1492580fc0604fb3507451402526e.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_bathroom_cabinet_blue_empty.png"
+dest_files=["res://.godot/imported/animated_bathroom_cabinet_blue_empty.png-8c76535138b2e178c5eca14cbab22b14.ctex"]
 
 [params]
 

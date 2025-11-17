@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctsioeiglmrrk"
-path="res://.godot/imported/animated_hospital_door_blue_32x32.png-ce0001a3adc11dcb336de1caa9c37290.ctex"
+path="res://.godot/imported/animated_hospital_door_blue_32x32.png-99972799ab9c27c4fb01564300557ebd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_hospital_door_blue_32x32.png"
-dest_files=["res://.godot/imported/animated_hospital_door_blue_32x32.png-ce0001a3adc11dcb336de1caa9c37290.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_hospital_door_blue_32x32.png"
+dest_files=["res://.godot/imported/animated_hospital_door_blue_32x32.png-99972799ab9c27c4fb01564300557ebd.ctex"]
 
 [params]
 

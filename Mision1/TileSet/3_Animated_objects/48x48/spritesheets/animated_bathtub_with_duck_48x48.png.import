@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ch66f23i2oqbu"
-path="res://.godot/imported/animated_bathtub_with_duck_48x48.png-e66df55b8a79b72bef9bf1651104d88d.ctex"
+path="res://.godot/imported/animated_bathtub_with_duck_48x48.png-eb1c1830354e3d8f72943b5a4700d424.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_bathtub_with_duck_48x48.png"
-dest_files=["res://.godot/imported/animated_bathtub_with_duck_48x48.png-e66df55b8a79b72bef9bf1651104d88d.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_bathtub_with_duck_48x48.png"
+dest_files=["res://.godot/imported/animated_bathtub_with_duck_48x48.png-eb1c1830354e3d8f72943b5a4700d424.ctex"]
 
 [params]
 

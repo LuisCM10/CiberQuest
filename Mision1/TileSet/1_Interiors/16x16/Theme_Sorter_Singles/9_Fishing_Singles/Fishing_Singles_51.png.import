@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxudq0ra6je4u"
-path="res://.godot/imported/Fishing_Singles_51.png-980e8d0ceb0a6134f405ea1d6fe5f4a4.ctex"
+path="res://.godot/imported/Fishing_Singles_51.png-602ce34e05e9c21298a435dab21aeda8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/16x16/Theme_Sorter_Singles/9_Fishing_Singles/Fishing_Singles_51.png"
-dest_files=["res://.godot/imported/Fishing_Singles_51.png-980e8d0ceb0a6134f405ea1d6fe5f4a4.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/16x16/Theme_Sorter_Singles/9_Fishing_Singles/Fishing_Singles_51.png"
+dest_files=["res://.godot/imported/Fishing_Singles_51.png-602ce34e05e9c21298a435dab21aeda8.ctex"]
 
 [params]
 

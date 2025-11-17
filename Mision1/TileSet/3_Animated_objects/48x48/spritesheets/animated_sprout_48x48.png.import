@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7vut0dlfa487"
-path="res://.godot/imported/animated_sprout_48x48.png-7804f339c79335bc050ee14b42e168e7.ctex"
+path="res://.godot/imported/animated_sprout_48x48.png-71962c96e67a7aa1fac090b57b999304.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_sprout_48x48.png"
-dest_files=["res://.godot/imported/animated_sprout_48x48.png-7804f339c79335bc050ee14b42e168e7.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_sprout_48x48.png"
+dest_files=["res://.godot/imported/animated_sprout_48x48.png-71962c96e67a7aa1fac090b57b999304.ctex"]
 
 [params]
 

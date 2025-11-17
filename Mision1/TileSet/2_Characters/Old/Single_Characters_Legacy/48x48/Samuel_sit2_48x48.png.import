@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0t6p26yydjty"
-path="res://.godot/imported/Samuel_sit2_48x48.png-c500f42495c5f20255f3a7b488f645ec.ctex"
+path="res://.godot/imported/Samuel_sit2_48x48.png-8242672055424016b9b01eac5b2a9320.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Samuel_sit2_48x48.png"
-dest_files=["res://.godot/imported/Samuel_sit2_48x48.png-c500f42495c5f20255f3a7b488f645ec.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Samuel_sit2_48x48.png"
+dest_files=["res://.godot/imported/Samuel_sit2_48x48.png-8242672055424016b9b01eac5b2a9320.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgsnyhligaefq"
-path="res://.godot/imported/Bouncer_32x32.png-d80268822e0603493ce8dc41a729fda8.ctex"
+path="res://.godot/imported/Bouncer_32x32.png-b1618dad6c662d508064d24c4a374a65.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Bouncer_32x32.png"
-dest_files=["res://.godot/imported/Bouncer_32x32.png-d80268822e0603493ce8dc41a729fda8.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Bouncer_32x32.png"
+dest_files=["res://.godot/imported/Bouncer_32x32.png-b1618dad6c662d508064d24c4a374a65.ctex"]
 
 [params]
 

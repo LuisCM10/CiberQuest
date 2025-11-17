@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvtdxgappixha"
-path="res://.godot/imported/animated_door_prison_48x48.png-5cef97e652fe902a59342e2874758b64.ctex"
+path="res://.godot/imported/animated_door_prison_48x48.png-82e9b0f3dc7111b19bfc69d513a57b26.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_door_prison_48x48.png"
-dest_files=["res://.godot/imported/animated_door_prison_48x48.png-5cef97e652fe902a59342e2874758b64.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_door_prison_48x48.png"
+dest_files=["res://.godot/imported/animated_door_prison_48x48.png-82e9b0f3dc7111b19bfc69d513a57b26.ctex"]
 
 [params]
 

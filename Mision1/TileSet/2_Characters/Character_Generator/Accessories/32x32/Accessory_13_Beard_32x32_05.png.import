@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cojgvuxa2fbgm"
-path="res://.godot/imported/Accessory_13_Beard_32x32_05.png-dfb6d82438cfb600bd2581909b220931.ctex"
+path="res://.godot/imported/Accessory_13_Beard_32x32_05.png-f06a96aaf835e887975b4918b2dcd7fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/32x32/Accessory_13_Beard_32x32_05.png"
-dest_files=["res://.godot/imported/Accessory_13_Beard_32x32_05.png-dfb6d82438cfb600bd2581909b220931.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/32x32/Accessory_13_Beard_32x32_05.png"
+dest_files=["res://.godot/imported/Accessory_13_Beard_32x32_05.png-f06a96aaf835e887975b4918b2dcd7fb.ctex"]
 
 [params]
 

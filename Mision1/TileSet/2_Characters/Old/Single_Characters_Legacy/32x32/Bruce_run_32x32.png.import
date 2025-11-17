@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx628bllju17v"
-path="res://.godot/imported/Bruce_run_32x32.png-675f92248380791440089a0d6ee685a4.ctex"
+path="res://.godot/imported/Bruce_run_32x32.png-7d6b8fc34bda1c38863f7e110546c8df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Bruce_run_32x32.png"
-dest_files=["res://.godot/imported/Bruce_run_32x32.png-675f92248380791440089a0d6ee685a4.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Bruce_run_32x32.png"
+dest_files=["res://.godot/imported/Bruce_run_32x32.png-7d6b8fc34bda1c38863f7e110546c8df.ctex"]
 
 [params]
 

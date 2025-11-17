@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yyallhw5hvqu"
-path="res://.godot/imported/animated_bathroom_sink_new_3-10 loop_48x48.png-cc10075c4d04ede246e8db72d084036d.ctex"
+path="res://.godot/imported/animated_bathroom_sink_new_3-10 loop_48x48.png-800f65e38d56dcf62e5f8f88fd7e6709.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_bathroom_sink_new_3-10 loop_48x48.png"
-dest_files=["res://.godot/imported/animated_bathroom_sink_new_3-10 loop_48x48.png-cc10075c4d04ede246e8db72d084036d.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_bathroom_sink_new_3-10 loop_48x48.png"
+dest_files=["res://.godot/imported/animated_bathroom_sink_new_3-10 loop_48x48.png-800f65e38d56dcf62e5f8f88fd7e6709.ctex"]
 
 [params]
 

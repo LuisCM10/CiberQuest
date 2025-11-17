@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djee1do5aqywm"
-path="res://.godot/imported/Accessory_14_Gloves_02.png-4ed2410242d25ca9d20c99b3df66463f.ctex"
+path="res://.godot/imported/Accessory_14_Gloves_02.png-533bf32deacc95e2a74ec7e8858ef434.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_14_Gloves_02.png"
-dest_files=["res://.godot/imported/Accessory_14_Gloves_02.png-4ed2410242d25ca9d20c99b3df66463f.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_14_Gloves_02.png"
+dest_files=["res://.godot/imported/Accessory_14_Gloves_02.png-533bf32deacc95e2a74ec7e8858ef434.ctex"]
 
 [params]
 

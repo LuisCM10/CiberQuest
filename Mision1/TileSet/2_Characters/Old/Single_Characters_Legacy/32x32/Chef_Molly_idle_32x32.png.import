@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmgw0u7f38js3"
-path="res://.godot/imported/Chef_Molly_idle_32x32.png-6789cac9751c791b6d5338092f433a04.ctex"
+path="res://.godot/imported/Chef_Molly_idle_32x32.png-8b609d7838bf3cf227b15576a6773772.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Chef_Molly_idle_32x32.png"
-dest_files=["res://.godot/imported/Chef_Molly_idle_32x32.png-6789cac9751c791b6d5338092f433a04.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Chef_Molly_idle_32x32.png"
+dest_files=["res://.godot/imported/Chef_Molly_idle_32x32.png-8b609d7838bf3cf227b15576a6773772.ctex"]
 
 [params]
 

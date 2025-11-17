@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cn1y5x06eap57"
-path="res://.godot/imported/Shooting_Range_Black_Shadow_Singles_20.png-86aa39705df154dae52b0286ee24561d.ctex"
+path="res://.godot/imported/Shooting_Range_Black_Shadow_Singles_20.png-05d6acb1edc65278767338b2a2d6d502.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/16x16/Theme_Sorter_Black_Shadow_Singles/25_Shooting_Range_Black_Shadow_Singles_16x16/Shooting_Range_Black_Shadow_Singles_20.png"
-dest_files=["res://.godot/imported/Shooting_Range_Black_Shadow_Singles_20.png-86aa39705df154dae52b0286ee24561d.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/16x16/Theme_Sorter_Black_Shadow_Singles/25_Shooting_Range_Black_Shadow_Singles_16x16/Shooting_Range_Black_Shadow_Singles_20.png"
+dest_files=["res://.godot/imported/Shooting_Range_Black_Shadow_Singles_20.png-05d6acb1edc65278767338b2a2d6d502.ctex"]
 
 [params]
 

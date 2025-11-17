@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djebwd7jl6yna"
-path="res://.godot/imported/Adam_32x32.png-a07b70e04cd37ab9583db7ec588799f0.ctex"
+path="res://.godot/imported/Adam_32x32.png-34d42873ce080b00be1b1844342ad1c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Adam_32x32.png"
-dest_files=["res://.godot/imported/Adam_32x32.png-a07b70e04cd37ab9583db7ec588799f0.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Adam_32x32.png"
+dest_files=["res://.godot/imported/Adam_32x32.png-34d42873ce080b00be1b1844342ad1c2.ctex"]
 
 [params]
 

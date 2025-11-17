@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6nwjgk2fpp3x"
-path="res://.godot/imported/Kid_Romeo_idle_48x48.png-71bdbe54a20aaa9e62986a98c1b93626.ctex"
+path="res://.godot/imported/Kid_Romeo_idle_48x48.png-e601eeb54e9642b158dde8fb7507b598.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Kid_Romeo_idle_48x48.png"
-dest_files=["res://.godot/imported/Kid_Romeo_idle_48x48.png-71bdbe54a20aaa9e62986a98c1b93626.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Kid_Romeo_idle_48x48.png"
+dest_files=["res://.godot/imported/Kid_Romeo_idle_48x48.png-e601eeb54e9642b158dde8fb7507b598.ctex"]
 
 [params]
 

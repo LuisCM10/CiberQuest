@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bam5pmq030g1b"
-path="res://.godot/imported/animated_safe_bucks.png-e670692d27a9cef612a82a7371260942.ctex"
+path="res://.godot/imported/animated_safe_bucks.png-da66edbe3a6a78d62a1f25611fe92569.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_safe_bucks.png"
-dest_files=["res://.godot/imported/animated_safe_bucks.png-e670692d27a9cef612a82a7371260942.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_safe_bucks.png"
+dest_files=["res://.godot/imported/animated_safe_bucks.png-da66edbe3a6a78d62a1f25611fe92569.ctex"]
 
 [params]
 

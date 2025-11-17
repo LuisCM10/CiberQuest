@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btn4hevt8rtfa"
-path="res://.godot/imported/Accessory_08_Detective_Hat_02.png-8966a79afc5278b65b419f7bacc1b12a.ctex"
+path="res://.godot/imported/Accessory_08_Detective_Hat_02.png-420e2acd787d22c76fa40422e2e77214.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_08_Detective_Hat_02.png"
-dest_files=["res://.godot/imported/Accessory_08_Detective_Hat_02.png-8966a79afc5278b65b419f7bacc1b12a.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_08_Detective_Hat_02.png"
+dest_files=["res://.godot/imported/Accessory_08_Detective_Hat_02.png-420e2acd787d22c76fa40422e2e77214.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://viakppoxb7cl"
-path="res://.godot/imported/Japanese_Interiors_Black_Shadow_Singles_48x48_81.png-48380405af2be37b401b5f1b4391654a.ctex"
+path="res://.godot/imported/Japanese_Interiors_Black_Shadow_Singles_48x48_81.png-0e0c6d34ec7df3f1bff9ee5860d73f79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/48x48/Theme_Sorter_Black_Shadow_Singles_48x48/20_Japanese_Interiors_Black_Shadow_Singles_48x48/Japanese_Interiors_Black_Shadow_Singles_48x48_81.png"
-dest_files=["res://.godot/imported/Japanese_Interiors_Black_Shadow_Singles_48x48_81.png-48380405af2be37b401b5f1b4391654a.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/48x48/Theme_Sorter_Black_Shadow_Singles_48x48/20_Japanese_Interiors_Black_Shadow_Singles_48x48/Japanese_Interiors_Black_Shadow_Singles_48x48_81.png"
+dest_files=["res://.godot/imported/Japanese_Interiors_Black_Shadow_Singles_48x48_81.png-0e0c6d34ec7df3f1bff9ee5860d73f79.ctex"]
 
 [params]
 

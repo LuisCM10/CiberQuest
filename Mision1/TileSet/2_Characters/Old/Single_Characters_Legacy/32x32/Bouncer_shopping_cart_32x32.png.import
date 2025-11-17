@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8aapo0txofal"
-path="res://.godot/imported/Bouncer_shopping_cart_32x32.png-212c714fe8bf384232c9cb88a198c226.ctex"
+path="res://.godot/imported/Bouncer_shopping_cart_32x32.png-0baa5b4235db7208ec68cf018d7f61f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Bouncer_shopping_cart_32x32.png"
-dest_files=["res://.godot/imported/Bouncer_shopping_cart_32x32.png-212c714fe8bf384232c9cb88a198c226.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Bouncer_shopping_cart_32x32.png"
+dest_files=["res://.godot/imported/Bouncer_shopping_cart_32x32.png-0baa5b4235db7208ec68cf018d7f61f1.ctex"]
 
 [params]
 

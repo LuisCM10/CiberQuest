@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crfqw2usslpdd"
-path="res://.godot/imported/Accessory_11_Beanie_01.png-bb49db4a8a9e350279913e90e72c0e10.ctex"
+path="res://.godot/imported/Accessory_11_Beanie_01.png-9c256092bd6b4c552b1e39fc1d4604e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_11_Beanie_01.png"
-dest_files=["res://.godot/imported/Accessory_11_Beanie_01.png-bb49db4a8a9e350279913e90e72c0e10.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_11_Beanie_01.png"
+dest_files=["res://.godot/imported/Accessory_11_Beanie_01.png-9c256092bd6b4c552b1e39fc1d4604e1.ctex"]
 
 [params]
 

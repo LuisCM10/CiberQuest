@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c025smv7idg07"
-path="res://.godot/imported/Conference_Hall_Singles_Shadowless_48x48_10.png-fdb3fb1d080fabd9114b80c725a29b2f.ctex"
+path="res://.godot/imported/Conference_Hall_Singles_Shadowless_48x48_10.png-5f17fbe713bbece8f94a07550ad21ea2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/48x48/Theme_Sorter_Shadowless_Singles_48x48/13_Conference_Hall_Singles_Shadowless_48x48/Conference_Hall_Singles_Shadowless_48x48_10.png"
-dest_files=["res://.godot/imported/Conference_Hall_Singles_Shadowless_48x48_10.png-fdb3fb1d080fabd9114b80c725a29b2f.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/48x48/Theme_Sorter_Shadowless_Singles_48x48/13_Conference_Hall_Singles_Shadowless_48x48/Conference_Hall_Singles_Shadowless_48x48_10.png"
+dest_files=["res://.godot/imported/Conference_Hall_Singles_Shadowless_48x48_10.png-5f17fbe713bbece8f94a07550ad21ea2.ctex"]
 
 [params]
 

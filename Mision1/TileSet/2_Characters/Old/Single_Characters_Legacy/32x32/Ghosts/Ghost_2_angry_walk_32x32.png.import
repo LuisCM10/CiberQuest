@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bscq3hlwaamrj"
-path="res://.godot/imported/Ghost_2_angry_walk_32x32.png-4320f1f3aea93b0d559824a09cae6369.ctex"
+path="res://.godot/imported/Ghost_2_angry_walk_32x32.png-6092eb93165bfdf62a60a2fb60ae8d23.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Ghosts/Ghost_2_angry_walk_32x32.png"
-dest_files=["res://.godot/imported/Ghost_2_angry_walk_32x32.png-4320f1f3aea93b0d559824a09cae6369.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Ghosts/Ghost_2_angry_walk_32x32.png"
+dest_files=["res://.godot/imported/Ghost_2_angry_walk_32x32.png-6092eb93165bfdf62a60a2fb60ae8d23.ctex"]
 
 [params]
 

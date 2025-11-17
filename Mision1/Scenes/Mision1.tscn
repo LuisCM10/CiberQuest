@@ -1,10 +1,30 @@
-[gd_scene load_steps=4 format=4 uid="uid://da8wsh2cjdoiw"]
+[gd_scene load_steps=10 format=4 uid="uid://n31glmfwc040"]
 
-[ext_resource type="TileSet" uid="uid://vri2jbg2a8fm" path="res://TileSet/tileSet.tres" id="1_2qcc2"]
-[ext_resource type="PackedScene" uid="uid://cbxo4u4ba0wt8" path="res://Scenes/ms_1_network_tracer.tscn" id="2_jtjef"]
+[ext_resource type="TileSet" uid="uid://vri2jbg2a8fm" path="res://Mision1/TileSet/tileSet.tres" id="1_2qcc2"]
+[ext_resource type="PackedScene" path="res://Mision1/Scenes/ms_1_network_tracer.tscn" id="2_jtjef"]
+[ext_resource type="FontFile" uid="uid://dudo3khf2v3o4" path="res://VT323-Regular.ttf" id="3_ukclc"]
 
 [sub_resource type="Theme" id="Theme_jtjef"]
 Button/font_sizes/font_size = 60
+
+[sub_resource type="Theme" id="Theme_ukclc"]
+Label/font_sizes/font_size = 24
+Label/fonts/font = ExtResource("3_ukclc")
+
+[sub_resource type="LabelSettings" id="LabelSettings_jolh6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qus1d"]
+font = ExtResource("3_ukclc")
+font_size = 28
+
+[sub_resource type="Theme" id="Theme_27kt2"]
+Label/font_sizes/font_size = 23
+Label/fonts/font = ExtResource("3_ukclc")
+
+[sub_resource type="Theme" id="Theme_jolh6"]
+default_font = ExtResource("3_ukclc")
+Button/font_sizes/font_size = 24
+Button/fonts/font = ExtResource("3_ukclc")
 
 [node name="Escena" type="Node2D"]
 scale = Vector2(0.41665348, 0.4116019)
@@ -33,6 +53,7 @@ offset_right = 628.8199
 offset_bottom = 325.55728
 
 [node name="Panel" parent="Ms1NetworkTracer" index="1"]
+self_modulate = Color(1, 1, 1, 0)
 offset_left = -100.803185
 offset_top = 366.8593
 offset_right = 1022.4323
@@ -44,6 +65,8 @@ offset_top = 38.854095
 offset_right = 171.7638
 offset_bottom = 143.02231
 theme = SubResource("Theme_jtjef")
+theme_override_fonts/font = ExtResource("3_ukclc")
+theme_override_font_sizes/font_size = 89
 
 [node name="Panel2" parent="Ms1NetworkTracer" index="2"]
 offset_left = 717.6227
@@ -66,10 +89,16 @@ offset_left = 4.0
 offset_top = 5.0
 offset_right = -6.0
 offset_bottom = -4.9999924
+theme = SubResource("Theme_ukclc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+label_settings = SubResource("LabelSettings_jolh6")
 
 [node name="PanLabelName" parent="Ms1NetworkTracer/Panel2/PanelInfoServer" index="1"]
 offset_left = 24.0
 offset_right = 473.0
+
+[node name="LabelName" parent="Ms1NetworkTracer/Panel2/PanelInfoServer/PanLabelName" index="0"]
+label_settings = SubResource("LabelSettings_qus1d")
 
 [node name="PanelPista" parent="Ms1NetworkTracer/Panel2" index="1"]
 offset_left = -1.7836342
@@ -80,11 +109,21 @@ offset_bottom = 328.67035
 [node name="ColorRect" parent="Ms1NetworkTracer/Panel2/PanelPista" index="0"]
 offset_left = 24.0
 offset_right = 574.0
-offset_bottom = 150.0
+offset_bottom = 166.0
+
+[node name="LabelPista" parent="Ms1NetworkTracer/Panel2/PanelPista/ColorRect" index="0"]
+offset_right = -5.83313
+offset_bottom = -1.0
+theme = SubResource("Theme_27kt2")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+label_settings = SubResource("LabelSettings_qus1d")
 
 [node name="PanLabelPista" parent="Ms1NetworkTracer/Panel2/PanelPista" index="1"]
 offset_left = 24.0
 offset_right = 575.0
+
+[node name="Label" parent="Ms1NetworkTracer/Panel2/PanelPista/PanLabelPista" index="0"]
+label_settings = SubResource("LabelSettings_qus1d")
 
 [node name="PanelInfo" parent="Ms1NetworkTracer/Panel2" index="2"]
 self_modulate = Color(1, 1, 1, 0)
@@ -93,29 +132,35 @@ offset_right = 187.28009
 [node name="Label" parent="Ms1NetworkTracer/Panel2/PanelInfo" index="0"]
 offset_right = 436.65674
 offset_bottom = 113.57274
+label_settings = SubResource("LabelSettings_qus1d")
 
 [node name="ButtonBFS" parent="Ms1NetworkTracer/Panel2/PanelInfo" index="1"]
 offset_left = 14.754272
 offset_top = 42.87639
 offset_right = 115.99768
 offset_bottom = 157.86345
-theme = null
+theme = SubResource("Theme_jolh6")
+theme_override_font_sizes/font_size = 27
+autowrap_mode = 2
 
 [node name="ButtonDFS" parent="Ms1NetworkTracer/Panel2/PanelInfo" index="2"]
 offset_left = 100.36798
 offset_top = 42.87639
 offset_right = 237.36798
 offset_bottom = 133.29018
-theme = null
+theme = SubResource("Theme_jolh6")
+theme_override_font_sizes/font_size = 27
 
 [node name="ButtonSig" parent="Ms1NetworkTracer/Panel2" index="3"]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -36.000492
-offset_top = -29.000229
-offset_right = 163.99951
-offset_bottom = 20.999786
-theme = null
+offset_left = -37.455997
+offset_top = -28.125854
+offset_right = 162.544
+offset_bottom = 46.874176
+theme = SubResource("Theme_jolh6")
+theme_override_font_sizes/font_size = 30
+autowrap_mode = 3
 
 [editable path="Ms1NetworkTracer"]

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ueo52j8in1nn"
-path="res://.godot/imported/run_horizontal_48x48_4.png-d85433830a7cd9a3a2edfcc4e3d2cf2d.ctex"
+path="res://.godot/imported/run_horizontal_48x48_4.png-3d774c9d24ba5f2209e9938263c290b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Old characters/run_horizontal_48x48_4.png"
-dest_files=["res://.godot/imported/run_horizontal_48x48_4.png-d85433830a7cd9a3a2edfcc4e3d2cf2d.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Old characters/run_horizontal_48x48_4.png"
+dest_files=["res://.godot/imported/run_horizontal_48x48_4.png-3d774c9d24ba5f2209e9938263c290b0.ctex"]
 
 [params]
 

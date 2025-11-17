@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7huaskrm8tnm"
-path="res://.godot/imported/kid_Abby_sit_32x32.png-351d0e8472c721f49a9bedd9ccc306cd.ctex"
+path="res://.godot/imported/kid_Abby_sit_32x32.png-3fa18c857965b6d4ee1873b92660f69e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/kid_Abby_sit_32x32.png"
-dest_files=["res://.godot/imported/kid_Abby_sit_32x32.png-351d0e8472c721f49a9bedd9ccc306cd.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/kid_Abby_sit_32x32.png"
+dest_files=["res://.godot/imported/kid_Abby_sit_32x32.png-3fa18c857965b6d4ee1873b92660f69e.ctex"]
 
 [params]
 

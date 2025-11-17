@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqa5maqh8f4fy"
-path="res://.godot/imported/animated_spell_book_48x48.png-c595adae31bf421160bcb83a30599691.ctex"
+path="res://.godot/imported/animated_spell_book_48x48.png-cafe9aabe97169da9cb8eb93b9d2a05f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_spell_book_48x48.png"
-dest_files=["res://.godot/imported/animated_spell_book_48x48.png-c595adae31bf421160bcb83a30599691.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_spell_book_48x48.png"
+dest_files=["res://.godot/imported/animated_spell_book_48x48.png-cafe9aabe97169da9cb8eb93b9d2a05f.ctex"]
 
 [params]
 

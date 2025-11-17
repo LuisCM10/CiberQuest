@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctioujc842hj8"
-path="res://.godot/imported/animated_grocery_store_butchershop_cool_room_door.png-382ae2eff71c21f6e090b8b825d3cda3.ctex"
+path="res://.godot/imported/animated_grocery_store_butchershop_cool_room_door.png-796e4ed542b89b59c963a83182fced88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_grocery_store_butchershop_cool_room_door.png"
-dest_files=["res://.godot/imported/animated_grocery_store_butchershop_cool_room_door.png-382ae2eff71c21f6e090b8b825d3cda3.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_grocery_store_butchershop_cool_room_door.png"
+dest_files=["res://.godot/imported/animated_grocery_store_butchershop_cool_room_door.png-796e4ed542b89b59c963a83182fced88.ctex"]
 
 [params]
 

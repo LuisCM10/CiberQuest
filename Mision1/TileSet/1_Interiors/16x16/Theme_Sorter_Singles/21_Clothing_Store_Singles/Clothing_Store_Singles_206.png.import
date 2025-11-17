@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3drgfy7yh5tr"
-path="res://.godot/imported/Clothing_Store_Singles_206.png-ec4e3658b9b3fe1a5f7beb11c5f0b315.ctex"
+path="res://.godot/imported/Clothing_Store_Singles_206.png-c24fc104b755005341e642440d9146f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/16x16/Theme_Sorter_Singles/21_Clothing_Store_Singles/Clothing_Store_Singles_206.png"
-dest_files=["res://.godot/imported/Clothing_Store_Singles_206.png-ec4e3658b9b3fe1a5f7beb11c5f0b315.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/16x16/Theme_Sorter_Singles/21_Clothing_Store_Singles/Clothing_Store_Singles_206.png"
+dest_files=["res://.godot/imported/Clothing_Store_Singles_206.png-c24fc104b755005341e642440d9146f0.ctex"]
 
 [params]
 

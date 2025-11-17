@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dehanr3re6cai"
-path="res://.godot/imported/animated_frog_2_idle.png-592c624e839e2d9833b0e3f743a5e330.ctex"
+path="res://.godot/imported/animated_frog_2_idle.png-0f3d6eceaa8fb1bb525b6283e13be537.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_frog_2_idle.png"
-dest_files=["res://.godot/imported/animated_frog_2_idle.png-592c624e839e2d9833b0e3f743a5e330.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_frog_2_idle.png"
+dest_files=["res://.godot/imported/animated_frog_2_idle.png-0f3d6eceaa8fb1bb525b6283e13be537.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vtca32rfiv0q"
-path="res://.godot/imported/Bob_sit3_32x32.png-d9d02b2c06c49a3945ac2bdb78bf05a3.ctex"
+path="res://.godot/imported/Bob_sit3_32x32.png-50afd8ebb7966ffc06e43740b0cdaa10.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Bob_sit3_32x32.png"
-dest_files=["res://.godot/imported/Bob_sit3_32x32.png-d9d02b2c06c49a3945ac2bdb78bf05a3.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Bob_sit3_32x32.png"
+dest_files=["res://.godot/imported/Bob_sit3_32x32.png-50afd8ebb7966ffc06e43740b0cdaa10.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bltgrtre1v3rj"
-path="res://.godot/imported/animated_blood_altar.png-23d9d315fef1b282406f970394baa195.ctex"
+path="res://.godot/imported/animated_blood_altar.png-be0267399de05da7398f10b22720c89a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_blood_altar.png"
-dest_files=["res://.godot/imported/animated_blood_altar.png-23d9d315fef1b282406f970394baa195.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_blood_altar.png"
+dest_files=["res://.godot/imported/animated_blood_altar.png-be0267399de05da7398f10b22720c89a.ctex"]
 
 [params]
 

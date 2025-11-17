@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cifacwh7iygut"
-path="res://.godot/imported/Music_and_Sport_Singles_Shadowless_48x48_64.png-b8d0a906fbd077bb15dc9a49782cce18.ctex"
+path="res://.godot/imported/Music_and_Sport_Singles_Shadowless_48x48_64.png-6ec65e4eac637a83c96ce7f5cfa8a34b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/48x48/Theme_Sorter_Shadowless_Singles_48x48/6_Music_and_Sport_Shadowless_48x48/Music_and_Sport_Singles_Shadowless_48x48_64.png"
-dest_files=["res://.godot/imported/Music_and_Sport_Singles_Shadowless_48x48_64.png-b8d0a906fbd077bb15dc9a49782cce18.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/48x48/Theme_Sorter_Shadowless_Singles_48x48/6_Music_and_Sport_Shadowless_48x48/Music_and_Sport_Singles_Shadowless_48x48_64.png"
+dest_files=["res://.godot/imported/Music_and_Sport_Singles_Shadowless_48x48_64.png-6ec65e4eac637a83c96ce7f5cfa8a34b.ctex"]
 
 [params]
 

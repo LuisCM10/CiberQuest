@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cth00onv015ae"
-path="res://.godot/imported/animated_escalator_down_32x32.png-fca004b521acb2b357436a1d4186db52.ctex"
+path="res://.godot/imported/animated_escalator_down_32x32.png-f3291949db21668f8fd680a0753523af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_escalator_down_32x32.png"
-dest_files=["res://.godot/imported/animated_escalator_down_32x32.png-fca004b521acb2b357436a1d4186db52.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_escalator_down_32x32.png"
+dest_files=["res://.godot/imported/animated_escalator_down_32x32.png-f3291949db21668f8fd680a0753523af.ctex"]
 
 [params]
 

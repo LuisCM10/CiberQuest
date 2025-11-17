@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnptp0nhe1hyj"
-path="res://.godot/imported/idle_16x16_3.png-07c20cd0568a3660502b2570be303a46.ctex"
+path="res://.godot/imported/idle_16x16_3.png-2c3cc8488b52c6c69a5956903e882e3a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Old characters/idle_16x16_3.png"
-dest_files=["res://.godot/imported/idle_16x16_3.png-07c20cd0568a3660502b2570be303a46.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Old characters/idle_16x16_3.png"
+dest_files=["res://.godot/imported/idle_16x16_3.png-2c3cc8488b52c6c69a5956903e882e3a.ctex"]
 
 [params]
 

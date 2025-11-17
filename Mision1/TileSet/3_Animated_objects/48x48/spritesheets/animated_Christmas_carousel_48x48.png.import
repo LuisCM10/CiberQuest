@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://db4qj47rjmmik"
-path="res://.godot/imported/animated_Christmas_carousel_48x48.png-95861ed3411d33f41003836d7ca1b715.ctex"
+path="res://.godot/imported/animated_Christmas_carousel_48x48.png-3e007200c4eed3a2b18eb998f3bb55e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_Christmas_carousel_48x48.png"
-dest_files=["res://.godot/imported/animated_Christmas_carousel_48x48.png-95861ed3411d33f41003836d7ca1b715.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_Christmas_carousel_48x48.png"
+dest_files=["res://.godot/imported/animated_Christmas_carousel_48x48.png-3e007200c4eed3a2b18eb998f3bb55e1.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wbi4reiipmsc"
-path="res://.godot/imported/Ghost_2_idle_48x48.png-d5bfbc928b2da0d233941109ee5206f0.ctex"
+path="res://.godot/imported/Ghost_2_idle_48x48.png-5d814be25511abb6cda095469f6e383f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Ghosts/Ghost_2_idle_48x48.png"
-dest_files=["res://.godot/imported/Ghost_2_idle_48x48.png-d5bfbc928b2da0d233941109ee5206f0.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Ghosts/Ghost_2_idle_48x48.png"
+dest_files=["res://.godot/imported/Ghost_2_idle_48x48.png-5d814be25511abb6cda095469f6e383f.ctex"]
 
 [params]
 

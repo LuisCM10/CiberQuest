@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://coq56rkm0tnkh"
-path="res://.godot/imported/Room_Builder_Walls_48x48.png-e9f050ff609d06b75b57d77ef1ff0599.ctex"
+path="res://.godot/imported/Room_Builder_Walls_48x48.png-4519a9345c381fd08e8233b55ecd0c41.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/48x48/Room_Builder_subfiles_48x48/Room_Builder_Walls_48x48.png"
-dest_files=["res://.godot/imported/Room_Builder_Walls_48x48.png-e9f050ff609d06b75b57d77ef1ff0599.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/48x48/Room_Builder_subfiles_48x48/Room_Builder_Walls_48x48.png"
+dest_files=["res://.godot/imported/Room_Builder_Walls_48x48.png-4519a9345c381fd08e8233b55ecd0c41.ctex"]
 
 [params]
 

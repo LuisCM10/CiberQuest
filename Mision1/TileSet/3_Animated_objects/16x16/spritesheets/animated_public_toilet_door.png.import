@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cd41cpl2x7es3"
-path="res://.godot/imported/animated_public_toilet_door.png-c46d6eefe44b502f69f3e4db98390a70.ctex"
+path="res://.godot/imported/animated_public_toilet_door.png-87caee92011134025f2a0bff453f0c9f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_public_toilet_door.png"
-dest_files=["res://.godot/imported/animated_public_toilet_door.png-c46d6eefe44b502f69f3e4db98390a70.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_public_toilet_door.png"
+dest_files=["res://.godot/imported/animated_public_toilet_door.png-87caee92011134025f2a0bff453f0c9f.ctex"]
 
 [params]
 

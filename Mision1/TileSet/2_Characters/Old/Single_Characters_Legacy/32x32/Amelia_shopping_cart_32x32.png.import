@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgekg254jt7yq"
-path="res://.godot/imported/Amelia_shopping_cart_32x32.png-7f20cbbff4014bc9df874c5f574066dd.ctex"
+path="res://.godot/imported/Amelia_shopping_cart_32x32.png-4fd9eb90efabe09d05bfa6a7072b0351.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Amelia_shopping_cart_32x32.png"
-dest_files=["res://.godot/imported/Amelia_shopping_cart_32x32.png-7f20cbbff4014bc9df874c5f574066dd.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Amelia_shopping_cart_32x32.png"
+dest_files=["res://.godot/imported/Amelia_shopping_cart_32x32.png-4fd9eb90efabe09d05bfa6a7072b0351.ctex"]
 
 [params]
 

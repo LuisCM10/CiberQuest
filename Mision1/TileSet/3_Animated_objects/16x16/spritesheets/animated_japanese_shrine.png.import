@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvfxeep01hybp"
-path="res://.godot/imported/animated_japanese_shrine.png-484782a930fa04af76f92593a65c59ef.ctex"
+path="res://.godot/imported/animated_japanese_shrine.png-2d6c503a6ff1f4518cc2e1a3ddf2d16f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_japanese_shrine.png"
-dest_files=["res://.godot/imported/animated_japanese_shrine.png-484782a930fa04af76f92593a65c59ef.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_japanese_shrine.png"
+dest_files=["res://.godot/imported/animated_japanese_shrine.png-2d6c503a6ff1f4518cc2e1a3ddf2d16f.ctex"]
 
 [params]
 

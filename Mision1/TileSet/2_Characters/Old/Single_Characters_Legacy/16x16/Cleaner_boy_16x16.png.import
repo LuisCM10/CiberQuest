@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c602rw67pcadc"
-path="res://.godot/imported/Cleaner_boy_16x16.png-dda1868e7721da05b8ed9799eb93ea65.ctex"
+path="res://.godot/imported/Cleaner_boy_16x16.png-4edcd122a286ca43ed6a211ca2ed48fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Cleaner_boy_16x16.png"
-dest_files=["res://.godot/imported/Cleaner_boy_16x16.png-dda1868e7721da05b8ed9799eb93ea65.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Cleaner_boy_16x16.png"
+dest_files=["res://.godot/imported/Cleaner_boy_16x16.png-4edcd122a286ca43ed6a211ca2ed48fd.ctex"]
 
 [params]
 

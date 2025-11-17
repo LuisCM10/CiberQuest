@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ds1oxjfchlase"
-path="res://.godot/imported/17_Visibile_Upstairs_System_16x16.png-1afc88d0692a00828c93177fc00c2110.ctex"
+path="res://.godot/imported/17_Visibile_Upstairs_System_16x16.png-2c8e484bcb799cae29656584072b3bce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/16x16/Theme_Sorter/17_Visibile_Upstairs_System_16x16.png"
-dest_files=["res://.godot/imported/17_Visibile_Upstairs_System_16x16.png-1afc88d0692a00828c93177fc00c2110.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/16x16/Theme_Sorter/17_Visibile_Upstairs_System_16x16.png"
+dest_files=["res://.godot/imported/17_Visibile_Upstairs_System_16x16.png-2c8e484bcb799cae29656584072b3bce.ctex"]
 
 [params]
 

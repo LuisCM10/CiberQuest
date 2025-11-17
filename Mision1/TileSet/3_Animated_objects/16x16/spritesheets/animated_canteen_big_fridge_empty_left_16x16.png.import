@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csvt0qnxo8i7l"
-path="res://.godot/imported/animated_canteen_big_fridge_empty_left_16x16.png-dc30147663b90bc71fb59283b16c12f1.ctex"
+path="res://.godot/imported/animated_canteen_big_fridge_empty_left_16x16.png-b77fa5cd92da427f6252bd48c450ff46.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_canteen_big_fridge_empty_left_16x16.png"
-dest_files=["res://.godot/imported/animated_canteen_big_fridge_empty_left_16x16.png-dc30147663b90bc71fb59283b16c12f1.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_canteen_big_fridge_empty_left_16x16.png"
+dest_files=["res://.godot/imported/animated_canteen_big_fridge_empty_left_16x16.png-b77fa5cd92da427f6252bd48c450ff46.ctex"]
 
 [params]
 

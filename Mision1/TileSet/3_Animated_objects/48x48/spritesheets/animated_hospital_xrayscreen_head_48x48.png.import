@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0idefddfauca"
-path="res://.godot/imported/animated_hospital_xrayscreen_head_48x48.png-bbbd4c9043ce98decdf15270a5c5d6ff.ctex"
+path="res://.godot/imported/animated_hospital_xrayscreen_head_48x48.png-7aff6acbeac480db77a66641882dfed3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_hospital_xrayscreen_head_48x48.png"
-dest_files=["res://.godot/imported/animated_hospital_xrayscreen_head_48x48.png-bbbd4c9043ce98decdf15270a5c5d6ff.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_hospital_xrayscreen_head_48x48.png"
+dest_files=["res://.godot/imported/animated_hospital_xrayscreen_head_48x48.png-7aff6acbeac480db77a66641882dfed3.ctex"]
 
 [params]
 

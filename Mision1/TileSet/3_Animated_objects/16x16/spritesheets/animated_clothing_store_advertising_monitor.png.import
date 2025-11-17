@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxw6unc8ioacl"
-path="res://.godot/imported/animated_clothing_store_advertising_monitor.png-f6a7d2004c5f1fe5d6098500d5e4a9ef.ctex"
+path="res://.godot/imported/animated_clothing_store_advertising_monitor.png-d46cc1e4afb680c0651de3cbd9fc2f01.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_clothing_store_advertising_monitor.png"
-dest_files=["res://.godot/imported/animated_clothing_store_advertising_monitor.png-f6a7d2004c5f1fe5d6098500d5e4a9ef.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_clothing_store_advertising_monitor.png"
+dest_files=["res://.godot/imported/animated_clothing_store_advertising_monitor.png-d46cc1e4afb680c0651de3cbd9fc2f01.ctex"]
 
 [params]
 

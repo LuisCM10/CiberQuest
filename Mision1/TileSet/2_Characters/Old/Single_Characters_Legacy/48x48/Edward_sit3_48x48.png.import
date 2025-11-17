@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcmmbjbxkwef2"
-path="res://.godot/imported/Edward_sit3_48x48.png-3a094b3ebd368eef2642397c61a08d94.ctex"
+path="res://.godot/imported/Edward_sit3_48x48.png-f0d104432bc54296b9f716828f4b4b11.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Edward_sit3_48x48.png"
-dest_files=["res://.godot/imported/Edward_sit3_48x48.png-3a094b3ebd368eef2642397c61a08d94.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Edward_sit3_48x48.png"
+dest_files=["res://.godot/imported/Edward_sit3_48x48.png-f0d104432bc54296b9f716828f4b4b11.ctex"]
 
 [params]
 

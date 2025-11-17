@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wpj7heywpk7f"
-path="res://.godot/imported/Rob_phone_16x16.png-3093c90ea99d00176571fff994ac7137.ctex"
+path="res://.godot/imported/Rob_phone_16x16.png-dad9fb090d1146ef0da5742d1cc610c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Rob_phone_16x16.png"
-dest_files=["res://.godot/imported/Rob_phone_16x16.png-3093c90ea99d00176571fff994ac7137.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Rob_phone_16x16.png"
+dest_files=["res://.godot/imported/Rob_phone_16x16.png-dad9fb090d1146ef0da5742d1cc610c1.ctex"]
 
 [params]
 

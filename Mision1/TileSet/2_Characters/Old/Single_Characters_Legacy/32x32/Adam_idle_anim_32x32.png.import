@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bw4utc34ps66m"
-path="res://.godot/imported/Adam_idle_anim_32x32.png-c666a3368f0da1bfbea28759dc783234.ctex"
+path="res://.godot/imported/Adam_idle_anim_32x32.png-653409b9b8266cce9332502ffefab268.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Adam_idle_anim_32x32.png"
-dest_files=["res://.godot/imported/Adam_idle_anim_32x32.png-c666a3368f0da1bfbea28759dc783234.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Adam_idle_anim_32x32.png"
+dest_files=["res://.godot/imported/Adam_idle_anim_32x32.png-653409b9b8266cce9332502ffefab268.ctex"]
 
 [params]
 

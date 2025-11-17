@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btcjswlxijx64"
-path="res://.godot/imported/Kid_Romeo_run_16x16.png-c8150099c505dd268a4be99daaac8284.ctex"
+path="res://.godot/imported/Kid_Romeo_run_16x16.png-6a3141c4c5fc81bb875866b1554824e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Kid_Romeo_run_16x16.png"
-dest_files=["res://.godot/imported/Kid_Romeo_run_16x16.png-c8150099c505dd268a4be99daaac8284.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Kid_Romeo_run_16x16.png"
+dest_files=["res://.godot/imported/Kid_Romeo_run_16x16.png-6a3141c4c5fc81bb875866b1554824e6.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3f1ysfwdpe7k"
-path="res://.godot/imported/animated_treadmill_48x48.png-ee5c935eb3c2cedb800cf27917bfccce.ctex"
+path="res://.godot/imported/animated_treadmill_48x48.png-0834683adafd19f5bf42bbca0c86c969.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_treadmill_48x48.png"
-dest_files=["res://.godot/imported/animated_treadmill_48x48.png-ee5c935eb3c2cedb800cf27917bfccce.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_treadmill_48x48.png"
+dest_files=["res://.godot/imported/animated_treadmill_48x48.png-0834683adafd19f5bf42bbca0c86c969.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvp7igf2h6l5o"
-path="res://.godot/imported/Old_man_Josh_shopping_cart_16x16.png-358e362bb4a2810c6f5b10b730dc6272.ctex"
+path="res://.godot/imported/Old_man_Josh_shopping_cart_16x16.png-ff1cc0d6b0d7c988c57a846ab7c37ced.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Old_man_Josh_shopping_cart_16x16.png"
-dest_files=["res://.godot/imported/Old_man_Josh_shopping_cart_16x16.png-358e362bb4a2810c6f5b10b730dc6272.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Old_man_Josh_shopping_cart_16x16.png"
+dest_files=["res://.godot/imported/Old_man_Josh_shopping_cart_16x16.png-ff1cc0d6b0d7c988c57a846ab7c37ced.ctex"]
 
 [params]
 

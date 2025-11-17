@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwouk6d18c2co"
-path="res://.godot/imported/Outfit_kid_6_pajama_frog_32x32.png-55c89940d7b6a397190b45798c24094f.ctex"
+path="res://.godot/imported/Outfit_kid_6_pajama_frog_32x32.png-d389a5e9c65f3d92bd73a7333ad42689.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Outfits_kids/32x32/Outfit_kid_6_pajama_frog_32x32.png"
-dest_files=["res://.godot/imported/Outfit_kid_6_pajama_frog_32x32.png-55c89940d7b6a397190b45798c24094f.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Outfits_kids/32x32/Outfit_kid_6_pajama_frog_32x32.png"
+dest_files=["res://.godot/imported/Outfit_kid_6_pajama_frog_32x32.png-d389a5e9c65f3d92bd73a7333ad42689.ctex"]
 
 [params]
 

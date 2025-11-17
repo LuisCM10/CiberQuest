@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3r1gcy37on3i"
-path="res://.godot/imported/animated_fridge_white_vertical_left.png-a0e8ad98eebc8d861170ca6953f4e234.ctex"
+path="res://.godot/imported/animated_fridge_white_vertical_left.png-54e9e52f6a03d1dcaf59fa0163acd6e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_fridge_white_vertical_left.png"
-dest_files=["res://.godot/imported/animated_fridge_white_vertical_left.png-a0e8ad98eebc8d861170ca6953f4e234.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_fridge_white_vertical_left.png"
+dest_files=["res://.godot/imported/animated_fridge_white_vertical_left.png-54e9e52f6a03d1dcaf59fa0163acd6e0.ctex"]
 
 [params]
 

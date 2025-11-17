@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0dmell1080sd"
-path="res://.godot/imported/kid_Oscar_run_48x48.png-bf074a95d99549b56c4c81ed87b9e805.ctex"
+path="res://.godot/imported/kid_Oscar_run_48x48.png-8f5fbbc01ed737eccc95a990da30e244.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/kid_Oscar_run_48x48.png"
-dest_files=["res://.godot/imported/kid_Oscar_run_48x48.png-bf074a95d99549b56c4c81ed87b9e805.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/kid_Oscar_run_48x48.png"
+dest_files=["res://.godot/imported/kid_Oscar_run_48x48.png-8f5fbbc01ed737eccc95a990da30e244.ctex"]
 
 [params]
 

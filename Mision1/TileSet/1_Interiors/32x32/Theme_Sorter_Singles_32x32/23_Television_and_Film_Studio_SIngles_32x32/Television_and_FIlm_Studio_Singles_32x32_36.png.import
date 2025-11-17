@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drcb33xgt83pq"
-path="res://.godot/imported/Television_and_FIlm_Studio_Singles_32x32_36.png-db9c5b7cac9e563f59103619c23224ce.ctex"
+path="res://.godot/imported/Television_and_FIlm_Studio_Singles_32x32_36.png-be0c3dad9e1f40f33602ffb20c72c5c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/32x32/Theme_Sorter_Singles_32x32/23_Television_and_Film_Studio_SIngles_32x32/Television_and_FIlm_Studio_Singles_32x32_36.png"
-dest_files=["res://.godot/imported/Television_and_FIlm_Studio_Singles_32x32_36.png-db9c5b7cac9e563f59103619c23224ce.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/32x32/Theme_Sorter_Singles_32x32/23_Television_and_Film_Studio_SIngles_32x32/Television_and_FIlm_Studio_Singles_32x32_36.png"
+dest_files=["res://.godot/imported/Television_and_FIlm_Studio_Singles_32x32_36.png-be0c3dad9e1f40f33602ffb20c72c5c1.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgim0nsr43dms"
-path="res://.godot/imported/Accessory_09_Zombie_Brain_01.png-fc9db98aaf2ea951868e1aef28223fcb.ctex"
+path="res://.godot/imported/Accessory_09_Zombie_Brain_01.png-9e60593636e8766ac2598b8d9afb73a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_09_Zombie_Brain_01.png"
-dest_files=["res://.godot/imported/Accessory_09_Zombie_Brain_01.png-fc9db98aaf2ea951868e1aef28223fcb.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_09_Zombie_Brain_01.png"
+dest_files=["res://.godot/imported/Accessory_09_Zombie_Brain_01.png-9e60593636e8766ac2598b8d9afb73a5.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bopy53jbdwqom"
-path="res://.godot/imported/animated_wall_candle_48x48.png-16cd0a87377f1e61f4dd02305a55aa49.ctex"
+path="res://.godot/imported/animated_wall_candle_48x48.png-5f0d8406bcf766a6ce6d85cf80d7afaf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_wall_candle_48x48.png"
-dest_files=["res://.godot/imported/animated_wall_candle_48x48.png-16cd0a87377f1e61f4dd02305a55aa49.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_wall_candle_48x48.png"
+dest_files=["res://.godot/imported/animated_wall_candle_48x48.png-5f0d8406bcf766a6ce6d85cf80d7afaf.ctex"]
 
 [params]
 

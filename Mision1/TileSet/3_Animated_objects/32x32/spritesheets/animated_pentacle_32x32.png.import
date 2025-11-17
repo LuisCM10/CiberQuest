@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvcu04hsixq5l"
-path="res://.godot/imported/animated_pentacle_32x32.png-042fd41f839ffbc6bb66a9b229a7b679.ctex"
+path="res://.godot/imported/animated_pentacle_32x32.png-7563e223685605dfe7a9cdaab197177b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_pentacle_32x32.png"
-dest_files=["res://.godot/imported/animated_pentacle_32x32.png-042fd41f839ffbc6bb66a9b229a7b679.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_pentacle_32x32.png"
+dest_files=["res://.godot/imported/animated_pentacle_32x32.png-7563e223685605dfe7a9cdaab197177b.ctex"]
 
 [params]
 

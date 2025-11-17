@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://deqkebjtxejsp"
-path="res://.godot/imported/Ash_reading_16x16.png-5895c2b91fcc2bb9fe20471dae79db46.ctex"
+path="res://.godot/imported/Ash_reading_16x16.png-a497bcd9177c351e8d95fb1fb376f3bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Ash_reading_16x16.png"
-dest_files=["res://.godot/imported/Ash_reading_16x16.png-5895c2b91fcc2bb9fe20471dae79db46.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Ash_reading_16x16.png"
+dest_files=["res://.godot/imported/Ash_reading_16x16.png-a497bcd9177c351e8d95fb1fb376f3bb.ctex"]
 
 [params]
 

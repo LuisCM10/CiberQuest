@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqbr10mllvcbc"
-path="res://.godot/imported/Chef_Rob_run_32x32.png-837c6480547c8b7305c149ded20e3ab6.ctex"
+path="res://.godot/imported/Chef_Rob_run_32x32.png-631bba00edac9719620a17edcb2f5f6e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Chef_Rob_run_32x32.png"
-dest_files=["res://.godot/imported/Chef_Rob_run_32x32.png-837c6480547c8b7305c149ded20e3ab6.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Chef_Rob_run_32x32.png"
+dest_files=["res://.godot/imported/Chef_Rob_run_32x32.png-631bba00edac9719620a17edcb2f5f6e.ctex"]
 
 [params]
 

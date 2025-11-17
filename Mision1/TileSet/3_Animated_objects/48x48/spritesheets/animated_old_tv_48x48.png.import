@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkjsaak6v8be8"
-path="res://.godot/imported/animated_old_tv_48x48.png-d8384bf79ba25f1bbe2046f6d10efb7b.ctex"
+path="res://.godot/imported/animated_old_tv_48x48.png-72ff0047b560fafed6f97c6f48a793fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_old_tv_48x48.png"
-dest_files=["res://.godot/imported/animated_old_tv_48x48.png-d8384bf79ba25f1bbe2046f6d10efb7b.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_old_tv_48x48.png"
+dest_files=["res://.godot/imported/animated_old_tv_48x48.png-72ff0047b560fafed6f97c6f48a793fb.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kpg515kh3g3n"
-path="res://.godot/imported/Lucy_phone_16x16.png-dc997083861e1766ae60b4fd4d69e80b.ctex"
+path="res://.godot/imported/Lucy_phone_16x16.png-f8a885ab1458765efeb780eec1eb3cb1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Lucy_phone_16x16.png"
-dest_files=["res://.godot/imported/Lucy_phone_16x16.png-dc997083861e1766ae60b4fd4d69e80b.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Lucy_phone_16x16.png"
+dest_files=["res://.godot/imported/Lucy_phone_16x16.png-f8a885ab1458765efeb780eec1eb3cb1.ctex"]
 
 [params]
 

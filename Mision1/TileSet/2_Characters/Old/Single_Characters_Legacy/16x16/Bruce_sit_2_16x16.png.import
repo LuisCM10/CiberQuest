@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2dr2qp1ldqvl"
-path="res://.godot/imported/Bruce_sit_2_16x16.png-cecdcfc1cdb32115d3efc017dc91c329.ctex"
+path="res://.godot/imported/Bruce_sit_2_16x16.png-2601932b563c15dedd9f026349408f2d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Bruce_sit_2_16x16.png"
-dest_files=["res://.godot/imported/Bruce_sit_2_16x16.png-cecdcfc1cdb32115d3efc017dc91c329.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Bruce_sit_2_16x16.png"
+dest_files=["res://.godot/imported/Bruce_sit_2_16x16.png-2601932b563c15dedd9f026349408f2d.ctex"]
 
 [params]
 

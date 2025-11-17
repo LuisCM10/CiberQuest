@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpk0tt8sn617s"
-path="res://.godot/imported/Spritesheet_animations_GUIDE.png-c9b8913383adc549fb5cd205926a17d7.ctex"
+path="res://.godot/imported/Spritesheet_animations_GUIDE.png-ce91a7b370b3c144ff970b8e12178eff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Spritesheet_animations_GUIDE.png"
-dest_files=["res://.godot/imported/Spritesheet_animations_GUIDE.png-c9b8913383adc549fb5cd205926a17d7.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Spritesheet_animations_GUIDE.png"
+dest_files=["res://.godot/imported/Spritesheet_animations_GUIDE.png-ce91a7b370b3c144ff970b8e12178eff.ctex"]
 
 [params]
 

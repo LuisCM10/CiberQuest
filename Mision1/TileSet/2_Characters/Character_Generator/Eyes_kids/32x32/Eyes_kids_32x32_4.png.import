@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mdwqbqmd0b42"
-path="res://.godot/imported/Eyes_kids_32x32_4.png-571a7f8a0dcfd2fa6d9975525d51ee85.ctex"
+path="res://.godot/imported/Eyes_kids_32x32_4.png-8b3019310b98442e765cca7fb2126352.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Eyes_kids/32x32/Eyes_kids_32x32_4.png"
-dest_files=["res://.godot/imported/Eyes_kids_32x32_4.png-571a7f8a0dcfd2fa6d9975525d51ee85.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Eyes_kids/32x32/Eyes_kids_32x32_4.png"
+dest_files=["res://.godot/imported/Eyes_kids_32x32_4.png-8b3019310b98442e765cca7fb2126352.ctex"]
 
 [params]
 

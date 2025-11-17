@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnavh51tfip7y"
-path="res://.godot/imported/animated_toytrain.png-68890bd9954ad4d42db45554dab3b71c.ctex"
+path="res://.godot/imported/animated_toytrain.png-3c37dc6243dfcafbe4d1d4f2d4f41cef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_toytrain.png"
-dest_files=["res://.godot/imported/animated_toytrain.png-68890bd9954ad4d42db45554dab3b71c.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_toytrain.png"
+dest_files=["res://.godot/imported/animated_toytrain.png-3c37dc6243dfcafbe4d1d4f2d4f41cef.ctex"]
 
 [params]
 

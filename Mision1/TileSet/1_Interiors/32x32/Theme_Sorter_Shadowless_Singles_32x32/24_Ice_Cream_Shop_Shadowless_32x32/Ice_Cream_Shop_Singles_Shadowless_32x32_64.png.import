@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwt1yl0c0qfnj"
-path="res://.godot/imported/Ice_Cream_Shop_Singles_Shadowless_32x32_64.png-32ead20449c264cd902cd12c87c8a333.ctex"
+path="res://.godot/imported/Ice_Cream_Shop_Singles_Shadowless_32x32_64.png-3be58aad9edb6ad85a21adc2ab131199.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/32x32/Theme_Sorter_Shadowless_Singles_32x32/24_Ice_Cream_Shop_Shadowless_32x32/Ice_Cream_Shop_Singles_Shadowless_32x32_64.png"
-dest_files=["res://.godot/imported/Ice_Cream_Shop_Singles_Shadowless_32x32_64.png-32ead20449c264cd902cd12c87c8a333.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/32x32/Theme_Sorter_Shadowless_Singles_32x32/24_Ice_Cream_Shop_Shadowless_32x32/Ice_Cream_Shop_Singles_Shadowless_32x32_64.png"
+dest_files=["res://.godot/imported/Ice_Cream_Shop_Singles_Shadowless_32x32_64.png-3be58aad9edb6ad85a21adc2ab131199.ctex"]
 
 [params]
 

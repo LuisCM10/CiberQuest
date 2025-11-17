@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4w6baayqccw"
-path="res://.godot/imported/animated_hospital_resonance_machine.png-e16aef0a03ec0b787dd3495a1b2d8efe.ctex"
+path="res://.godot/imported/animated_hospital_resonance_machine.png-afee0106b9b64f5fa3d8963f35d9625f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_hospital_resonance_machine.png"
-dest_files=["res://.godot/imported/animated_hospital_resonance_machine.png-e16aef0a03ec0b787dd3495a1b2d8efe.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_hospital_resonance_machine.png"
+dest_files=["res://.godot/imported/animated_hospital_resonance_machine.png-afee0106b9b64f5fa3d8963f35d9625f.ctex"]
 
 [params]
 

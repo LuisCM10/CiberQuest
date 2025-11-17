@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddhrmjnbr0ybh"
-path="res://.godot/imported/Doctor_1_run_48x48.png-b9a5f06fcf879669f22bb44a4c7e981f.ctex"
+path="res://.godot/imported/Doctor_1_run_48x48.png-d6689e07e6455c773623664b502d8b0a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Doctor_1_run_48x48.png"
-dest_files=["res://.godot/imported/Doctor_1_run_48x48.png-b9a5f06fcf879669f22bb44a4c7e981f.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Doctor_1_run_48x48.png"
+dest_files=["res://.godot/imported/Doctor_1_run_48x48.png-d6689e07e6455c773623664b502d8b0a.ctex"]
 
 [params]
 

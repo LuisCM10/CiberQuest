@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi0ny88ht0f5v"
-path="res://.godot/imported/animated_iron_cage_doll_48x48.png-ea298b57b4a64f633fc19e5a7fde4696.ctex"
+path="res://.godot/imported/animated_iron_cage_doll_48x48.png-832ef8d81bcc1f5829b976ce9d6c576b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_iron_cage_doll_48x48.png"
-dest_files=["res://.godot/imported/animated_iron_cage_doll_48x48.png-ea298b57b4a64f633fc19e5a7fde4696.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_iron_cage_doll_48x48.png"
+dest_files=["res://.godot/imported/animated_iron_cage_doll_48x48.png-832ef8d81bcc1f5829b976ce9d6c576b.ctex"]
 
 [params]
 

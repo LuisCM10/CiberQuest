@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bn377pr174kpc"
-path="res://.godot/imported/Accessory_19_Party_Cone_32x32_03.png-2adda8e36195c27009e3f5c7184890b3.ctex"
+path="res://.godot/imported/Accessory_19_Party_Cone_32x32_03.png-d04ec04e279e5ab45a690340d5fb56e9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/32x32/Accessory_19_Party_Cone_32x32_03.png"
-dest_files=["res://.godot/imported/Accessory_19_Party_Cone_32x32_03.png-2adda8e36195c27009e3f5c7184890b3.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/32x32/Accessory_19_Party_Cone_32x32_03.png"
+dest_files=["res://.godot/imported/Accessory_19_Party_Cone_32x32_03.png-d04ec04e279e5ab45a690340d5fb56e9.ctex"]
 
 [params]
 

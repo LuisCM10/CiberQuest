@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://i1n6b6kvfdo4"
-path="res://.godot/imported/animated_bathtub_2_32x32.png-c67c730eafdcca385ddf73a239254d19.ctex"
+path="res://.godot/imported/animated_bathtub_2_32x32.png-0ad63ed8abea3a48f87c2b83217d2a78.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_bathtub_2_32x32.png"
-dest_files=["res://.godot/imported/animated_bathtub_2_32x32.png-c67c730eafdcca385ddf73a239254d19.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_bathtub_2_32x32.png"
+dest_files=["res://.godot/imported/animated_bathtub_2_32x32.png-0ad63ed8abea3a48f87c2b83217d2a78.ctex"]
 
 [params]
 

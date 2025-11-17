@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsfgnkwgrye7p"
-path="res://.godot/imported/Accessory_18_Chef_01.png-91c9319b06bd239764617b2ed908c478.ctex"
+path="res://.godot/imported/Accessory_18_Chef_01.png-5edd05781d717df9f434c9174a1b88a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_18_Chef_01.png"
-dest_files=["res://.godot/imported/Accessory_18_Chef_01.png-91c9319b06bd239764617b2ed908c478.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_18_Chef_01.png"
+dest_files=["res://.godot/imported/Accessory_18_Chef_01.png-5edd05781d717df9f434c9174a1b88a6.ctex"]
 
 [params]
 

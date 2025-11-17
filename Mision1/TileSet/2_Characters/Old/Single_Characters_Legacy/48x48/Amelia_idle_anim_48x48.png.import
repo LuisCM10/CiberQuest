@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqkavney877rv"
-path="res://.godot/imported/Amelia_idle_anim_48x48.png-13e087554654ec8380878f54ddd34aa3.ctex"
+path="res://.godot/imported/Amelia_idle_anim_48x48.png-af529a7bc3015ee664676bb8fb95d0f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Amelia_idle_anim_48x48.png"
-dest_files=["res://.godot/imported/Amelia_idle_anim_48x48.png-13e087554654ec8380878f54ddd34aa3.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Amelia_idle_anim_48x48.png"
+dest_files=["res://.godot/imported/Amelia_idle_anim_48x48.png-af529a7bc3015ee664676bb8fb95d0f6.ctex"]
 
 [params]
 

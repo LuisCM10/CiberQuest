@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1cmlkbblbxmq"
-path="res://.godot/imported/animated_spider.png-dea2b402346a60c2f2d34b6cc86bc122.ctex"
+path="res://.godot/imported/animated_spider.png-d380d65d5b22cf0cda9abd476c7596a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_spider.png"
-dest_files=["res://.godot/imported/animated_spider.png-dea2b402346a60c2f2d34b6cc86bc122.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_spider.png"
+dest_files=["res://.godot/imported/animated_spider.png-d380d65d5b22cf0cda9abd476c7596a6.ctex"]
 
 [params]
 

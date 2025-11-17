@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bobk00628uybr"
-path="res://.godot/imported/animated_toybox_full.png-e5effe9f790f193a21f3dffb479160ae.ctex"
+path="res://.godot/imported/animated_toybox_full.png-102c9bab7fa7368c2f092ceb0b15b832.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_toybox_full.png"
-dest_files=["res://.godot/imported/animated_toybox_full.png-e5effe9f790f193a21f3dffb479160ae.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_toybox_full.png"
+dest_files=["res://.godot/imported/animated_toybox_full.png-102c9bab7fa7368c2f092ceb0b15b832.ctex"]
 
 [params]
 

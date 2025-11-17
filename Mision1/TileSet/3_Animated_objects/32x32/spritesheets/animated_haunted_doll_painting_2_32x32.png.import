@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwm2rbg7q5l1f"
-path="res://.godot/imported/animated_haunted_doll_painting_2_32x32.png-6960f09a755acca813633b27f04ae934.ctex"
+path="res://.godot/imported/animated_haunted_doll_painting_2_32x32.png-bf1e2912c3aa5f2d149cc7b627b4fab0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_haunted_doll_painting_2_32x32.png"
-dest_files=["res://.godot/imported/animated_haunted_doll_painting_2_32x32.png-6960f09a755acca813633b27f04ae934.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_haunted_doll_painting_2_32x32.png"
+dest_files=["res://.godot/imported/animated_haunted_doll_painting_2_32x32.png-bf1e2912c3aa5f2d149cc7b627b4fab0.ctex"]
 
 [params]
 

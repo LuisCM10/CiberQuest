@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5n3jju555dee"
-path="res://.godot/imported/Edward_run_16x16.png-de70d654dc82b920c419fb3cade119fa.ctex"
+path="res://.godot/imported/Edward_run_16x16.png-9dfae239587d285420281e2102be1797.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Edward_run_16x16.png"
-dest_files=["res://.godot/imported/Edward_run_16x16.png-de70d654dc82b920c419fb3cade119fa.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Edward_run_16x16.png"
+dest_files=["res://.godot/imported/Edward_run_16x16.png-9dfae239587d285420281e2102be1797.ctex"]
 
 [params]
 

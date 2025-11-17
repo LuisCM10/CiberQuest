@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blqpftat2yntx"
-path="res://.godot/imported/Clothing_Store_Singles_Shadowless_32x32_125.png-bc404fe3c1eff03811d4ad55a4bf61d6.ctex"
+path="res://.godot/imported/Clothing_Store_Singles_Shadowless_32x32_125.png-56c22b51e61b39487c39f8dd1a231cd2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/32x32/Theme_Sorter_Shadowless_Singles_32x32/21_Clothing_Store_Singles_Shadowless_32x32/Clothing_Store_Singles_Shadowless_32x32_125.png"
-dest_files=["res://.godot/imported/Clothing_Store_Singles_Shadowless_32x32_125.png-bc404fe3c1eff03811d4ad55a4bf61d6.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/32x32/Theme_Sorter_Shadowless_Singles_32x32/21_Clothing_Store_Singles_Shadowless_32x32/Clothing_Store_Singles_Shadowless_32x32_125.png"
+dest_files=["res://.godot/imported/Clothing_Store_Singles_Shadowless_32x32_125.png-56c22b51e61b39487c39f8dd1a231cd2.ctex"]
 
 [params]
 

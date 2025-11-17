@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bstttvgq1yroh"
-path="res://.godot/imported/Lucy_idle_48x48.png-c9d0ab01abbae0d2693f86cba0418aee.ctex"
+path="res://.godot/imported/Lucy_idle_48x48.png-ce8a3606803b59b3b94b0f1fe11cba28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Lucy_idle_48x48.png"
-dest_files=["res://.godot/imported/Lucy_idle_48x48.png-c9d0ab01abbae0d2693f86cba0418aee.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Lucy_idle_48x48.png"
+dest_files=["res://.godot/imported/Lucy_idle_48x48.png-ce8a3606803b59b3b94b0f1fe11cba28.ctex"]
 
 [params]
 

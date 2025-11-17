@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnwpggacva5a7"
-path="res://.godot/imported/kid_Oscar_idle_anim_48x48.png-8dd4a5d6760d7babbd3b1cb096e754b4.ctex"
+path="res://.godot/imported/kid_Oscar_idle_anim_48x48.png-665eed3b1a55c9a378b6d6402f2f6a95.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/kid_Oscar_idle_anim_48x48.png"
-dest_files=["res://.godot/imported/kid_Oscar_idle_anim_48x48.png-8dd4a5d6760d7babbd3b1cb096e754b4.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/kid_Oscar_idle_anim_48x48.png"
+dest_files=["res://.godot/imported/kid_Oscar_idle_anim_48x48.png-665eed3b1a55c9a378b6d6402f2f6a95.ctex"]
 
 [params]
 

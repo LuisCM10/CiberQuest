@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1h7inc3j2cc0"
-path="res://.godot/imported/Roki_reading_48x48.png-231450e1651d47dfac3191f693a81e60.ctex"
+path="res://.godot/imported/Roki_reading_48x48.png-1bf3fe398562e46101f214793edb230b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Roki_reading_48x48.png"
-dest_files=["res://.godot/imported/Roki_reading_48x48.png-231450e1651d47dfac3191f693a81e60.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Roki_reading_48x48.png"
+dest_files=["res://.godot/imported/Roki_reading_48x48.png-1bf3fe398562e46101f214793edb230b.ctex"]
 
 [params]
 

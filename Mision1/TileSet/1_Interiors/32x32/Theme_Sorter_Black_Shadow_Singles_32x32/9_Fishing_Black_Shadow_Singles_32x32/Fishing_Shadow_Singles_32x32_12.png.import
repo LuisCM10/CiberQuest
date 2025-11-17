@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dg3h3fhtyq3go"
-path="res://.godot/imported/Fishing_Shadow_Singles_32x32_12.png-3f6f40c29b995e7f283d19ed4e4fac6a.ctex"
+path="res://.godot/imported/Fishing_Shadow_Singles_32x32_12.png-9319323fba03d2d18bb40ddf706101ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/32x32/Theme_Sorter_Black_Shadow_Singles_32x32/9_Fishing_Black_Shadow_Singles_32x32/Fishing_Shadow_Singles_32x32_12.png"
-dest_files=["res://.godot/imported/Fishing_Shadow_Singles_32x32_12.png-3f6f40c29b995e7f283d19ed4e4fac6a.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/32x32/Theme_Sorter_Black_Shadow_Singles_32x32/9_Fishing_Black_Shadow_Singles_32x32/Fishing_Shadow_Singles_32x32_12.png"
+dest_files=["res://.godot/imported/Fishing_Shadow_Singles_32x32_12.png-9319323fba03d2d18bb40ddf706101ab.ctex"]
 
 [params]
 

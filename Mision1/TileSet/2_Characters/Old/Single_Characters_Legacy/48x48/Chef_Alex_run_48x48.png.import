@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4tsp5uh02rv4"
-path="res://.godot/imported/Chef_Alex_run_48x48.png-2901bbc5cef0a0f7f1be376257dbec1c.ctex"
+path="res://.godot/imported/Chef_Alex_run_48x48.png-09c4a0c7958ac3867db8860c286ab934.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Chef_Alex_run_48x48.png"
-dest_files=["res://.godot/imported/Chef_Alex_run_48x48.png-2901bbc5cef0a0f7f1be376257dbec1c.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Chef_Alex_run_48x48.png"
+dest_files=["res://.godot/imported/Chef_Alex_run_48x48.png-09c4a0c7958ac3867db8860c286ab934.ctex"]
 
 [params]
 

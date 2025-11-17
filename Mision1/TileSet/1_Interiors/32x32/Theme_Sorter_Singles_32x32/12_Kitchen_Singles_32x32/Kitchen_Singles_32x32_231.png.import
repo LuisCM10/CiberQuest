@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xlq1ncs1iu8f"
-path="res://.godot/imported/Kitchen_Singles_32x32_231.png-6d342d76b35f275584a36c8d3308de15.ctex"
+path="res://.godot/imported/Kitchen_Singles_32x32_231.png-35b3ab45e34264351e4888eefebe01f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/32x32/Theme_Sorter_Singles_32x32/12_Kitchen_Singles_32x32/Kitchen_Singles_32x32_231.png"
-dest_files=["res://.godot/imported/Kitchen_Singles_32x32_231.png-6d342d76b35f275584a36c8d3308de15.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/32x32/Theme_Sorter_Singles_32x32/12_Kitchen_Singles_32x32/Kitchen_Singles_32x32_231.png"
+dest_files=["res://.godot/imported/Kitchen_Singles_32x32_231.png-35b3ab45e34264351e4888eefebe01f6.ctex"]
 
 [params]
 

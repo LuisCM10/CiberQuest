@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dq0ee678w6l78"
-path="res://.godot/imported/Pier_shopping_cart_32x32.png-3f1fabce9455512377caa3ed099b57ea.ctex"
+path="res://.godot/imported/Pier_shopping_cart_32x32.png-d12f57982943eeb56651934d64d817bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Pier_shopping_cart_32x32.png"
-dest_files=["res://.godot/imported/Pier_shopping_cart_32x32.png-3f1fabce9455512377caa3ed099b57ea.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Pier_shopping_cart_32x32.png"
+dest_files=["res://.godot/imported/Pier_shopping_cart_32x32.png-d12f57982943eeb56651934d64d817bd.ctex"]
 
 [params]
 

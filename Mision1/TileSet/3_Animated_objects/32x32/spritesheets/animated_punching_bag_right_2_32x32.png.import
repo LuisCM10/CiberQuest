@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dymvwbmb6dppj"
-path="res://.godot/imported/animated_punching_bag_right_2_32x32.png-57970f87f338d44fb2cc0f1348b5b4f1.ctex"
+path="res://.godot/imported/animated_punching_bag_right_2_32x32.png-6ce36e30838bfbf6d6261e0ebeeb8857.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_punching_bag_right_2_32x32.png"
-dest_files=["res://.godot/imported/animated_punching_bag_right_2_32x32.png-57970f87f338d44fb2cc0f1348b5b4f1.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_punching_bag_right_2_32x32.png"
+dest_files=["res://.godot/imported/animated_punching_bag_right_2_32x32.png-6ce36e30838bfbf6d6261e0ebeeb8857.ctex"]
 
 [params]
 

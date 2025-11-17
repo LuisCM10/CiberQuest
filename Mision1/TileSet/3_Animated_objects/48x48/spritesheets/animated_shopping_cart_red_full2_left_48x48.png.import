@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bprbk5dq3km3g"
-path="res://.godot/imported/animated_shopping_cart_red_full2_left_48x48.png-d072400f4aee0f4721d5dcdc233ec51f.ctex"
+path="res://.godot/imported/animated_shopping_cart_red_full2_left_48x48.png-592c05d1853a9f41c42d89cd76bb120f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_shopping_cart_red_full2_left_48x48.png"
-dest_files=["res://.godot/imported/animated_shopping_cart_red_full2_left_48x48.png-d072400f4aee0f4721d5dcdc233ec51f.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_shopping_cart_red_full2_left_48x48.png"
+dest_files=["res://.godot/imported/animated_shopping_cart_red_full2_left_48x48.png-592c05d1853a9f41c42d89cd76bb120f.ctex"]
 
 [params]
 

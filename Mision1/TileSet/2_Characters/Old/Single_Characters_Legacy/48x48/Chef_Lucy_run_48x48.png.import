@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdisocifwr6gp"
-path="res://.godot/imported/Chef_Lucy_run_48x48.png-cd3b6138d6dfeef70807557daa311ceb.ctex"
+path="res://.godot/imported/Chef_Lucy_run_48x48.png-8ee08a579f2bf66144fb1ac08be455c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Chef_Lucy_run_48x48.png"
-dest_files=["res://.godot/imported/Chef_Lucy_run_48x48.png-cd3b6138d6dfeef70807557daa311ceb.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Chef_Lucy_run_48x48.png"
+dest_files=["res://.godot/imported/Chef_Lucy_run_48x48.png-8ee08a579f2bf66144fb1ac08be455c8.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lwt44txp7uiv"
-path="res://.godot/imported/Chef_Pier_idle_anim_48x48.png-15cd7bc925ce566bd55802358d849d94.ctex"
+path="res://.godot/imported/Chef_Pier_idle_anim_48x48.png-cd5bea3bb3cc8581a80c20126d732ad6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Chef_Pier_idle_anim_48x48.png"
-dest_files=["res://.godot/imported/Chef_Pier_idle_anim_48x48.png-15cd7bc925ce566bd55802358d849d94.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Chef_Pier_idle_anim_48x48.png"
+dest_files=["res://.godot/imported/Chef_Pier_idle_anim_48x48.png-cd5bea3bb3cc8581a80c20126d732ad6.ctex"]
 
 [params]
 

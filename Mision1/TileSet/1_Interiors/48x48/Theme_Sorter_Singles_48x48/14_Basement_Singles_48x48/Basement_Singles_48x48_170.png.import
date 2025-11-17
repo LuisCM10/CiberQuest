@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d36cxp4lyt8e8"
-path="res://.godot/imported/Basement_Singles_48x48_170.png-600a01647c866f5cb4975139130f84c6.ctex"
+path="res://.godot/imported/Basement_Singles_48x48_170.png-ab81fc633d9ada529e381ddbd4c369c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/48x48/Theme_Sorter_Singles_48x48/14_Basement_Singles_48x48/Basement_Singles_48x48_170.png"
-dest_files=["res://.godot/imported/Basement_Singles_48x48_170.png-600a01647c866f5cb4975139130f84c6.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/48x48/Theme_Sorter_Singles_48x48/14_Basement_Singles_48x48/Basement_Singles_48x48_170.png"
+dest_files=["res://.godot/imported/Basement_Singles_48x48_170.png-ab81fc633d9ada529e381ddbd4c369c0.ctex"]
 
 [params]
 

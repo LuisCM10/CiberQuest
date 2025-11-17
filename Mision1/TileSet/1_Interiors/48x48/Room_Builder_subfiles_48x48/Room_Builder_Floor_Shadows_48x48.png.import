@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxhtbwnrcrhsu"
-path="res://.godot/imported/Room_Builder_Floor_Shadows_48x48.png-a108f54189afbdfd835aca540386fea1.ctex"
+path="res://.godot/imported/Room_Builder_Floor_Shadows_48x48.png-06748f205c9e9e01112d95c799afdde8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/48x48/Room_Builder_subfiles_48x48/Room_Builder_Floor_Shadows_48x48.png"
-dest_files=["res://.godot/imported/Room_Builder_Floor_Shadows_48x48.png-a108f54189afbdfd835aca540386fea1.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/48x48/Room_Builder_subfiles_48x48/Room_Builder_Floor_Shadows_48x48.png"
+dest_files=["res://.godot/imported/Room_Builder_Floor_Shadows_48x48.png-06748f205c9e9e01112d95c799afdde8.ctex"]
 
 [params]
 

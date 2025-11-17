@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bk7hsf8lkdyc6"
-path="res://.godot/imported/Mood_changer_squeeze_48x48.png-667c9315858fb856be827250e5440818.ctex"
+path="res://.godot/imported/Mood_changer_squeeze_48x48.png-de619b898d859fd5ffff2373fd5cb12b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Moods/Mood_changer_squeeze_48x48.png"
-dest_files=["res://.godot/imported/Mood_changer_squeeze_48x48.png-667c9315858fb856be827250e5440818.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Moods/Mood_changer_squeeze_48x48.png"
+dest_files=["res://.godot/imported/Mood_changer_squeeze_48x48.png-de619b898d859fd5ffff2373fd5cb12b.ctex"]
 
 [params]
 

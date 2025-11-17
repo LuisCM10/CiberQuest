@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://s385h2ag5vk0"
-path="res://.godot/imported/animated_trapdoor_3.png-2bab4e0b7253d7e3554c9c0c5429e2c3.ctex"
+path="res://.godot/imported/animated_trapdoor_3.png-2c53341b137f8523e3931c7e2e9a4b05.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_trapdoor_3.png"
-dest_files=["res://.godot/imported/animated_trapdoor_3.png-2bab4e0b7253d7e3554c9c0c5429e2c3.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_trapdoor_3.png"
+dest_files=["res://.godot/imported/animated_trapdoor_3.png-2c53341b137f8523e3931c7e2e9a4b05.ctex"]
 
 [params]
 

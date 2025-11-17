@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ehmkpnlaa7x7"
-path="res://.godot/imported/Old_woman_Jenny_idle_32x32.png-b1aa3e72c726fbc29370d17a9b773424.ctex"
+path="res://.godot/imported/Old_woman_Jenny_idle_32x32.png-99c788e90b6dd15528edf02b913280bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Old_woman_Jenny_idle_32x32.png"
-dest_files=["res://.godot/imported/Old_woman_Jenny_idle_32x32.png-b1aa3e72c726fbc29370d17a9b773424.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Old_woman_Jenny_idle_32x32.png"
+dest_files=["res://.godot/imported/Old_woman_Jenny_idle_32x32.png-99c788e90b6dd15528edf02b913280bf.ctex"]
 
 [params]
 

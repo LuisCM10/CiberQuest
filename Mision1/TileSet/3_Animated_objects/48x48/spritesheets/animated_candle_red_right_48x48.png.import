@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7ccgkv4mv10m"
-path="res://.godot/imported/animated_candle_red_right_48x48.png-cdad64ab04f3a468832fb5e56e87d4b8.ctex"
+path="res://.godot/imported/animated_candle_red_right_48x48.png-813befb3ee74ede175eaeed6935e81b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_candle_red_right_48x48.png"
-dest_files=["res://.godot/imported/animated_candle_red_right_48x48.png-cdad64ab04f3a468832fb5e56e87d4b8.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_candle_red_right_48x48.png"
+dest_files=["res://.godot/imported/animated_candle_red_right_48x48.png-813befb3ee74ede175eaeed6935e81b9.ctex"]
 
 [params]
 

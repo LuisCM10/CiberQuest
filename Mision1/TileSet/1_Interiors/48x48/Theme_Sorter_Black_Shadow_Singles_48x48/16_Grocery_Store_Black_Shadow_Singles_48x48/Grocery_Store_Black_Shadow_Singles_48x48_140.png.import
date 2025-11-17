@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6t0dlrc3mv72"
-path="res://.godot/imported/Grocery_Store_Black_Shadow_Singles_48x48_140.png-8918dc529a3c65cd7b6a378ff64b3ce6.ctex"
+path="res://.godot/imported/Grocery_Store_Black_Shadow_Singles_48x48_140.png-d3a45225c8161b82ede342fc38136ee3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/48x48/Theme_Sorter_Black_Shadow_Singles_48x48/16_Grocery_Store_Black_Shadow_Singles_48x48/Grocery_Store_Black_Shadow_Singles_48x48_140.png"
-dest_files=["res://.godot/imported/Grocery_Store_Black_Shadow_Singles_48x48_140.png-8918dc529a3c65cd7b6a378ff64b3ce6.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/48x48/Theme_Sorter_Black_Shadow_Singles_48x48/16_Grocery_Store_Black_Shadow_Singles_48x48/Grocery_Store_Black_Shadow_Singles_48x48_140.png"
+dest_files=["res://.godot/imported/Grocery_Store_Black_Shadow_Singles_48x48_140.png-d3a45225c8161b82ede342fc38136ee3.ctex"]
 
 [params]
 

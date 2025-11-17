@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnpmi53us2cud"
-path="res://.godot/imported/web.png-f491254c8ecc32e2d3c2fdf39086fd35.ctex"
+path="res://.godot/imported/web.png-28f78aef6d74c9caf71a6af8ba7b870d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icons/web.png"
-dest_files=["res://.godot/imported/web.png-f491254c8ecc32e2d3c2fdf39086fd35.ctex"]
+source_file="res://Mision1/icons/web.png"
+dest_files=["res://.godot/imported/web.png-28f78aef6d74c9caf71a6af8ba7b870d.ctex"]
 
 [params]
 

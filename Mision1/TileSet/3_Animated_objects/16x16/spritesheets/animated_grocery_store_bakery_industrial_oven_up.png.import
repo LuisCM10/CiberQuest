@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://biuoisq4vysl6"
-path="res://.godot/imported/animated_grocery_store_bakery_industrial_oven_up.png-8bc9ee6c0a0eaf5ac97d4ad6104efe7e.ctex"
+path="res://.godot/imported/animated_grocery_store_bakery_industrial_oven_up.png-9e0ee0b12de8ad29a7133d0fce03a3ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_grocery_store_bakery_industrial_oven_up.png"
-dest_files=["res://.godot/imported/animated_grocery_store_bakery_industrial_oven_up.png-8bc9ee6c0a0eaf5ac97d4ad6104efe7e.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_grocery_store_bakery_industrial_oven_up.png"
+dest_files=["res://.godot/imported/animated_grocery_store_bakery_industrial_oven_up.png-9e0ee0b12de8ad29a7133d0fce03a3ef.ctex"]
 
 [params]
 

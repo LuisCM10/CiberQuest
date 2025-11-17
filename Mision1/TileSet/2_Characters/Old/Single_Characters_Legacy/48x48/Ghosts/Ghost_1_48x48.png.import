@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2hwrec2tua1n"
-path="res://.godot/imported/Ghost_1_48x48.png-4232f6b9e487a7e0cc32f46e7f399edb.ctex"
+path="res://.godot/imported/Ghost_1_48x48.png-f91190ff3c31b0854d3e223c31bde9f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Ghosts/Ghost_1_48x48.png"
-dest_files=["res://.godot/imported/Ghost_1_48x48.png-4232f6b9e487a7e0cc32f46e7f399edb.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Ghosts/Ghost_1_48x48.png"
+dest_files=["res://.godot/imported/Ghost_1_48x48.png-f91190ff3c31b0854d3e223c31bde9f9.ctex"]
 
 [params]
 

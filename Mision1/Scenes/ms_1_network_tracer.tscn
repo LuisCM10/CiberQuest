@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://cbxo4u4ba0wt8"]
 
-[ext_resource type="Script" uid="uid://jwc4boi2mn43" path="res://Scripts/ms_1_network_tracer.gd" id="1_q86yi"]
-[ext_resource type="Theme" uid="uid://4wumgw1yqy2f" path="res://Themes/buttonTheme.tres" id="2_vspgn"]
+[ext_resource type="Script" uid="uid://jwc4boi2mn43" path="res://Mision1/Scripts/ms_1_network_tracer.gd" id="1_q86yi"]
+[ext_resource type="Theme" uid="uid://4wumgw1yqy2f" path="res://Mision1/Themes/buttonTheme.tres" id="2_vspgn"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_nek87"]
 font_color = Color(0, 0, 0, 1)

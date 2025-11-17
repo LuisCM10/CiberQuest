@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgf61bhk76ess"
-path="res://.godot/imported/animated_receptionist_with_textbox_32x32.png-fced14b3288891d8ccd40ee24eae31f6.ctex"
+path="res://.godot/imported/animated_receptionist_with_textbox_32x32.png-e1d3718e845abb4cc456cb3e32caf304.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_receptionist_with_textbox_32x32.png"
-dest_files=["res://.godot/imported/animated_receptionist_with_textbox_32x32.png-fced14b3288891d8ccd40ee24eae31f6.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_receptionist_with_textbox_32x32.png"
+dest_files=["res://.godot/imported/animated_receptionist_with_textbox_32x32.png-e1d3718e845abb4cc456cb3e32caf304.ctex"]
 
 [params]
 

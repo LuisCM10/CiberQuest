@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8gpjqt3l1hp6"
-path="res://.godot/imported/Moods_32x32.png-4ba5bdf22198b7641e228ff689001b31.ctex"
+path="res://.godot/imported/Moods_32x32.png-57a55f134159c2701e6b2f6dcdcf2091.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Moods/Moods_32x32.png"
-dest_files=["res://.godot/imported/Moods_32x32.png-4ba5bdf22198b7641e228ff689001b31.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Moods/Moods_32x32.png"
+dest_files=["res://.godot/imported/Moods_32x32.png-57a55f134159c2701e6b2f6dcdcf2091.ctex"]
 
 [params]
 

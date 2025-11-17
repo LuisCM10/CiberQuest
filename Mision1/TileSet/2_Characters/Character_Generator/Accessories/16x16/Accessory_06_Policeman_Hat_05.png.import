@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqqq65x1454gi"
-path="res://.godot/imported/Accessory_06_Policeman_Hat_05.png-b2664bb6d3d1fb9bad67a386a1e7c818.ctex"
+path="res://.godot/imported/Accessory_06_Policeman_Hat_05.png-016eed5628af361d02cb0f7d7262f766.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_06_Policeman_Hat_05.png"
-dest_files=["res://.godot/imported/Accessory_06_Policeman_Hat_05.png-b2664bb6d3d1fb9bad67a386a1e7c818.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_06_Policeman_Hat_05.png"
+dest_files=["res://.godot/imported/Accessory_06_Policeman_Hat_05.png-016eed5628af361d02cb0f7d7262f766.ctex"]
 
 [params]
 

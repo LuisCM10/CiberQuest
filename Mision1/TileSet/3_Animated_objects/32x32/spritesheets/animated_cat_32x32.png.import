@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wv3d1jc16h0i"
-path="res://.godot/imported/animated_cat_32x32.png-ec2fc6d2aad003cf1876c858cafb3a91.ctex"
+path="res://.godot/imported/animated_cat_32x32.png-80de14ba26be9b9094e2fd4589db183f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_cat_32x32.png"
-dest_files=["res://.godot/imported/animated_cat_32x32.png-ec2fc6d2aad003cf1876c858cafb3a91.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_cat_32x32.png"
+dest_files=["res://.godot/imported/animated_cat_32x32.png-80de14ba26be9b9094e2fd4589db183f.ctex"]
 
 [params]
 

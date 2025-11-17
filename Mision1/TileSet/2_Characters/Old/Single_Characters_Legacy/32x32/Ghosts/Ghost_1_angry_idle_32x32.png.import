@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://by6d3raibs2na"
-path="res://.godot/imported/Ghost_1_angry_idle_32x32.png-4999cc741f04b09aa473825704856a8c.ctex"
+path="res://.godot/imported/Ghost_1_angry_idle_32x32.png-fc23a917531fd8d475fb8efd43f17357.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Ghosts/Ghost_1_angry_idle_32x32.png"
-dest_files=["res://.godot/imported/Ghost_1_angry_idle_32x32.png-4999cc741f04b09aa473825704856a8c.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Ghosts/Ghost_1_angry_idle_32x32.png"
+dest_files=["res://.godot/imported/Ghost_1_angry_idle_32x32.png-fc23a917531fd8d475fb8efd43f17357.ctex"]
 
 [params]
 

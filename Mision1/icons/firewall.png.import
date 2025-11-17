@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c62l7vo37nhio"
-path="res://.godot/imported/firewall.png-66bb1f4ac776c7c04284e7d7e3e4888c.ctex"
+path="res://.godot/imported/firewall.png-935a9a9a5b2cc56367dc96ba544d26c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icons/firewall.png"
-dest_files=["res://.godot/imported/firewall.png-66bb1f4ac776c7c04284e7d7e3e4888c.ctex"]
+source_file="res://Mision1/icons/firewall.png"
+dest_files=["res://.godot/imported/firewall.png-935a9a9a5b2cc56367dc96ba544d26c8.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dblfhne4t73b8"
-path="res://.godot/imported/HOW_TO_CHARACTER_GENERATOR.png-f9295502fcba48c41da746e9272e5606.ctex"
+path="res://.godot/imported/HOW_TO_CHARACTER_GENERATOR.png-8577811feca2c72554e41387475f1593.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/HOW_TO_CHARACTER_GENERATOR.png"
-dest_files=["res://.godot/imported/HOW_TO_CHARACTER_GENERATOR.png-f9295502fcba48c41da746e9272e5606.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/HOW_TO_CHARACTER_GENERATOR.png"
+dest_files=["res://.godot/imported/HOW_TO_CHARACTER_GENERATOR.png-8577811feca2c72554e41387475f1593.ctex"]
 
 [params]
 

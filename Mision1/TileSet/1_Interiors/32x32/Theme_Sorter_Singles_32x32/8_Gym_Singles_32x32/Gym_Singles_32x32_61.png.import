@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqjbbx44ey7ma"
-path="res://.godot/imported/Gym_Singles_32x32_61.png-5e597d52d64c1f236ecc62dc0e717a3f.ctex"
+path="res://.godot/imported/Gym_Singles_32x32_61.png-e12ebcdb7b136c7c7801ec8a37f7f54c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/32x32/Theme_Sorter_Singles_32x32/8_Gym_Singles_32x32/Gym_Singles_32x32_61.png"
-dest_files=["res://.godot/imported/Gym_Singles_32x32_61.png-5e597d52d64c1f236ecc62dc0e717a3f.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/32x32/Theme_Sorter_Singles_32x32/8_Gym_Singles_32x32/Gym_Singles_32x32_61.png"
+dest_files=["res://.godot/imported/Gym_Singles_32x32_61.png-e12ebcdb7b136c7c7801ec8a37f7f54c.ctex"]
 
 [params]
 

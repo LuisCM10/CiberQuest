@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://liys2nd4gfsv"
-path="res://.godot/imported/Nurse_1_run_16x16.png-a49cb285bc1a231a1ecb78af6b9740c5.ctex"
+path="res://.godot/imported/Nurse_1_run_16x16.png-eb6ee6f30b53ea582d9b05b8a3dfc911.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Nurse_1_run_16x16.png"
-dest_files=["res://.godot/imported/Nurse_1_run_16x16.png-a49cb285bc1a231a1ecb78af6b9740c5.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Nurse_1_run_16x16.png"
+dest_files=["res://.godot/imported/Nurse_1_run_16x16.png-eb6ee6f30b53ea582d9b05b8a3dfc911.ctex"]
 
 [params]
 

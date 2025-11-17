@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4i705k5cfk6i"
-path="res://.godot/imported/NetworkTracer.png-ee22712d0042fb3168d6d558bc712f03.ctex"
+path="res://.godot/imported/NetworkTracer.png-66863fd0a958e4bb9119e9dc9e844ecf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Themes/NetworkTracer.png"
-dest_files=["res://.godot/imported/NetworkTracer.png-ee22712d0042fb3168d6d558bc712f03.ctex"]
+source_file="res://Mision1/Themes/NetworkTracer.png"
+dest_files=["res://.godot/imported/NetworkTracer.png-66863fd0a958e4bb9119e9dc9e844ecf.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d28okmsucs8ai"
-path="res://.godot/imported/Samuel_48x48.png-b2c045ff348ac427851be81e91998549.ctex"
+path="res://.godot/imported/Samuel_48x48.png-403d6752332f9e0debe10e54a4f62bc6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Samuel_48x48.png"
-dest_files=["res://.godot/imported/Samuel_48x48.png-b2c045ff348ac427851be81e91998549.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Samuel_48x48.png"
+dest_files=["res://.godot/imported/Samuel_48x48.png-403d6752332f9e0debe10e54a4f62bc6.ctex"]
 
 [params]
 

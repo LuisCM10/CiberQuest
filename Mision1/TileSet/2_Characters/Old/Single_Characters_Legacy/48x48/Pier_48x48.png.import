@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b28csfjro14h5"
-path="res://.godot/imported/Pier_48x48.png-9b61b8a4432b3cc5a839ef0060baf68f.ctex"
+path="res://.godot/imported/Pier_48x48.png-1bef161981756bc5b29ec9429284718f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Pier_48x48.png"
-dest_files=["res://.godot/imported/Pier_48x48.png-9b61b8a4432b3cc5a839ef0060baf68f.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Pier_48x48.png"
+dest_files=["res://.godot/imported/Pier_48x48.png-1bef161981756bc5b29ec9429284718f.ctex"]
 
 [params]
 

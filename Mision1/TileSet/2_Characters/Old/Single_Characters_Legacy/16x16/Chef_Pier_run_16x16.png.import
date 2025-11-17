@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://butosg1uyvd78"
-path="res://.godot/imported/Chef_Pier_run_16x16.png-20f4b6f348ebc1227b7d91f7b39f6e63.ctex"
+path="res://.godot/imported/Chef_Pier_run_16x16.png-5d80663d8b45b1eb4e383e2a7ff8f021.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Chef_Pier_run_16x16.png"
-dest_files=["res://.godot/imported/Chef_Pier_run_16x16.png-20f4b6f348ebc1227b7d91f7b39f6e63.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Chef_Pier_run_16x16.png"
+dest_files=["res://.godot/imported/Chef_Pier_run_16x16.png-5d80663d8b45b1eb4e383e2a7ff8f021.ctex"]
 
 [params]
 

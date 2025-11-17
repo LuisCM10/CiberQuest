@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ct7go6vlf6uln"
-path="res://.godot/imported/Premade_Character_48x48_18.png-f9be123ef761afd21534355101af2ef4.ctex"
+path="res://.godot/imported/Premade_Character_48x48_18.png-3baa5125374c4506183fb2d907abee3a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/0_Premade_Characters/48x48/Premade_Character_48x48_18.png"
-dest_files=["res://.godot/imported/Premade_Character_48x48_18.png-f9be123ef761afd21534355101af2ef4.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/0_Premade_Characters/48x48/Premade_Character_48x48_18.png"
+dest_files=["res://.godot/imported/Premade_Character_48x48_18.png-3baa5125374c4506183fb2d907abee3a.ctex"]
 
 [params]
 

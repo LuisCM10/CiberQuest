@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bukbiqqohwnx5"
-path="res://.godot/imported/animated_museum_ticket_turnstile_48x48.png-f989993835c5635b39f9611adf7459d2.ctex"
+path="res://.godot/imported/animated_museum_ticket_turnstile_48x48.png-093fb46db31492a9eb7bdcede4ceb077.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_museum_ticket_turnstile_48x48.png"
-dest_files=["res://.godot/imported/animated_museum_ticket_turnstile_48x48.png-f989993835c5635b39f9611adf7459d2.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_museum_ticket_turnstile_48x48.png"
+dest_files=["res://.godot/imported/animated_museum_ticket_turnstile_48x48.png-093fb46db31492a9eb7bdcede4ceb077.ctex"]
 
 [params]
 

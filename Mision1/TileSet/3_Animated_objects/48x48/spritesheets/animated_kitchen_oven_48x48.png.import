@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dd55tkub0murk"
-path="res://.godot/imported/animated_kitchen_oven_48x48.png-261ce56ffc18bed921547fdad3eb6669.ctex"
+path="res://.godot/imported/animated_kitchen_oven_48x48.png-b523c13413ea5612289bdc5821b706bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_kitchen_oven_48x48.png"
-dest_files=["res://.godot/imported/animated_kitchen_oven_48x48.png-261ce56ffc18bed921547fdad3eb6669.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_kitchen_oven_48x48.png"
+dest_files=["res://.godot/imported/animated_kitchen_oven_48x48.png-b523c13413ea5612289bdc5821b706bd.ctex"]
 
 [params]
 

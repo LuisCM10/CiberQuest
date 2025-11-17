@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyp82ph4bvubg"
-path="res://.godot/imported/animated_trap_falling_blade.png-7ab2b7bf0bc0b8710a2a043c3d74c13b.ctex"
+path="res://.godot/imported/animated_trap_falling_blade.png-9e21efe9ddca1c97353484329ec64237.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_trap_falling_blade.png"
-dest_files=["res://.godot/imported/animated_trap_falling_blade.png-7ab2b7bf0bc0b8710a2a043c3d74c13b.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_trap_falling_blade.png"
+dest_files=["res://.godot/imported/animated_trap_falling_blade.png-9e21efe9ddca1c97353484329ec64237.ctex"]
 
 [params]
 

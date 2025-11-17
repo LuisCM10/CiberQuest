@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btca3fus5vuxb"
-path="res://.godot/imported/animated_fishcuttingtable_sink_32x32.png-c882d4edc59992707cf3bbd12793e763.ctex"
+path="res://.godot/imported/animated_fishcuttingtable_sink_32x32.png-b5d4c48cf0bc6a6b63b5a2eb9ec53676.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_fishcuttingtable_sink_32x32.png"
-dest_files=["res://.godot/imported/animated_fishcuttingtable_sink_32x32.png-c882d4edc59992707cf3bbd12793e763.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_fishcuttingtable_sink_32x32.png"
+dest_files=["res://.godot/imported/animated_fishcuttingtable_sink_32x32.png-b5d4c48cf0bc6a6b63b5a2eb9ec53676.ctex"]
 
 [params]
 

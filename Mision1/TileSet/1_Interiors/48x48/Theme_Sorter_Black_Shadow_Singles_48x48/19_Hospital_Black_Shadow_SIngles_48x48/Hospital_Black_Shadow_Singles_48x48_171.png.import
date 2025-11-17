@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2lhoe2upsbho"
-path="res://.godot/imported/Hospital_Black_Shadow_Singles_48x48_171.png-967f66e3b0c7b83af91ab8de1543a53f.ctex"
+path="res://.godot/imported/Hospital_Black_Shadow_Singles_48x48_171.png-6236fd12de3e1b9848d47b013409cb7a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/48x48/Theme_Sorter_Black_Shadow_Singles_48x48/19_Hospital_Black_Shadow_SIngles_48x48/Hospital_Black_Shadow_Singles_48x48_171.png"
-dest_files=["res://.godot/imported/Hospital_Black_Shadow_Singles_48x48_171.png-967f66e3b0c7b83af91ab8de1543a53f.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/48x48/Theme_Sorter_Black_Shadow_Singles_48x48/19_Hospital_Black_Shadow_SIngles_48x48/Hospital_Black_Shadow_Singles_48x48_171.png"
+dest_files=["res://.godot/imported/Hospital_Black_Shadow_Singles_48x48_171.png-6236fd12de3e1b9848d47b013409cb7a.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bii71b50t70fj"
-path="res://.godot/imported/Accessory_03_Backpack_48x48_05.png-4607ef02cf0d7177215d9460002bdba8.ctex"
+path="res://.godot/imported/Accessory_03_Backpack_48x48_05.png-316dbfee082d02a08decabd5084ad782.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/48x48/Accessory_03_Backpack_48x48_05.png"
-dest_files=["res://.godot/imported/Accessory_03_Backpack_48x48_05.png-4607ef02cf0d7177215d9460002bdba8.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/48x48/Accessory_03_Backpack_48x48_05.png"
+dest_files=["res://.godot/imported/Accessory_03_Backpack_48x48_05.png-316dbfee082d02a08decabd5084ad782.ctex"]
 
 [params]
 

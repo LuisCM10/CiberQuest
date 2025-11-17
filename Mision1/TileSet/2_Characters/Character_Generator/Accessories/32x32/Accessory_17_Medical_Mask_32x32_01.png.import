@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2ws31wwodwr8"
-path="res://.godot/imported/Accessory_17_Medical_Mask_32x32_01.png-013936bfc9275668b903c148842784e9.ctex"
+path="res://.godot/imported/Accessory_17_Medical_Mask_32x32_01.png-a5bb54bbe3fd0a3b6a73fae9ca66e6f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/32x32/Accessory_17_Medical_Mask_32x32_01.png"
-dest_files=["res://.godot/imported/Accessory_17_Medical_Mask_32x32_01.png-013936bfc9275668b903c148842784e9.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/32x32/Accessory_17_Medical_Mask_32x32_01.png"
+dest_files=["res://.godot/imported/Accessory_17_Medical_Mask_32x32_01.png-a5bb54bbe3fd0a3b6a73fae9ca66e6f7.ctex"]
 
 [params]
 

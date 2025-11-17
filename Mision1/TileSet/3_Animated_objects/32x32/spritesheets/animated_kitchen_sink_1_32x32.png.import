@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8v7b6sqoog4y"
-path="res://.godot/imported/animated_kitchen_sink_1_32x32.png-26d0ffe72f2d7211d2c100286dd9defc.ctex"
+path="res://.godot/imported/animated_kitchen_sink_1_32x32.png-e4d2cfbdfffa42637799f315235de167.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_kitchen_sink_1_32x32.png"
-dest_files=["res://.godot/imported/animated_kitchen_sink_1_32x32.png-26d0ffe72f2d7211d2c100286dd9defc.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_kitchen_sink_1_32x32.png"
+dest_files=["res://.godot/imported/animated_kitchen_sink_1_32x32.png-e4d2cfbdfffa42637799f315235de167.ctex"]
 
 [params]
 

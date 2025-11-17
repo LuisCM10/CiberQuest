@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clkkqndhgxnqg"
-path="res://.godot/imported/Accessory_05_Dino_Snapback_32x32_02.png-241de10b47839318505718a44404bcfb.ctex"
+path="res://.godot/imported/Accessory_05_Dino_Snapback_32x32_02.png-e437dd25eaf2f693dfa6e4a869366ec2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/32x32/Accessory_05_Dino_Snapback_32x32_02.png"
-dest_files=["res://.godot/imported/Accessory_05_Dino_Snapback_32x32_02.png-241de10b47839318505718a44404bcfb.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/32x32/Accessory_05_Dino_Snapback_32x32_02.png"
+dest_files=["res://.godot/imported/Accessory_05_Dino_Snapback_32x32_02.png-e437dd25eaf2f693dfa6e4a869366ec2.ctex"]
 
 [params]
 

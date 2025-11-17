@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cx0dwiapeudvu"
-path="res://.godot/imported/Pier_idle_16x16.png-a1d75b65040d66afda205299728d9e19.ctex"
+path="res://.godot/imported/Pier_idle_16x16.png-41d7b5a6595f6e923e0ee313af6a1580.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Pier_idle_16x16.png"
-dest_files=["res://.godot/imported/Pier_idle_16x16.png-a1d75b65040d66afda205299728d9e19.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Pier_idle_16x16.png"
+dest_files=["res://.godot/imported/Pier_idle_16x16.png-41d7b5a6595f6e923e0ee313af6a1580.ctex"]
 
 [params]
 

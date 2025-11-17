@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0l563ara2gpw"
-path="res://.godot/imported/Bruce_phone_16x16.png-c5b4c9edc8200662e36804dcdabbb7a1.ctex"
+path="res://.godot/imported/Bruce_phone_16x16.png-9a4b47050a2f3033a3dba3fab20da829.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Bruce_phone_16x16.png"
-dest_files=["res://.godot/imported/Bruce_phone_16x16.png-c5b4c9edc8200662e36804dcdabbb7a1.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Bruce_phone_16x16.png"
+dest_files=["res://.godot/imported/Bruce_phone_16x16.png-9a4b47050a2f3033a3dba3fab20da829.ctex"]
 
 [params]
 

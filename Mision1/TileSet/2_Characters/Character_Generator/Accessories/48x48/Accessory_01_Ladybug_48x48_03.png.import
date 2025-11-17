@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dayara05ksfep"
-path="res://.godot/imported/Accessory_01_Ladybug_48x48_03.png-13c98d7dc9d471575ab1121577a35b83.ctex"
+path="res://.godot/imported/Accessory_01_Ladybug_48x48_03.png-f47a0c70804340395395c98c1fa5a1fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/48x48/Accessory_01_Ladybug_48x48_03.png"
-dest_files=["res://.godot/imported/Accessory_01_Ladybug_48x48_03.png-13c98d7dc9d471575ab1121577a35b83.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/48x48/Accessory_01_Ladybug_48x48_03.png"
+dest_files=["res://.godot/imported/Accessory_01_Ladybug_48x48_03.png-f47a0c70804340395395c98c1fa5a1fb.ctex"]
 
 [params]
 

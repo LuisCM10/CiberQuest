@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqarr2pvvsc1p"
-path="res://.godot/imported/animated_kitchen_pan_with_omelette.png-4c2ec941ba90f8db751f716071be3386.ctex"
+path="res://.godot/imported/animated_kitchen_pan_with_omelette.png-3477927cdace7fd1bfefa141050343ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_kitchen_pan_with_omelette.png"
-dest_files=["res://.godot/imported/animated_kitchen_pan_with_omelette.png-4c2ec941ba90f8db751f716071be3386.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_kitchen_pan_with_omelette.png"
+dest_files=["res://.godot/imported/animated_kitchen_pan_with_omelette.png-3477927cdace7fd1bfefa141050343ab.ctex"]
 
 [params]
 

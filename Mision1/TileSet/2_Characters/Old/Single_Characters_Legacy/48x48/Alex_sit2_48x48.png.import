@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfv20mmm6rs2r"
-path="res://.godot/imported/Alex_sit2_48x48.png-7c92d0b42b7c9866ac82b5b031a4759b.ctex"
+path="res://.godot/imported/Alex_sit2_48x48.png-ab2023960d1fb6910faa1ebd1ecb7a35.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Alex_sit2_48x48.png"
-dest_files=["res://.godot/imported/Alex_sit2_48x48.png-7c92d0b42b7c9866ac82b5b031a4759b.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Alex_sit2_48x48.png"
+dest_files=["res://.godot/imported/Alex_sit2_48x48.png-ab2023960d1fb6910faa1ebd1ecb7a35.ctex"]
 
 [params]
 

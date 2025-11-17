@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3cats5nb8kup"
-path="res://.godot/imported/Kid_Tim_idle_48x48.png-0a7a2f22f1b5e9bf5b1a01e302d46a41.ctex"
+path="res://.godot/imported/Kid_Tim_idle_48x48.png-18b5d26e7dbaebdd86eb700a2c467bd9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Kid_Tim_idle_48x48.png"
-dest_files=["res://.godot/imported/Kid_Tim_idle_48x48.png-0a7a2f22f1b5e9bf5b1a01e302d46a41.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Kid_Tim_idle_48x48.png"
+dest_files=["res://.godot/imported/Kid_Tim_idle_48x48.png-18b5d26e7dbaebdd86eb700a2c467bd9.ctex"]
 
 [params]
 

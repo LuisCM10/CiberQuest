@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3g51gutq4i36"
-path="res://.godot/imported/Kid_Karen_phone_16x16.png-94c5190585a41899110ee8a02d8bbda0.ctex"
+path="res://.godot/imported/Kid_Karen_phone_16x16.png-1c565a6b30a4e0c6bac2b723e28ce65a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Kid_Karen_phone_16x16.png"
-dest_files=["res://.godot/imported/Kid_Karen_phone_16x16.png-94c5190585a41899110ee8a02d8bbda0.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Kid_Karen_phone_16x16.png"
+dest_files=["res://.godot/imported/Kid_Karen_phone_16x16.png-1c565a6b30a4e0c6bac2b723e28ce65a.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://si1rb5obpyvx"
-path="res://.godot/imported/Conference_woman_sit_48x48.png-83a5d377dc7b9f330f77e358173a231d.ctex"
+path="res://.godot/imported/Conference_woman_sit_48x48.png-ebef0673e34f65b2a623566a7cedb6a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Conference_woman_sit_48x48.png"
-dest_files=["res://.godot/imported/Conference_woman_sit_48x48.png-83a5d377dc7b9f330f77e358173a231d.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/48x48/Conference_woman_sit_48x48.png"
+dest_files=["res://.godot/imported/Conference_woman_sit_48x48.png-ebef0673e34f65b2a623566a7cedb6a3.ctex"]
 
 [params]
 

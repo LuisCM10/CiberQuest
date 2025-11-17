@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cet8wfxt1frsr"
-path="res://.godot/imported/animated_hospital_xraycabin_door_2.png-efb127d0bfb702ff45e351de5b3b9688.ctex"
+path="res://.godot/imported/animated_hospital_xraycabin_door_2.png-8b1ae44141bd56cb6e51c8bd0140f094.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_hospital_xraycabin_door_2.png"
-dest_files=["res://.godot/imported/animated_hospital_xraycabin_door_2.png-efb127d0bfb702ff45e351de5b3b9688.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_hospital_xraycabin_door_2.png"
+dest_files=["res://.godot/imported/animated_hospital_xraycabin_door_2.png-8b1ae44141bd56cb6e51c8bd0140f094.ctex"]
 
 [params]
 

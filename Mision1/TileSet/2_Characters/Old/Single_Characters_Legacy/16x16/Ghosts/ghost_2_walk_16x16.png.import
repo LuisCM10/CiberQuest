@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0mrtvy1p8ky4"
-path="res://.godot/imported/ghost_2_walk_16x16.png-9a9ea9b59b4fea6059cca0cc8807f201.ctex"
+path="res://.godot/imported/ghost_2_walk_16x16.png-ecf43cdb2ecbb25a420d15fae965a091.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Ghosts/ghost_2_walk_16x16.png"
-dest_files=["res://.godot/imported/ghost_2_walk_16x16.png-9a9ea9b59b4fea6059cca0cc8807f201.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Ghosts/ghost_2_walk_16x16.png"
+dest_files=["res://.godot/imported/ghost_2_walk_16x16.png-ecf43cdb2ecbb25a420d15fae965a091.ctex"]
 
 [params]
 

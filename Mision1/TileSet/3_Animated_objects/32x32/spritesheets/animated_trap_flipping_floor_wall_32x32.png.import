@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6pmuwrqndaef"
-path="res://.godot/imported/animated_trap_flipping_floor_wall_32x32.png-54c23d494e16f7a4f757fc0219eb6d04.ctex"
+path="res://.godot/imported/animated_trap_flipping_floor_wall_32x32.png-11a1dbb42e1d28e9b8b8803950cd0689.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_trap_flipping_floor_wall_32x32.png"
-dest_files=["res://.godot/imported/animated_trap_flipping_floor_wall_32x32.png-54c23d494e16f7a4f757fc0219eb6d04.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_trap_flipping_floor_wall_32x32.png"
+dest_files=["res://.godot/imported/animated_trap_flipping_floor_wall_32x32.png-11a1dbb42e1d28e9b8b8803950cd0689.ctex"]
 
 [params]
 

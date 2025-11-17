@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgyeaxxkcubpg"
-path="res://.godot/imported/Witch_32x32.png-930bda2ceb2b0443e0b6746b2bb1bd94.ctex"
+path="res://.godot/imported/Witch_32x32.png-1b45bc3eabd45636064f48c0a75656c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Witch_32x32.png"
-dest_files=["res://.godot/imported/Witch_32x32.png-930bda2ceb2b0443e0b6746b2bb1bd94.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Witch_32x32.png"
+dest_files=["res://.godot/imported/Witch_32x32.png-1b45bc3eabd45636064f48c0a75656c6.ctex"]
 
 [params]
 

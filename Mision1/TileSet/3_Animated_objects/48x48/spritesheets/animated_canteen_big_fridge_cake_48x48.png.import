@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qr8vhxh3cxf8"
-path="res://.godot/imported/animated_canteen_big_fridge_cake_48x48.png-d896d97b228d8271c1264f38d1659890.ctex"
+path="res://.godot/imported/animated_canteen_big_fridge_cake_48x48.png-62250b94454595472b0b70bf4ed04704.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_canteen_big_fridge_cake_48x48.png"
-dest_files=["res://.godot/imported/animated_canteen_big_fridge_cake_48x48.png-d896d97b228d8271c1264f38d1659890.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_canteen_big_fridge_cake_48x48.png"
+dest_files=["res://.godot/imported/animated_canteen_big_fridge_cake_48x48.png-62250b94454595472b0b70bf4ed04704.ctex"]
 
 [params]
 

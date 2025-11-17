@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cepiumvl0uhcm"
-path="res://.godot/imported/animated_morgue_freezer_door_no_corpse_48x48.png-e3599eee9a4c1d60b4c82a1d8681d078.ctex"
+path="res://.godot/imported/animated_morgue_freezer_door_no_corpse_48x48.png-c064293bf7beb225cee05bcbf6b45d38.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/48x48/spritesheets/animated_morgue_freezer_door_no_corpse_48x48.png"
-dest_files=["res://.godot/imported/animated_morgue_freezer_door_no_corpse_48x48.png-e3599eee9a4c1d60b4c82a1d8681d078.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/48x48/spritesheets/animated_morgue_freezer_door_no_corpse_48x48.png"
+dest_files=["res://.godot/imported/animated_morgue_freezer_door_no_corpse_48x48.png-c064293bf7beb225cee05bcbf6b45d38.ctex"]
 
 [params]
 

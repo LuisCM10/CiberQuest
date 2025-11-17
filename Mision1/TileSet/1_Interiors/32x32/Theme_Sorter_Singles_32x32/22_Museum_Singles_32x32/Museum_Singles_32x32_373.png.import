@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://74ml667c2n8f"
-path="res://.godot/imported/Museum_Singles_32x32_373.png-804327eb5d0c25302538d7ba46fd944e.ctex"
+path="res://.godot/imported/Museum_Singles_32x32_373.png-fdb6a2550921334d0f4e6580a9836c3c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/32x32/Theme_Sorter_Singles_32x32/22_Museum_Singles_32x32/Museum_Singles_32x32_373.png"
-dest_files=["res://.godot/imported/Museum_Singles_32x32_373.png-804327eb5d0c25302538d7ba46fd944e.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/32x32/Theme_Sorter_Singles_32x32/22_Museum_Singles_32x32/Museum_Singles_32x32_373.png"
+dest_files=["res://.godot/imported/Museum_Singles_32x32_373.png-fdb6a2550921334d0f4e6580a9836c3c.ctex"]
 
 [params]
 

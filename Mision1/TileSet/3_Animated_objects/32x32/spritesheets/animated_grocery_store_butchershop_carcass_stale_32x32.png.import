@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://buxn0ymy7opxq"
-path="res://.godot/imported/animated_grocery_store_butchershop_carcass_stale_32x32.png-d790b90978386ef0f6d4f511c5a48308.ctex"
+path="res://.godot/imported/animated_grocery_store_butchershop_carcass_stale_32x32.png-d586a1a8124ee7b41e9ec08ce48d5941.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/32x32/spritesheets/animated_grocery_store_butchershop_carcass_stale_32x32.png"
-dest_files=["res://.godot/imported/animated_grocery_store_butchershop_carcass_stale_32x32.png-d790b90978386ef0f6d4f511c5a48308.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/32x32/spritesheets/animated_grocery_store_butchershop_carcass_stale_32x32.png"
+dest_files=["res://.godot/imported/animated_grocery_store_butchershop_carcass_stale_32x32.png-d586a1a8124ee7b41e9ec08ce48d5941.ctex"]
 
 [params]
 

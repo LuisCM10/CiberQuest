@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qola5qh15fw1"
-path="res://.godot/imported/Christmas_SIngles_13.png-2f0dff7eab08567ccedb70748d45469b.ctex"
+path="res://.godot/imported/Christmas_SIngles_13.png-b4406c7ca4246e2d39d9389d77f4fa58.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/16x16/Theme_Sorter_Singles/15_Christmas_Singles/Christmas_SIngles_13.png"
-dest_files=["res://.godot/imported/Christmas_SIngles_13.png-2f0dff7eab08567ccedb70748d45469b.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/16x16/Theme_Sorter_Singles/15_Christmas_Singles/Christmas_SIngles_13.png"
+dest_files=["res://.godot/imported/Christmas_SIngles_13.png-b4406c7ca4246e2d39d9389d77f4fa58.ctex"]
 
 [params]
 

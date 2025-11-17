@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dw54t7p81hagc"
-path="res://.godot/imported/animated_glowing_pumpkin.png-edc4fb583e1e87e5741ba6e683be84e4.ctex"
+path="res://.godot/imported/animated_glowing_pumpkin.png-9bae3c11c4af92b5e8b3bdcbe8501a07.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_glowing_pumpkin.png"
-dest_files=["res://.godot/imported/animated_glowing_pumpkin.png-edc4fb583e1e87e5741ba6e683be84e4.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_glowing_pumpkin.png"
+dest_files=["res://.godot/imported/animated_glowing_pumpkin.png-9bae3c11c4af92b5e8b3bdcbe8501a07.ctex"]
 
 [params]
 

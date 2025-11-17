@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dikscnjm633ip"
-path="res://.godot/imported/Prisoner_1_32x32.png-82dc4ca3e9a6680f715fc03665c0040f.ctex"
+path="res://.godot/imported/Prisoner_1_32x32.png-39b0f023f2b716e699f49f25e9ebbc52.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Prisoner_1_32x32.png"
-dest_files=["res://.godot/imported/Prisoner_1_32x32.png-82dc4ca3e9a6680f715fc03665c0040f.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Prisoner_1_32x32.png"
+dest_files=["res://.godot/imported/Prisoner_1_32x32.png-39b0f023f2b716e699f49f25e9ebbc52.ctex"]
 
 [params]
 

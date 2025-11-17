@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crd3ijvj6npqu"
-path="res://.godot/imported/Accessory_16_Monocle_03.png-74f412e04adcec0b1eb891979b2863fc.ctex"
+path="res://.godot/imported/Accessory_16_Monocle_03.png-f4cd59e5f02dd111a5e06b3d93fff4b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_16_Monocle_03.png"
-dest_files=["res://.godot/imported/Accessory_16_Monocle_03.png-74f412e04adcec0b1eb891979b2863fc.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/16x16/Accessory_16_Monocle_03.png"
+dest_files=["res://.godot/imported/Accessory_16_Monocle_03.png-f4cd59e5f02dd111a5e06b3d93fff4b6.ctex"]
 
 [params]
 

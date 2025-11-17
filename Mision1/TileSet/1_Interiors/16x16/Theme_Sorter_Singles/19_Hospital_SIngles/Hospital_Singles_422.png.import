@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tmx2alex0o7k"
-path="res://.godot/imported/Hospital_Singles_422.png-c96495dbb506f65b82dd4a0fefe74b91.ctex"
+path="res://.godot/imported/Hospital_Singles_422.png-0c0b6edcaba4173aea7860f69a980604.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/16x16/Theme_Sorter_Singles/19_Hospital_SIngles/Hospital_Singles_422.png"
-dest_files=["res://.godot/imported/Hospital_Singles_422.png-c96495dbb506f65b82dd4a0fefe74b91.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/16x16/Theme_Sorter_Singles/19_Hospital_SIngles/Hospital_Singles_422.png"
+dest_files=["res://.godot/imported/Hospital_Singles_422.png-0c0b6edcaba4173aea7860f69a980604.ctex"]
 
 [params]
 

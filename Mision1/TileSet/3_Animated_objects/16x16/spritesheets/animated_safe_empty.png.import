@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qjlhcxjhec2l"
-path="res://.godot/imported/animated_safe_empty.png-b53a08c86e3ae6ed2f8c7ae3ebe6ea40.ctex"
+path="res://.godot/imported/animated_safe_empty.png-8a836a7396a83c94bf0ee0ad332277f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_safe_empty.png"
-dest_files=["res://.godot/imported/animated_safe_empty.png-b53a08c86e3ae6ed2f8c7ae3ebe6ea40.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_safe_empty.png"
+dest_files=["res://.godot/imported/animated_safe_empty.png-8a836a7396a83c94bf0ee0ad332277f8.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bc1dxdjkmrxfb"
-path="res://.godot/imported/animated_japanese_sliding_door.png-6863215e536419640d60e00b9f88c93c.ctex"
+path="res://.godot/imported/animated_japanese_sliding_door.png-7be45beeb2d357d8d8aef12a94110dbc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_japanese_sliding_door.png"
-dest_files=["res://.godot/imported/animated_japanese_sliding_door.png-6863215e536419640d60e00b9f88c93c.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_japanese_sliding_door.png"
+dest_files=["res://.godot/imported/animated_japanese_sliding_door.png-7be45beeb2d357d8d8aef12a94110dbc.ctex"]
 
 [params]
 

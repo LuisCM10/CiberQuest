@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsjqytb76mutn"
-path="res://.godot/imported/Jail_Singles_48x48_75.png-19d49a0c9c8f20e4d72b0e69c64293e1.ctex"
+path="res://.godot/imported/Jail_Singles_48x48_75.png-24080b59d50de458a023297a8a3f36f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/48x48/Theme_Sorter_Singles_48x48/18_Jail_Singles_48x48/Jail_Singles_48x48_75.png"
-dest_files=["res://.godot/imported/Jail_Singles_48x48_75.png-19d49a0c9c8f20e4d72b0e69c64293e1.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/48x48/Theme_Sorter_Singles_48x48/18_Jail_Singles_48x48/Jail_Singles_48x48_75.png"
+dest_files=["res://.godot/imported/Jail_Singles_48x48_75.png-24080b59d50de458a023297a8a3f36f2.ctex"]
 
 [params]
 

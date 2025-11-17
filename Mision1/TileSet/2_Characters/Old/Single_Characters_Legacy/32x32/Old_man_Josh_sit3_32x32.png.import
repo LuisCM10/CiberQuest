@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ygqwb5qqitih"
-path="res://.godot/imported/Old_man_Josh_sit3_32x32.png-5c0965e0cd4f416792c0f77bd760bab4.ctex"
+path="res://.godot/imported/Old_man_Josh_sit3_32x32.png-c385f3224594a3013b3fa93b854b436f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Old_man_Josh_sit3_32x32.png"
-dest_files=["res://.godot/imported/Old_man_Josh_sit3_32x32.png-5c0965e0cd4f416792c0f77bd760bab4.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Old_man_Josh_sit3_32x32.png"
+dest_files=["res://.godot/imported/Old_man_Josh_sit3_32x32.png-c385f3224594a3013b3fa93b854b436f.ctex"]
 
 [params]
 

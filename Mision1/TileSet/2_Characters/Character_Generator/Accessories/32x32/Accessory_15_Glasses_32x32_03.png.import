@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dh8lv223mvplq"
-path="res://.godot/imported/Accessory_15_Glasses_32x32_03.png-3c737272e40ac3d6f07a9fdbec5b1d2d.ctex"
+path="res://.godot/imported/Accessory_15_Glasses_32x32_03.png-cb110d6b8d18b6b680c4cafffacbe50d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Character_Generator/Accessories/32x32/Accessory_15_Glasses_32x32_03.png"
-dest_files=["res://.godot/imported/Accessory_15_Glasses_32x32_03.png-3c737272e40ac3d6f07a9fdbec5b1d2d.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Character_Generator/Accessories/32x32/Accessory_15_Glasses_32x32_03.png"
+dest_files=["res://.godot/imported/Accessory_15_Glasses_32x32_03.png-cb110d6b8d18b6b680c4cafffacbe50d.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjugx8b804t0f"
-path="res://.godot/imported/Samuel_phone_32x32.png-8a6ff4a2eecefb2bfb3f331e3c3efa46.ctex"
+path="res://.godot/imported/Samuel_phone_32x32.png-db1a0471278c9860c8ed17977f1fc2dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Samuel_phone_32x32.png"
-dest_files=["res://.godot/imported/Samuel_phone_32x32.png-8a6ff4a2eecefb2bfb3f331e3c3efa46.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Samuel_phone_32x32.png"
+dest_files=["res://.godot/imported/Samuel_phone_32x32.png-db1a0471278c9860c8ed17977f1fc2dc.ctex"]
 
 [params]
 

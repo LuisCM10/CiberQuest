@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7p2tgnv4orec"
-path="res://.godot/imported/Clothing_Store_Black_Shadow_Singles_32x32_225.png-52cce8e7baa12e4193610b34a3c11160.ctex"
+path="res://.godot/imported/Clothing_Store_Black_Shadow_Singles_32x32_225.png-542f6a58cee0bfdf7183d2faafc3b121.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/32x32/Theme_Sorter_Black_Shadow_Singles_32x32/21_Clothing_Store_Black_Shadow_Singles_32x32/Clothing_Store_Black_Shadow_Singles_32x32_225.png"
-dest_files=["res://.godot/imported/Clothing_Store_Black_Shadow_Singles_32x32_225.png-52cce8e7baa12e4193610b34a3c11160.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/32x32/Theme_Sorter_Black_Shadow_Singles_32x32/21_Clothing_Store_Black_Shadow_Singles_32x32/Clothing_Store_Black_Shadow_Singles_32x32_225.png"
+dest_files=["res://.godot/imported/Clothing_Store_Black_Shadow_Singles_32x32_225.png-542f6a58cee0bfdf7183d2faafc3b121.ctex"]
 
 [params]
 

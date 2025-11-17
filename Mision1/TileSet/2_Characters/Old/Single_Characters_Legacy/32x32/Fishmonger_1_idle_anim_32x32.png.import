@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsdeum24flxbp"
-path="res://.godot/imported/Fishmonger_1_idle_anim_32x32.png-255444528446475a3fbec665b901c7ad.ctex"
+path="res://.godot/imported/Fishmonger_1_idle_anim_32x32.png-00b8b3edd7af6d5ffd1a7ca827dafeb3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Fishmonger_1_idle_anim_32x32.png"
-dest_files=["res://.godot/imported/Fishmonger_1_idle_anim_32x32.png-255444528446475a3fbec665b901c7ad.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Fishmonger_1_idle_anim_32x32.png"
+dest_files=["res://.godot/imported/Fishmonger_1_idle_anim_32x32.png-00b8b3edd7af6d5ffd1a7ca827dafeb3.ctex"]
 
 [params]
 

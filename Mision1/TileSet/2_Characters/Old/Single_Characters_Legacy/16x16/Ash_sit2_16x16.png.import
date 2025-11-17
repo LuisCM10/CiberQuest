@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btahbbv7x8da"
-path="res://.godot/imported/Ash_sit2_16x16.png-bff04282af54c14093a54dd5ac7fc915.ctex"
+path="res://.godot/imported/Ash_sit2_16x16.png-e662c72b427414e0a181e0c0615e249e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Ash_sit2_16x16.png"
-dest_files=["res://.godot/imported/Ash_sit2_16x16.png-bff04282af54c14093a54dd5ac7fc915.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/16x16/Ash_sit2_16x16.png"
+dest_files=["res://.godot/imported/Ash_sit2_16x16.png-e662c72b427414e0a181e0c0615e249e.ctex"]
 
 [params]
 

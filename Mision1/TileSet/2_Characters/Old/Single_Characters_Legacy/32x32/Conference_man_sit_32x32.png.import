@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ml8no5o83dkf"
-path="res://.godot/imported/Conference_man_sit_32x32.png-6b5be7258a5e426a56d2c84cf1d449f7.ctex"
+path="res://.godot/imported/Conference_man_sit_32x32.png-36e1c268511c6d831c26e2cd139e42c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Conference_man_sit_32x32.png"
-dest_files=["res://.godot/imported/Conference_man_sit_32x32.png-6b5be7258a5e426a56d2c84cf1d449f7.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Conference_man_sit_32x32.png"
+dest_files=["res://.godot/imported/Conference_man_sit_32x32.png-36e1c268511c6d831c26e2cd139e42c0.ctex"]
 
 [params]
 

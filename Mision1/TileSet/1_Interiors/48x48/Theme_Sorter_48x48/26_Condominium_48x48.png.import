@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpfcsujn1uqcu"
-path="res://.godot/imported/26_Condominium_48x48.png-b0d0df7490738888f50046bcf3578c7b.ctex"
+path="res://.godot/imported/26_Condominium_48x48.png-42ebcaa743b00ba5a6041408864c5274.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/1_Interiors/48x48/Theme_Sorter_48x48/26_Condominium_48x48.png"
-dest_files=["res://.godot/imported/26_Condominium_48x48.png-b0d0df7490738888f50046bcf3578c7b.ctex"]
+source_file="res://Mision1/TileSet/1_Interiors/48x48/Theme_Sorter_48x48/26_Condominium_48x48.png"
+dest_files=["res://.godot/imported/26_Condominium_48x48.png-42ebcaa743b00ba5a6041408864c5274.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bog2qvkhji0v1"
-path="res://.godot/imported/Kid_Mitty_idle_32x32.png-06ba7541a7286f9e5f25b10d2002bee9.ctex"
+path="res://.godot/imported/Kid_Mitty_idle_32x32.png-6df8e87809f7441950fc798b8d306a04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Kid_Mitty_idle_32x32.png"
-dest_files=["res://.godot/imported/Kid_Mitty_idle_32x32.png-06ba7541a7286f9e5f25b10d2002bee9.ctex"]
+source_file="res://Mision1/TileSet/2_Characters/Old/Single_Characters_Legacy/32x32/Kid_Mitty_idle_32x32.png"
+dest_files=["res://.godot/imported/Kid_Mitty_idle_32x32.png-6df8e87809f7441950fc798b8d306a04.ctex"]
 
 [params]
 

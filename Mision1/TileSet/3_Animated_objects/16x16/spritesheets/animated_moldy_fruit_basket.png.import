@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dv72sld8yvsbj"
-path="res://.godot/imported/animated_moldy_fruit_basket.png-c7f3534ed4e473ffebe9eb8eec5f3f24.ctex"
+path="res://.godot/imported/animated_moldy_fruit_basket.png-621c1285bd5a7e8bcccb5d8608fa2aae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TileSet/3_Animated_objects/16x16/spritesheets/animated_moldy_fruit_basket.png"
-dest_files=["res://.godot/imported/animated_moldy_fruit_basket.png-c7f3534ed4e473ffebe9eb8eec5f3f24.ctex"]
+source_file="res://Mision1/TileSet/3_Animated_objects/16x16/spritesheets/animated_moldy_fruit_basket.png"
+dest_files=["res://.godot/imported/animated_moldy_fruit_basket.png-621c1285bd5a7e8bcccb5d8608fa2aae.ctex"]
 
 [params]
 
