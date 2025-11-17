@@ -25,3 +25,4 @@ func set_adyacencia(adyacencia: Array):
 
 func addAdyacente(vertice: Vertice):
 	self.adyacentes.append(vertice)
+	self.adyacentes.sort_custom(func(a: Vertice, b: Vertice): return a.id < b.id)

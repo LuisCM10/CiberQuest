@@ -14,6 +14,9 @@ const LINEA_DE_FLUJO_MAX_NODOS = "flujoMaximo"
 # -----Variables Visuales--------
 @onready var panelGrafo = $PanGrafo
 @onready var sizes = [panelGrafo.size[0] * 0.46, panelGrafo.size[1] * 0.44]
+@onready var lblIntruc = $VBoxContainer/LblIntruccion
+@onready var lblTime = $VBoxContainer/LblTime
+@onready var lblrecor = $VBoxContainer/lblRecorrido
 
 # ----- Variables de generacion --------
 @onready var grafo = Grafo.new()
@@ -24,17 +27,26 @@ var prob_conexion = 0.5
 var vertActual : Vertice
 var origen : Vertice = null
 var destino : Vertice = null
+# recorrido
 var recorri = true
+
+# disjkstra
 var dijkstra = false
+# reconstruccion
 var reconstrucion = false
+var parent = []
+# flujo
 var flujo = false
-var start = false
-var visitados = []
+
+# respuestas
 var recorrido = []
 var UserRecorrido = []
-var cola = []
+
+# 
+var start = false
 var ite = 0
 var cont = 0
+var iteAnt = 0
 var turno = false
 
 func _ready():
@@ -51,15 +63,16 @@ func _ready():
 	# Conectar vértices con pesos y capacidades aleatorios
 	for i in range(num_vertices):
 		var vertic1 = grafo.searchVertice(i)
-		for j in range(i + 1, num_vertices):
-			if randf() < prob_conexion:
-				var vertic2 = grafo.searchVertice(j)
-				# Generar peso aleatorio (ej. entre 1 y 10)
-				var peso = randf_range(1.0, 10.0)
-				# Generar capacidad aleatoria (ej. entre 1 y 20)
-				var capacidad = randi_range(1, 20)
-				# Conectar con peso y capacidad (ajusta según tu método connect_vertice)
-				grafo.connect_vertice(vertic1, vertic2, peso, capacidad)
+		for j in range(num_vertices):
+			if i != j:
+				if randf() < prob_conexion:
+					var vertic2 = grafo.searchVertice(j)
+					# Generar peso aleatorio (ej. entre 1 y 10)
+					var peso = randf_range(1.0, 10.0)
+					# Generar capacidad aleatoria (ej. entre 1 y 20)
+					var capacidad = randi_range(1, 20)
+					# Conectar con peso y capacidad (ajusta según tu método connect_vertice)
+					grafo.connect_vertice(vertic1, vertic2, peso, capacidad)
 	dibujar_grafo()
 
 func dibujar_grafo():
@@ -80,17 +93,74 @@ func dibujar_grafo():
 		# Dibujar conexiones (líneas)
 		for ady in vertice.get_adyacencia():
 			var indice_ady = grafo.vertices.find(ady)
-			if indice_ady > i:  # Evita duplicar líneas
+			if not has_node(str(ady.id) + "_" + str(vertice.id)):
 				crearLinea(vertice, 2, indice_ady)
-				
+
+#---------------- Metodos de click a boton de nodos y lineas de conexiones -------------------------
 func _on_nodo_clicked(vertice : Vertice):
 	vertActual = vertice
 	if start and recorri and turno and cont < ite:
-		UserRecorrido.append(vertActual)
-		cont+=1
+		if not UserRecorrido.has(vertActual):
+			UserRecorrido.append(vertActual)
+			lblrecor.text = str(recorStr())			
+			dibujarRecorrido(vertActual, UserRecorrido.size()-1)			
+		else:
+			lblIntruc.text = "El nodo "+ str(vertActual.id) + " ya se encuentra en el recorrido"
+
+func _on_arista_clicked(linea: conexion):
+	var label : Label = obtenerLabelCapacidad(linea)
+	vertActual = linea.destino
+	print(linea.id)
+	if start and recorri:
+		if UserRecorrido.has(linea.origen):
+			UserRecorrido.append(vertActual)
+			cont+=1
+	if start and reconstrucion:
+		kruskal_click(linea)
+
+
+# ------------------- Kruskal -----------------------------
+func kruskal_click(linea : conexion):
+	var n1 = find(linea.origen)
+	var n2 = find(linea.destino)
+
+	if n1 != n2:
+		union(n1, n2)
+		recorrido.append(linea)
+		crearLinea(linea.origen, 3, linea.destino, LINEA_DE_RECONSTRUCCION_NODOS, grafo.getPeso(linea.origen, linea.destino))
+	else:
+		crearLinea(linea.origen, 3, linea.destino, LINEA_DE_RECONSTRUCCION_NODOS, grafo.getPeso(linea.origen, linea.destino))
+		cont += 1
+		if cont >= 5:
+			#show_defeat_message()
+			pass
+		await get_tree().create_timer(0.5).timeout
+		borrarLinea(LINEA_DE_RECONSTRUCCION_NODOS, linea)
+
+	if recorrido.size() == num_vertices - 1:
+		#Victoria
+		pass
+
+func find(i : Vertice):
+	if parent[i.id] != i:
+		parent[i.id] = find(parent[i.id])
+	return parent[i.id]
 	
+func union(a, b):
+	var ra = a
+	var rb = b
+	if ra != rb:
+		parent[rb.id] = ra
+		
+func start_kruskal():
+	reconstrucion = true
+	start = true
+	recorrido.clear()
+	UserRecorrido.clear()
 	
-func crearLinea(vertice, width, indice_ady, name = LINEA_DE_CONEXION_NODOS, peso: float = 0.0, capacidad: float = 0.0, lineaRef : conexion= null):
+# ----------------- Configuraciones Lineas ------------------------------------
+
+func crearLinea(vertice, width, indice_ady,correcto = true, name = LINEA_DE_CONEXION_NODOS, peso: float = 0.0, capacidad: float = 0.0, lineaRef : conexion= null):
 	var linea = conexion.new()
 	var node_b
 	if indice_ady is int:
@@ -110,7 +180,7 @@ func crearLinea(vertice, width, indice_ady, name = LINEA_DE_CONEXION_NODOS, peso
 	match name:
 		LINEA_DE_CONEXION_NODOS:
 			linea.name = str(vertice.id) + "_" + str(node_b.id)
-			linea.connect("pressed", Callable(self, "_on_arista_clicked").bind(linea))
+			linea.connect("edge_selected", Callable(self, "_on_arista_clicked"))
 			linea.start_point = end_point
 			linea.end_point = start_point
 			linea.origen = vertice
@@ -132,7 +202,7 @@ func crearLinea(vertice, width, indice_ady, name = LINEA_DE_CONEXION_NODOS, peso
 			linea.tipo = name
 			linea.name = name + "_" + lineaRef.name
 		LINEA_DE_FLUJO_MAX_NODOS:
-			color = Color(0.702, 0.0, 0.331, 1.0)
+			color = Color(0.833, 0.066, 0.064, 1.0)
 			if has_node(str(vertice.id) + "_" + str(node_b.id)):            
 				linea.start_point = start_point
 				linea.end_point = end_point    
@@ -143,6 +213,8 @@ func crearLinea(vertice, width, indice_ady, name = LINEA_DE_CONEXION_NODOS, peso
 			linea.name = name + "_" + lineaRef.name
 		LINEA_DE_FLUJO_NODOS:
 			color = Color(0.0, 0.541, 0.448, 1.0)
+			if not correcto:
+				color = Color(1.0, 0.0, 0.102, 1.0)
 			if has_node(str(vertice.id) + "_" + str(node_b.id)):            
 				linea.start_point = start_point
 				linea.end_point = end_point    
@@ -153,6 +225,8 @@ func crearLinea(vertice, width, indice_ady, name = LINEA_DE_CONEXION_NODOS, peso
 			linea.name = name + "_" + lineaRef.name
 		LINEA_DE_RECONSTRUCCION_NODOS:
 			color = Color(0.488, 0.504, 0.378, 1.0)
+			if not correcto:
+				color = Color(1.0, 0.0, 0.102, 1.0)
 			if lineaRef:
 				linea.start_point = lineaRef.start_point
 				linea.end_point = lineaRef.end_point
@@ -193,16 +267,7 @@ func crearLinea(vertice, width, indice_ady, name = LINEA_DE_CONEXION_NODOS, peso
 	linea.duracion = anim
 	panelGrafo.add_child(linea)
 	return linea
-	
-func _on_arista_clicked(linea: conexion):
-	var label : Label = obtenerLabelCapacidad(linea)
-	vertActual = linea.destino
-	if start and recorri and turno and cont < ite:
-		if UserRecorrido.has(linea.origen):
-			UserRecorrido.append(vertActual)
-			cont+=1
-
-
+		
 func añadirLabelLineas (vert1, vert2, tipo, valor, capacidad_usada = 0):
 	var label = Label.new()
 	var linea
@@ -241,6 +306,18 @@ func configurarLabelCapacidad(label: Label, capacidad: float, capacidad_usada):
 	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	label.modulate = Color(0, 0, 0)  # Color del texto (negro; cambia si quieres otro)
 
+func generarLabels(tipo):
+	for i in range(grafo.vertices.size()):
+		var vertice = grafo.vertices[i]
+		for ady in vertice.get_adyacencia():
+			var indice_ady = grafo.vertices.find(ady)
+			if indice_ady > i:  # Evita duplicar labels
+				match tipo:
+					LINEA_DE_CONEXION_PESOS_NODOS:
+						añadirLabelLineas(vertice, ady, tipo, grafo.getPeso(vertice, ady))
+					LINEA_DE_CONEXION_CAPACIDAD_NODOS:
+						añadirLabelLineas(vertice, ady, tipo, grafo.getFlujoMax(vertice, ady), grafo.getFlujoUsado(vertice, ady))
+
 func borrarLineas(tipo):
 	var linea : conexion
 	for x in grafo.vertices:
@@ -253,6 +330,12 @@ func borrarLineas(tipo):
 			if linea:
 				linea.queue_free()
 			linea = null
+			
+func borrarLinea(tipo, linea):
+	var lint
+	if has_node(tipo + "_" + linea.name):
+		lint = get_node(tipo + "_" + linea.name)
+		lint.queue_free()
 			
 func borrarLabels(tipo):
 	var linea : conexion
@@ -278,22 +361,8 @@ func obtenerLabelCapacidad(linea: conexion) -> Label:
 		print("Error: Label no encontrado para la línea '" + linea.name + "'")
 		return null
 		
-# Metodos Recorrido BFS
-func BFS () :
-	var top = ite +3
-	while ite < top or cola.is_empty():
-		var node = cola.pop_front()
-		if node:
-			recorrido.append(node)
-			if node.is_origin:
-				ite = top			
-			for neighbor in node.adyacentes:
-				if neighbor not in visitados:
-					visitados.append(neighbor)
-					cola.append(neighbor)		
-		ite+=1
-	return recorrido
-	
+# -------------------------------- Recorrido ------------------------------------
+
 func dibujarRecorrido(node, prev) -> void:
 	if prev < 0:
 		return
@@ -301,16 +370,28 @@ func dibujarRecorrido(node, prev) -> void:
 		dibujarRecorrido(node, prev-1)
 		return
 	var x = recorrido[prev]
-	var color 
-	if node.is_origin:
-		color = Color(255,0,0)
-	else: 
-		color = Color(0.185, 0.416, 1.0, 1.0)
+	if recorrido[UserRecorrido.size-1] != UserRecorrido[UserRecorrido.size-1]:
+		lblIntruc.text = "El nodo " + str(UserRecorrido[UserRecorrido.size-1].id) + " no esta en su posicion correcta. Elige el nodo correcto"
+		lblrecor.text = str(recorStr())
+		var linea = crearLinea(x, 5, node, false, LINEA_DE_RECORRIDO_NODOS)
+		UserRecorrido.remove_at(x)
+		await get_tree().create_timer(1).timeout
+		borrarLinea(LINEA_DE_RECORRIDO_NODOS, linea)
+		return
 	crearLinea(x, 5, node, LINEA_DE_RECORRIDO_NODOS)
 
+func recorStr() -> Array:
+	var recor = []
+	for x in UserRecorrido:
+		recor.append(x.id)
+	return recor
 
+# ------------------------- Botones De control de juego ------------------------
 func _on_btn_iniciar_pressed() -> void:
 	if recorri:		
+		if not vertActual:
+			lblIntruc.text = "Por fvavor selecciona un nodo para comenzar"
+			return
 		var origin_index = randi() % grafo.vertices.size()
 		origen = grafo.vertices[origin_index]
 		while origen == vertActual or vertActual.adyacentes.has(origen):
@@ -318,22 +399,16 @@ func _on_btn_iniciar_pressed() -> void:
 			origen = grafo.vertices[origin_index]
 		origen.is_origin = true	
 		start = true
-		cola.append(vertActual)
-		visitados.append(vertActual)
 		UserRecorrido.append(vertActual)
-		BFS()
-		turno = true
-	pass # Replace with function body.
+		lblIntruc.text = "Es hora de encontrar el recorrido desde el nodo "+ str(vertActual.id)
+		lblrecor.text = str(recorStr())
+		recorrido = grafo.bfs(vertActual)
+	if reconstrucion:
+		start = true
+		generarLabels(LINEA_DE_CONEXION_PESOS_NODOS)
+		lblIntruc.text = "Es hora de reconstruir el camino. Suerte!"
 
 
 func _on_btn_enviar_pressed() -> void:
 	if recorri:
-		turno = false
-		if recorrido == UserRecorrido:
-			for x in recorrido:
-				dibujarRecorrido(x, recorrido.size()-1)
-				await get_tree().create_timer(2).timeout
-		BFS()
-		await get_tree().create_timer(1).timeout
-		turno = true
-	pass # Replace with function body.
+		pass # Replace with function body.

@@ -169,8 +169,7 @@ func dibujarRecorrido(node, prev) -> void:
 	var x = recorrido[prev]
 	var color 
 	if node.is_origin:
-		color = Color(255,0,0)
-		
+		color = Color(255,0,0)		
 	else: 
 		color = Color(0.185, 0.416, 1.0, 1.0)
 	crearLinea(x, color, 5, node, "recorrido")
