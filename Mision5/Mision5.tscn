@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=3 uid="uid://brliao6hafp1w"]
+
+[ext_resource type="Script" uid="uid://cip2br1bu211x" path="res://Mision5/mision5.gd" id="1_grvwb"]
+[ext_resource type="FontFile" uid="uid://dudo3khf2v3o4" path="res://VT323-Regular.ttf" id="2_eyvh5"]
+
+[sub_resource type="TileSet" id="TileSet_eyvh5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_asxaa"]
+font = ExtResource("2_eyvh5")
+font_size = 15
+
+[sub_resource type="LabelSettings" id="LabelSettings_mr1ps"]
+font = ExtResource("2_eyvh5")
+font_size = 18
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BackGround" type="TileMap" parent="."]
+format = 2
+
+[node name="TileMapLayer" type="TileMapLayer" parent="BackGround"]
+tile_set = SubResource("TileSet_eyvh5")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 479.0
+offset_bottom = 270.0
+script = ExtResource("1_grvwb")
+
+[node name="PanGrafo" type="Panel" parent="Control"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 19.0
+offset_right = 353.0
+offset_bottom = 232.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 0
+offset_left = 366.0
+offset_top = 16.0
+offset_right = 470.0
+offset_bottom = 229.0
+
+[node name="LblIntruccion" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Elige un vertice para iniciar el recorrido"
+label_settings = SubResource("LabelSettings_asxaa")
+autowrap_mode = 2
+
+[node name="BtnIniciar" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Iniciar"
+
+[node name="LblTime" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "00:00"
+label_settings = SubResource("LabelSettings_mr1ps")
+horizontal_alignment = 1
+
+[node name="BtnEnviar" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Enviar"
+autowrap_mode = 2
+
+[connection signal="pressed" from="Control/VBoxContainer/BtnIniciar" to="Control" method="_on_btn_iniciar_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/BtnEnviar" to="Control" method="_on_btn_enviar_pressed"]

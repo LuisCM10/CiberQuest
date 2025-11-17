@@ -231,6 +231,7 @@ func show_victory_message():
                            Todos los servidores vuelven a estar sincronizados."
 	lbl_victory.visible = true
 	await get_tree().create_timer(3.0).timeout
+	ControlGame.avanzarNivel()
 	get_tree().change_scene_to_file("res://niveles.tscn")
 
 

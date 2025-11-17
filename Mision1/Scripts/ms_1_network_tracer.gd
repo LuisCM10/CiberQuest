@@ -65,10 +65,10 @@ func _ready():
 	dibujar_grafo()
 
 
-func _on_servidor_clicked(index: int):
+func _on_servidor_clicked(vertice : Vertice):
+	VertIni = vertice
 	if !PanServ.visible:
-		PanServ.visible = true
-	VertIni = grafo.searchVertice(index)
+		PanServ.visible = true	
 	LabelName.text = VertIni.name
 	LabelFunct.text = VertIni.funcionalidad
 	if PanPista.visible and not recorrido.has(VertIni):
@@ -170,6 +170,7 @@ func dibujarRecorrido(node, prev) -> void:
 	var color 
 	if node.is_origin:
 		color = Color(255,0,0)
+		
 	else: 
 		color = Color(0.185, 0.416, 1.0, 1.0)
 	crearLinea(x, color, 5, node, "recorrido")
@@ -191,6 +192,7 @@ func _on_button_sig_pressed() -> void:
 
 
 func _on_button_exit_pressed() -> void:
+	ControlGame.avanzarNivel()
 	get_tree().change_scene_to_file("res://niveles.tscn")
 	pass # Replace with function body.
 	
@@ -207,7 +209,7 @@ func dibujar_grafo():
 		button.size = Vector2(40, 40)
 		button.position = vertice.posicion
 		button.flat = true
-		button.connect("pressed", Callable(self, "_on_servidor_clicked").bind(i))
+		button.connect("pressed", Callable(self, "_on_servidor_clicked").bind(vertice))
 		PanGrafo.add_child(button)
 		# Dibujar conexiones (líneas)
 		for ady in vertice.get_adyacencia():
@@ -235,14 +237,21 @@ func crearLinea(vertice, color, width, indice_ady, name = "conexion"):
 		linea.name = vertice.name + "_"+ node_b.name
 		linea.start_point = end_point
 		linea.end_point = start_point
+		linea.origen = vertice
+		linea.destino = node_b
 	else: 
 		anim = 0.6
 		if has_node(vertice.name + "_"+ node_b.name):			
 			linea.start_point = start_point
 			linea.end_point = end_point	
+			linea.origen = vertice
+			linea.destino = node_b
 		else:
 			linea.start_point = start_point
 			linea.end_point = end_point
+			linea.origen = node_b
+			linea.destino = vertice
+		linea.tipo = name
 		linea.name = name + "_" + vertice.name + "_" + node_b.name
 	linea.width = width
 	linea.default_color = color
