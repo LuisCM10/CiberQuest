@@ -783,6 +783,7 @@ func _game_over(victory: bool):
 	if victory:
 		_update_instructions("Flujo máximo alcanzado: %d/%d unidades" % [total_flow_sent, target_flow])
 		await get_tree().create_timer(3.0).timeout
+		ControlGame.avanzarNivel()
 		get_tree().change_scene_to_file("res://niveles.tscn")
 	else:
 		_update_instructions("Tiempo agotado. Flujo logrado: %d/%d" % [total_flow_sent, target_flow])

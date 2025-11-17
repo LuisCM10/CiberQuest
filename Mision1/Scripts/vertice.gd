@@ -9,10 +9,9 @@ var funcionalidad = "" # String para guardar la funcion del servidor
 var is_origin := false
 var pista
 
-func _init(id, name, funcionalidad, origen, pista):
+func _init(id, name = "", funcionalidad = "", origen = false, pista = ""):
 	self.id = id
-	self.name = name	
-	self.posicion = posicion
+	self.name = name
 	self.funcionalidad = funcionalidad
 	self.is_origin = origen
 	self.pista = pista

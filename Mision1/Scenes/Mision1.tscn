@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=4 uid="uid://n31glmfwc040"]
 
 [ext_resource type="TileSet" uid="uid://vri2jbg2a8fm" path="res://Mision1/TileSet/tileSet.tres" id="1_2qcc2"]
-[ext_resource type="PackedScene" path="res://Mision1/Scenes/ms_1_network_tracer.tscn" id="2_jtjef"]
+[ext_resource type="PackedScene" uid="uid://cbxo4u4ba0wt8" path="res://Mision1/Scenes/ms_1_network_tracer.tscn" id="2_jtjef"]
 [ext_resource type="FontFile" uid="uid://dudo3khf2v3o4" path="res://VT323-Regular.ttf" id="3_ukclc"]
 
 [sub_resource type="Theme" id="Theme_jtjef"]
