@@ -21,7 +21,7 @@ const LINEA_DE_FLUJO_MAX_NODOS = "flujoMaximo"
 # ----- Variables de generacion --------
 @onready var grafo = Grafo.new()
 var num_vertices = 10
-var prob_conexion = 0.5
+var prob_conexion = 0.3
 
 # ------ Variables de control ------
 var vertActual : Vertice
@@ -167,11 +167,11 @@ func crearLinea(vertice, width, indice_ady,correcto = true, name = LINEA_DE_CONE
 		node_b = grafo.searchVertice(indice_ady)
 	else:
 		node_b = indice_ady
-	var pos_a = vertice.posicion + Vector2(32, 32) / 2
-	var pos_b = node_b.posicion + Vector2(32, 32) / 2
-	var radius_a = max(24, 32) / 2
-	var radius_b = max(24, 32) / 2
-	var dir = (pos_b - pos_a).normalized()        
+	var pos_a = vertice.posicion + Vector2(40, 40) / 2
+	var pos_b = node_b.posicion + Vector2(40, 40) / 2
+	var radius_a = max(24, 46) / 2
+	var radius_b = max(24, 46) / 2
+	var dir = (pos_b - pos_a).normalized()
 	var start_point = pos_a + dir * radius_a
 	var end_point = pos_b - dir * radius_b
 	var anim = 1
@@ -375,10 +375,11 @@ func dibujarRecorrido(node, prev) -> void:
 		lblrecor.text = str(recorStr())
 		var linea = crearLinea(x, 5, node, false, LINEA_DE_RECORRIDO_NODOS)
 		UserRecorrido.remove_at(x)
-		await get_tree().create_timer(1).timeout
+		await get_tree().create_timer(4).timeout
 		borrarLinea(LINEA_DE_RECORRIDO_NODOS, linea)
 		return
 	crearLinea(x, 5, node, LINEA_DE_RECORRIDO_NODOS)
+	await get_tree().create_timer(2).timeout
 
 func recorStr() -> Array:
 	var recor = []
