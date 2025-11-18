@@ -1,9 +1,13 @@
 class_name  conexion extends Line2D
 
-signal edge_selected(linea)
+const LINEA_DE_CONEXION_PESOS_NODOS = "Pesos"
+const LINEA_DE_CONEXION_CAPACIDAD_NODOS = "Capacidad"
+signal linea_presionada(linea)
 
-@onready var area = Area2D.new()
-@onready var rect_shape = RectangleShape2D.new()
+@onready var area 
+@onready var rect_shape 
+@onready var label = Label.new()
+@onready var shape
 var flecha: Polygon2D
 var start_point = [0,0]
 var end_point = [100, 100]
@@ -13,20 +17,19 @@ var destino :Vertice = null
 var duracion = 1
 var progress = 0.0
 var tipo = "conexion"
+var grafo : Grafo = null
 		
 func _ready():
-	area.name = "area"
-	add_child(area)
-	var shape = CollisionShape2D.new()
-	_update_collision()
-	shape.shape = rect_shape	
-	area.add_child(shape)
-	area.connect("input_event", Callable(self, "_on_area_input_event"))
-	print("Area conectada")
 	points = [start_point,start_point]	
+	label.name = "label_" + self.name
+	label.modulate = Color(255,255,255)
+	add_child(label)
+	label.visible = false
+	conectarCollisionShape()	
 	if not destino.adyacentes.has(origen) or tipo != "conexion":
 		flecha = Polygon2D.new()
 		add_child(flecha)
+		
 
 func _process(delta: float) -> void:
 	if progress < 1.0:
@@ -54,15 +57,78 @@ func actualizarFlecha():
 func setPointEnd(new_end: Vector2):
 	points = [start_point, new_end]
 	actualizarFlecha()
-	_update_collision()
+	añadirLabelLineas()
 
-func _update_collision():
-	var length = start_point.distance_to(end_point)
-	var angle = (end_point - start_point).angle()
-	rect_shape.size = Vector2(length, width * 2)
+func conectarCollisionShape():
+	# Crear Area2D si no existe
+	if not has_node("Area2D"):
+		var area = Area2D.new()
+		area.name = "Area2D"
+		add_child(area)
+		
+		# Crear CollisionShape2D con forma rectangular aproximada a la línea
+		var shape = CollisionShape2D.new()
+		var rect_shape = RectangleShape2D.new()
+		var length = points[1].distance_to(points[0]) if points.size() >= 2 else 0
+		rect_shape.size = Vector2(length, width * 2)  # Ancho basado en el grosor de la línea
+		shape.shape = rect_shape
+		area.add_child(shape)
+		
+		# Posicionar y rotar el Area2D para seguir la línea
+		var mid_point = (points[0] + points[1]) / 2
+		area.position = mid_point
+		var angle = (points[1] - points[0]).angle()
+		area.rotation = angle
+		
+		# Conectar señal de input_event para detectar clics
+		area.connect("input_event", Callable(self, "_on_area_input_event"))
+	
+	# Señal personalizada para clic en la línea
+	if not has_signal("linea_presionada"):
+		add_user_signal("linea_presionada", [{"name": "linea"}])
+
+# Función para manejar el evento de clic
+func _on_area_input_event(viewport, event, shape_idx):
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		emit_signal("linea_presionada", self)  # Emite señal con la línea como parámetro
+
+func añadirLabelLineas ():
+	match tipo:
+		LINEA_DE_CONEXION_PESOS_NODOS:
+			configurarLabelPeso()			
+		LINEA_DE_CONEXION_CAPACIDAD_NODOS:
+			configurarLabelCapacidad()
+	# Calcular posición: punto medio entre start_point y end_point
+	var mid_point = (start_point + end_point) / 2
+	label.position = mid_point
+	# Calcular rotación: ángulo de la línea (para alinear el texto)
+	var direction = end_point - start_point
+	var angle = atan2(direction.y, direction.x)  # Ángulo en radianes
+	label.rotation = angle  # Rota el Label para que el texto siga la dirección
+	# Nombre para el Label 
 	
 	
-func _on_area_input_event(viewport, event, shape_idx) -> void:
-	if event is InputEventMouseButton and event.pressed:
-		print("Señal emitida")
-		emit_signal("edge_selected", self)
+func configurarLabelPeso():
+	var peso = grafo.getPeso(origen, destino)
+	label.text = str(peso)
+	label.add_theme_font_size_override("font_size", 12)  # Tamaño de fuente (ajusta si es necesario)
+	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	label.modulate = Color(0, 0, 0)  # Color del texto (negro; cambia si quieres otro)
+
+func configurarLabelCapacidad():
+	var capacidad_usada = grafo.getFlujoUsado(origen, destino)
+	var capacidad = grafo.getFlujoMax(origen, destino)
+	label.text = "%d / %d" % [capacidad_usada, capacidad]
+	label.add_theme_font_size_override("font_size", 12)  # Tamaño de fuente (ajusta si es necesario)
+	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	label.modulate = Color(0, 0, 0)  # Color del texto (negro; cambia si quieres otro)
+
+			
+func borrarLabels():
+	label.visible = false
+	
+func actualizarLabelCapacidad(nueva_capacidad_usada: int, capacidad_maxima: int):
+	label.text = "%d / %d" % [nueva_capacidad_usada, capacidad_maxima]
+	

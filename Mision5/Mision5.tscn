@@ -5,16 +5,16 @@
 
 [sub_resource type="TileSet" id="TileSet_eyvh5"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_asxaa"]
-font = ExtResource("2_eyvh5")
-font_size = 15
-
 [sub_resource type="LabelSettings" id="LabelSettings_mr1ps"]
 font = ExtResource("2_eyvh5")
 font_size = 18
 
 [sub_resource type="LabelSettings" id="LabelSettings_eyvh5"]
 font = ExtResource("2_eyvh5")
+
+[sub_resource type="LabelSettings" id="LabelSettings_asxaa"]
+font = ExtResource("2_eyvh5")
+font_size = 15
 
 [node name="Node2D" type="Node2D"]
 
@@ -45,12 +45,6 @@ offset_top = 16.0
 offset_right = 470.0
 offset_bottom = 229.0
 
-[node name="LblIntruccion" type="Label" parent="Control/VBoxContainer"]
-layout_mode = 2
-text = "Elige un vertice para iniciar el recorrido"
-label_settings = SubResource("LabelSettings_asxaa")
-autowrap_mode = 2
-
 [node name="BtnIniciar" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2
 text = "Iniciar"
@@ -71,6 +65,16 @@ autowrap_mode = 3
 [node name="BtnEnviar" type="Button" parent="Control/VBoxContainer"]
 layout_mode = 2
 text = "Enviar"
+autowrap_mode = 2
+
+[node name="LblIntruccion" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 366.0
+offset_top = 16.0
+offset_right = 470.0
+offset_bottom = 67.0
+text = "Elige un vertice para iniciar el recorrido"
+label_settings = SubResource("LabelSettings_asxaa")
 autowrap_mode = 2
 
 [connection signal="pressed" from="Control/VBoxContainer/BtnIniciar" to="Control" method="_on_btn_iniciar_pressed"]

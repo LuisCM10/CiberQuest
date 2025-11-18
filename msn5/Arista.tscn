@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuknf7d0s4uk5"]
+
+[ext_resource type="Script" uid="uid://cg5nqfx3yy1gc" path="res://msn5/arista.gd" id="1_m3rr3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wwvay"]
+
+[node name="Arista" type="Area2D"]
+script = ExtResource("1_m3rr3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_wwvay")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

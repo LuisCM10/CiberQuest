@@ -1,7 +1,7 @@
 const INF = 999999
 
 # Clase auxiliar para representar un nodo con ID y distancia
-class Nodo:
+class Noda:
 	var id: int
 	var dist: int
 	
@@ -23,7 +23,7 @@ func dijkstra(adj_matrix: Array, source: int) -> Array:
 	
 	# Inicializar la cola con el vértice de origen
 	var queue = []  # Simula cola con Array
-	queue.append(Nodo.new(source, 0))
+	queue.append(Noda.new(source, 0))
 	
 	# Mientras la cola no esté vacía
 	while queue.size() > 0:
@@ -42,6 +42,6 @@ func dijkstra(adj_matrix: Array, source: int) -> Array:
 				if new_dist < dist[i]:
 					dist[i] = new_dist
 					# Añadir a la cola con la nueva distancia
-					queue.append(Nodo.new(i, dist[i]))
+					queue.append(Noda.new(i, dist[i]))
 	
 	return dist
