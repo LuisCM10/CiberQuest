@@ -3,7 +3,7 @@ class_name Arista extends Area2D
 @onready var linea = Line2D.new()
 @onready var flecha = Polygon2D.new()
 @onready var label = Label.new()
-@onready var colission = $CollisionShape2D
+@onready var colission = CollisionShape2D.new()
 
 const LINEA_DE_CONEXION_NODOS = "conexion"
 signal linea_presionada(linea)
@@ -30,16 +30,20 @@ func _init(origen, destino, tipo = "Dirigido", color = Color(0,0,0)) -> void:
 	self.tipo = tipo
 	self.color = color
 	
-func _ready() -> void:
+func _ready() -> void:	
 	name = funcion + str(origen.id) + "_" + str(destino.id)
 	add_child(linea)
 	if funcion == LINEA_DE_CONEXION_NODOS:
 		add_child(label)
+		add_child(colission)
 	if tipo == "Dirigido":
 		add_child(flecha)
+	var shape = RectangleShape2D.new()
+	colission.shape = shape
 	linea.points = [origen.posicion, origen.posicion]
 	linea.default_color = color
-	linea.width = 2
+	linea.width = 3
+	connect("linea_presionada", Callable(self, "_on_input_event"))
 	var pos_a = origen.posicion + Vector2(32, 32) / 2
 	var pos_b = destino.posicion + Vector2(32, 32) / 2
 	var radius_a = max(24, 32) / 2
@@ -74,6 +78,7 @@ func actualizarFlecha():
 func setPointEnd(new_end: Vector2):
 	linea.points = [linea.points[0], new_end]
 	actualizarFlecha()
+	_update_collision()
 
 func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if event is InputEventMouseButton and event.pressed:
@@ -90,9 +95,9 @@ func _update_collision():
 	var end = destino.posicion
 	var length = start.distance_to(end)
 	var angle = (end - start).angle()
-	$CollisionShape2D.position = (start + end) * 0.5
-	$CollisionShape2D.rotation = angle
-	$CollisionShape2D.shape.extents = Vector2(length * 0.5, 5)
+	colission.position = (start + end) * 0.5
+	colission.rotation = angle
+	colission.shape.extents = Vector2(length * 0.5, 5)
 	
 func mostrarLabel():
 	var mid_point = (linea.points[0] + end_point) / 2
