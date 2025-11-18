@@ -28,6 +28,7 @@ var dijstra = false
 var kruskal = false
 var flujo = false
 var start = false
+var time_remaining := 120.0
 
 var num_vertices = 9
 var prob_conexion = 0.4
@@ -68,6 +69,20 @@ func _ready() -> void:
 	dibujarGrafo()
 	
 func _process(delta: float) -> void:
+	if start:
+		time_remaining -= delta
+		var minutes = int(time_remaining) / 60
+		var seconds = int(time_remaining) % 60
+		lblTime.text = "Tiempo: %02d:%02d" % [minutes, seconds]
+		
+		if time_remaining < 30:
+			lblTime.add_theme_color_override("font_color", Color(1.0, 0.3, 0.3))
+		
+		if time_remaining <= 0:
+			lblIntro.text = "Haz demorado mucho, intentalo de nuevo"
+			BtnIniciar.visible = true
+			start = false
+			time_remaining = 120
 	pass
 	
 func dibujarGrafo():
@@ -168,7 +183,9 @@ func kruskal_click(edge):
 		edge.set_correct(false)
 
 	if KruskalLineas.size() == num_vertices - 1:
-		#show_victory_message()
+		start = false
+		lblIntro.text = "Has reconstruido el sistema es hora de enviar una nueva señal de victoria."
+		BtnEnviar.visible = true
 		pass
 
 func find(i):
@@ -213,10 +230,18 @@ func BFS () :
 			await get_tree().create_timer(3).timeout
 			return
 
-
+#------------------------- Controles juego ----------------------------------------------------------
 func _on_btn_iniciar_pressed() -> void:
 	if bfs:
 		iniciarRecorridos()
+		start = true
+		BtnIniciar.visible = false
+		BtnEnviar.visible = false
+	if dijstra:
+		start = true
+		BtnIniciar.visible = false
+		BtnEnviar.visible = false
+	if kruskal:
 		start = true
 		BtnIniciar.visible = false
 		BtnEnviar.visible = false
@@ -239,8 +264,21 @@ func _on_btn_enviar_pressed() -> void:
 			lblIntro.text = "Parece que aun te falta algun nodo por recorrer. Sera necesario revisar."
 	if dijstra:
 		if verificarRecorrido():
+			UserRecorrido.clear()
+			recorrido.clear()
 			lblIntro.text = "Felicidades, completaste tu segundo reto. Ahora es hora de construir un sistema seguro y liviano hasta cada uno de nuestros servidores."
-			bfs = false
+			dijstra = false
+		else:
+			lblIntro.text = "Parece que ese no es el camino mas corto. Hemos perdido recursos al intentar enviarlo, intentalo de nuevo."
+			BtnIniciar.visible = false
+			BtnEnviar.visible = false
+	if kruskal:
+		lblIntro.text = "Felicidades, completaste tu tercer reto. Ahora es hora de verificar que el backup llege hasta cada uno de nuestros servidores."
+		kruskal = false
+		UserRecorrido.clear()
+		recorrido.clear()
+		mostrarCapacidad()
+		
 	pass # Replace with function body.
 
 func verificarRecorrido() -> bool:
@@ -258,10 +296,14 @@ func limpiarVisual():
 func mostrarPesos():
 	for x in lineasConexion:
 		var lbl = x.label
-		lbl.text = grafo.getPeso(x.origen, x. destino)
+		lbl.text = str(grafo.getPeso(x.origen, x. destino))
 		x.mostrarLabel()
 		
-
+func mostrarCapacidad():
+	for x in lineasConexion:
+		var lbl = x.label
+		lbl.text = str(grafo.getFlujoUsado(x.origen, x.destino))+"/"+str(grafo.getFlujoMax(x.origen, x.destino))
+		x.mostrarLabel()
 
 func _on_btn_limpiar_pressed() -> void:
 	limpiarVisual()
