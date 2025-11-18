@@ -805,7 +805,7 @@ func verificarRecorrido() -> bool:
 func limpiarVisual():
 	for x in lineasVisuales:
 		x.queue_free()
-	lineasVisuales.clear()  # Limpia el array para evitar referencias a objetos ya liberados
+	lineasVisuales.clear()
 	time_remaining = 120
 	
 func limpiarConexiones():
