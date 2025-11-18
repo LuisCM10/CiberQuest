@@ -5,7 +5,7 @@ extends Node2D
 
 func _ready() -> void:
 	var i = ControlGame.getNivel()-1
-	while i > 0:
+	while i > -1:
 		BloqueMis[i].visible = false
 		i-=1
 	i = ControlGame.getNivel()-1

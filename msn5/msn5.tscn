@@ -1,0 +1,81 @@
+[gd_scene load_steps=6 format=3 uid="uid://duw88my2sscjs"]
+
+[ext_resource type="Script" uid="uid://cbvebp480tb6o" path="res://msn5/TheCore.gd" id="1_sy4yf"]
+[ext_resource type="FontFile" uid="uid://dudo3khf2v3o4" path="res://VT323-Regular.ttf" id="2_1myvp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_cvcgt"]
+font = ExtResource("2_1myvp")
+font_size = 12
+
+[sub_resource type="LabelSettings" id="LabelSettings_41tnk"]
+font = ExtResource("2_1myvp")
+font_size = 14
+
+[sub_resource type="LabelSettings" id="LabelSettings_sy4yf"]
+font = ExtResource("2_1myvp")
+font_size = 12
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sy4yf")
+
+[node name="PanGrafo" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 19.0
+offset_right = 353.0
+offset_bottom = 232.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 366.0
+offset_top = 16.0
+offset_right = 470.0
+offset_bottom = 229.0
+
+[node name="LblIntruccion" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Elige un nodo para iniciar la busqueda del backup del sistema."
+label_settings = SubResource("LabelSettings_cvcgt")
+autowrap_mode = 2
+
+[node name="BtnIniciar" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_1myvp")
+theme_override_font_sizes/font_size = 12
+text = "Iniciar"
+
+[node name="LblTime" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "00:00"
+label_settings = SubResource("LabelSettings_41tnk")
+horizontal_alignment = 1
+
+[node name="lblRecorrido" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "[ ]"
+label_settings = SubResource("LabelSettings_sy4yf")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="BtnLimpiar" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_1myvp")
+theme_override_font_sizes/font_size = 14
+text = "Limpiar"
+
+[node name="BtnEnviar" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_1myvp")
+theme_override_font_sizes/font_size = 14
+text = "Enviar"
+autowrap_mode = 2
+
+[connection signal="pressed" from="VBoxContainer/BtnIniciar" to="." method="_on_btn_iniciar_pressed"]
+[connection signal="pressed" from="VBoxContainer/BtnLimpiar" to="." method="_on_btn_limpiar_pressed"]
+[connection signal="pressed" from="VBoxContainer/BtnEnviar" to="." method="_on_btn_enviar_pressed"]
