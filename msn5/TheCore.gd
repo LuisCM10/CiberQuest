@@ -45,6 +45,10 @@ var recorrido = []
 var KruskalLineas = []
 var parent = []
 var wrong_clicks = 0
+var original_capacity 
+var flow_network
+var residual_graph
+var target_flow
 
 
 func _ready() -> void:
@@ -229,6 +233,165 @@ func BFS () :
 				UserRecorrido.pop_back()
 			await get_tree().create_timer(3).timeout
 			return
+			
+#--------------------------------- Flujo ------------------------------------------------------------
+func _initialize_flow_network():
+	# Guardar capacidades originales
+	original_capacity.clear()
+	for i in range(num_vertices):
+		var row = []
+		for j in range(num_vertices):
+			row.append(grafo.matriz_capa_max[i][j])
+		original_capacity.append(row)
+	
+	# Inicializar flujo en 0
+	flow_network.clear()
+	for i in range(num_vertices):
+		var row = []
+		for j in range(num_vertices):
+			row.append(0)
+		flow_network.append(row)
+	
+	# Inicializar grafo residual = capacidad original(matrices)
+	residual_graph.clear()
+	for i in range(num_vertices):
+		var row = []
+		for j in range(num_vertices):
+			row.append(grafo.matriz_capa_max[i][j])
+		residual_graph.append(row)
+
+func _calculate_target_flow():
+	var temp_residual = []
+	for i in range(num_vertices):
+		var row = []
+		for j in range(num_vertices):
+			row.append(original_capacity[i][j])
+		temp_residual.append(row)
+	
+	target_flow = 0
+	while true:
+		var path = _bfs_find_path_temp(temp_residual)
+		if path.is_empty():
+			break
+		
+		var path_flow = INF
+		for i in range(path.size() - 1):
+			var u = path[i]
+			var v = path[i + 1]
+			path_flow = min(path_flow, temp_residual[u][v])
+		
+		for i in range(path.size() - 1):
+			var u = path[i]
+			var v = path[i + 1]
+			temp_residual[u][v] -= path_flow
+			temp_residual[v][u] += path_flow
+		
+		target_flow += path_flow
+	
+	lblIntro.text = "Flujo: 0/%d | Paquetes: 0" % target_flow
+##BFS
+
+func _bfs_find_path_temp(res) -> Array:
+	var parent = []
+	parent.resize(num_vertices)
+	for i in range(num_vertices):
+		parent[i] = -1
+	var visited = []
+	visited.resize(num_vertices)
+	for i in range(num_vertices):
+		visited[i] = false
+
+	var queue = [origin]
+	visited[origin.id] = true
+	while queue.size() > 0:
+		var u = queue.pop_front()
+		for v in range(num_vertices):
+			if !visited[v] and res[u][v] > 0:
+				parent[v] = u
+				visited[v] = true
+				queue.append(v)
+	
+	if !visited[destino.id]:
+		return []
+	
+	var path = []
+	var v = destino.id
+	while v != origin.id:
+		path.insert(0, v)
+		v = parent[v]
+	path.insert(0, origin.id)
+	return path
+
+func _animate_flow_sending(path: Array, flow_value: int):
+	for i in range(path.size() - 1):
+		var u = path[i]
+		var v = path[i + 1]
+		var start_pos = grafo.vertices[u]
+		var end_pos = grafo.vertices[v]
+		
+		var edge_line = null
+		for e in lineasVisuales:
+			if e.origen == u and e.destino == v:
+				edge_line = e.linea
+				break
+		
+		for j in range(3):
+			await _spawn_particle_along_path(edge_line if edge_line else null, start_pos, end_pos)
+			await get_tree().create_timer(0.1).timeout
+
+func _spawn_particle_along_path(line: Line2D, start: Vector2, end: Vector2):
+	var particle = ColorRect.new()
+	particle.custom_minimum_size = Vector2(8, 8)
+	particle.z_index = 15
+	
+	var shader_code = """
+shader_type canvas_item;
+
+void fragment() {
+	vec2 center = vec2(0.5, 0.5);
+	float dist = distance(UV, center);
+	
+	if (dist > 0.5) {
+		COLOR.a = 0.0;
+	} else {
+		COLOR = vec4(0.4, 1.0, 1.0, 1.0);
+		float glow = 1.0 - (dist * 2.0);
+		COLOR.rgb += vec3(glow * 0.5);
+		COLOR.a = smoothstep(0.5, 0.3, dist);
+	}
+}
+"""
+	#CUADRADO VIajando
+	var shader = Shader.new()
+	shader.code = shader_code
+	var material = ShaderMaterial.new()
+	material.shader = shader
+	particle.material = material
+	
+	if line and line.points.size() > 1:
+		particle.position = line.points[0] - Vector2(4, 4)
+	else:
+		particle.position = start - Vector2(4, 4)
+	
+	PanelGrafo.add_child(particle)
+	
+	var tween = get_tree().create_tween()
+	
+	if line and line.points.size() > 1:
+		# Seguir la curva punto por punto
+		for i in range(1, line.points.size()):
+			var target = line.points[i] - Vector2(4, 4)
+			var duration = 0.4 / float(line.points.size())
+			tween.tween_property(particle, "position", target, duration)
+	else:
+		# LÃ­nea recta simple
+		tween.tween_property(particle, "position", end - Vector2(4, 4), 0.4)
+	
+	# Efecto de fade out 
+	tween.parallel().tween_property(particle, "modulate:a", 0.0, 0.3).set_delay(0.1)
+	
+	await tween.finished
+	particle.queue_free()
 
 #------------------------- Controles juego ----------------------------------------------------------
 func _on_btn_iniciar_pressed() -> void:
