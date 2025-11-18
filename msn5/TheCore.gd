@@ -55,15 +55,35 @@ var packets_sent := 0
 var current_path = []
 
 func _ready() -> void:
-	for i in range(num_vertices):		
+	grafo = Grafo.new()
+	
+	# Inicializar matrices 2D del grafo (solo las que existen y se usan)
+	grafo.matriz_adya = []
+	grafo.matriz_adya.resize(num_vertices)
+	for i in range(num_vertices):
+		grafo.matriz_adya[i] = []
+		grafo.matriz_adya[i].resize(num_vertices)
+		for j in range(num_vertices):
+			grafo.matriz_adya[i][j] = 0.0  # Peso inicial (float para pesos)
+	
+	grafo.matriz_capa_max = []
+	grafo.matriz_capa_max.resize(num_vertices)
+	for i in range(num_vertices):
+		grafo.matriz_capa_max[i] = []
+		grafo.matriz_capa_max[i].resize(num_vertices)
+		for j in range(num_vertices):
+			grafo.matriz_capa_max[i][j] = 0  # Capacidad inicial (int)
+	
+	# Resto del código original...
+	for i in range(num_vertices):
 		var angle = (2 * PI * i) / 10
 		var x = 150 + view[0] * cos(angle)
 		var y = 90 + view[1] * sin(angle)
 		var positions = Vector2(x, y)
 		var vertice = Nodo.new(i, positions)
 		grafo.add_vertice(vertice)
-		
-	# Conectar vértices con pesos y capacidades aleatorios
+	
+	# Conectar vértices...
 	for i in range(num_vertices):
 		var vertic1 = grafo.searchVertice(i)
 		for j in range(num_vertices):
@@ -752,6 +772,7 @@ func verificarRecorrido() -> bool:
 func limpiarVisual():
 	for x in lineasVisuales:
 		x.queue_free()
+	lineasVisuales.clear()  # Limpia el array para evitar referencias a objetos ya liberados
 	time_remaining = 120
 	
 func mostrarPesos():
