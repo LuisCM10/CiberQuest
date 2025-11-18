@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crpmnlkprlh42"
-path="res://.godot/imported/btnNemesis.png-69cbfa4fb26f91a31e920e17379c73bb.ctex"
+uid="uid://cuv5kd3wffskj"
+path="res://.godot/imported/btnes.png-65d3d946fdc794e633a25a9f957581c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Mision2/btnNemesis.png"
-dest_files=["res://.godot/imported/btnNemesis.png-69cbfa4fb26f91a31e920e17379c73bb.ctex"]
+source_file="res://Mision2/btnes.png"
+dest_files=["res://.godot/imported/btnes.png-65d3d946fdc794e633a25a9f957581c1.ctex"]
 
 [params]
 

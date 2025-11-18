@@ -1,8 +1,8 @@
 extends Control
 
-var num_nodos = 7
+var num_nodos = 8
 var adj_matrix = []
-var nodo_start = 0
+var nodo_start = randi() % 8  # Cambiado a aleatorio
 var nemesis_node = -1
 
 var nemesis_icon  = load("res://Mision2/btnNemesis.png")
@@ -18,12 +18,15 @@ var grafo = Grafo.new()
 @onready var sonido_boton = $SonidoBoton 
 @onready var sonido_perder = $SonidoPerder
 @onready var musica_aparicion = $MusicaAparicion
-
+@onready var panel_ayuda = $"../PanelAyuda"
 # Variable para almacenar el grafo generado (para no regenerarlo al reiniciar)
 var grafo_generado = false
 var animacion_activa = false  # Nuevo: Para controlar si la animación de aparición está activa
 
+
+
 func _ready():
+	panel_ayuda.visible = false
 	if not grafo_generado:
 		_generar_grafo()
 		grafo_generado = true
@@ -37,20 +40,20 @@ func _ready():
 	esperando_click = false
 
 # ────────────────────────────────────────────────
-# GENERAR GRAFO DIRIGIDO
+# GENERAR GRAFO DIRIGIDO (MODIFICADO PARA EVITAR CONEXIONES BIDIRECCIONALES)
 # ────────────────────────────────────────────────
 func _generar_grafo():
 	adj_matrix.clear()
 	for i in range(num_nodos):
 		adj_matrix.append([])
 		for j in range(num_nodos):
-			if i == j:
-				adj_matrix[i].append(0)
-			else:
-				if randf() < 0.3:
-					adj_matrix[i].append(randi() % 10 + 1)
-				else:
-					adj_matrix[i].append(0)
+			adj_matrix[i].append(0)
+	
+	# Generar conexiones aleatorias, asegurando que no haya bidireccionales
+	for i in range(num_nodos):
+		for j in range(num_nodos):
+			if i != j and randf() < 0.4 and adj_matrix[j][i] == 0:  # Evita bidireccionalidad
+				adj_matrix[i][j] = randi() % 10 + 1
 
 # ────────────────────────────────────────────────
 # GENERAR POSICIONES EN CÍRCULO (ADAPTADO PARA EVITAR SUPERPOSICIONES Y SALIRSE DE PANTALLA)
@@ -75,18 +78,31 @@ func _crear_botones():
 			c.queue_free()
 	else:
 		print("Error: Panel no encontrado. Asegúrate de que $Panel exista.")
-
+		
 	for i in range(num_nodos):
-		# Usar TextureButton para simular botones circulares con textura (puedes reemplazar con Polygon2D si prefieres, pero Polygon2D no es interactivo por defecto)
-		var b = Button.new()
+		# Cambiado a TextureButton para mejor manejo de texturas
+		var b = TextureButton.new()
 		b.name = str(i)
 		b.position = posiciones[i]
-		b.size = Vector2(20, 20) # Escalar textura para forma circular
-		# Asigna una textura circular por defecto (puedes crear una textura PNG de círculo blanco o transparente)
-		b.icon = load("res://ruta/a/textura_circulo.png")  # Agrega esto si tienes una textura
-		b.expand_icon = true
+		b.size = Vector2(20, 20)  # Aumentado ligeramente para que con scale=0.5 quede en ~10x10 (ajusta si es necesario)
+		b.texture_normal = load("res://Mision2/btnes.png")  # Usar texture_normal en lugar de icon
+		b.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_CENTERED  # Cambiado para mantener proporción y centrar
+		b.scale = Vector2(0.1, 0.1)  # Nuevo: Escala el botón a la mitad, haciendo la imagen más pequeña
 		b.disabled = true
 		b.connect("pressed", Callable(self, "_seleccionar_nodo").bind(i))
+		
+		# Marcar el nodo inicial con color azul y un label "Inicio"
+		if i == nodo_start:
+			b.modulate = Color(0.883, 0.409, 0.395, 1.0)# Colorear el botón inicial de azul
+			var label_inicio = Label.new()
+			label_inicio.text = "Inicio"
+			label_inicio.position = b.position - Vector2(15, 25)  # Posición arriba del botón (ajusta si scale cambia la apariencia)
+			label_inicio.size = Vector2(50, 20)
+			label_inicio.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+			label_inicio.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+			label_inicio.name = "label_inicio_" + str(i)
+			container.add_child(label_inicio)
+	
 		if container:
 			container.add_child(b)
 
@@ -104,7 +120,7 @@ func _conectar_nodos():
 	for i in range(num_nodos):
 		for j in range(num_nodos):
 			if adj_matrix[i][j] > 0:
-				crearLinea(i, j, Color("808080"), 3)
+				crearLinea(i, j, Color("7f4737ff"), 2)
 
 # Función para crear líneas dirigidas (COPIADA Y ADAPTADA DEL CÓDIGO ORIGINAL)
 func crearLinea(vertice, indice_ady, color, width, name = "conexion"):
@@ -116,10 +132,10 @@ func crearLinea(vertice, indice_ady, color, width, name = "conexion"):
 	var destino_vert = Vertice.new(indice_ady, str(indice_ady), "", false, "")
 	destino_vert.posicion = posiciones[indice_ady]
 	
-	var pos_a = posiciones[vertice] + Vector2(10, 10)  # Centro aproximado del botón (40x40 / 2)
-	var pos_b = posiciones[indice_ady] + Vector2(10, 10)
-	var radius_a = 15 # Radio aproximado del círculo
-	var radius_b = 15
+	var pos_a = origen_vert.posicion + Vector2(20, 20) / 2
+	var pos_b = destino_vert.posicion + Vector2(20, 20) / 2
+	var radius_a = max(16, 20) / 2
+	var radius_b = max(16, 20) / 2
 	var dir = (pos_b - pos_a).normalized()
 	var start_point = pos_a + dir * radius_a
 	var end_point = pos_b - dir * radius_b
@@ -142,6 +158,18 @@ func crearLinea(vertice, indice_ady, color, width, name = "conexion"):
 	linea.default_color = color
 	linea.duracion = anim
 	container.add_child(linea)
+	
+	# Agregar etiqueta con el peso de la arista (MOVIDA CERCA DEL EXTREMO PARA MEJOR VISIBILIDAD)
+	var peso = adj_matrix[vertice][indice_ady]
+	var label_pos = end_point - dir * 20  # Ajustado para botones más pequeños
+	var label = Label.new()
+	label.text = str(peso)
+	label.position = label_pos - Vector2(5, 5)  # Ajustar para centrar aproximadamente
+	label.size = Vector2(10, 10)  # Reducido para que no sea enorme
+	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	label.name = "peso_" + linea.name
+	container.add_child(label)
 
 # ────────────────────────────────────────────────
 # IMPLEMENTACIÓN DE DIJKSTRA
@@ -189,12 +217,12 @@ func _calcular_camino_optimo():
 	nemesis_node = -1
 	var max_dist = -1
 	for i in range(num_nodos):
-		if dist[i] < 999999 and dist[i] > max_dist:
+		if i != nodo_start and dist[i] < 999999 and dist[i] > max_dist:  # Asegurar que no sea el mismo que nodo_start
 			max_dist = dist[i]
 			nemesis_node = i
 	
 	if nemesis_node == -1:
-		nemesis_node = randi() % num_nodos
+		nemesis_node = (nodo_start + 1) % num_nodos  # Fallback si no hay otro
 	
 	camino_optimo = _reconstruir_camino(prev, nemesis_node)
 
@@ -219,7 +247,9 @@ func _elegir_nemesis():
 	if not boton:
 		return
 	if nemesis_icon:
-		boton.icon = nemesis_icon
+		boton.texture_normal = nemesis_icon
+		boton.scale = Vector2(0.04, 0.04)
+		
 
 # Nuevo: Iniciar animación de aparición de nemesis
 func _iniciar_animacion_aparicion():
@@ -234,11 +264,11 @@ func _iniciar_animacion_aparicion():
 	await get_tree().create_timer(3.0).timeout
 	_terminar_animacion_aparicion()
 
-func _parpadear_boton_temporal(boton: Button):
+func _parpadear_boton_temporal(boton: TextureButton):
 	var tween = get_tree().create_tween()
-	tween.set_loops(6)
-	tween.tween_property(boton, "modulate", Color(1, 1, 1, 0.3), 0.5)
-	tween.tween_property(boton, "modulate", Color(1, 1, 1, 1), 0.5)
+	tween.set_loops(3)
+	tween.tween_property(boton, "modulate", Color(1.0, 1.0, 1.0, 0.302), 0.5)
+	tween.tween_property(boton, "modulate", Color(1.0, 1.0, 1.0, 1.0), 0.5)
 
 func _terminar_animacion_aparicion():
 	animacion_activa = false
@@ -247,10 +277,14 @@ func _terminar_animacion_aparicion():
 
 	var boton = container.get_node(str(nemesis_node))
 	if boton:
-		boton.icon = null  # Remover la textura de Nemesis
+		boton.texture_normal = null  # Remover la textura de Nemesis
+		boton.texture_normal = load("res://Mision2/btnes.png")  # Asignar la textura normal de los botones
+	
+		boton.scale = Vector2(0.1, 0.1)
 	
 	# Mostrar aristas
 	_conectar_nodos()
+	
 	
 	for c in container.get_children():
 		if c is TextureButton:
@@ -265,12 +299,12 @@ func _seleccionar_nodo(nodo):
 	if not esperando_click or animacion_activa:
 		return
 	
+	if sonido_boton:  # Movido arriba para que suene siempre al tocar un botón
+		sonido_boton.play()
+	
 	# Verificar si el nodo está conectado al actual (no permitir avanzar si no lo está)
 	if adj_matrix[nodo_actual][nodo] == 0:
 		return  # No hacer nada si no está conectado
-	
-	if sonido_boton:
-		sonido_boton.play()
 	
 	var idx = camino_optimo.find(nodo_actual)
 	if idx == -1 or idx == camino_optimo.size() - 1:
@@ -285,6 +319,9 @@ func _seleccionar_nodo(nodo):
 		if nodo == nemesis_node:
 			print("¡GANASTE!")
 			esperando_click = false
+			await get_tree().create_timer(2).timeout
+			ControlGame.avanzarNivel()
+			get_tree().change_scene_to_file("res://niveles.tscn")  # Cambiar a la escena siguiente
 	else:
 		_colorear_arista(nodo_actual, nodo, Color.RED)  # Dibujar arista roja si es incorrecto
 		if sonido_perder:
@@ -296,7 +333,7 @@ func _seleccionar_nodo(nodo):
 # COLOREAR ARISTA (USANDO crearLinea PARA DIBUJAR EL CAMINO)
 # ────────────────────────────────────────────────
 func _colorear_arista(origen, destino, color):
-	crearLinea(origen, destino, color, 5, "recorrido")  # Dibuja la arista del camino elegido
+	crearLinea(origen, destino, color, 2, "recorrido")  # Dibuja la arista del camino elegido
 
 # ────────────────────────────────────────────────
 # REINICIAR (MANTIENE EL GRAFO)
@@ -311,3 +348,11 @@ func _reiniciar():
 			if c is TextureButton:
 				c.queue_free()
 	_ready()
+
+
+func _on_boton_ayuda_pressed() -> void:
+	panel_ayuda.visible = true
+
+
+func _on_boton_continuar_pressed() -> void:
+	panel_ayuda.visible = false

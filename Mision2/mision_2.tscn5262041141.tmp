@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://dc7jg3tdbikao"]
+[gd_scene load_steps=14 format=4 uid="uid://dc7jg3tdbikao"]
 
 [ext_resource type="Texture2D" uid="uid://61l3fgetw4np" path="res://Museum_room_3_layer_1.png" id="1_koi5n"]
 [ext_resource type="Texture2D" uid="uid://f2td6kqwjlpx" path="res://Museum_room_3_layer_2.png" id="2_r88w1"]
@@ -6,10 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://bjwrmi6obrhqu" path="res://imagenes/animated_security_camera_left_.png" id="4_cjai4"]
 [ext_resource type="Texture2D" uid="uid://dladn36p4av7u" path="res://imagenes/animated_security_camera_right.png" id="5_2lwjo"]
 [ext_resource type="PackedScene" uid="uid://dtbinu5ykhi86" path="res://Mision2/generador_grafo.tscn" id="6_2lwjo"]
-[ext_resource type="Texture2D" uid="uid://j4ncx0mcm8xv" path="res://ayuda.png" id="7_re5lw"]
-[ext_resource type="Texture2D" uid="uid://cbrskk22q2wth" path="res://letreroMision3.png" id="8_xyk0m"]
-[ext_resource type="FontFile" uid="uid://dudo3khf2v3o4" path="res://VT323-Regular.ttf" id="9_vmigl"]
-[ext_resource type="Texture2D" uid="uid://ctjbmwr0gakao" path="res://boton.png" id="10_wcdte"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2lwjo"]
 texture = ExtResource("1_koi5n")
@@ -832,7 +828,7 @@ tile_map_data = PackedByteArray("AAAAAAsAAQABAA8AAAAAAAwAAQABABAAAAAAAA4AAQANABE
 tile_set = SubResource("TileSet_5fn6w")
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAACAAIAAQACAAoAAAADAAEAAQACAAEAAAADAAIAAQACAAIAAAADAAMAAQACAAMAAAAEAAEAAQADAAEAAAAEAAIAAQADAAIAAAAEAAMAAQADAAMAAAAFAAEAAQAEAAEAAAAFAAIAAQAEAAIAAAAFAAMAAQAEAAMAAAAYAAEAAQAMAAEAAAAYAAIAAQAMAAIAAAAYAAMAAQAMAAMAAAAZAAEAAQANAAEAAAAZAAIAAQANAAIAAAAZAAMAAQANAAMAAAAaAAEAAQAOAAEAAAAaAAIAAQAOAAIAAAAaAAMAAQAOAAMAAAAWAAAAAQALAAAAAAAWAAEAAQALAAEAAAAWAAIAAQALAAIAAAAWAAMAAQALAAMAAAAIAAAAAQAFAAAAAAAIAAEAAQAFAAEAAAAIAAIAAQAFAAIAAAAIAAMAAQAFAAMAAAANAAEAAQAGAAEAAAANAAIAAQAGAAIAAAANAAMAAQAGAAMAAAANAAQAAQAGAAQAAAAOAAEAAQAHAAEAAAAOAAIAAQAHAAIAAAAOAAMAAQAHAAMAAAAOAAQAAQAHAAQAAAAPAAEAAQAIAAEAAAAPAAIAAQAIAAIAAAAPAAMAAQAIAAMAAAAPAAQAAQAIAAQAAAAQAAEAAQAJAAEAAAAQAAIAAQAJAAIAAAAQAAMAAQAJAAMAAAAQAAQAAQAJAAQAAAARAAEAAQAKAAEAAAARAAIAAQAKAAIAAAARAAMAAQAKAAMAAAARAAQAAQAKAAQAAAALAAMAAgAOAAoAAAALAAQAAgAOAAsAAAATAAMAAgABAAoAAAATAAQAAgABAAsAAAAJAAAAAwAAAAAAAAAVAAAABAAAAAAAAAACAAYAAQADAAoAAAACAAcAAQADAAsAAAADAAYAAQAEAAoAAAADAAcAAQAEAAsAAAADAAgAAQAEAAwAAAADAAkAAQAEAA0AAAAEAAYAAQAFAAoAAAAEAAcAAQAFAAsAAAAEAAgAAQAFAAwAAAAEAAkAAQAFAA0AAAAFAAcAAQAGAAsAAAAFAAgAAQAGAAwAAAABAAYAAQACAAoAAAABAAcAAQACAAsAAAACAAgAAQADAAwAAAACAAkAAQADAA0AAAAZAAcAAQALAAsAAAAZAAgAAQALAAwAAAAaAAcAAQAMAAsAAAAaAAgAAQAMAAwAAAAaAAkAAQAMAA0AAAAbAAcAAQANAAsAAAAbAAgAAQANAAwAAAAbAAkAAQANAA0AAAAcAAcAAQAOAAsAAAAYAAcAAQAKAAsAAAAYAAgAAQAKAAwAAAAZAAkAAQALAA0AAAA=")
+tile_map_data = PackedByteArray("AAACAAIAAQACAAoAAAACAAYAAQACAAoAAAACAAcAAQACAAsAAAADAAEAAQACAAEAAAADAAIAAQACAAIAAAADAAMAAQACAAMAAAADAAYAAQADAAoAAAADAAcAAQADAAsAAAADAAgAAQADAAwAAAADAAkAAQADAA0AAAAEAAEAAQADAAEAAAAEAAIAAQADAAIAAAAEAAMAAQADAAMAAAAEAAYAAQAEAAoAAAAEAAcAAQAEAAsAAAAEAAgAAQAEAAwAAAAEAAkAAQAEAA0AAAAFAAEAAQAEAAEAAAAFAAIAAQAEAAIAAAAFAAMAAQAEAAMAAAAFAAYAAQAFAAoAAAAFAAcAAQAFAAsAAAAFAAgAAQAFAAwAAAAFAAkAAQAFAA0AAAAGAAcAAQAGAAsAAAAGAAgAAQAGAAwAAAAYAAEAAQAMAAEAAAAYAAIAAQAMAAIAAAAYAAMAAQAMAAMAAAAZAAEAAQANAAEAAAAZAAIAAQANAAIAAAAZAAMAAQANAAMAAAAaAAEAAQAOAAEAAAAaAAIAAQAOAAIAAAAaAAMAAQAOAAMAAAAWAAAAAQALAAAAAAAWAAEAAQALAAEAAAAWAAIAAQALAAIAAAAWAAMAAQALAAMAAAAIAAAAAQAFAAAAAAAIAAEAAQAFAAEAAAAIAAIAAQAFAAIAAAAIAAMAAQAFAAMAAAANAAEAAQAGAAEAAAANAAIAAQAGAAIAAAANAAMAAQAGAAMAAAANAAQAAQAGAAQAAAAOAAEAAQAHAAEAAAAOAAIAAQAHAAIAAAAOAAMAAQAHAAMAAAAOAAQAAQAHAAQAAAAPAAEAAQAIAAEAAAAPAAIAAQAIAAIAAAAPAAMAAQAIAAMAAAAPAAQAAQAIAAQAAAAQAAEAAQAJAAEAAAAQAAIAAQAJAAIAAAAQAAMAAQAJAAMAAAAQAAQAAQAJAAQAAAARAAEAAQAKAAEAAAARAAIAAQAKAAIAAAARAAMAAQAKAAMAAAARAAQAAQAKAAQAAAALAAMAAgAOAAoAAAALAAQAAgAOAAsAAAATAAMAAgABAAoAAAATAAQAAgABAAsAAAAXAAcAAQAKAAsAAAAXAAgAAQAKAAwAAAAYAAcAAQALAAsAAAAYAAgAAQALAAwAAAAYAAkAAQALAA0AAAAZAAcAAQAMAAsAAAAZAAgAAQAMAAwAAAAZAAkAAQAMAA0AAAAaAAcAAQANAAsAAAAaAAgAAQANAAwAAAAaAAkAAQANAA0AAAAbAAcAAQAOAAsAAAAJAAAAAwAAAAAAAAAVAAAABAAAAAAAAAA=")
 tile_set = SubResource("TileSet_re5lw")
 
 [node name="GeneradorGrafo" parent="." instance=ExtResource("6_2lwjo")]
@@ -843,79 +839,9 @@ offset_bottom = -13.0
 
 [node name="Panel" parent="GeneradorGrafo" index="0"]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 20.0
-offset_top = 15.0
-offset_right = 294.0
-offset_bottom = 165.0
-
-[node name="SonidoPerder" parent="GeneradorGrafo" index="2"]
-volume_db = 3.824
-
-[node name="MusicaAparicion" parent="GeneradorGrafo" index="3"]
-volume_db = 9.176
-
-[node name="BotonAyuda" type="TextureButton" parent="."]
-offset_left = 434.0
-offset_top = 9.0
-offset_right = 467.0
-offset_bottom = 42.0
-texture_normal = ExtResource("7_re5lw")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="PanelAyuda" type="TextureRect" parent="."]
-offset_left = 42.0
-offset_top = 35.0
-offset_right = 409.0
-offset_bottom = 233.0
-texture = ExtResource("8_xyk0m")
-expand_mode = 1
-
-[node name="LabelExplicacion" type="Label" parent="PanelAyuda"]
-layout_mode = 0
-offset_left = 69.0
-offset_top = 35.0
-offset_right = 2749.0
-offset_bottom = 202.0
-theme_override_colors/font_color = Color(0.016551724, 0.016551726, 0.016551724, 1)
-theme_override_fonts/font = ExtResource("9_vmigl")
-theme_override_font_sizes/font_size = 12
-text = "Tu objetivo es avanzar por el grafo haciendo
-clic en los nodos de menos peso, para seguir el 
-camino correcto que lleva hasta Nemesis, empiezas en 
-el nodo inicial y cada vez que eliges el nodo 
-correcto la arista se ilumina en verde y 
-avanzas, pero si escoges uno incorrecto la 
-arista se ilumina en rojo y el grafo se reinicia,
-obligándote a comenzar de nuevo
-
-"
-
-[node name="BotonContinuar" type="TextureButton" parent="PanelAyuda"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -3.9550002
-anchor_top = -2.8460002
-anchor_right = -3.9550002
-anchor_bottom = -2.8460002
-offset_left = 1660.4851
-offset_top = 704.50806
-offset_right = 1776.4851
-offset_bottom = 756.50806
-texture_normal = ExtResource("10_wcdte")
-
-[node name="LabelContinuar" type="Label" parent="PanelAyuda"]
-layout_mode = 0
-offset_left = 246.0
-offset_top = 158.0
-offset_right = 311.0
-offset_bottom = 181.0
-theme_override_colors/font_color = Color(0.00069389754, 0.00069389766, 0.0006938976, 1)
-theme_override_fonts/font = ExtResource("9_vmigl")
-theme_override_font_sizes/font_size = 14
-text = "Continuar "
-
-[connection signal="pressed" from="BotonAyuda" to="GeneradorGrafo" method="_on_boton_ayuda_pressed"]
-[connection signal="pressed" from="PanelAyuda/BotonContinuar" to="GeneradorGrafo" method="_on_boton_continuar_pressed"]
+offset_left = 18.0
+offset_top = 22.0
+offset_right = 498.0
+offset_bottom = 291.0
 
 [editable path="GeneradorGrafo"]

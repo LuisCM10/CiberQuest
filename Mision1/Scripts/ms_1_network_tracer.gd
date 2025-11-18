@@ -99,7 +99,7 @@ func iniciarRecorridos():
 	BotBFS.visible = false
 	BotDFS.visible = false
 	PanPista.visible = true
-	LabelIntru.text = "Haz elegido iniciar la busqueda con "+VertIni.name+". \nHas encontrado una pista en los nodos recorridos, leela para guiarte bien"
+	LabelIntru.text = "Haz elegido iniciar la busqueda con " + VertIni.name + ". \nHas encontrado una pista en los nodos recorridos, leela para guiarte bien"
 
 func _on_button_bfs_pressed() -> void:
 	if VertIni:
