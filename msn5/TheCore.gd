@@ -59,6 +59,7 @@ var current_path = []
 
 func _ready() -> void:
 	grafo = Grafo.new()
+	fade_transition.visible = false
 	
 	# Inicializar matrices 2D del grafo (solo las que existen y se usan)
 	grafo.matriz_adya = []
