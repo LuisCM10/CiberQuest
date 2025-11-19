@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://cnb78lvk8o13m"]
+
+[ext_resource type="Script" uid="uid://4gypr057j4rk" path="res://pantalla_final.gd" id="1_sti78"]
+[ext_resource type="Texture2D" uid="uid://cakh8ipf5mvo6" path="res://pantallaFinal.png" id="1_w3occ"]
+[ext_resource type="Texture2D" uid="uid://bsuay1sw63kcn" path="res://botonMenu.png" id="2_kaswv"]
+[ext_resource type="FontFile" uid="uid://dudo3khf2v3o4" path="res://VT323-Regular.ttf" id="4_t7x5c"]
+
+[node name="pantallaFinal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sti78")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 479.0
+offset_bottom = 269.0
+texture = ExtResource("1_w3occ")
+expand_mode = 1
+
+[node name="salir" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 172.0
+offset_top = 188.0
+offset_right = 297.0
+offset_bottom = 245.0
+texture_normal = ExtResource("2_kaswv")
+stretch_mode = 3
+
+[node name="Salir" type="Label" parent="."]
+layout_mode = 0
+offset_left = 211.0
+offset_top = 203.0
+offset_right = 267.0
+offset_bottom = 230.0
+theme_override_colors/font_color = Color(0.5803922, 0.39215687, 0.13725491, 1)
+theme_override_fonts/font = ExtResource("4_t7x5c")
+theme_override_font_sizes/font_size = 26
+text = "SALIR"
+
+[connection signal="pressed" from="salir" to="." method="_on_salir_pressed"]

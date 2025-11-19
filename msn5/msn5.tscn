@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=4 uid="uid://duw88my2sscjs"]
+[gd_scene load_steps=43 format=4 uid="uid://duw88my2sscjs"]
 
 [ext_resource type="Script" uid="uid://cbvebp480tb6o" path="res://msn5/TheCore.gd" id="1_sy4yf"]
 [ext_resource type="FontFile" uid="uid://dudo3khf2v3o4" path="res://VT323-Regular.ttf" id="2_1myvp"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://7c8ak08qkjbt" path="res://png/Museum_room_1_layer_2.png" id="13_c30hy"]
 [ext_resource type="Texture2D" uid="uid://dnmg767hlosug" path="res://imagenes/animated_museum_laser_front.png" id="14_0mi65"]
 [ext_resource type="Texture2D" uid="uid://bvm0opt4st40p" path="res://imagenes/animated_museum_laser_horizontal.png" id="15_v0d1m"]
+[ext_resource type="PackedScene" uid="uid://c2hl8yujgxf1j" path="res://FadeTransition.tscn" id="17_1nfvh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3rq2w"]
 texture = ExtResource("2_jjdaf")
@@ -5171,6 +5172,8 @@ theme_override_fonts/font = ExtResource("2_1myvp")
 theme_override_font_sizes/font_size = 14
 text = "Enviar"
 autowrap_mode = 2
+
+[node name="CanvasLayer" parent="." instance=ExtResource("17_1nfvh")]
 
 [connection signal="pressed" from="VBoxContainer/BtnIniciar" to="." method="_on_btn_iniciar_pressed"]
 [connection signal="pressed" from="VBoxContainer/BtnLimpiar" to="." method="_on_btn_limpiar_pressed"]

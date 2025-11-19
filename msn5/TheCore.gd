@@ -21,6 +21,9 @@ const MAX_WRONG_CLICKS = 5
 @onready var BtnLimpiar = $VBoxContainer/BtnLimpiar
 @onready var view = get_viewport_rect().size * 0.3
 
+#transicion
+@onready var fade_transition = $CanvasLayer  
+
 var grafo = Grafo.new()
 
 # Variables control
@@ -757,8 +760,7 @@ func _on_btn_enviar_pressed() -> void:
 			flujo = false
 			return
 	await get_tree().create_timer(3.0).timeout
-	get_tree().change_scene_to_file("res://niveles.tscn")	
-	
+	fade_transition.fade_to_scene("res://pantalla_final.tscn")	
 	 # Replace with function body.
 
 func verificarRecorrido() -> bool:
