@@ -854,6 +854,53 @@ volume_db = 3.824
 [node name="MusicaAparicion" parent="GeneradorGrafo" index="3"]
 volume_db = 9.176
 
+[node name="PanelCiber" type="TextureRect" parent="GeneradorGrafo"]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 25.0
+offset_right = 408.0
+offset_bottom = 246.0
+texture = ExtResource("8_xyk0m")
+expand_mode = 1
+
+[node name="ExplicaCiber" type="Label" parent="GeneradorGrafo/PanelCiber"]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 24.0
+offset_right = 316.0
+offset_bottom = 197.0
+theme_override_colors/font_color = Color(0.016551724, 0.016551726, 0.016551724, 1)
+theme_override_fonts/font = ExtResource("9_vmigl")
+theme_override_font_sizes/font_size = 11
+text = "El nodo infectado ha sido identificado, pero la red sigue en riesgo: si intentas aislarlo sin cuidado, podrías afectar servidores críticos y provocar fallas en cadena. En ciberseguridad, establecer rutas seguras es fundamental para contener amenazas sin comprometer servicios esenciales. Cada conexión entre servidores representa un nivel de riesgo, y elegir mal podría permitir que el virus se propague o bloquee funciones vitales. Tu objetivo es verr estos riesgos y decidir el camino más seguro para llegar al nodo comprometido sin causar daños"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="BotonContinuar2" type="TextureButton" parent="GeneradorGrafo/PanelCiber"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -3.9550002
+anchor_top = -2.8460002
+anchor_right = -3.9550002
+anchor_bottom = -2.8460002
+offset_left = 1650.5751
+offset_top = 791.96606
+offset_right = 1766.5751
+offset_bottom = 843.96606
+texture_normal = ExtResource("10_wcdte")
+
+[node name="LabelContinuar2" type="Label" parent="GeneradorGrafo/PanelCiber"]
+layout_mode = 0
+offset_left = 243.0
+offset_top = 180.0
+offset_right = 308.0
+offset_bottom = 203.0
+theme_override_colors/font_color = Color(0.00069389754, 0.00069389766, 0.0006938976, 1)
+theme_override_fonts/font = ExtResource("9_vmigl")
+theme_override_font_sizes/font_size = 14
+text = "Continuar "
+
 [node name="BotonAyuda" type="TextureButton" parent="."]
 offset_left = 434.0
 offset_top = 9.0
@@ -864,32 +911,34 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="PanelAyuda" type="TextureRect" parent="."]
-offset_left = 42.0
-offset_top = 35.0
-offset_right = 409.0
-offset_bottom = 233.0
+visible = false
+offset_left = 52.0
+offset_top = 13.0
+offset_right = 415.0
+offset_bottom = 232.0
 texture = ExtResource("8_xyk0m")
 expand_mode = 1
 
 [node name="LabelExplicacion" type="Label" parent="PanelAyuda"]
 layout_mode = 0
-offset_left = 69.0
-offset_top = 35.0
-offset_right = 2749.0
-offset_bottom = 202.0
+offset_left = 67.0
+offset_top = 30.0
+offset_right = 317.0
+offset_bottom = 203.0
 theme_override_colors/font_color = Color(0.016551724, 0.016551726, 0.016551724, 1)
 theme_override_fonts/font = ExtResource("9_vmigl")
 theme_override_font_sizes/font_size = 12
 text = "Tu objetivo es avanzar por el grafo haciendo
-clic en los nodos de menos peso, para seguir el 
-camino correcto que lleva hasta Nemesis, empiezas en 
-el nodo inicial y cada vez que eliges el nodo 
+clic en los nodos de menos peso, para seguir el  camino correcto que lleva hasta Nemesis, empiezas en  el nodo inicial y cada vez que eliges el nodo 
 correcto la arista se ilumina en verde y 
 avanzas, pero si escoges uno incorrecto la 
 arista se ilumina en rojo y el grafo se reinicia,
 obligándote a comenzar de nuevo
 
 "
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="BotonContinuar" type="TextureButton" parent="PanelAyuda"]
 layout_mode = 1
@@ -898,23 +947,24 @@ anchor_left = -3.9550002
 anchor_top = -2.8460002
 anchor_right = -3.9550002
 anchor_bottom = -2.8460002
-offset_left = 1660.4851
-offset_top = 704.50806
-offset_right = 1776.4851
-offset_bottom = 756.50806
+offset_left = 1639.665
+offset_top = 777.27405
+offset_right = 1755.665
+offset_bottom = 829.27405
 texture_normal = ExtResource("10_wcdte")
 
 [node name="LabelContinuar" type="Label" parent="PanelAyuda"]
 layout_mode = 0
-offset_left = 246.0
-offset_top = 158.0
-offset_right = 311.0
-offset_bottom = 181.0
+offset_left = 241.0
+offset_top = 171.0
+offset_right = 306.0
+offset_bottom = 194.0
 theme_override_colors/font_color = Color(0.00069389754, 0.00069389766, 0.0006938976, 1)
 theme_override_fonts/font = ExtResource("9_vmigl")
 theme_override_font_sizes/font_size = 14
 text = "Continuar "
 
+[connection signal="pressed" from="GeneradorGrafo/PanelCiber/BotonContinuar2" to="GeneradorGrafo" method="_on_boton_continuar_2_pressed"]
 [connection signal="pressed" from="BotonAyuda" to="GeneradorGrafo" method="_on_boton_ayuda_pressed"]
 [connection signal="pressed" from="PanelAyuda/BotonContinuar" to="GeneradorGrafo" method="_on_boton_continuar_pressed"]
 

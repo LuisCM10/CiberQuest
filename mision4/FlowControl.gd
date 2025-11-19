@@ -50,18 +50,23 @@ var nemesis_active := false
 @onready var panel_ayuda = $UI/Panel/PanelAyuda
 @onready var label_explicacion = $UI/Panel/PanelAyuda/LabelExplicacion
 @onready var boton_continuar = $UI/Panel/PanelAyuda/BotonContinuar
-
+@onready var panelCiber = $UI/Panel/PanelCiber
+@onready var lExplicaCiber = $UI/Panel/PanelCiber/ExplicaCiber
+@onready var boton_continuar2 = $UI/Panel/PanelCiber/BotonContinuar2
 
 var base_resolution := Vector2(480, 270)
-
 func _ready():
+	panelCiber.visible = true
+func _iniciar_mision():
 	randomize()
 	_setup_ui()
+	
 	start_button.pressed.connect(_on_start_pressed)
 	send_button.pressed.connect(_on_send_flow_pressed)
 	clear_button.pressed.connect(_on_clear_path_pressed)
 	send_button.disabled = true
 	panel_ayuda.visible = false
+	
 	_update_instructions("Presiona [Iniciar] para comenzar")
 	_initialize_flow_network()
 	_draw_fixed_graph()
@@ -860,3 +865,10 @@ func _on_boton_continuar_pressed() -> void:
 	start_button.visible = true
 	send_button.visible = true
 	clear_button.visible = true
+
+
+
+
+func _on_boton_continuar_2_pressed() -> void:
+	panelCiber.visible=false
+	_iniciar_mision()

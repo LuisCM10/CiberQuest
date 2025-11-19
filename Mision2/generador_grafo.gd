@@ -19,6 +19,9 @@ var grafo = Grafo.new()
 @onready var sonido_perder = $SonidoPerder
 @onready var musica_aparicion = $MusicaAparicion
 @onready var panel_ayuda = $"../PanelAyuda"
+@onready var panelCiber = $PanelCiber
+@onready var lExplicaCiber = $PanelCiber/ExplicaCiber
+@onready var boton_continuar2 = $PanelCiber/BotonContinuar2
 # Variable para almacenar el grafo generado (para no regenerarlo al reiniciar)
 var grafo_generado = false
 var animacion_activa = false  # Nuevo: Para controlar si la animación de aparición está activa
@@ -27,17 +30,24 @@ var animacion_activa = false  # Nuevo: Para controlar si la animación de aparic
 
 func _ready():
 	panel_ayuda.visible = false
+	panelCiber.visible = true
+	# NO generar grafo todavía.
+	# NO llamar a nada más aquí.
+
+func iniciar_mision():
 	if not grafo_generado:
 		_generar_grafo()
 		grafo_generado = true
+
 	_generar_posiciones()
 	_crear_botones()
-	# _conectar_nodos() quitado inicialmente, se llama después de la animación
 	_calcular_camino_optimo()
 	_elegir_nemesis()
 	_iniciar_animacion_aparicion()
+
 	nodo_actual = nodo_start
 	esperando_click = false
+
 
 # ────────────────────────────────────────────────
 # GENERAR GRAFO DIRIGIDO (MODIFICADO PARA EVITAR CONEXIONES BIDIRECCIONALES)
@@ -356,3 +366,8 @@ func _on_boton_ayuda_pressed() -> void:
 
 func _on_boton_continuar_pressed() -> void:
 	panel_ayuda.visible = false
+
+
+func _on_boton_continuar_2_pressed() -> void:
+	panelCiber.visible = false
+	iniciar_mision()

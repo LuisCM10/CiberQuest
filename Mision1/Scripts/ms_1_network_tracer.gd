@@ -48,7 +48,7 @@ func _ready():
 	json_data = JSON.parse_string(file.get_as_text())
 	file.close()
 	panelCiber.visible = true
-	panel_ayuda.visible = false
+	panel_ayuda.visible = false	
 	for i in range(json_data.size()):
 		var vertice = Vertice.new(i, json_data[i]["name"], json_data[i]["functionality"], json_data[i]["is_origin"], json_data[i]["hidden_message"])
 		var angle = (2 * PI * i) / 10
