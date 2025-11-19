@@ -21,6 +21,9 @@ func connect_vertice(verti1, verti2, peso = 0, capacidad = 0):
 	if matriz_adya.is_empty():
 		# Inicializar matriz 2D con tamaño dinámico
 		matriz_adya = []
+		matriz_peso = []
+		matriz_capa_max = []
+		matriz_capa_usa = []
 		for i in range(vertices.size()):
 			matriz_adya.append([])
 			matriz_peso.append([])

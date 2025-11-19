@@ -4,11 +4,11 @@ extends Node2D
 @onready var BloqueMis = [0,$BloqueoMis2, $BloqueoMis3, $BloqueoMis4, $BloqueoMis5]
 
 func _ready() -> void:
-	var i = ControlGame.getNivel()
-	while i > 1:
+	var i = ControlGame.getNivel()-1
+	while i > 0:
 		BloqueMis[i].visible = false
 		i-=1
-	i = ControlGame.getNivel()-1
+	i = ControlGame.getNivel()
 	while i < BotonMis.size():
 		BotonMis[i].disabled = true
 		i+=1
