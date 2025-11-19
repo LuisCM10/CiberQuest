@@ -37,15 +37,17 @@ var scale_factor := 1.0
 # --- NUEVO: Ayuda ---
 @onready var boton_ayuda = $CanvasLayer/BotonAyuda
 @onready var panel_ayuda = $CanvasLayer/PanelAyuda
+@onready var panelCiber = $CanvasLayer/PanelCiber
+@onready var lExplicaCiber = $CanvasLayer/PanelCiber/ExplicaCiber
 @onready var label_explicacion = $CanvasLayer/PanelAyuda/LabelExplicacion
 @onready var boton_continuar = $CanvasLayer/PanelAyuda/BotonContinuar
-
+@onready var boton_continuar2 = $CanvasLayer/PanelAyuda/BotonContinuar2
 
 func _ready():
 	lbl_warning.text = "Las redes están dañadas! Elige un algoritmo 
              para reconstruirlas."
 	lbl_warning.visible = true
-
+	panelCiber.visible=true
 	btn_prim.pressed.connect(_on_btn_prim_pressed)
 	btn_kruskal.pressed.connect(_on_btn_kruskal_pressed)
 	btn_retry.pressed.connect(_on_btn_retry_pressed)
@@ -272,3 +274,7 @@ func _on_boton_ayuda_pressed():
 func _on_boton_continuar_pressed():
 	panel_ayuda.visible = false
 	# Volver a mostrar los botones y labels al cerrar ayuda
+
+
+func _on_boton_continuar_2_pressed() -> void:
+	panelCiber.visible = false

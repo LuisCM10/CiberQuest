@@ -1,8 +1,10 @@
-[gd_scene load_steps=11 format=4 uid="uid://n31glmfwc040"]
+[gd_scene load_steps=13 format=4 uid="uid://n31glmfwc040"]
 
 [ext_resource type="TileSet" uid="uid://vri2jbg2a8fm" path="res://Mision1/TileSet/tileSet.tres" id="1_2qcc2"]
 [ext_resource type="PackedScene" uid="uid://cbxo4u4ba0wt8" path="res://Mision1/Scenes/ms_1_network_tracer.tscn" id="2_jtjef"]
 [ext_resource type="FontFile" uid="uid://dudo3khf2v3o4" path="res://VT323-Regular.ttf" id="3_ukclc"]
+[ext_resource type="Texture2D" uid="uid://cbrskk22q2wth" path="res://letreroMision3.png" id="4_jolh6"]
+[ext_resource type="Texture2D" uid="uid://ctjbmwr0gakao" path="res://boton.png" id="5_27kt2"]
 
 [sub_resource type="Theme" id="Theme_jtjef"]
 Button/font_sizes/font_size = 60
@@ -169,5 +171,56 @@ offset_bottom = 46.874176
 theme = SubResource("Theme_jolh6")
 theme_override_font_sizes/font_size = 30
 autowrap_mode = 3
+
+[node name="PanelCiber" type="TextureRect" parent="Ms1NetworkTracer"]
+layout_mode = 0
+offset_left = -103.20327
+offset_top = -31.583916
+offset_right = 686.4218
+offset_bottom = 340.1345
+texture = ExtResource("4_jolh6")
+expand_mode = 1
+
+[node name="ExplicaCiber" type="Label" parent="Ms1NetworkTracer/PanelCiber"]
+layout_mode = 0
+offset_left = 172.80551
+offset_top = 60.738297
+offset_right = 657.62085
+offset_bottom = 309.7383
+theme_override_colors/font_color = Color(0.016551724, 0.016551726, 0.016551724, 1)
+theme_override_fonts/font = ExtResource("3_ukclc")
+theme_override_font_sizes/font_size = 17
+text = "Nuestros servidores principales —incluyendo el Firewall Central, la Base de Datos, el Servidor de Correo y el Servidor Web— están siendo atacados por el virus NEMESIS, comprometiendo la seguridad de toda la red; es crucial que los restablezcas porque cada uno cumple una función vital: el firewall nos protege de accesos no autorizados, la base de datos almacena información crítica, el servidor de correo puede usarse para propagar el ataque y el servidor web es la puerta de entrada para usuarios externos. Tu misión es recorrer estos nodos utilizando BFS o DFS para identificar los puntos infectados, descubrir las pistas ocultas y localizar el origen del ataque antes de que el sistema colapse."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="BotonContinuar2" type="TextureButton" parent="Ms1NetworkTracer/PanelCiber"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -3.9550002
+anchor_top = -2.8460002
+anchor_right = -3.9550002
+anchor_bottom = -2.8460002
+offset_left = 3576.5815
+offset_top = 1327.5886
+offset_right = 3802.189
+offset_bottom = 1405.3337
+texture_normal = ExtResource("5_27kt2")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="LabelContinuar2" type="Label" parent="Ms1NetworkTracer/PanelCiber"]
+layout_mode = 0
+offset_left = 542.4172
+offset_top = 296.40292
+offset_right = 618.4172
+offset_bottom = 319.40292
+theme_override_colors/font_color = Color(0.00069389754, 0.00069389766, 0.0006938976, 1)
+theme_override_fonts/font = ExtResource("3_ukclc")
+theme_override_font_sizes/font_size = 19
+text = "Continuar "
+
+[connection signal="pressed" from="Ms1NetworkTracer/PanelCiber/BotonContinuar2" to="Ms1NetworkTracer" method="_on_boton_continuar_2_pressed"]
 
 [editable path="Ms1NetworkTracer"]

@@ -11,6 +11,10 @@ extends Control
 @onready var BotDFS = $Panel2/PanelInfo/ButtonDFS
 @onready var BotSig = $Panel2/ButtonSig
 @onready var LabelIntru = $Panel2/PanelInfo/Label
+@onready var panelCiber = $PanelCiber
+@onready var lExplicaCiber = $PanelCiber/ExplicaCiber
+@onready var boton_continuar2 = $PanelCiber/BotonContinuar2
+
 # Número de servidores
 var num_servidores = 10
 
@@ -41,7 +45,7 @@ func _ready():
 	var file = FileAccess.open("res://Mision1/data/servidores.json", FileAccess.READ)
 	json_data = JSON.parse_string(file.get_as_text())
 	file.close()
-	
+	panelCiber.visible = true
 	for i in range(json_data.size()):
 		var vertice = Vertice.new(i, json_data[i]["name"], json_data[i]["functionality"], json_data[i]["is_origin"], json_data[i]["hidden_message"])
 		var angle = (2 * PI * i) / 10
@@ -256,3 +260,8 @@ func crearLinea(vertice, color, width, indice_ady, name = "conexion"):
 	linea.default_color = color
 	linea.duracion = anim
 	PanGrafo.add_child(linea)
+
+
+
+func _on_boton_continuar_2_pressed() -> void:
+	panelCiber.visible = false
