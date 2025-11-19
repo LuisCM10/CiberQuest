@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=4 uid="uid://duw88my2sscjs"]
+[gd_scene load_steps=46 format=4 uid="uid://duw88my2sscjs"]
 
 [ext_resource type="Script" uid="uid://cbvebp480tb6o" path="res://msn5/TheCore.gd" id="1_sy4yf"]
 [ext_resource type="FontFile" uid="uid://dudo3khf2v3o4" path="res://VT323-Regular.ttf" id="2_1myvp"]
@@ -17,6 +17,9 @@
 [ext_resource type="Texture2D" uid="uid://dnmg767hlosug" path="res://imagenes/animated_museum_laser_front.png" id="14_0mi65"]
 [ext_resource type="Texture2D" uid="uid://bvm0opt4st40p" path="res://imagenes/animated_museum_laser_horizontal.png" id="15_v0d1m"]
 [ext_resource type="PackedScene" uid="uid://c2hl8yujgxf1j" path="res://FadeTransition.tscn" id="17_1nfvh"]
+[ext_resource type="Texture2D" uid="uid://j4ncx0mcm8xv" path="res://ayuda.png" id="18_83a6y"]
+[ext_resource type="Texture2D" uid="uid://cbrskk22q2wth" path="res://letreroMision3.png" id="19_fjuno"]
+[ext_resource type="Texture2D" uid="uid://ctjbmwr0gakao" path="res://boton.png" id="20_u7om7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3rq2w"]
 texture = ExtResource("2_jjdaf")
@@ -5175,6 +5178,114 @@ autowrap_mode = 2
 
 [node name="CanvasLayer" parent="." instance=ExtResource("17_1nfvh")]
 
+[node name="BotonAyuda" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 233.0
+offset_right = 41.0
+offset_bottom = 266.0
+texture_normal = ExtResource("18_83a6y")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PanelAyuda" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -34.0
+offset_top = -1.0
+offset_right = 384.0
+offset_bottom = 245.0
+texture = ExtResource("19_fjuno")
+expand_mode = 1
+
+[node name="LabelExplicacion" type="Label" parent="PanelAyuda"]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 16.0
+offset_right = 362.0
+offset_bottom = 234.0
+theme_override_colors/font_color = Color(0.016551724, 0.016551726, 0.016551724, 1)
+theme_override_fonts/font = ExtResource("2_1myvp")
+theme_override_font_sizes/font_size = 11
+text = "En esta misión, el sistema genera una red aleatoria y deberás aplicar todos los algoritmos aprendidos para cerrar definitivamente la brecha: primero realizar un recorrido BFS o DFS para rastrear la corrupción; luego calcular un camino mínimo con Dijkstra o Floyd-Warshall para seleccionar la ruta más segura; después reconstruir la red dañada usando Kruskal o Prim; y finalmente estabilizar la comunicación con un algoritmo de máximo flujo. Superar esta secuencia demuestra tu dominio total del sistema. Si completas todas las etapas, habrás derrotado a NEMESIS y restaurado por completo la red global.
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="BotonContinuar" type="TextureButton" parent="PanelAyuda"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -3.9550002
+anchor_top = -2.8460002
+anchor_right = -3.9550002
+anchor_bottom = -2.8460002
+offset_left = 1903.1901
+offset_top = 882.116
+offset_right = 2019.1901
+offset_bottom = 934.116
+texture_normal = ExtResource("20_u7om7")
+
+[node name="LabelContinuar" type="Label" parent="PanelAyuda"]
+layout_mode = 0
+offset_left = 290.0
+offset_top = 200.0
+offset_right = 355.0
+offset_bottom = 223.0
+theme_override_colors/font_color = Color(0.00069389754, 0.00069389766, 0.0006938976, 1)
+theme_override_fonts/font = ExtResource("2_1myvp")
+theme_override_font_sizes/font_size = 12
+text = "Continuar "
+
+[node name="PanelCiber" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -34.0
+offset_top = -1.0
+offset_right = 384.0
+offset_bottom = 245.0
+texture = ExtResource("19_fjuno")
+expand_mode = 1
+
+[node name="ExplicaCiber" type="Label" parent="PanelCiber"]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 29.0
+offset_right = 341.0
+offset_bottom = 202.0
+theme_override_colors/font_color = Color(0.016551724, 0.016551726, 0.016551724, 1)
+theme_override_fonts/font = ExtResource("2_1myvp")
+theme_override_font_sizes/font_size = 11
+text = "En su último intento por sobrevivir, el virus NEMESIS ha corrompido los registros del sistema central, alterando rutas, permisos y configuraciones esenciales de la red. En el mundo real, cuando un ataque compromete el núcleo de un sistema, es vital reconstruir cada capa de defensa utilizando múltiples técnicas, garantizando que no quede ninguna brecha abierta. Esta etapa final representa la restauración total de la infraestructura: recorrer, analizar, optimizar y reforzar la red para sellar cualquier punto vulnerable antes de que el daño se propague nuevamente"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="BotonContinuar2" type="TextureButton" parent="PanelCiber"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -3.9550002
+anchor_top = -2.8460002
+anchor_right = -3.9550002
+anchor_bottom = -2.8460002
+offset_left = 1903.1901
+offset_top = 885.116
+offset_right = 2019.1901
+offset_bottom = 937.116
+texture_normal = ExtResource("20_u7om7")
+
+[node name="LabelContinuar2" type="Label" parent="PanelCiber"]
+layout_mode = 0
+offset_left = 289.0
+offset_top = 203.0
+offset_right = 354.0
+offset_bottom = 226.0
+theme_override_colors/font_color = Color(0.00069389754, 0.00069389766, 0.0006938976, 1)
+theme_override_fonts/font = ExtResource("2_1myvp")
+theme_override_font_sizes/font_size = 12
+text = "Continuar "
+
 [connection signal="pressed" from="VBoxContainer/BtnIniciar" to="." method="_on_btn_iniciar_pressed"]
 [connection signal="pressed" from="VBoxContainer/BtnLimpiar" to="." method="_on_btn_limpiar_pressed"]
 [connection signal="pressed" from="VBoxContainer/BtnEnviar" to="." method="_on_btn_enviar_pressed"]
+[connection signal="pressed" from="BotonAyuda" to="." method="_on_boton_ayuda_pressed"]
+[connection signal="pressed" from="PanelAyuda/BotonContinuar" to="." method="_on_boton_continuar_pressed"]
+[connection signal="pressed" from="PanelCiber/BotonContinuar2" to="." method="_on_boton_continuar_2_pressed"]

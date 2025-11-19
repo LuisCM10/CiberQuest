@@ -39,9 +39,10 @@ var scale_factor := 1.0
 @onready var panel_ayuda = $CanvasLayer/PanelAyuda
 @onready var panelCiber = $CanvasLayer/PanelCiber
 @onready var lExplicaCiber = $CanvasLayer/PanelCiber/ExplicaCiber
+@onready var boton_continuar2 = $CanvasLayer/PanelAyuda/BotonContinuar2
 @onready var label_explicacion = $CanvasLayer/PanelAyuda/LabelExplicacion
 @onready var boton_continuar = $CanvasLayer/PanelAyuda/BotonContinuar
-@onready var boton_continuar2 = $CanvasLayer/PanelAyuda/BotonContinuar2
+
 
 func _ready():
 	lbl_warning.text = "Las redes están dañadas! Elige un algoritmo 

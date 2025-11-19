@@ -15,7 +15,7 @@ Label/font_sizes/font_size = 24
 Label/fonts/font = ExtResource("3_ukclc")
 
 [sub_resource type="LabelSettings" id="LabelSettings_jolh6"]
-font_size = 20
+font_size = 24
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_qus1d"]
@@ -70,13 +70,31 @@ offset_right = 1022.4323
 offset_bottom = 541.9885
 
 [node name="ButtonExit" parent="Ms1NetworkTracer/Panel" index="0"]
-offset_left = -117.60364
-offset_top = 38.854095
-offset_right = 171.7638
-offset_bottom = 143.02231
+offset_left = -129.604
+offset_top = -24.355244
+offset_right = 159.76343
+offset_bottom = 79.81297
 theme = SubResource("Theme_jtjef")
 theme_override_fonts/font = ExtResource("3_ukclc")
 theme_override_font_sizes/font_size = 89
+
+[node name="LblRecorrido" parent="Ms1NetworkTracer/Panel" index="1"]
+offset_left = 24.00075
+offset_top = 52.311214
+offset_right = 799.2253
+offset_bottom = 117.700165
+text = "[  ]"
+autowrap_mode = 3
+
+[node name="ButtonSig" parent="Ms1NetworkTracer/Panel" index="2"]
+offset_left = 820.826
+offset_top = -114.09946
+offset_right = 108.34607
+offset_bottom = -4.6943054
+theme_override_fonts/font = ExtResource("3_ukclc")
+theme_override_font_sizes/font_size = 62
+text = "Siguiente Nivel"
+autowrap_mode = 3
 
 [node name="Panel2" parent="Ms1NetworkTracer" index="2"]
 offset_left = 717.6227
@@ -86,9 +104,9 @@ scale = Vector2(1.3456206, 1.2957128)
 
 [node name="PanelInfoServer" parent="Ms1NetworkTracer/Panel2" index="0"]
 offset_left = -1.7836342
-offset_top = 80.62734
+offset_top = 95.62778
 offset_right = 463.81476
-offset_bottom = 275.62735
+offset_bottom = 290.62778
 
 [node name="ColorRect" parent="Ms1NetworkTracer/Panel2/PanelInfoServer" index="0"]
 offset_left = 24.0
@@ -112,9 +130,9 @@ label_settings = SubResource("LabelSettings_qus1d")
 
 [node name="PanelPista" parent="Ms1NetworkTracer/Panel2" index="1"]
 offset_left = -1.7836342
-offset_top = 143.62735
+offset_top = 158.62778
 offset_right = 449.81433
-offset_bottom = 328.67035
+offset_bottom = 343.67078
 
 [node name="ColorRect" parent="Ms1NetworkTracer/Panel2/PanelPista" index="0"]
 offset_left = 24.0
@@ -160,18 +178,6 @@ offset_right = 237.36798
 offset_bottom = 133.29018
 theme = SubResource("Theme_jolh6")
 theme_override_font_sizes/font_size = 27
-
-[node name="ButtonSig" parent="Ms1NetworkTracer/Panel2" index="3"]
-anchors_preset = 7
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -37.455997
-offset_top = -28.125854
-offset_right = 162.544
-offset_bottom = 46.874176
-theme = SubResource("Theme_jolh6")
-theme_override_font_sizes/font_size = 30
-autowrap_mode = 3
 
 [node name="PanelCiber" type="TextureRect" parent="Ms1NetworkTracer"]
 layout_mode = 0

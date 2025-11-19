@@ -699,14 +699,14 @@ expand_mode = 1
 
 [node name="ExplicaCiber" type="Label" parent="CanvasLayer/PanelCiber"]
 layout_mode = 0
-offset_left = 69.0
-offset_top = 23.0
-offset_right = 310.0
-offset_bottom = 180.0
+offset_left = 67.0
+offset_top = 18.0
+offset_right = 316.0
+offset_bottom = 191.0
 theme_override_colors/font_color = Color(0.016551724, 0.016551726, 0.016551724, 1)
 theme_override_fonts/font = ExtResource("2_074og")
-theme_override_font_sizes/font_size = 12
-text = "Nuestros servidores principales —incluyendo el Firewall Central, la Base de Datos, el Servidor de Correo y el Servidor Web— están siendo atacados; restablecelos porque cada uno cumple una función vital: el firewall nos protege de accesos no autorizados, la base de datos almacena información crítica, el servidor de correo puede usarse para propagar el ataque y el servidor web es la puerta de entrada para usuarios externos"
+theme_override_font_sizes/font_size = 11
+text = "Tras contener al virus, la red quedó dañada: Varios enlaces fueron destruidos y algunos servidores quedaron aislados. En ciberseguridad, restaurar la infraestructura es esencial para garantizar que todos los sistemas vuelvan a comunicarse sin generar vulnerabilidades nuevas. Cada conexión tiene un costo diferente —ya sea por recursos, tiempo o riesgo— y reconstruirlas sin un plan podría dejar puntos débiles. Tu misión es restablecer la red de la forma más eficiente posible  minimizando gastos."
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
@@ -718,18 +718,18 @@ anchor_left = -3.9550002
 anchor_top = -2.8460002
 anchor_right = -3.9550002
 anchor_bottom = -2.8460002
-offset_left = 1649.5751
-offset_top = 789.96606
-offset_right = 1765.5751
-offset_bottom = 841.96606
+offset_left = 1647.5751
+offset_top = 791.96606
+offset_right = 1763.5751
+offset_bottom = 843.96606
 texture_normal = ExtResource("7_074og")
 
 [node name="LabelContinuar2" type="Label" parent="CanvasLayer/PanelCiber"]
 layout_mode = 0
-offset_left = 242.0
-offset_top = 178.0
-offset_right = 307.0
-offset_bottom = 201.0
+offset_left = 240.0
+offset_top = 180.0
+offset_right = 305.0
+offset_bottom = 203.0
 theme_override_colors/font_color = Color(0.00069389754, 0.00069389766, 0.0006938976, 1)
 theme_override_fonts/font = ExtResource("2_074og")
 theme_override_font_sizes/font_size = 14

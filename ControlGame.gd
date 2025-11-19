@@ -1,5 +1,5 @@
 extends Node
-@onready var NivelActual = 2
+@onready var NivelActual = 1
 
 func getNivel() -> int:
 	return NivelActual

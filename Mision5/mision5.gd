@@ -18,6 +18,8 @@ const LINEA_DE_FLUJO_MAX_NODOS = "flujoMaximo"
 @onready var lblTime = $VBoxContainer/LblTime
 @onready var lblrecor = $VBoxContainer/lblRecorrido
 
+
+
 # ----- Variables de generacion --------
 @onready var grafo = Grafo.new()
 var num_vertices = 10

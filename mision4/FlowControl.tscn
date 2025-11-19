@@ -16,6 +16,53 @@ script = ExtResource("1_uessc")
 [node name="Panel" type="Panel" parent="UI"]
 metadata/_edit_use_anchors_ = true
 
+[node name="PanelCiber" type="TextureRect" parent="UI/Panel"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 34.0
+offset_right = 407.0
+offset_bottom = 229.0
+texture = ExtResource("3_0csbv")
+expand_mode = 1
+
+[node name="ExplicaCiber" type="Label" parent="UI/Panel/PanelCiber"]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 33.0
+offset_right = 316.0
+offset_bottom = 152.0
+theme_override_colors/font_color = Color(0.016551724, 0.016551726, 0.016551724, 1)
+theme_override_fonts/font = ExtResource("2_srwna")
+theme_override_font_sizes/font_size = 10
+text = "Tras contener al virus, la red quedó dañada: Varios enlaces fueron destruidos y algunos servidores quedaron aislados. En ciberseguridad, restaurar la infraestructura es esencial para garantizar que todos los sistemas vuelvan a comunicarse sin generar vulnerabilidades nuevas. Cada conexión tiene un costo diferente —ya sea por recursos, tiempo o riesgo— y reconstruirlas sin un plan podría dejar puntos débiles. Tu misión es restablecer la red de la forma más eficiente posible  minimizando gastos."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="BotonContinuar2" type="TextureButton" parent="UI/Panel/PanelCiber"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -3.9550002
+anchor_top = -2.8460002
+anchor_right = -3.9550002
+anchor_bottom = -2.8460002
+offset_left = 1648.5751
+offset_top = 692.97003
+offset_right = 1764.5751
+offset_bottom = 744.97003
+texture_normal = ExtResource("4_7c6un")
+
+[node name="LabelContinuar2" type="Label" parent="UI/Panel/PanelCiber"]
+layout_mode = 0
+offset_left = 243.0
+offset_top = 155.0
+offset_right = 308.0
+offset_bottom = 178.0
+theme_override_colors/font_color = Color(0.00069389754, 0.00069389766, 0.0006938976, 1)
+theme_override_fonts/font = ExtResource("2_srwna")
+theme_override_font_sizes/font_size = 13
+text = "Continuar "
+
 [node name="Instructions" type="Label" parent="UI/Panel"]
 layout_mode = 1
 anchors_preset = 5
@@ -31,9 +78,9 @@ theme_override_font_sizes/font_size = 18
 
 [node name="Stats" type="Label" parent="UI/Panel"]
 layout_mode = 1
-offset_left = 345.0
+offset_left = 355.0
 offset_top = 69.0
-offset_right = 385.0
+offset_right = 395.0
 offset_bottom = 94.0
 theme_override_fonts/font = ExtResource("2_srwna")
 theme_override_font_sizes/font_size = 24
@@ -43,9 +90,9 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 353.0
+offset_left = 364.0
 offset_top = 190.0
-offset_right = 393.0
+offset_right = 404.0
 offset_bottom = 213.0
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_srwna")
@@ -106,6 +153,7 @@ theme_override_fonts/font = ExtResource("2_srwna")
 theme_override_font_sizes/font_size = 20
 
 [node name="PanelAyuda" type="TextureRect" parent="UI/Panel"]
+visible = false
 layout_mode = 0
 offset_left = 42.0
 offset_top = 35.0
@@ -162,13 +210,14 @@ theme_override_font_sizes/font_size = 14
 text = "Continuar "
 
 [node name="BotonAyuda" type="TextureButton" parent="UI"]
-offset_left = 443.0
+offset_left = 424.0
 offset_top = 7.0
-offset_right = 476.0
+offset_right = 457.0
 offset_bottom = 40.0
 texture_normal = ExtResource("3_4g4t3")
 ignore_texture_size = true
 stretch_mode = 0
 
+[connection signal="pressed" from="UI/Panel/PanelCiber/BotonContinuar2" to="." method="_on_boton_continuar_2_pressed"]
 [connection signal="pressed" from="UI/Panel/PanelAyuda/BotonContinuar" to="." method="_on_boton_continuar_pressed"]
 [connection signal="pressed" from="UI/BotonAyuda" to="." method="_on_boton_ayuda_pressed"]

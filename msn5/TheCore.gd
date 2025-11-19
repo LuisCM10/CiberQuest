@@ -20,7 +20,14 @@ const MAX_WRONG_CLICKS = 5
 @onready var BtnEnviar = $VBoxContainer/BtnEnviar
 @onready var BtnLimpiar = $VBoxContainer/BtnLimpiar
 @onready var view = get_viewport_rect().size * 0.3
-
+#----------Ayuda----------
+@onready var boton_ayuda = $BotonAyuda
+@onready var panel_ayuda = $PanelAyuda
+@onready var panelCiber = $PanelCiber
+@onready var lExplicaCiber = $PanelCiber/ExplicaCiber
+@onready var boton_continuar2 = $PanelCiber/BotonContinuar2
+@onready var label_explicacion = $PanelAyuda/LabelExplicacion
+@onready var boton_continuar = $PanelAyuda/BotonContinuar
 #transicion
 @onready var fade_transition = $CanvasLayer  
 
@@ -60,7 +67,8 @@ var current_path = []
 func _ready() -> void:
 	grafo = Grafo.new()
 	fade_transition.visible = false
-	
+	panelCiber.visible = true
+	panel_ayuda.visible = false
 	# Inicializar matrices 2D del grafo (solo las que existen y se usan)
 	grafo.matriz_adya = []
 	grafo.matriz_adya.resize(num_vertices)
@@ -856,3 +864,14 @@ func _on_btn_limpiar_pressed() -> void:
 		BtnEnviar.disabled = true
 		_update_path_display()
 	pass # Replace with function body.
+func _on_boton_ayuda_pressed():
+	panel_ayuda.visible = true
+	
+	
+
+func _on_boton_continuar_pressed():
+	panel_ayuda.visible = false
+
+
+func _on_boton_continuar_2_pressed() -> void:
+	panelCiber.visible = false

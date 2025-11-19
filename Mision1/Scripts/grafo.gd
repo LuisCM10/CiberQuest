@@ -81,3 +81,18 @@ func bfs(vertActual) :
 			if node.is_origin:
 				cola.clear()
 	return recorrido
+	
+func dfs(vertActual):
+	var visitados = []
+	var recorrido = []	
+	dfs_aux(vertActual, visitados, recorrido)	
+	return recorrido
+
+func dfs_aux(actual, visitados, recorrido):
+	if visitados.has(actual):
+		return	
+	visitados.append(actual)
+	recorrido.append(actual)	
+	# Explorar adyacentes recursivamente
+	for adyacente in actual.adyacentes:
+		dfs_aux(adyacente, visitados, recorrido)
