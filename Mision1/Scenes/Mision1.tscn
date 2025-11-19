@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=4 uid="uid://n31glmfwc040"]
+[gd_scene load_steps=14 format=4 uid="uid://n31glmfwc040"]
 
 [ext_resource type="TileSet" uid="uid://vri2jbg2a8fm" path="res://Mision1/TileSet/tileSet.tres" id="1_2qcc2"]
 [ext_resource type="PackedScene" uid="uid://cbxo4u4ba0wt8" path="res://Mision1/Scenes/ms_1_network_tracer.tscn" id="2_jtjef"]
 [ext_resource type="FontFile" uid="uid://dudo3khf2v3o4" path="res://VT323-Regular.ttf" id="3_ukclc"]
 [ext_resource type="Texture2D" uid="uid://cbrskk22q2wth" path="res://letreroMision3.png" id="4_jolh6"]
 [ext_resource type="Texture2D" uid="uid://ctjbmwr0gakao" path="res://boton.png" id="5_27kt2"]
+[ext_resource type="Texture2D" uid="uid://j4ncx0mcm8xv" path="res://ayuda.png" id="6_27kt2"]
 
 [sub_resource type="Theme" id="Theme_jtjef"]
 Button/font_sizes/font_size = 60
@@ -221,6 +222,72 @@ theme_override_fonts/font = ExtResource("3_ukclc")
 theme_override_font_sizes/font_size = 19
 text = "Continuar "
 
+[node name="PanelAyuda" type="TextureRect" parent="Ms1NetworkTracer"]
+layout_mode = 0
+offset_left = -100.80319
+offset_top = -29.154388
+offset_right = 674.42126
+offset_bottom = 340.1345
+texture = ExtResource("4_jolh6")
+expand_mode = 1
+
+[node name="LabelExplicacion" type="Label" parent="Ms1NetworkTracer/PanelAyuda"]
+layout_mode = 0
+offset_left = 153.60486
+offset_top = 34.01345
+offset_right = 655.60486
+offset_bottom = 304.01346
+theme_override_colors/font_color = Color(0.016551724, 0.016551726, 0.016551724, 1)
+theme_override_fonts/font = ExtResource("3_ukclc")
+theme_override_font_sizes/font_size = 17
+text = "Tu misión es recorrer la red para descubrir el nodo donde comenzó el ataque. Para hacerlo, debes utilizar uno de dos métodos de búsqueda:
+
+BFS (Búsqueda en Anchura): explora primero los nodos más cercanos al punto de inicio. Es ideal para encontrar rutas cortas y asegurarte de no saltarte ningún servidor importante.
+
+DFS (Búsqueda en Profundidad): avanza por un camino hasta lo más profundo antes de retroceder. Es útil para explorar rápidamente ramas completas de la red y detectar patrones escondidos.
+Si recorres la red correctamente, descubrirás el origen del virus y desbloquearás el código para restaurar el sistema."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="BotonContinuar" type="TextureButton" parent="Ms1NetworkTracer/PanelAyuda"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -3.9550002
+anchor_top = -2.8460002
+anchor_right = -3.9550002
+anchor_bottom = -2.8460002
+offset_left = 3550.8284
+offset_top = 1335.2515
+offset_right = 3728.434
+offset_bottom = 1403.2783
+texture_normal = ExtResource("5_27kt2")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="LabelContinuar" type="Label" parent="Ms1NetworkTracer/PanelAyuda"]
+layout_mode = 0
+offset_left = 549.6174
+offset_top = 308.55057
+offset_right = 617.6174
+offset_bottom = 331.55057
+theme_override_colors/font_color = Color(0.00069389754, 0.00069389766, 0.0006938976, 1)
+theme_override_fonts/font = ExtResource("3_ukclc")
+theme_override_font_sizes/font_size = 17
+text = "Continuar "
+
+[node name="BotonAyuda" type="TextureButton" parent="Ms1NetworkTracer"]
+layout_mode = 0
+offset_left = -93.602936
+offset_top = -31.58392
+offset_right = -24.000763
+offset_bottom = 29.154377
+texture_normal = ExtResource("6_27kt2")
+ignore_texture_size = true
+stretch_mode = 0
+
 [connection signal="pressed" from="Ms1NetworkTracer/PanelCiber/BotonContinuar2" to="Ms1NetworkTracer" method="_on_boton_continuar_2_pressed"]
+[connection signal="pressed" from="Ms1NetworkTracer/PanelAyuda/BotonContinuar" to="Ms1NetworkTracer" method="_on_boton_continuar_pressed"]
+[connection signal="pressed" from="Ms1NetworkTracer/BotonAyuda" to="Ms1NetworkTracer" method="_on_boton_ayuda_pressed"]
 
 [editable path="Ms1NetworkTracer"]

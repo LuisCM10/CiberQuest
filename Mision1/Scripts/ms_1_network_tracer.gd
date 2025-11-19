@@ -14,7 +14,9 @@ extends Control
 @onready var panelCiber = $PanelCiber
 @onready var lExplicaCiber = $PanelCiber/ExplicaCiber
 @onready var boton_continuar2 = $PanelCiber/BotonContinuar2
-
+@onready var boton_ayuda = $BotonAyuda
+@onready var panel_ayuda = $PanelAyuda
+@onready var boton_continuar = $PanelAyuda/BotonContinuar
 # Número de servidores
 var num_servidores = 10
 
@@ -46,6 +48,7 @@ func _ready():
 	json_data = JSON.parse_string(file.get_as_text())
 	file.close()
 	panelCiber.visible = true
+	panel_ayuda.visible = false
 	for i in range(json_data.size()):
 		var vertice = Vertice.new(i, json_data[i]["name"], json_data[i]["functionality"], json_data[i]["is_origin"], json_data[i]["hidden_message"])
 		var angle = (2 * PI * i) / 10
@@ -265,3 +268,11 @@ func crearLinea(vertice, color, width, indice_ady, name = "conexion"):
 
 func _on_boton_continuar_2_pressed() -> void:
 	panelCiber.visible = false
+
+
+func _on_boton_ayuda_pressed() -> void:
+	panel_ayuda.visible = true
+
+
+func _on_boton_continuar_pressed() -> void:
+	panel_ayuda.visible=false
