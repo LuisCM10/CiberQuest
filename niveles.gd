@@ -1,6 +1,6 @@
 extends Node2D
 @onready var boton_inicio = $BtnMision3
-@onready var BotonMis = [$BtnMision2, $BtnMision3, $BtnMision4, $BtnMision5]
+@onready var BotonMis = [$BtnMision1, $BtnMision2, $BtnMision3, $BtnMision4, $BtnMision5]
 @onready var BloqueMis = [0,$BloqueoMis2, $BloqueoMis3, $BloqueoMis4, $BloqueoMis5]
 
 func _ready() -> void:
