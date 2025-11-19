@@ -9,7 +9,7 @@ func _ready() -> void:
 		BloqueMis[i].visible = false
 		i-=1
 	i = ControlGame.getNivel()-1
-	while i < 5:
+	while i < BotonMis.size():
 		BotonMis[i].disabled = true
 		i+=1
 
