@@ -1,7 +1,19 @@
-[gd_scene load_steps=7 format=3 uid="uid://cbxo4u4ba0wt8"]
+[gd_scene load_steps=11 format=3 uid="uid://cbxo4u4ba0wt8"]
 
 [ext_resource type="Script" uid="uid://jwc4boi2mn43" path="res://Mision1/Scripts/ms_1_network_tracer.gd" id="1_q86yi"]
+[ext_resource type="FontFile" uid="uid://dudo3khf2v3o4" path="res://VT323-Regular.ttf" id="2_pdv7t"]
 [ext_resource type="Theme" uid="uid://4wumgw1yqy2f" path="res://Mision1/Themes/buttonTheme.tres" id="2_vspgn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pdv7t"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_5yk4t"]
+font = ExtResource("2_pdv7t")
+font_size = 26
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5yk4t"]
+bg_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_nek87"]
 font_color = Color(0, 0, 0, 1)
@@ -56,7 +68,34 @@ offset_bottom = 34.02857
 grow_horizontal = 0
 grow_vertical = 2
 scale = Vector2(0.39732915, 0.39403322)
+theme_override_styles/normal = SubResource("StyleBoxFlat_pdv7t")
 text = "Salir"
+
+[node name="LblRecorrido" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 1.794268
+offset_right = 54.0
+offset_bottom = 24.794268
+text = "[ ]"
+label_settings = SubResource("LabelSettings_5yk4t")
+vertical_alignment = 1
+
+[node name="ButtonSig" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 381.0
+offset_top = -22.428545
+offset_right = 26.0
+offset_bottom = 18.571457
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.39732915, 0.39403322)
+theme_override_styles/normal = SubResource("StyleBoxFlat_5yk4t")
+text = "Siguiente"
 
 [node name="Panel2" type="Panel" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -212,23 +251,7 @@ text = "Busqueda en Profundida
 (DFS)"
 autowrap_mode = 2
 
-[node name="ButtonSig" type="Button" parent="Panel2"]
-layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 53.0
-offset_top = -30.0
-offset_right = 53.0
-offset_bottom = 4.0
-grow_horizontal = 2
-grow_vertical = 0
-scale = Vector2(0.39732915, 0.39403322)
-theme = ExtResource("2_vspgn")
-text = "Siguiente"
-
 [connection signal="pressed" from="Panel/ButtonExit" to="." method="_on_button_exit_pressed"]
+[connection signal="pressed" from="Panel/ButtonSig" to="." method="_on_button_sig_pressed"]
 [connection signal="pressed" from="Panel2/PanelInfo/ButtonBFS" to="." method="_on_button_bfs_pressed"]
 [connection signal="pressed" from="Panel2/PanelInfo/ButtonDFS" to="." method="_on_button_dfs_pressed"]
-[connection signal="pressed" from="Panel2/ButtonSig" to="." method="_on_button_sig_pressed"]
