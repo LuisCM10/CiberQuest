@@ -267,15 +267,8 @@ func _on_btn_retry_pressed():
 func _on_boton_ayuda_pressed():
 	panel_ayuda.visible = true
 	# Ocultar botones y labels cuando se abre ayuda
-	btn_prim.visible = false
-	btn_kruskal.visible = false
-	btn_retry.visible = false
-	lbl_warning.visible = false
-	lbl_victory.visible = false
+	
 
 func _on_boton_continuar_pressed():
 	panel_ayuda.visible = false
 	# Volver a mostrar los botones y labels al cerrar ayuda
-	btn_prim.visible = true
-	btn_kruskal.visible = true
-	lbl_warning.visible = true
