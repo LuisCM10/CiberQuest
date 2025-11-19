@@ -17,7 +17,7 @@ func _init():
 func add_vertice(vertice):
 	self.vertices.append(vertice)
 
-func connect_vertice(verti1, verti2, peso = 0, capacidad = 0):
+func connect_vertice(verti1, verti2, peso = 0, capacidad = 0, tipo = "NoDirigido"):
 	if matriz_adya.is_empty() or  matriz_peso.is_empty() or matriz_capa_max.is_empty():
 		# Inicializar matriz 2D con tamaño dinámico
 		matriz_adya = []
@@ -36,7 +36,8 @@ func connect_vertice(verti1, verti2, peso = 0, capacidad = 0):
 				matriz_capa_usa[i].append(0)
 				
 	verti1.addAdyacente(verti2)
-	verti2.addAdyacente(verti1)	
+	if tipo == "NoDirigido":
+		verti2.addAdyacente(verti1)	
 	matriz_adya[verti1.id][verti2.id] = 1
 	matriz_peso[verti1.id][verti2.id] = peso
 	matriz_capa_max[verti1.id][verti2.id] = capacidad

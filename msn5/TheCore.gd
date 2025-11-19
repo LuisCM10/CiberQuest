@@ -45,6 +45,7 @@ var num_vertices = 9
 var prob_conexion = 0.4
 var lineasConexion = []
 var lineasVisuales = []
+var labels = []
 
 var vertActual = null
 var aristaActual = null
@@ -69,7 +70,28 @@ func _ready() -> void:
 	fade_transition.visible = false
 	panelCiber.visible = true
 	panel_ayuda.visible = false
-	# Inicializar matrices 2D del grafo (solo las que existen y se usan)
+	
+	iniciarMatrices()	
+	
+	for i in range(num_vertices):
+		var angle = (2 * PI * i) / 10
+		var x = 150 + view[0] * cos(angle)
+		var y = 90 + view[1] * sin(angle)
+		var positions = Vector2(x, y)
+		var vertice = Nodo.new(i, positions)
+		grafo.add_vertice(vertice)
+	
+	# Conectar vértices...
+	for i in range(num_vertices):
+		var vertic1 = grafo.searchVertice(i)
+		for j in range(num_vertices):
+			if i != j:
+				if randf() < prob_conexion:
+					var vertic2 = grafo.searchVertice(j)
+					grafo.connect_vertice(vertic1, vertic2)
+	dibujarGrafo()
+
+func iniciarMatrices():
 	grafo.matriz_adya = []
 	grafo.matriz_adya.resize(num_vertices)
 	grafo.matriz_capa_max = []
@@ -91,29 +113,7 @@ func _ready() -> void:
 			grafo.matriz_adya[i][j] = 0
 			grafo.matriz_capa_max[i][j] = 0
 			grafo.matriz_peso[i][j] = 0
-			# Peso inicial (float para pesos)
-	
-	# Resto del código original...
-	for i in range(num_vertices):
-		var angle = (2 * PI * i) / 10
-		var x = 150 + view[0] * cos(angle)
-		var y = 90 + view[1] * sin(angle)
-		var positions = Vector2(x, y)
-		var vertice = Nodo.new(i, positions)
-		grafo.add_vertice(vertice)
-	
-	# Conectar vértices...
-	for i in range(num_vertices):
-		var vertic1 = grafo.searchVertice(i)
-		for j in range(num_vertices):
-			if i != j:
-				if randf() < prob_conexion:
-					var vertic2 = grafo.searchVertice(j)
-					var peso = randi_range(1, 15)
-					var capacidad = randi_range(1, 20)
-					grafo.connect_vertice(vertic1, vertic2, peso, capacidad)
-	dibujarGrafo()
-	
+			
 func _process(delta: float) -> void:
 	if start:
 		time_remaining -= delta
@@ -149,7 +149,7 @@ func dibujarGrafo():
 		for ady in vertice.adyacentes:
 			var indice_ady = grafo.vertices.find(ady)
 			if indice_ady > i:
-				dibujarLineas(vertice, ady, LINEA_DE_CONEXION_NODOS)
+				dibujarLineas(vertice, ady, LINEA_DE_CONEXION_NODOS, false)
 	pass
 	
 func dibujarLineas(origen, destin, funcion,lab = true, correcto = true):
@@ -159,6 +159,7 @@ func dibujarLineas(origen, destin, funcion,lab = true, correcto = true):
 			arista.connect("linea_presionada", Callable(self, "_on_linea_presionada").bind(arista))
 			arista.tipo = "NoDirigida"
 			lineasConexion.append(arista)
+			
 		LINEA_DE_DIJKSTRA_NODOS:
 			arista.funcion = funcion
 			arista.color = Color(0.906, 0.686, 0.0, 1.0)
@@ -180,20 +181,20 @@ func dibujarLineas(origen, destin, funcion,lab = true, correcto = true):
 				arista.color = Color(1.0, 0.0, 0.102, 1.0)
 			lineasVisuales.append(arista)
 		LINEA_DE_RECORRIDO_NODOS:
-			arista.duracion = 0.6
-			if destino.is_origin:
-				arista.color = Color(53.064, 244.585, 0.0, 1.0)
-			else: 
+			arista.duracion = 0.6			
+			if correcto:
 				arista.color = Color(0.185, 0.416, 1.0, 1.0)
-			if not correcto:
+				if destin.is_origin:
+					arista.color = Color(53.064, 244.585, 0.0, 1.0)
+			else:
 				arista.color = Color(1.0, 0.0, 0.102, 1.0)
-			lineasVisuales.append(arista)
+			lineasVisuales.append(arista)			
 	PanelGrafo.add_child(arista)
-	if lab:
+	if lab and LINEA_DE_CONEXION_NODOS:
 		var peso = grafo.matriz_peso[origen.id][destin.id]
-		var dir = (arista.linea.points[1] - arista.linea.points[0]).normalized()
+		var dir = (arista.line.points[1] - arista.line.points[0]).normalized()
 		var direccion = arista.linea.points[0] + arista.linea.points[1]
-		var label = Label.new()
+		var label = Label.new()		
 		label.text = str(peso)
 		label.position = direccion/2 + Vector2(10, 10)  # Ajustar para centrar aproximadamente
 		var angle = atan2(direccion.y, direccion.x) # Ángulo en radianes
@@ -201,8 +202,10 @@ func dibujarLineas(origen, destin, funcion,lab = true, correcto = true):
 		label.size = Vector2(10, 10)  # Reducido para que no sea enorme
 		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-		label.name = "peso_" +arista.linea.name
+		label.name = str(origen.id)+","+str(destin.id)
 		PanelGrafo.add_child(label)
+		labels.append(label)
+		label.visible = false
 
 func _on_linea_presionada(arista):
 	aristaActual = arista
@@ -350,17 +353,20 @@ func iniciarRecorridos():
 	BtnIniciar.visible = false
 	BtnEnviar.visible = false
 
-func BFS () :
-	
+func BFS () :	
 	for x in UserRecorrido:
 		if x.adyacentes.has(vertActual):
 			UserRecorrido.append(vertActual)
 			var verificar = recorrido[UserRecorrido.size()-1] == vertActual
-			dibujarLineas(x,vertActual,LINEA_DE_RECORRIDO_NODOS,verificar)
 			if not verificar:
+				dibujarLineas(x,vertActual,LINEA_DE_RECORRIDO_NODOS, false, false)
 				UserRecorrido.remove_at(UserRecorrido.size()-1)
-			if vertActual == origin:
+				await get_tree().create_timer(3).timeout
+				return
+			dibujarLineas(x,vertActual,LINEA_DE_RECORRIDO_NODOS, false)
+			if verificar and vertActual == origin:
 				lblIntro.text = "Has hallado el backup del sistema es necesario enviar una señal de victoria."
+				BtnLimpiar.visible = false
 				BtnEnviar.visible = true
 				start = false
 			await get_tree().create_timer(3).timeout
@@ -689,7 +695,7 @@ func dijkstra(start):
 		
 		for v in range(num_vertices):
 			if grafo.matriz_adya[u][v] > 0 and not visited[v]:
-				var alt = dist[u] + grafo.matriz_adya[u][v]
+				var alt = dist[u] + grafo.matriz_peso[u][v]
 				if alt < dist[v]:
 					dist[v] = alt
 					prev[v] = u
@@ -722,8 +728,6 @@ func _on_btn_iniciar_pressed() -> void:
 	if bfs:
 		iniciarRecorridos()		
 	if dijstra:
-		limpiarConexiones()
-		dibujarConexiones()
 		_calcular_camino_optimo()
 		start = true
 		UserRecorrido.append(origin)
@@ -764,6 +768,9 @@ func _on_btn_enviar_pressed() -> void:
 			BtnEnviar.visible = false
 			BtnLimpiar.visible = false
 			start = false
+			limpiarConexiones()
+			dibujarConexiones()
+			mostrarPesos()
 			return
 		else:
 			lblIntro.text = "Parece que aun te falta algun nodo por recorrer. Sera necesario revisar."
@@ -781,8 +788,9 @@ func _on_btn_enviar_pressed() -> void:
 		else:
 			lblIntro.text = "Parece que ese no es el camino mas corto. Hemos perdido recursos al intentar enviarlo, intentalo de nuevo."
 			BtnIniciar.visible = false
-			BtnEnviar.visible = false
-			
+			BtnEnviar.visible = false			
+			UserRecorrido.clear()
+			UserRecorrido.append(origin)
 			return
 	if kruskal:
 		lblIntro.text = "Felicidades, completaste tu tercer reto. Ahora es hora de verificar que el backup llege hasta cada uno de nuestros servidores."
@@ -833,27 +841,43 @@ func limpiarConexiones():
 	time_remaining = 120
 	
 func dibujarConexiones():
+	for i in range(num_vertices):
+		var vertic1 = grafo.searchVertice(i)
+		for j in range(num_vertices):
+			if i != j:
+				if randf() < prob_conexion:
+					var vertic2 = grafo.searchVertice(j)
+					var peso = randi_range(1, 15)
+					var capacidad = randi_range(1, 20)
+					grafo.connect_vertice(vertic1, vertic2, peso, capacidad, "dirigido")
 	for i in range(grafo.vertices.size()):
 		var vertice = grafo.vertices[i]		
 		for ady in vertice.adyacentes:
 			var indice_ady = grafo.vertices.find(ady)
-			if indice_ady > i:
-				dibujarLineas(vertice, ady, LINEA_DE_CONEXION_NODOS, true)
+			if indice_ady != i:
+				dibujarLineas(vertice, ady, LINEA_DE_CONEXION_NODOS)
 	
 func mostrarPesos():
-	for x in lineasConexion:
-		var lbl = x.label
-		lbl.text = str(grafo.getPeso(x.origen, x. destino))
-		x.mostrarLabel()
-		
+	for x in labels:
+		var nam = str(x.name)
+		nam = nam.split(",")
+		print(nam[0])
+		print(nam[1])
+		x.text = str(grafo.getPeso(grafo.searchVertice(int(nam[0])), grafo.searchVertice(int(nam[1]))))
+		x.visible = true
+
 func mostrarCapacidad():
-	for x in lineasConexion:
-		var lbl = x.label
-		lbl.text = str(grafo.getFlujoUsado(x.origen, x.destino))+"/"+str(grafo.getFlujoMax(x.origen, x.destino))
-		x.mostrarLabel()
+	for x in labels:
+		x.text = str(grafo.getFlujoUsado(x.origen, x.destino))+"/"+str(grafo.getFlujoMax(x.origen, x.destino))
+		x.visible = true
 
 func _on_btn_limpiar_pressed() -> void:
-	if kruskal or dijstra or bfs:
+	if bfs:
+		limpiarVisual()
+		UserRecorrido.clear()
+		UserRecorrido.append(destino)
+		lblRecorrido.text = str(recorStr())
+	if kruskal or dijstra:
 		limpiarVisual()
 		UserRecorrido.clear()
 		UserRecorrido.append(origin)

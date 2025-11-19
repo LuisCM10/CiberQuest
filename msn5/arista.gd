@@ -2,7 +2,7 @@ class_name Arista extends Area2D
 
 @onready var linea = Line2D.new()
 @onready var flecha = Polygon2D.new()
-@onready var label = Label.new()
+
 @onready var colission = CollisionShape2D.new()
 
 const LINEA_DE_CONEXION_NODOS = "conexion"
@@ -16,7 +16,9 @@ var tamano_flecha = 12.0
 var tipo
 var funcion = ""
 var color
+var start_point
 var end_point
+var line
 
 var selected := false      # si la arista fue seleccionada
 var is_correct := false    # si es correcta (verde)
@@ -31,13 +33,14 @@ func _init(origen, destino, tipo = "Dirigido", color = Color(0,0,0)) -> void:
 	self.color = color
 	
 func _ready() -> void:	
-	name = funcion + str(origen.id) + "_" + str(destino.id)
+	name = str(origen.id) + "_" + str(destino.id)
+	line = linea
 	add_child(linea)
 	if funcion == LINEA_DE_CONEXION_NODOS:
-		add_child(label)
 		add_child(colission)
 	if tipo == "Dirigido":
 		add_child(flecha)
+	name = funcion + str(origen.id) + "_" + str(destino.id)
 	var shape = RectangleShape2D.new()
 	colission.shape = shape
 	linea.points = [origen.posicion, origen.posicion]
@@ -49,8 +52,8 @@ func _ready() -> void:
 	var radius_a = max(24, 32) / 2
 	var radius_b = max(24, 32) / 2
 	var dir = (pos_b - pos_a).normalized()
-	var start_point = pos_a + dir * radius_a
-	end_point = pos_b - dir * radius_b
+	start_point = pos_a + dir * radius_a
+	end_point = pos_b - dir * radius_b	
 	linea.points = [start_point, start_point]
 	
 func _process(delta: float) -> void:
@@ -98,17 +101,7 @@ func _update_collision():
 	colission.position = (start + end) * 0.5
 	colission.rotation = angle
 	colission.shape.extents = Vector2(length * 0.5, 5)
-	
-func mostrarLabel():
-	var mid_point = (linea.points[0] + end_point) / 2
-	label.position = mid_point
-	# Calcular rotación: ángulo de la línea (para alinear el texto)
-	var direction = end_point - linea.points[0]
-	var angle = atan2(direction.y, direction.x)  # Ángulo en radianes
-	label.rotation = angle
-	label.visible = true
-	pass
-	
+		
 func _update_line_color():
 	if is_correct:
 		linea.default_color = Color(0,1,0)  # verde
