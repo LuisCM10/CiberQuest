@@ -59,23 +59,31 @@ var current_path = []
 
 func _ready() -> void:
 	grafo = Grafo.new()
+	fade_transition.visible = false
 	
 	# Inicializar matrices 2D del grafo (solo las que existen y se usan)
 	grafo.matriz_adya = []
 	grafo.matriz_adya.resize(num_vertices)
+	grafo.matriz_capa_max = []
+	grafo.matriz_capa_max.resize(num_vertices)
+	grafo.matriz_peso = []
+	grafo.matriz_peso.resize(num_vertices)
+	grafo.matriz_capa_usa = []
+	grafo.matriz_capa_usa.resize(num_vertices)
 	for i in range(num_vertices):
 		grafo.matriz_adya[i] = []
 		grafo.matriz_adya[i].resize(num_vertices)
-		for j in range(num_vertices):
-			grafo.matriz_adya[i][j] = 0.0  # Peso inicial (float para pesos)
-	
-	grafo.matriz_capa_max = []
-	grafo.matriz_capa_max.resize(num_vertices)
-	for i in range(num_vertices):
 		grafo.matriz_capa_max[i] = []
 		grafo.matriz_capa_max[i].resize(num_vertices)
+		grafo.matriz_peso[i] = []
+		grafo.matriz_peso[i].resize(num_vertices)
+		grafo.matriz_capa_usa[i] = []
+		grafo.matriz_capa_usa[i].resize(num_vertices)
 		for j in range(num_vertices):
-			grafo.matriz_capa_max[i][j] = 0  # Capacidad inicial (int)
+			grafo.matriz_adya[i][j] = 0
+			grafo.matriz_capa_max[i][j] = 0
+			grafo.matriz_peso[i][j] = 0
+			# Peso inicial (float para pesos)
 	
 	# Resto del código original...
 	for i in range(num_vertices):
