@@ -2,12 +2,11 @@ class_name  conexion extends Line2D
 
 const LINEA_DE_CONEXION_PESOS_NODOS = "Pesos"
 const LINEA_DE_CONEXION_CAPACIDAD_NODOS = "Capacidad"
-signal linea_presionada(linea)
 
-@onready var area 
-@onready var rect_shape 
+
+
 @onready var label = Label.new()
-@onready var shape
+
 var flecha: Polygon2D
 var start_point = [0,0]
 var end_point = [100, 100]
@@ -25,7 +24,6 @@ func _ready():
 	label.modulate = Color(255,255,255)
 	add_child(label)
 	label.visible = false
-	conectarCollisionShape()	
 	if not destino.adyacentes.has(origen) or tipo != "conexion":
 		flecha = Polygon2D.new()
 		add_child(flecha)
@@ -58,39 +56,6 @@ func setPointEnd(new_end: Vector2):
 	points = [start_point, new_end]
 	actualizarFlecha()
 	añadirLabelLineas()
-
-func conectarCollisionShape():
-	# Crear Area2D si no existe
-	if not has_node("Area2D"):
-		var area = Area2D.new()
-		area.name = "Area2D"
-		add_child(area)
-		
-		# Crear CollisionShape2D con forma rectangular aproximada a la línea
-		var shape = CollisionShape2D.new()
-		var rect_shape = RectangleShape2D.new()
-		var length = points[1].distance_to(points[0]) if points.size() >= 2 else 0
-		rect_shape.size = Vector2(length, width * 2)  # Ancho basado en el grosor de la línea
-		shape.shape = rect_shape
-		area.add_child(shape)
-		
-		# Posicionar y rotar el Area2D para seguir la línea
-		var mid_point = (points[0] + points[1]) / 2
-		area.position = mid_point
-		var angle = (points[1] - points[0]).angle()
-		area.rotation = angle
-		
-		# Conectar señal de input_event para detectar clics
-		area.connect("input_event", Callable(self, "_on_area_input_event"))
-	
-	# Señal personalizada para clic en la línea
-	if not has_signal("linea_presionada"):
-		add_user_signal("linea_presionada", [{"name": "linea"}])
-
-# Función para manejar el evento de clic
-func _on_area_input_event(viewport, event, shape_idx):
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		emit_signal("linea_presionada", self)  # Emite señal con la línea como parámetro
 
 func añadirLabelLineas ():
 	match tipo:
@@ -129,6 +94,6 @@ func configurarLabelCapacidad():
 func borrarLabels():
 	label.visible = false
 	
-func actualizarLabelCapacidad(nueva_capacidad_usada: int, capacidad_maxima: int):
-	label.text = "%d / %d" % [nueva_capacidad_usada, capacidad_maxima]
+func actualizarLabelCapacidad(nueva_capacidad_usada: int):
+	label.text = "%d / %d" % [nueva_capacidad_usada, grafo.getFlujoMax(origen, destino)]
 	
