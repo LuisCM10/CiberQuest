@@ -101,7 +101,7 @@ func _ready() -> void:
 			if i != j:
 				if randf() < prob_conexion:
 					var vertic2 = grafo.searchVertice(j)
-					var peso = randf_range(1.0, 10.0)
+					var peso = randi_range(1, 15)
 					var capacidad = randi_range(1, 20)
 					grafo.connect_vertice(vertic1, vertic2, peso, capacidad)
 	dibujarGrafo()
@@ -848,7 +848,7 @@ func _on_btn_limpiar_pressed() -> void:
 	if kruskal or dijstra or bfs:
 		limpiarVisual()
 		UserRecorrido.clear()
-		UserRecorrido.append(destino)
+		UserRecorrido.append(origin)
 		lblRecorrido.text = str(recorStr())	
 	if flujo:
 		current_path.clear()
