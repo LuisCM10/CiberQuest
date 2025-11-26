@@ -3,8 +3,8 @@ class_name EdgeLine
 
 signal edge_selected(edge)
 
-var node_a: NodePoint
-var node_b: NodePoint
+var node_a
+var node_b
 var weight: int
 var selected := false
 var is_correct := false
@@ -15,7 +15,7 @@ var scale_factor := 1.0
 func _ready():
 	connect("input_event", Callable(self, "_on_input_event"))
 
-func connect_nodes(a: NodePoint, b: NodePoint, w: int):
+func connect_nodes(a, b, w: int):
 	node_a = a
 	node_b = b
 	weight = w
@@ -71,8 +71,10 @@ func _draw():
 	
 	# Dibujar el peso con tamaño escalado
 	var font = ThemeDB.fallback_font
+	@warning_ignore("narrowing_conversion")
 	draw_string(font, pos_peso, str(weight), HORIZONTAL_ALIGNMENT_LEFT, -1.0, 12 * scale_factor, Color.DIM_GRAY)
 
+@warning_ignore("unused_parameter")
 func _on_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed:
 		selected = true

@@ -3,10 +3,10 @@ extends Control
 # -----Constantes----- 
 const LINEA_DE_CONEXION_NODOS = "conexion"
 const LINEA_DE_RECORRIDO_NODOS = "recorrido"
-const LINEA_DE_CONEXION_PESOS_NODOS = "Pesos"
+#const LINEA_DE_CONEXION_PESOS_NODOS = "Pesos"
 const LINEA_DE_DIJKSTRA_NODOS = "dijkstra"
 const LINEA_DE_RECONSTRUCCION_NODOS = "reconstruccion"
-const LINEA_DE_CONEXION_CAPACIDAD_NODOS = "Capacidad"
+#const LINEA_DE_CONEXION_CAPACIDAD_NODOS = "Capacidad"
 const LINEA_DE_FLUJO_NODOS = "flujo"
 const LINEA_DE_FLUJO_MAX_NODOS = "flujoMaximo"
 const MAX_WRONG_CLICKS = 5
@@ -42,7 +42,7 @@ var start = false
 var time_remaining := 120.0
 
 var num_vertices = 9
-var prob_conexion = 0.4
+var prob_conexion = 0.35
 var lineasConexion = []
 var lineasVisuales = []
 var labels = []
@@ -57,13 +57,14 @@ var recorrido = []
 var KruskalLineas = []
 var parent = []
 var wrong_clicks = 0
-var original_capacity 
-var flow_network
-var residual_graph
+var original_capacity = []
+var flow_network = []
+var residual_graph = []
 var target_flow
 var total_flow_sent := 0
 var packets_sent := 0
 var current_path = []
+var pesoTotal = 0
 
 func _ready() -> void:
 	grafo = Grafo.new()
@@ -74,7 +75,7 @@ func _ready() -> void:
 	iniciarMatrices()	
 	
 	for i in range(num_vertices):
-		var angle = (2 * PI * i) / 10
+		var angle = (2 * PI * (i+num_vertices)) / 10
 		var x = 150 + view[0] * cos(angle)
 		var y = 90 + view[1] * sin(angle)
 		var positions = Vector2(x, y)
@@ -88,7 +89,7 @@ func _ready() -> void:
 			if i != j:
 				if randf() < prob_conexion:
 					var vertic2 = grafo.searchVertice(j)
-					grafo.connect_vertice(vertic1, vertic2)
+					grafo.connect_vertice(vertic1, vertic2, 1, 1)
 	dibujarGrafo()
 
 func iniciarMatrices():
@@ -113,6 +114,7 @@ func iniciarMatrices():
 			grafo.matriz_adya[i][j] = 0
 			grafo.matriz_capa_max[i][j] = 0
 			grafo.matriz_peso[i][j] = 0
+			grafo.matriz_capa_usa[i][j] = 0
 			
 func _process(delta: float) -> void:
 	if start:
@@ -152,12 +154,11 @@ func dibujarGrafo():
 				dibujarLineas(vertice, ady, LINEA_DE_CONEXION_NODOS, false)
 	pass
 	
-func dibujarLineas(origen, destin, funcion,lab = true, correcto = true):
+func dibujarLineas(origen, destin, funcion,lab = true, correcto = true, tipo = "NoDirigida"):
 	var arista = Arista.new(origen, destin)	
 	match funcion:
 		LINEA_DE_CONEXION_NODOS:
-			arista.connect("linea_presionada", Callable(self, "_on_linea_presionada").bind(arista))
-			arista.tipo = "NoDirigida"
+			arista.tipo = tipo
 			lineasConexion.append(arista)
 			
 		LINEA_DE_DIJKSTRA_NODOS:
@@ -190,29 +191,109 @@ func dibujarLineas(origen, destin, funcion,lab = true, correcto = true):
 				arista.color = Color(1.0, 0.0, 0.102, 1.0)
 			lineasVisuales.append(arista)			
 	PanelGrafo.add_child(arista)
-	if lab and LINEA_DE_CONEXION_NODOS:
+	if lab and funcion == LINEA_DE_CONEXION_NODOS:  # Nota: Cambié a 'funcion' en lugar de 'LINEA_DE_CONEXION_NODOS' directamente, ya que 'funcion' es el parámetro
 		var peso = grafo.matriz_peso[origen.id][destin.id]
-		var dir = (arista.line.points[1] - arista.line.points[0]).normalized()
-		var direccion = arista.linea.points[0] + arista.linea.points[1]
-		var label = Label.new()		
-		label.text = str(peso)
-		label.position = direccion/2 + Vector2(10, 10)  # Ajustar para centrar aproximadamente
-		var angle = atan2(direccion.y, direccion.x) # Ángulo en radianes
-		label.rotation = angle
-		label.size = Vector2(10, 10)  # Reducido para que no sea enorme
+		var p0 = arista.line.points[0]  # Punto de inicio de la línea
+		var p1 = arista.line.points[1]  # Punto de fin de la línea
+		var center = (p0 + p1) / 2  # Punto medio de la línea
+		var dir = (p1 - p0).normalized()  # Dirección normalizada de la línea
+		var perp = Vector2(-dir.y, dir.x)  # Vector para desplazar "sobre" la línea
+		var offset_distance = 20.0  # Distancia para desplazar el label sobre la línea
+		var label = Label.new()
+		label.text = str(peso)		
+		# Posición: Centro + offset perpendicular
+		label.position = center + perp * offset_distance * 3		
+		# Rotación: Alinear con la dirección de la línea
+		label.rotation = atan2(dir.y, dir.x)		
+		# Alineación y tamaño
 		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-		label.name = str(origen.id)+","+str(destin.id)
+		label.autowrap_mode = TextServer.AUTOWRAP_WORD  # Para textos largos
+		label.size = Vector2(50, 20)  # Tamaño inicial razonable (se ajustará dinámicamente)
+		label.pivot_offset = label.size / 2  # Rotar alrededor del centro del label		
+		# Nombre único
+		if not has_node("Label," + str(origen.id) + "," + str(destin.id)):
+			label.name = "Label," + str(origen.id) + "," + str(destin.id)
+		else:
+			label.name = "Label," + str(destin.id) + "," + str(origen.id)		
 		PanelGrafo.add_child(label)
 		labels.append(label)
-		label.visible = false
+		label.visible = true
 
-func _on_linea_presionada(arista):
-	aristaActual = arista
-	pass
+func dibujarConexionKruskal():
+	for i in range(grafo.vertices.size()):
+		var vertice = grafo.vertices[i]		
+		for ady in vertice.adyacentes:
+			var edge_scene = preload("res://edge_line.tscn").instantiate()
+			edge_scene.connect_nodes(vertice, ady, grafo.getPeso(vertice, ady))
+			edge_scene.connect("edge_selected", Callable(self, "_on_edge_selected"))
+			edge_scene.update_scale(1.0)
+			PanelGrafo.add_child(edge_scene)
+			lineasConexion.append(edge_scene)
+
+	parent.resize(num_vertices)
+	for i in range(num_vertices):
+		parent[i] = i
+		
+func limpiarVisual():
+	for x in lineasVisuales:
+		x.queue_free()
+	lineasVisuales.clear()
+	time_remaining = 120
+	
+func limpiarConexiones():
+	for x in lineasConexion:
+		x.queue_free()
+	lineasConexion.clear()
+	time_remaining = 120
+	
+func dibujarGrafoNuevo():
+	for i in range(num_vertices):
+		var vertic1 = grafo.searchVertice(i)
+		for j in range(num_vertices):
+			if i != j:
+				if randf() < prob_conexion:
+					var vertic2 = grafo.searchVertice(j)
+					var peso = randi_range(1, 15)
+					var capacidad = randi_range(1, 20)
+					grafo.connect_vertice(vertic1, vertic2, peso, capacidad, "dirigido")
+	for i in range(grafo.vertices.size()):
+		var vertice = grafo.vertices[i]		
+		for ady in vertice.adyacentes:
+			var indice_ady = grafo.vertices.find(ady)
+			if indice_ady != i:
+				dibujarLineas(vertice, ady, LINEA_DE_CONEXION_NODOS, true, true, "Dirigido")
+				
+func dibujarConexiones():
+	for i in range(grafo.vertices.size()):
+		var vertice = grafo.vertices[i]
+		for ady in vertice.adyacentes:
+			var indice_ady = grafo.vertices.find(ady)
+			if indice_ady != i:
+				dibujarLineas(vertice, ady, LINEA_DE_CONEXION_NODOS)
+	
+func mostrarPesos(opc : bool):
+	for x in labels:
+			x.visible = opc
+
+func mostrarCapacidad(opc:bool):
+	for x in labels:
+		var nam = str(x.name)
+		nam = nam.split(",")
+		if nam.size() > 2:
+			print(nam[1])
+			print(nam[2])
+			x.text = str(grafo.getFlujoUsado(grafo.searchVertice(int(nam[1])), grafo.searchVertice(int(nam[2]))))+"/"+str(grafo.getFlujoMax(grafo.searchVertice(int(nam[1])), grafo.searchVertice(int(nam[2]))))
+			x.visible = opc
+		
+func _on_edge_selected(edge):
+	print("Se selecciono una conexion")
+	if start and kruskal:		
+		kruskal_click(edge)
 	
 func _on_nodo_clicked(vertice):
-	var verticeAnt = vertActual
+	if start and dijstra:
+		recorrido.append(vertActual)
 	vertActual = vertice
 	if start and bfs:
 		if not UserRecorrido.has(vertActual):
@@ -221,23 +302,26 @@ func _on_nodo_clicked(vertice):
 		else:
 			lblIntro.text = "El nodo "+ str(vertActual.id) + " ya se encuentra en el recorrido"
 	if start and dijstra:
+		
 		# Verificar si el nodo está conectado al actual (no permitir avanzar si no lo está)
-		if grafo.matriz_adya[verticeAnt.id][vertActual.id] == 0:
+		if grafo.matriz_adya[recorrido.get(recorrido.size()-1).id][vertActual.id] == 0:
+			recorrido.pop_back()
 			lblIntro.text = "El nodo "+ str(vertActual.id) + " no esta conectado con los nodos anteriores"
 			return  # No hacer nada si no está conectado
 		
-		var idx = camino_optimo.find(verticeAnt.id)
+		var idx = camino_optimo.find(recorrido.get(recorrido.size()-1).id)
 		if idx == -1 or idx == camino_optimo.size() - 1:
 			return
 		
 		var siguiente_correcto = camino_optimo[idx + 1]
 		
 		if vertActual.id == siguiente_correcto:
-			dibujarLineas(verticeAnt, vertActual, LINEA_DE_DIJKSTRA_NODOS)
+			pesoTotal += grafo.matriz_peso[recorrido.get(recorrido.size()-1).id][vertActual.id]
+			dibujarLineas(recorrido.get(recorrido.size()-1), vertActual, LINEA_DE_DIJKSTRA_NODOS)
 			UserRecorrido.append(vertActual)
 			lblRecorrido.text = str(recorStr())
-			verticeAnt = vertActual
-			
+			lblIntro.text = "Peso total actual: " + str(pesoTotal)
+			print("Recorrido paso por: "+ str(vertActual.id))
 			if vertActual == destino:
 				print("¡GANASTE!")
 				esperando_click = false
@@ -246,14 +330,10 @@ func _on_nodo_clicked(vertice):
 				BtnEnviar.visible = true
 				start = false
 		else:
-			dibujarLineas(verticeAnt, vertActual, LINEA_DE_DIJKSTRA_NODOS, false, false)
+			dibujarLineas(recorrido.get(recorrido.size()-1), vertActual, LINEA_DE_DIJKSTRA_NODOS, false, false)
 			await get_tree().create_timer(2).timeout
-			start =  false
-			limpiarVisual()
-			UserRecorrido.clear()
-			UserRecorrido.append(origin)
-			lblRecorrido.text = str(recorStr())
-			BtnIniciar.visible = true
+			lineasVisuales.pop_back().queue_free()
+			recorrido.pop_back()
 	if start and flujo:
 		var index = vertActual
 		if current_path.is_empty():
@@ -284,10 +364,13 @@ func _on_nodo_clicked(vertice):
 			else:
 				_update_instructions("No hay conexión desde el nodo %d al nodo %d" % [last_node.id, index.id])
 
-func recorStr() -> Array:
+func recorStr(tipo = "nodo") -> Array:
 	var recor = []
 	for x in UserRecorrido:
-		recor.append(x.id)
+		if tipo == "nodo":
+			recor.append(x.id)
+		if tipo == "arista":
+			recor.append(str(x.node_a.id)+ " → " +str(x.node_b.id))
 	return recor
 	
 func _highlight_path():
@@ -300,19 +383,18 @@ func _highlight_path():
 	
 #----------------- Kruskal ----------------------------
 func kruskal_click(edge):
-	var n1 = edge.origen.id     
-	var n2 = edge.destino.id    
+	var n1 = grafo.vertices.find(edge.node_a)
+	var n2 = grafo.vertices.find(edge.node_b)
 
 	if find(n1) != find(n2):
 		union(n1, n2)
 		KruskalLineas.append(edge)
+		UserRecorrido.append(edge)
+		lblRecorrido.text = str(recorStr("arista"))
 		edge.set_correct(true)
 	else:
 		edge.set_correct(false)
-		wrong_clicks += 1
-		if wrong_clicks >= MAX_WRONG_CLICKS:
-			#show_defeat_message()
-			pass
+		lblIntro.text = "Te has equivocado de conexion, intentalo de nuevo."
 		await get_tree().create_timer(0.5).timeout
 		edge.set_correct(false)
 
@@ -439,7 +521,7 @@ func _bfs_find_path_temp(res) -> Array:
 	for i in range(num_vertices):
 		visited[i] = false
 
-	var queue = [origin]
+	var queue = [origin.id]
 	visited[origin.id] = true
 	while queue.size() > 0:
 		var u = queue.pop_front()
@@ -477,7 +559,7 @@ func _animate_flow_sending(path: Array, flow_value: int):
 			await _spawn_particle_along_path(edge_line if edge_line else null, start_pos, end_pos)
 			await get_tree().create_timer(0.1).timeout
 
-func _spawn_particle_along_path(line: Line2D, start: Vector2, end: Vector2):
+func _spawn_particle_along_path(line: Line2D, starte: Vector2, end: Vector2):
 	var particle = ColorRect.new()
 	particle.custom_minimum_size = Vector2(8, 8)
 	particle.z_index = 15
@@ -509,7 +591,7 @@ void fragment() {
 	if line and line.points.size() > 1:
 		particle.position = line.points[0] - Vector2(4, 4)
 	else:
-		particle.position = start - Vector2(4, 4)
+		particle.position = starte - Vector2(4, 4)
 	
 	PanelGrafo.add_child(particle)
 	
@@ -670,13 +752,13 @@ var camino_optimo = []
 var esperando_click = false
 #var adj_matrix = grafo.matriz_adya
 
-func dijkstra(start):
+func dijkstra(started):
 	var dist = []
 	var prev = []
 	var visited = []
 	
 	for i in range(num_vertices):
-		dist.append(999999 if i != start else 0)
+		dist.append(999999 if i != started else 0)
 		prev.append(-1)
 		visited.append(false)
 	
@@ -712,9 +794,9 @@ func _calcular_camino_optimo():
 		
 	camino_optimo = _reconstruir_camino(prev, destino.id)
 
-func _reconstruir_camino(prev, destino):
+func _reconstruir_camino(prev, destin):
 	var camino = []
-	var actual = destino
+	var actual = destin
 	while actual != -1:
 		camino.append(actual)
 		actual = prev[actual]
@@ -731,12 +813,15 @@ func _on_btn_iniciar_pressed() -> void:
 		_calcular_camino_optimo()
 		start = true
 		UserRecorrido.append(origin)
+		recorrido.clear()
+		recorrido.append(origin)
 		lblRecorrido.text = str(recorStr())
 		lblIntro.text = "Intenta hallar la ruta mas corta hacia el nodo de destino ("+ str(destino.id)+"), desde el nodo fuente ("+ str(origin.id)+")."
 		BtnIniciar.visible = false
 		BtnEnviar.visible = false
 		BtnLimpiar.visible = true
 	if kruskal:
+		lblIntro.text = "Intenta construir una red conextada mas rapida y segura, mucha suerte."
 		start = true
 		BtnIniciar.visible = false
 		BtnEnviar.visible = false
@@ -753,54 +838,62 @@ func _on_btn_iniciar_pressed() -> void:
 
 func _on_btn_enviar_pressed() -> void:
 	if bfs:
-		if UserRecorrido.size() == recorrido.size():
-			lblIntro.text = "Felicidades, completaste tu primer reto. Ahora es hora de hallar nuestro camino mas corto hasta el nodo "+str(origin.id)+" para hallar el backup del sistema."
+		print(recorrido)
+		print(UserRecorrido)
+		if UserRecorrido.has(origin):
+			lblIntro.text = "Felicidades, restauraste las conexiones entre servidores. Ahora es hora de hallar nuestro camino mas corto hasta el nodo "+str(origin.id)+" para hallar el backup del sistema."
 			bfs = false
 			destino = origin
 			origin = UserRecorrido[0]
 			UserRecorrido.clear()
+			lblRecorrido.text = str(recorStr())
 			recorrido.clear()
 			dijstra = true
-			mostrarPesos()
 			limpiarVisual()
-			lblRecorrido.text = str(recorStr())
+			limpiarConexiones()
+			dibujarGrafoNuevo()
 			BtnIniciar.visible = true
 			BtnEnviar.visible = false
 			BtnLimpiar.visible = false
-			start = false
-			limpiarConexiones()
-			dibujarConexiones()
-			mostrarPesos()
+			start = false			
 			return
 		else:
 			lblIntro.text = "Parece que aun te falta algun nodo por recorrer. Sera necesario revisar."
 			return
 	if dijstra:
-		if verificarRecorrido():
-			UserRecorrido.clear()
-			recorrido.clear()
-			lblIntro.text = "Felicidades, completaste tu segundo reto. Ahora es hora de construir un sistema seguro y liviano hasta cada uno de nuestros servidores."
-			dijstra = false
-			BtnIniciar.visible = true
-			BtnEnviar.visible = false
-			BtnLimpiar.visible = false
-			return
-		else:
-			lblIntro.text = "Parece que ese no es el camino mas corto. Hemos perdido recursos al intentar enviarlo, intentalo de nuevo."
-			BtnIniciar.visible = false
-			BtnEnviar.visible = false			
-			UserRecorrido.clear()
-			UserRecorrido.append(origin)
-			return
-	if kruskal:
-		lblIntro.text = "Felicidades, completaste tu tercer reto. Ahora es hora de verificar que el backup llege hasta cada uno de nuestros servidores."
-		kruskal = false
 		UserRecorrido.clear()
 		recorrido.clear()
-		mostrarCapacidad()
+		lblRecorrido.text = str(recorStr())
+		lblIntro.text = "Felicidades, hallaste el camino y enviaste el backup. Ahora es hora de construir un sistema seguro y liviano hasta cada uno de nuestros servidores."
+		dijstra = false
 		BtnIniciar.visible = true
 		BtnEnviar.visible = false
 		BtnLimpiar.visible = false
+		limpiarVisual()
+		# Logica para pasar al nivel kruskal		
+		#limpiarConexiones()
+		#mostrarPesos(false)
+		#dibujarConexionKruskal()
+		#kruskal = true
+		# Logica para pasar al nivel de Mai (PRUEBA)
+		limpiarConexiones()
+		dibujarConexiones()
+		mostrarCapacidad(true)
+		flujo = true	
+		return
+	if kruskal:
+		lblIntro.text = "Felicidades, construiste una red segura. Ahora es necesario verificar que las conexiones sean seguras y eficientes entre nuestros servidores, hora de hacer un pentesting."
+		kruskal = false
+		UserRecorrido.clear()
+		recorrido.clear()
+		limpiarVisual()
+		limpiarConexiones()
+		dibujarConexiones()
+		mostrarCapacidad(true)
+		BtnIniciar.visible = true
+		BtnEnviar.visible = false
+		BtnLimpiar.visible = false
+		flujo = true
 		return
 	if flujo:
 		if start:
@@ -809,7 +902,7 @@ func _on_btn_enviar_pressed() -> void:
 			BtnLimpiar.visible = false
 			return
 		else:
-			lblIntro.text = "Felicidades, completaste todas las tareas.Has hecho un gran trabajo el dia de hoy, es hora de descansa. Pero recuerda siempre estar alerta"
+			lblIntro.text = "Felicidades, completaste todas las tareas. Has hecho un gran trabajo el dia de hoy, es hora de descansa. Pero recuerda siempre estar alerta"
 			BtnEnviar.text = "Salir"
 			BtnLimpiar.visible = false
 			BtnIniciar.visible = false
@@ -827,49 +920,6 @@ func verificarRecorrido() -> bool:
 		if UserRecorrido[x] != recorrido[x]:
 			return false
 	return true
-	
-func limpiarVisual():
-	for x in lineasVisuales:
-		x.queue_free()
-	lineasVisuales.clear()
-	time_remaining = 120
-	
-func limpiarConexiones():
-	for x in lineasConexion:
-		x.queue_free()
-	lineasConexion.clear()
-	time_remaining = 120
-	
-func dibujarConexiones():
-	for i in range(num_vertices):
-		var vertic1 = grafo.searchVertice(i)
-		for j in range(num_vertices):
-			if i != j:
-				if randf() < prob_conexion:
-					var vertic2 = grafo.searchVertice(j)
-					var peso = randi_range(1, 15)
-					var capacidad = randi_range(1, 20)
-					grafo.connect_vertice(vertic1, vertic2, peso, capacidad, "dirigido")
-	for i in range(grafo.vertices.size()):
-		var vertice = grafo.vertices[i]		
-		for ady in vertice.adyacentes:
-			var indice_ady = grafo.vertices.find(ady)
-			if indice_ady != i:
-				dibujarLineas(vertice, ady, LINEA_DE_CONEXION_NODOS)
-	
-func mostrarPesos():
-	for x in labels:
-		var nam = str(x.name)
-		nam = nam.split(",")
-		print(nam[0])
-		print(nam[1])
-		x.text = str(grafo.getPeso(grafo.searchVertice(int(nam[0])), grafo.searchVertice(int(nam[1]))))
-		x.visible = true
-
-func mostrarCapacidad():
-	for x in labels:
-		x.text = str(grafo.getFlujoUsado(x.origen, x.destino))+"/"+str(grafo.getFlujoMax(x.origen, x.destino))
-		x.visible = true
 
 func _on_btn_limpiar_pressed() -> void:
 	if bfs:
@@ -877,7 +927,7 @@ func _on_btn_limpiar_pressed() -> void:
 		UserRecorrido.clear()
 		UserRecorrido.append(destino)
 		lblRecorrido.text = str(recorStr())
-	if kruskal or dijstra:
+	if dijstra:
 		limpiarVisual()
 		UserRecorrido.clear()
 		UserRecorrido.append(origin)

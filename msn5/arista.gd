@@ -6,7 +6,6 @@ class_name Arista extends Area2D
 @onready var colission = CollisionShape2D.new()
 
 const LINEA_DE_CONEXION_NODOS = "conexion"
-signal linea_presionada(linea)
 
 var origen : Nodo
 var destino : Nodo
@@ -26,11 +25,11 @@ var is_wrong := false      # si es incorrecta (rojo)
 
 
 
-func _init(origen, destino, tipo = "Dirigido", color = Color(0,0,0)) -> void:
-	self.origen = origen
-	self.destino = destino
-	self.tipo = tipo
-	self.color = color
+func _init(orign, destin, tipoe = "Dirigido", colorr = Color(0,0,0)) -> void:
+	self.origen = orign
+	self.destino = destin
+	self.tipo = tipoe
+	self.color = colorr
 	
 func _ready() -> void:	
 	name = str(origen.id) + "_" + str(destino.id)
@@ -46,7 +45,6 @@ func _ready() -> void:
 	linea.points = [origen.posicion, origen.posicion]
 	linea.default_color = color
 	linea.width = 3
-	connect("linea_presionada", Callable(self, "_on_input_event"))
 	var pos_a = origen.posicion + Vector2(32, 32) / 2
 	var pos_b = destino.posicion + Vector2(32, 32) / 2
 	var radius_a = max(24, 32) / 2
@@ -82,14 +80,6 @@ func setPointEnd(new_end: Vector2):
 	linea.points = [linea.points[0], new_end]
 	actualizarFlecha()
 	_update_collision()
-
-func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
-	if event is InputEventMouseButton and event.pressed:
-		selected = true
-		if not is_correct:
-			is_wrong = true
-		emit_signal("linea_presionada", self)
-	pass # Replace with function body.
 
 func _update_collision():
 	if origen == null or destino == null:
