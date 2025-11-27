@@ -269,8 +269,7 @@ func dibujarConexionKruskal():
 			
 			if edge_control.has_method("connect_nodes"):
 				# ASIGNAR z-index ÚNICO y CRECIENTE
-				edge_control.z_index = 10 + i  # z-index único para cada edge
-				
+				edge_control.z_index = 10 + i  # z-index único para cada edge				
 				edge_control.connect_nodes(arista_data["u"], arista_data["v"], arista_data["peso"])
 				edge_control.connect("edge_selected", Callable(self, "_on_edge_selected"))
 				lineasConexion.append(edge_control)
@@ -287,6 +286,7 @@ func verificarEdgeLines():
 			edge_count += 1
 			print("Edge: ", child.node_a.id, "-", child.node_b.id, " | z_index: ", child.z_index)
 	print("Total EdgeLines encontrados: ", edge_count)
+	
 func limpiarVisual():
 	print("Limpiando visuales...")
 	for x in lineasVisuales:
@@ -643,7 +643,7 @@ func _calculate_target_flow():
 		
 		target_flow += path_flow
 	
-	lblIntro.text = "Flujo: 0/%d | Paquetes: 0" % target_flow
+	lblIntro.text = "Flujo: 0/%d | Origen: %d, Destino: %d" % [target_flow, origin.id, destino.id]
 
 func _bfs_find_path_temp(res) -> Array:
 	var parente = []
@@ -805,7 +805,7 @@ func _update_path_display():
 	else:
 		var path_str = ""
 		for i in range(current_path.size()):
-			path_str += str(current_path[i])
+			path_str += str(current_path[i].id)
 			if i < current_path.size() - 1:
 				path_str += " → "
 		lblRecorrido.text = "Ruta actual: " + path_str
@@ -837,16 +837,8 @@ func _update_edge_visuals():
 		
 		e.linea.default_color = new_color
 		e.linea.width = 2 + (ratio * 2)
-
-		if e.has("bidirectional") and e.bidirectional:
-			if u.id < v.id:
-				e.label.text = "%d/%d (%d)" % [used, cap, residual]
-			else:
-				e.label.text = "%d/%d (%d)" % [used, cap, residual]
-			e.label.add_theme_color_override("font_color", Color(1.0, 1.0, 1.0))
-		else:
-			e.label.text = "%d/%d (%d)" % [used, cap, residual]
-			e.label.add_theme_color_override("font_color", Color(1.0, 1.0, 1.0))
+		e.label.text = "%d/%d (%d)" % [used, cap, residual]
+		e.label.add_theme_color_override("font_color", Color(1.0, 1.0, 1.0))
 			
 func _existe_camino_disponible() -> bool:
 	var visited = []

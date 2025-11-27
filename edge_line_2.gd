@@ -10,7 +10,7 @@ var is_correct := false
 var is_wrong := false
 
 const LINE_WIDTH = 3.0
-const CLICK_MARGIN = 15.0  # Reducido para más precisión
+const CLICK_MARGIN = 10.0  # Reducido para más precisión
 
 func _ready():
 	# Configurar para recibir eventos de mouse

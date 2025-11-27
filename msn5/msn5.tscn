@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=4 uid="uid://duw88my2sscjs"]
+[gd_scene load_steps=47 format=4 uid="uid://duw88my2sscjs"]
 
 [ext_resource type="Script" uid="uid://cbvebp480tb6o" path="res://msn5/TheCore.gd" id="1_sy4yf"]
 [ext_resource type="FontFile" uid="uid://dudo3khf2v3o4" path="res://VT323-Regular.ttf" id="2_1myvp"]
@@ -5086,6 +5086,11 @@ font = ExtResource("2_1myvp")
 font_size = 12
 font_color = Color(0, 0, 0, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_83a6y"]
+font = ExtResource("2_1myvp")
+font_size = 12
+font_color = Color(0, 0, 0, 1)
+
 [sub_resource type="LabelSettings" id="LabelSettings_41tnk"]
 font = ExtResource("2_1myvp")
 font_size = 14
@@ -5143,6 +5148,8 @@ autowrap_mode = 2
 
 [node name="LblFlujo" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+label_settings = SubResource("LabelSettings_83a6y")
+autowrap_mode = 2
 
 [node name="BtnIniciar" type="Button" parent="VBoxContainer"]
 layout_mode = 2
