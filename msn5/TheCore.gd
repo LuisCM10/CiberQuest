@@ -226,9 +226,8 @@ func dibujarLineas(origen, destin, funcion, lab = true, correcto = true, tipo = 
 		label.visible = true
 
 func dibujarConexionKruskal():
-	print("=== CREANDO SOLO EDGELINES ===")
+	print("=== CREANDO EDGE LINES CON DETECCIÓN PRECISA ===")
 	prepararKruskal()
-	
 	
 	var todas_aristas = []
 	var aristas_vistas = {}
@@ -252,9 +251,12 @@ func dibujarConexionKruskal():
 	
 	print("Aristas para crear: ", todas_aristas.size())
 	
+	# Ordenar aristas por peso para debugging
+	todas_aristas.sort_custom(func(a, b): return a["peso"] < b["peso"])
 	
-	var z_counter = 10
-	for arista_data in todas_aristas:
+	# Crear edge lines con z-index único y creciente
+	for i in range(todas_aristas.size()):
+		var arista_data = todas_aristas[i]
 		var edge_control = Control.new()
 		var edge_script = preload("res://edge_line_2.gd")
 		
@@ -262,30 +264,29 @@ func dibujarConexionKruskal():
 			edge_control.set_script(edge_script)
 			PanelGrafo.add_child(edge_control)
 			
+			# IMPORTANTE: Esperar un frame para que el script se inicialice
 			await get_tree().process_frame
 			
 			if edge_control.has_method("connect_nodes"):
-				# ASIGNAR z_index ÚNICO y CRECIENTE
-				edge_control.z_index = z_counter
-				z_counter += 1
+				# ASIGNAR z-index ÚNICO y CRECIENTE
+				edge_control.z_index = 10 + i  # z-index único para cada edge
 				
 				edge_control.connect_nodes(arista_data["u"], arista_data["v"], arista_data["peso"])
 				edge_control.connect("edge_selected", Callable(self, "_on_edge_selected"))
 				lineasConexion.append(edge_control)
 				
-				print("✅ EdgeLine: ", arista_data["u"].id, "-", arista_data["v"].id, " | z_index: ", edge_control.z_index)
-func verificar_edge_lines():
-	print("=== VERIFICACIÓN DE EDGE LINES ===")
-	var edge_controls = []
-	for child in PanelGrafo.get_children():
-		# Verificar por métodos únicos de EdgeLine
-		if child.has_method("connect_nodes") and child.has_method("set_correct"):
-			edge_controls.append(child)
+				print("✅ EdgeLine: ", arista_data["u"].id, "-", arista_data["v"].id, 
+					  " | Peso: ", arista_data["peso"], " | z_index: ", edge_control.z_index)
 	
-	print("EdgeLines encontrados en PanelGrafo: ", edge_controls.size())
-	for edge in edge_controls:
-		print("  - EdgeLine: ", edge.node_a.id, " - ", edge.node_b.id, " en posición: ", edge.global_position)
-
+	print("=== EDGE LINES CREADAS: ", lineasConexion.size(), " ===")
+func verificarEdgeLines():
+	print("=== VERIFICANDO EDGE LINES ===")
+	var edge_count = 0
+	for child in PanelGrafo.get_children():
+		if child.has_method("connect_nodes"):
+			edge_count += 1
+			print("Edge: ", child.node_a.id, "-", child.node_b.id, " | z_index: ", child.z_index)
+	print("Total EdgeLines encontrados: ", edge_count)
 func limpiarVisual():
 	print("Limpiando visuales...")
 	for x in lineasVisuales:
