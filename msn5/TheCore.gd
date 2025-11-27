@@ -3,14 +3,13 @@ extends Control
 # -----Constantes----- 
 const LINEA_DE_CONEXION_NODOS = "conexion"
 const LINEA_DE_RECORRIDO_NODOS = "recorrido"
-#const LINEA_DE_CONEXION_PESOS_NODOS = "Pesos"
 const LINEA_DE_DIJKSTRA_NODOS = "dijkstra"
 const LINEA_DE_RECONSTRUCCION_NODOS = "reconstruccion"
-#const LINEA_DE_CONEXION_CAPACIDAD_NODOS = "Capacidad"
 const LINEA_DE_FLUJO_NODOS = "flujo"
 const LINEA_DE_FLUJO_MAX_NODOS = "flujoMaximo"
 const MAX_WRONG_CLICKS = 5
-# Variable visuales
+
+# Variables visuales (se mantienen igual)
 @onready var PanelGrafo = $PanGrafo
 @onready var lblIntro =$VBoxContainer/LblIntruccion
 @onready var lblTime = $VBoxContainer/LblTime
@@ -20,6 +19,7 @@ const MAX_WRONG_CLICKS = 5
 @onready var BtnEnviar = $VBoxContainer/BtnEnviar
 @onready var BtnLimpiar = $VBoxContainer/BtnLimpiar
 @onready var view = get_viewport_rect().size * 0.3
+
 #----------Ayuda----------
 @onready var boton_ayuda = $BotonAyuda
 @onready var panel_ayuda = $PanelAyuda
@@ -66,7 +66,11 @@ var packets_sent := 0
 var current_path = []
 var pesoTotal = 0
 
+var camino_optimo = []   
+var esperando_click = false
+
 func _ready() -> void:
+	print("=== INICIANDO JUEGO ===")
 	grafo = Grafo.new()
 	fade_transition.visible = false
 	panelCiber.visible = true
@@ -91,7 +95,7 @@ func _ready() -> void:
 					var vertic2 = grafo.searchVertice(j)
 					grafo.connect_vertice(vertic1, vertic2, 1, 1)
 	dibujarGrafo()
-
+	
 func iniciarMatrices():
 	grafo.matriz_adya = []
 	grafo.matriz_adya.resize(num_vertices)
@@ -134,6 +138,7 @@ func _process(delta: float) -> void:
 	pass
 	
 func dibujarGrafo():
+	print("Dibujando grafo inicial con ", grafo.vertices.size(), " vértices")
 	for i in range(grafo.vertices.size()):
 		var vertice = grafo.vertices[i]
 		var button = Button.new()
@@ -147,14 +152,16 @@ func dibujarGrafo():
 		button.flat = true
 		button.connect("pressed", Callable(self, "_on_nodo_clicked").bind(vertice))
 		PanelGrafo.add_child(button)
+		
 		# Dibujar conexiones (líneas)
 		for ady in vertice.adyacentes:
 			var indice_ady = grafo.vertices.find(ady)
 			if indice_ady > i:
 				dibujarLineas(vertice, ady, LINEA_DE_CONEXION_NODOS, false)
-	pass
+				
+func dibujarLineas(origen, destin, funcion, lab = true, correcto = true, tipo = "NoDirigida"):
+	print("Dibujando línea: ", origen.id, " -> ", destin.id, " (", funcion, ")")
 	
-func dibujarLineas(origen, destin, funcion,lab = true, correcto = true, tipo = "NoDirigida"):
 	var arista = Arista.new(origen, destin)	
 	
 	match funcion:
@@ -192,27 +199,24 @@ func dibujarLineas(origen, destin, funcion,lab = true, correcto = true, tipo = "
 				arista.color = Color(1.0, 0.0, 0.102, 1.0)
 			lineasVisuales.append(arista)			
 	PanelGrafo.add_child(arista)
-	if lab and funcion == LINEA_DE_CONEXION_NODOS:  # Nota: Cambié a 'funcion' en lugar de 'LINEA_DE_CONEXION_NODOS' directamente, ya que 'funcion' es el parámetro
+	
+	if lab and funcion == LINEA_DE_CONEXION_NODOS:
 		var peso = grafo.matriz_peso[origen.id][destin.id]
-		var p0 = arista.line.points[0]  # Punto de inicio de la línea
-		var p1 = arista.line.points[1]  # Punto de fin de la línea
-		var center = (p0 + p1) / 2  # Punto medio de la línea
-		var dir = (p1 - p0).normalized()  # Dirección normalizada de la línea
-		var perp = Vector2(-dir.y, dir.x)  # Vector para desplazar "sobre" la línea
-		var offset_distance = 20.0  # Distancia para desplazar el label sobre la línea
+		var p0 = arista.line.points[0]
+		var p1 = arista.line.points[1]
+		var center = (p0 + p1) / 2
+		var dir = (p1 - p0).normalized()
+		var perp = Vector2(-dir.y, dir.x)
+		var offset_distance = 20.0
 		var label = Label.new()
 		label.text = str(peso)		
-		# Posición: Centro + offset perpendicular
 		label.position = center + perp * (offset_distance * 3)
-		# Rotación: Alinear con la dirección de la línea
 		label.rotation = atan2(dir.y, dir.x)		
-		# Alineación y tamaño
 		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-		label.autowrap_mode = TextServer.AUTOWRAP_WORD  # Para textos largos
-		label.size = Vector2(50, 20)  # Tamaño inicial razonable (se ajustará dinámicamente)
-		label.pivot_offset = label.size / 2  # Rotar alrededor del centro del label		
-		# Nombre único
+		label.autowrap_mode = TextServer.AUTOWRAP_WORD
+		label.size = Vector2(50, 20)
+		label.pivot_offset = label.size / 2		
 		if not has_node("Label," + str(origen.id) + "," + str(destin.id)):
 			label.name = "Label," + str(origen.id) + "," + str(destin.id)
 		else:
@@ -222,30 +226,90 @@ func dibujarLineas(origen, destin, funcion,lab = true, correcto = true, tipo = "
 		label.visible = true
 
 func dibujarConexionKruskal():
+	print("=== CREANDO SOLO EDGELINES ===")
+	prepararKruskal()
+	
+	
+	var todas_aristas = []
+	var aristas_vistas = {}
+	
 	for i in range(grafo.vertices.size()):
-		var vertice = grafo.vertices[i]		
+		var vertice = grafo.vertices[i]
 		for ady in vertice.adyacentes:
-			var edge_scene = preload("res://edge_line.tscn").instantiate()
-			edge_scene.connect_nodes(vertice, ady, grafo.getPeso(vertice, ady))
-			edge_scene.connect("edge_selected", Callable(self, "_on_edge_selected"))
-			edge_scene.update_scale(1.0)
-			PanelGrafo.add_child(edge_scene)
-			lineasConexion.append(edge_scene)
-
-	parent.resize(num_vertices)
-	for i in range(num_vertices):
-		parent[i] = i
+			var clave_min = min(vertice.id, ady.id)
+			var clave_max = max(vertice.id, ady.id)
+			var clave = str(clave_min) + "_" + str(clave_max)
+			
+			if not aristas_vistas.has(clave):
+				aristas_vistas[clave] = true
+				var peso = grafo.getPeso(vertice, ady)
+				todas_aristas.append({
+					"u": vertice, 
+					"v": ady, 
+					"peso": peso,
+					"clave": clave
+				})
+	
+	print("Aristas para crear: ", todas_aristas.size())
+	
+	
+	var z_counter = 10
+	for arista_data in todas_aristas:
+		var edge_control = Control.new()
+		var edge_script = preload("res://edge_line_2.gd")
 		
+		if edge_script:
+			edge_control.set_script(edge_script)
+			PanelGrafo.add_child(edge_control)
+			
+			await get_tree().process_frame
+			
+			if edge_control.has_method("connect_nodes"):
+				# ASIGNAR z_index ÚNICO y CRECIENTE
+				edge_control.z_index = z_counter
+				z_counter += 1
+				
+				edge_control.connect_nodes(arista_data["u"], arista_data["v"], arista_data["peso"])
+				edge_control.connect("edge_selected", Callable(self, "_on_edge_selected"))
+				lineasConexion.append(edge_control)
+				
+				print("✅ EdgeLine: ", arista_data["u"].id, "-", arista_data["v"].id, " | z_index: ", edge_control.z_index)
+func verificar_edge_lines():
+	print("=== VERIFICACIÓN DE EDGE LINES ===")
+	var edge_controls = []
+	for child in PanelGrafo.get_children():
+		# Verificar por métodos únicos de EdgeLine
+		if child.has_method("connect_nodes") and child.has_method("set_correct"):
+			edge_controls.append(child)
+	
+	print("EdgeLines encontrados en PanelGrafo: ", edge_controls.size())
+	for edge in edge_controls:
+		print("  - EdgeLine: ", edge.node_a.id, " - ", edge.node_b.id, " en posición: ", edge.global_position)
+
 func limpiarVisual():
+	print("Limpiando visuales...")
 	for x in lineasVisuales:
-		x.queue_free()
+		if is_instance_valid(x):
+			x.queue_free()
 	lineasVisuales.clear()
-	time_remaining = 120
+	time_remaining=120
 	
 func limpiarConexiones():
+	print("Limpiando ", lineasConexion.size(), " conexiones...")
 	for x in lineasConexion:
-		x.queue_free()
+		if is_instance_valid(x):
+			x.queue_free()
 	lineasConexion.clear()
+	
+	for label in labels:
+		if is_instance_valid(label):
+			label.queue_free()
+	labels.clear()
+	
+	for label in labels:
+		if is_instance_valid(label):
+			label.queue_free()
+	labels.clear()
 	time_remaining = 120
 	
 func dibujarGrafoNuevo():
@@ -288,8 +352,11 @@ func mostrarCapacidad(opc:bool):
 			x.visible = opc
 		
 func _on_edge_selected(edge):
-	print("Se selecciono una conexion")
-	if start and kruskal:		
+	print("=== EDGE SELECTED CALLBACK ===")
+	print("Edge seleccionada: ", edge.node_a.id, " - ", edge.node_b.id)
+	
+	if start and kruskal:
+		print("Ejecutando kruskal_click...")
 		kruskal_click(edge)
 	
 func _on_nodo_clicked(vertice):
@@ -383,38 +450,104 @@ func _highlight_path():
 				dibujarLineas(u, v, LINEA_DE_FLUJO_NODOS, false, true)
 	
 #----------------- Kruskal ----------------------------
-func kruskal_click(edge):
-	var n1 = grafo.vertices.find(edge.node_a)
-	var n2 = grafo.vertices.find(edge.node_b)
+# ------------------ Kruskal CORREGIDO ----------------------------
+func prepararKruskal():
+	print("=== LIMPIANDO PARA KRUSKAL ===")
+	
+	# Limpiar solo las conexiones visuales, NO los botones
+	for child in PanelGrafo.get_children():
+		if child is Button:
+			continue  
+		child.queue_free()
+	
+	lineasConexion = []  
+	KruskalLineas.clear()
+	UserRecorrido.clear()
+	labels.clear()
+	
+	# INICIALIZACIÓN CORREGIDA del parent array
+	parent.resize(num_vertices)
+	for i in range(num_vertices):
+		parent[i] = i  # Cada nodo es su propio padre inicialmente
+	
+	print("Parent inicializado: ", parent)
+	print("Limpieza completada - lineasConexion vacío: ", lineasConexion.size())
 
-	if find(n1) != find(n2):
-		union(n1, n2)
+func kruskal_click(edge):
+	print("=== KRUSKAL CLICK ===")
+	print("Procesando arista: ", edge.node_a.id, " - ", edge.node_b.id)
+	print("Peso: ", edge.weight)
+	
+	var n1 = edge.node_a.id
+	var n2 = edge.node_b.id
+	
+	print("Parent antes: ", parent)
+	
+	var root1 = find_kruskal(n1)  # Usar find_kruskal
+	var root2 = find_kruskal(n2)  # Usar find_kruskal
+	
+	print("Raíz de ", n1, ": ", root1)
+	print("Raíz de ", n2, ": ", root2)
+	
+	if root1 != root2:
+		print(">>> CONEXIÓN VÁLIDA - Uniendo componentes")
+		union_kruskal(root1, root2)  # Usar union_kruskal
 		KruskalLineas.append(edge)
 		UserRecorrido.append(edge)
-		lblRecorrido.text = str(recorStr("arista"))
+		
+		# Marcar como correcta
+		print("Llamando set_correct(true) en edge")
 		edge.set_correct(true)
+		
+		lblRecorrido.text = "Conexiones: " + str(KruskalLineas.size()) + "/" + str(num_vertices - 1)
+		lblIntro.text = "¡Correcto! Conexión añadida. Peso total: " + str(_calcular_peso_total())
+		
+		print("Parent después: ", parent)
+		print("Aristas seleccionadas: ", KruskalLineas.size())
+		
+		# Verificar si se completó
+		if KruskalLineas.size() == num_vertices - 1:
+			print(">>> KRUSKAL COMPLETADO!")
+			start = false
+			var peso_total = _calcular_peso_total()
+			lblIntro.text = "¡Árbol completado! Peso total: " + str(peso_total)
+			BtnEnviar.visible = true
 	else:
-		edge.set_correct(false)
-		lblIntro.text = "Te has equivocado de conexion, intentalo de nuevo."
-		await get_tree().create_timer(0.5).timeout
-		edge.set_correct(false)
+		print(">>> CONEXIÓN INVÁLIDA - Crearía ciclo")
+		print("Llamando set_correct(false) en edge")
+		edge.set_wrong()  # Cambiar a set_wrong para consistencia
+		lblIntro.text = "Esta conexión crearía un ciclo. Intenta con otra."
+		wrong_clicks += 1
+		
+		# Verificar si se excedió el límite de errores
+		if wrong_clicks >= MAX_WRONG_CLICKS:
+			lblIntro.text = "Demasiados errores. Reiniciando Kruskal..."
+			wrong_clicks = 0
+			# Reiniciar Kruskal
+			_on_btn_limpiar_pressed()
+			prepararKruskal()
+			dibujarConexionKruskal()
 
-	if KruskalLineas.size() == num_vertices - 1:
-		start = false
-		lblIntro.text = "Has reconstruido el sistema es hora de enviar una nueva señal de victoria."
-		BtnEnviar.visible = true
-		pass
-
-func find(i):
+# FUNCIÓN FIND CORREGIDA con compresión de camino
+func find_kruskal(i: int) -> int:
 	if parent[i] != i:
-		parent[i] = find(parent[i])
+		parent[i] = find_kruskal(parent[i])  # Compresión de camino
 	return parent[i]
 
-func union(a, b): #une nodos	
-	var ra = find(a)
-	var rb = find(b) #
-	if ra != rb:
-		parent[rb] = ra #conecta la raiz uno de otro
+# FUNCIÓN UNION CORREGIDA
+func union_kruskal(root1: int, root2: int):
+	# Siempre hacer parent[root2] = root1 para mantener consistencia
+	parent[root2] = root1
+	print("Unión: parent[", root2, "] = ", root1)
+
+func _calcular_peso_total() -> int:
+	var total = 0
+	for edge in KruskalLineas:
+		total += edge.weight
+	return total
+
+
+
 
 # -------------------- BFS ------------------------------------
 func iniciarRecorridos():
@@ -510,7 +643,6 @@ func _calculate_target_flow():
 		target_flow += path_flow
 	
 	lblIntro.text = "Flujo: 0/%d | Paquetes: 0" % target_flow
-##BFS
 
 func _bfs_find_path_temp(res) -> Array:
 	var parente = []
@@ -749,10 +881,6 @@ func _game_over(victory: bool):
 
 # -------------------------------- Dijsktra --------------------------------------------------------
 
-var camino_optimo = []   
-var esperando_click = false
-#var adj_matrix = grafo.matriz_adya
-
 func dijkstra(started):
 	var dist = []
 	var prev = []
@@ -785,9 +913,6 @@ func dijkstra(started):
 	
 	return {"dist": dist, "prev": prev}
 	
-# ────────────────────────────────────────────────
-# CALCULAR EL CAMINO ÓPTIMO CON DIJKSTRA
-# ────────────────────────────────────────────────
 func _calcular_camino_optimo():
 	var result = dijkstra(origin.id)
 	var dist = result["dist"]
@@ -822,10 +947,12 @@ func _on_btn_iniciar_pressed() -> void:
 		BtnEnviar.visible = false
 		BtnLimpiar.visible = true
 	if kruskal:
-		lblIntro.text = "Intenta construir una red conextada mas rapida y segura, mucha suerte."
+		lblIntro.text = "Intenta construir una red conectada más rápida y segura. Selecciona las conexiones en orden de menor peso para construir el árbol de expansión mínima."
 		start = true
 		BtnIniciar.visible = false
 		BtnEnviar.visible = false
+		# Asegurar que todo esté listo
+		dibujarConexionKruskal()
 	if flujo:
 		start = true		
 		_initialize_flow_network()
@@ -867,15 +994,20 @@ func _on_btn_enviar_pressed() -> void:
 		lblRecorrido.text = str(recorStr())
 		lblIntro.text = "Felicidades, hallaste el camino y enviaste el backup. Ahora es hora de construir un sistema seguro y liviano hasta cada uno de nuestros servidores."
 		dijstra = false
+		kruskal = true
+		
+		# Limpiar y preparar para Kruskal
+		limpiarVisual()
+		limpiarConexiones()
+		mostrarPesos(false)
+		
+		# Inicializar Kruskal
+		call_deferred("dibujarConexionKruskal")
+		
 		BtnIniciar.visible = true
 		BtnEnviar.visible = false
 		BtnLimpiar.visible = false
-		limpiarVisual()
-		# Logica para pasar al nivel kruskal		
-		limpiarConexiones()
-		mostrarPesos(false)
-		dibujarConexionKruskal()
-		kruskal = true
+		start = false
 		return
 	if kruskal:
 		lblIntro.text = "Felicidades, construiste una red segura. Ahora es necesario verificar que las conexiones sean seguras y eficientes entre nuestros servidores, hora de hacer un pentesting."
@@ -927,21 +1059,30 @@ func _on_btn_limpiar_pressed() -> void:
 		limpiarVisual()
 		UserRecorrido.clear()
 		UserRecorrido.append(origin)
-		lblRecorrido.text = str(recorStr())	
+		lblRecorrido.text = str(recorStr())    
+	if kruskal:  # AÑADIR ESTE CASO
+		limpiarVisual()
+		UserRecorrido.clear()
+		KruskalLineas.clear()
+		wrong_clicks = 0
+		# Reinicializar parent array
+		for i in range(num_vertices):
+			parent[i] = i
+		lblRecorrido.text = "Conexiones: 0/" + str(num_vertices - 1)
+		lblIntro.text = "Kruskal reiniciado. Selecciona las conexiones nuevamente."
+		# Volver a dibujar las edges
+		dibujarConexionKruskal()
 	if flujo:
 		current_path.clear()
 		vertActual = null
 		BtnEnviar.disabled = true
 		_update_path_display()
-	pass # Replace with function body.
+	
 func _on_boton_ayuda_pressed():
 	panel_ayuda.visible = true
-	
-	
 
 func _on_boton_continuar_pressed():
 	panel_ayuda.visible = false
-
 
 func _on_boton_continuar_2_pressed() -> void:
 	panelCiber.visible = false

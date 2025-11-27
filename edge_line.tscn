@@ -3,11 +3,11 @@
 [ext_resource type="Script" uid="uid://prohc6q2p56t" path="res://edge_line.gd" id="1_tfnrg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tfnrg"]
-size = Vector2(29, 23)
+size = Vector2(88, 49)
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_tfnrg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(4.5, 1.5)
+position = Vector2(34, 14.5)
 shape = SubResource("RectangleShape2D_tfnrg")
