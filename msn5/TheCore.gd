@@ -265,8 +265,8 @@ func dibujarConexionKruskal():
 			PanelGrafo.add_child(edge_control)
 			
 			# IMPORTANTE: Esperar un frame para que el script se inicialice
-			await get_tree().process_frame
-			
+			#await get_tree().process_frame
+		
 			if edge_control.has_method("connect_nodes"):
 				# ASIGNAR z-index ÚNICO y CRECIENTE
 				edge_control.z_index = 10 + i  # z-index único para cada edge				

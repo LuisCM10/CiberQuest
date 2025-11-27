@@ -30,7 +30,7 @@ var current_path = []
 var selected_node = -1
 var total_flow_sent := 0
 var target_flow := 0
-var time_remaining := 60.0
+var time_remaining := 300.0
 var game_started := false
 var game_over := false
 var packets_sent := 0
@@ -796,7 +796,7 @@ func _game_over(victory: bool):
 func _on_start_pressed():
 	game_started = true
 	game_over = false
-	time_remaining = 60.0
+	time_remaining = 300.0
 	total_flow_sent = 0
 	packets_sent = 0
 	nemesis_attacks = 0
