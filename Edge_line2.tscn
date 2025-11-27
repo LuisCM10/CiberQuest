@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://1t7wnxy6g63u"]
+[gd_scene load_steps=3 format=3 uid="uid://1t7wnxy6g63u"]
+
+[ext_resource type="Script" uid="uid://bdecg0tmfl505" path="res://edge_line_2.gd" id="1_0jyg1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jebic"]
 
@@ -7,6 +9,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_0jyg1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_jebic")

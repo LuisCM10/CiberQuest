@@ -9,8 +9,8 @@ var selected := false
 var is_correct := false
 var is_wrong := false
 
-const LINE_WIDTH = 4.0
-const CLICK_MARGIN = 3.0  # Reducido para más precisión
+const LINE_WIDTH = 3.0
+const CLICK_MARGIN = 15.0  # Reducido para más precisión
 
 func _ready():
 	# Configurar para recibir eventos de mouse
@@ -86,7 +86,7 @@ func _draw():
 	
 	# Texto
 	draw_string(font, label_pos - Vector2(text_size.x/2, -text_size.y/2), 
-			   text, HORIZONTAL_ALIGNMENT_CENTER, -1, font_size, Color(0, 0, 0))
+			   text, HORIZONTAL_ALIGNMENT_CENTER, -1, 10, Color(0, 0, 0))
 
 func _gui_input(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
