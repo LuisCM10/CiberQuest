@@ -41,7 +41,7 @@ var flujo = false
 var start = false
 var time_remaining := 120.0
 
-var num_vertices = 9
+var num_vertices = 8
 var prob_conexion = 0.35
 var lineasConexion = []
 var lineasVisuales = []
@@ -56,7 +56,7 @@ var UserRecorrido = []
 var recorrido = []
 var KruskalLineas = []
 var parent = []
-var wrong_clicks = 0
+var wrong_clicks = 8
 var original_capacity = []
 var flow_network = []
 var residual_graph = []
@@ -79,7 +79,7 @@ func _ready() -> void:
 	iniciarMatrices()	
 	
 	for i in range(num_vertices):
-		var angle = (2 * PI * (i+num_vertices)) / 10
+		var angle = (2 * PI * (i+num_vertices - 1)) / 10
 		var x = 150 + view[0] * cos(angle)
 		var y = 90 + view[1] * sin(angle)
 		var positions = Vector2(x, y)
@@ -199,24 +199,24 @@ func dibujarLineas(origen, destin, funcion, lab = true, correcto = true, tipo = 
 				arista.color = Color(1.0, 0.0, 0.102, 1.0)
 			lineasVisuales.append(arista)			
 	PanelGrafo.add_child(arista)
-	
-	if lab and funcion == LINEA_DE_CONEXION_NODOS:
-		var peso = grafo.matriz_peso[origen.id][destin.id]
-		var p0 = arista.line.points[0]
-		var p1 = arista.line.points[1]
-		var center = (p0 + p1) / 2
-		var dir = (p1 - p0).normalized()
-		var perp = Vector2(-dir.y, dir.x)
-		var offset_distance = 20.0
+	if lab and funcion == LINEA_DE_CONEXION_NODOS: 
+		var start_point = arista.line.points[0] 
+		var end_point = arista.end_point
+		var mid_point = (start_point + end_point) / 2
+		var direction = (end_point - start_point).normalized()
+		var perpendicular = Vector2(-direction.y, direction.x)
+		var curve_offset = 9
+		var control_point_uv = mid_point + perpendicular * curve_offset
 		var label = Label.new()
-		label.text = str(peso)		
-		label.position = center + perp * (offset_distance * 3)
-		label.rotation = atan2(dir.y, dir.x)		
-		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-		label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-		label.autowrap_mode = TextServer.AUTOWRAP_WORD
-		label.size = Vector2(50, 20)
-		label.pivot_offset = label.size / 2		
+		label.position = control_point_uv - Vector2(25, 5)
+		label.z_index = 20
+		label.custom_minimum_size = Vector2(50, 30)
+		label.text =  "%d" % grafo.matriz_peso[origen.id][destin.id]
+		label.add_theme_color_override("font_color", Color(1.0, 1.0, 1.0))
+		label.add_theme_constant_override("outline_size", 2)
+		label.add_theme_font_size_override("font_size", 10)
+		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER		
+		# Nombre único
 		if not has_node("Label," + str(origen.id) + "," + str(destin.id)):
 			label.name = "Label," + str(origen.id) + "," + str(destin.id)
 		else:
@@ -318,7 +318,7 @@ func dibujarGrafoNuevo():
 		var vertic1 = grafo.searchVertice(i)
 		for j in range(num_vertices):
 			if i != j:
-				if randf() < prob_conexion:
+				if randf() < (prob_conexion - 0.25):
 					var vertic2 = grafo.searchVertice(j)
 					var peso = randi_range(1, 15)
 					var capacidad = randi_range(1, 20)
