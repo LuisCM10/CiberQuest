@@ -171,11 +171,20 @@ func crearLinea(vertice, indice_ady, color, width, name = "conexion"):
 	
 	# Agregar etiqueta con el peso de la arista (MOVIDA CERCA DEL EXTREMO PARA MEJOR VISIBILIDAD)
 	var peso = adj_matrix[vertice][indice_ady]
-	var label_pos = end_point - dir * 20  # Ajustado para botones más pequeños
+	var startPoin = linea.points[0] 
+	var endPoin = linea.end_point
+	var mid_point = (startPoin + endPoin) / 2
+	var direction = (endPoin - startPoin).normalized()
+	var perpendicular = Vector2(-direction.y, direction.x)
+	var curve_offset = 15
+	var control_point_uv = mid_point + perpendicular * curve_offset
 	var label = Label.new()
 	label.text = str(peso)
-	label.position = label_pos - Vector2(5, 5)  # Ajustar para centrar aproximadamente
-	label.size = Vector2(10, 10)  # Reducido para que no sea enorme
+	label.position = control_point_uv - Vector2(25, 5)  # Ajustar para centrar aproximadamente
+	label.size = Vector2(50, 20)  # Reducido para que no sea enorme
+	label.add_theme_color_override("font_color", Color(1.0, 1.0, 1.0))
+	label.add_theme_constant_override("outline_size", 2)
+	label.add_theme_font_size_override("font_size", 10)
 	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	label.name = "peso_" + linea.name

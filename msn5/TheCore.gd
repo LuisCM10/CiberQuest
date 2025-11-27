@@ -41,7 +41,7 @@ var flujo = false
 var start = false
 var time_remaining := 120.0
 
-var num_vertices = 10
+var num_vertices = 8
 var prob_conexion = 0.35
 var lineasConexion = []
 var lineasVisuales = []
@@ -194,14 +194,14 @@ func dibujarLineas(origen, destin, funcion,lab = true, correcto = true, tipo = "
 	PanelGrafo.add_child(arista)
 	if lab and funcion == LINEA_DE_CONEXION_NODOS: 
 		var start_point = arista.line.points[0] 
-		var end_point = arista.line.points[1]
-		var mid_point = (start_point + end_point) / 1.5
+		var end_point = arista.end_point
+		var mid_point = (start_point + end_point) / 2
 		var direction = (end_point - start_point).normalized()
 		var perpendicular = Vector2(-direction.y, direction.x)
-		var curve_offset = 50000000000
+		var curve_offset = 9
 		var control_point_uv = mid_point + perpendicular * curve_offset
 		var label = Label.new()
-		label.position = control_point_uv - Vector2(25, 8)
+		label.position = control_point_uv - Vector2(25, 5)
 		label.z_index = 20
 		label.custom_minimum_size = Vector2(50, 30)
 		label.text =  "%d" % grafo.matriz_peso[origen.id][destin.id]
@@ -250,7 +250,7 @@ func dibujarGrafoNuevo():
 		var vertic1 = grafo.searchVertice(i)
 		for j in range(num_vertices):
 			if i != j:
-				if randf() < (prob_conexion - 0.2):
+				if randf() < (prob_conexion - 0.25):
 					var vertic2 = grafo.searchVertice(j)
 					var peso = randi_range(1, 15)
 					var capacidad = randi_range(1, 20)
