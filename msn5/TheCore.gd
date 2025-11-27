@@ -871,15 +871,10 @@ func _on_btn_enviar_pressed() -> void:
 		BtnLimpiar.visible = false
 		limpiarVisual()
 		# Logica para pasar al nivel kruskal		
-		#limpiarConexiones()
-		#mostrarPesos(false)
-		#dibujarConexionKruskal()
-		#kruskal = true
-		# Logica para pasar al nivel de Mai (PRUEBA)
 		limpiarConexiones()
-		dibujarConexiones()
-		mostrarCapacidad(true)
-		flujo = true	
+		mostrarPesos(false)
+		dibujarConexionKruskal()
+		kruskal = true
 		return
 	if kruskal:
 		lblIntro.text = "Felicidades, construiste una red segura. Ahora es necesario verificar que las conexiones sean seguras y eficientes entre nuestros servidores, hora de hacer un pentesting."
