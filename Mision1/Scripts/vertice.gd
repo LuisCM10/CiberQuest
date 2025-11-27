@@ -8,6 +8,7 @@ var id = 0           # int para el ID
 var funcionalidad = "" # String para guardar la funcion del servidor
 var is_origin := false
 var pista
+var sprite
 
 func _init(id, name = "", funcionalidad = "", origen = false, pista = ""):
 	self.id = id

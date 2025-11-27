@@ -109,6 +109,10 @@ func iniciarRecorridos(tipo):
 	lblRecorrido.text = str(recorStr())
 	LabelIntru.text = "Haz elegido iniciar la busqueda con " + VertIni.name + ". \nHas encontrado una pista en los nodos recorridos, leela para guiarte bien." + "\nTen en cuenta que debes añadir los servidores en orden de las manecillas del reloj iniciando desde firewall "
 	LabelPista.text = VertIni.pista
+	var new_gradient = Gradient.new()
+	new_gradient.add_point(0.0, Color(0.185, 0.416, 1.0, 1.0))
+	new_gradient.add_point(1.0, Color.WHITE)
+	VertIni.sprite.texture.gradient = new_gradient
 	if tipo == "bfs":
 		bfs = true
 		recorrido = grafo.bfs(VertIni)
@@ -144,18 +148,29 @@ func recorStr() -> Array:
 	
 func verificarNodoIngresado(nodoPrev):
 	UserRecorrido.append(VertIni)
-	var verificar = recorrido[UserRecorrido.size()-1] == VertIni		
+	var verificar = recorrido[UserRecorrido.size()-1] == VertIni
+	var new_gradient = Gradient.new()
 	if not verificar:
+		new_gradient.add_point(0.0, Color(0.864, 0.15, 0.185, 1.0))
+		new_gradient.add_point(1.0, Color.WHITE)
+		VertIni.sprite.texture.gradient = new_gradient
 		dibujarRecorrido(nodoPrev,VertIni, false)
 		UserRecorrido.remove_at(UserRecorrido.size()-1)
 		LabelIntru.text = "Lo siento, el " +VertIni.name+" no es el siguiente servidor a escanear."
 		await get_tree().create_timer(3).timeout
+		new_gradient.add_point(0.0, Color.GRAY)
+		new_gradient.add_point(1.0, Color.BLUE)
+		VertIni.sprite.texture.gradient = new_gradient
 		return
-	dibujarRecorrido(nodoPrev,VertIni)
+	dibujarRecorrido(nodoPrev,VertIni)	
+	new_gradient.add_point(0.0, Color(0.185, 0.416, 1.0, 1.0))
+	new_gradient.add_point(1.0, Color.WHITE)	
 	LabelIntru.text = "Bien hecho, sigue asi, " +VertIni.name+" esta siendo escaneado."
 	LabelPista.text = VertIni.pista
 	await get_tree().create_timer(3).timeout
 	if VertIni == origin:
+		new_gradient.add_point(0.0, Color(51.59, 38.892, 0.0, 1.0))
+		new_gradient.add_point(1.0, Color.BLACK)
 		LabelName.text = origin.name
 		LabelFunct.text = origin.funcionalidad
 		LabelPista.text = "“Rastreo completado. Has encontrado el nodo raíz del virus, el "+origin.name+". Siguiente misión: calcular la ruta más segura para aislarlo.”"
@@ -166,6 +181,7 @@ func verificarNodoIngresado(nodoPrev):
 		else:
 			dfs = false
 		BotSigNivel.visible = true
+	VertIni.sprite.texture.gradient = new_gradient
 	lblRecorrido.text = str(recorStr())
 	return
 
@@ -193,7 +209,28 @@ func _on_button_exit_pressed() -> void:
 	
 func dibujar_grafo():
 	for i in range(grafo.vertices.size()):
-		var vertice = grafo.vertices[i]				
+		var vertice = grafo.vertices[i]
+		var sprite = Sprite2D.new()
+		sprite.position = vertice.posicion + Vector2(20,20)
+		# Crear el GradientTexture2D
+		var gradient_texture = GradientTexture2D.new()		
+		gradient_texture.width = 80
+		gradient_texture.height = 80
+		# Crear y configurar el gradiente
+		var gradient = Gradient.new()
+		gradient.add_point(0.0, Color.GRAY)  # Color en el centro
+		gradient.add_point(1.0, Color.BLUE) # Color en los bordes
+		# Asignar el gradiente al texture
+		gradient_texture.gradient = gradient		
+		# Configurar el fill como radial para un efecto circular
+		gradient_texture.fill = GradientTexture2D.FILL_RADIAL
+		gradient_texture.fill_from = Vector2(0.5, 0.5)  # Centro del gradiente
+		gradient_texture.fill_to = Vector2(1.0, 1.0)    # Borde del gradiente (radio completo)
+		sprite.texture = gradient_texture
+		sprite.centered = true
+		sprite.scale = Vector2(0.5,0.5)
+		PanGrafo.add_child(sprite)
+		vertice.sprite = sprite
 		var button = Button.new()
 		button.name = vertice.name + "Button"
 		button.icon = load(json_data[i]["icon"])
