@@ -156,6 +156,7 @@ func dibujarGrafo():
 	
 func dibujarLineas(origen, destin, funcion,lab = true, correcto = true, tipo = "NoDirigida"):
 	var arista = Arista.new(origen, destin)	
+	
 	match funcion:
 		LINEA_DE_CONEXION_NODOS:
 			arista.tipo = tipo
@@ -202,7 +203,7 @@ func dibujarLineas(origen, destin, funcion,lab = true, correcto = true, tipo = "
 		var label = Label.new()
 		label.text = str(peso)		
 		# Posición: Centro + offset perpendicular
-		label.position = center + perp * offset_distance * 3		
+		label.position = center + perp * (offset_distance * 3)
 		# Rotación: Alinear con la dirección de la línea
 		label.rotation = atan2(dir.y, dir.x)		
 		# Alineación y tamaño
